@@ -1,0 +1,19 @@
+﻿Este é apenas um arquivo de teste
+
+Modifiquem ele e tentem enviar pro servidor
+
+
+
+------------------- PARTE FIXA---------------------
+
+PARA ATUALIZAR: botãoDireito no Mouse na Pasta com os arquivos do APP
+depois -> Git Sync - > Pull 
+
+PARA ENVIAR: botãoDireito no Mouse na Pasta com os arquivos do APP
+depois -> Git cOMMIT "MASTER" - >  Seleciona os arquivos que deseja mandar pro sevidor
+-> Faz um comentário sobre o que foi feito de adição ou alteração e ponha o NUMERO DA ISSUE
+exemplo: #(numero da atividade ou issue)
+
+Depois -> Clickar em Commit & Push
+
+---------------------------------------------------
