@@ -3,4 +3,6 @@
     <string name="EmailTextViewTelaDeLogin">E-mail</string>
     <string name="SenhaTextViewTelaDeLogin">Senha</string>
     <string name="SalvarSenhaCheckBoxTelaDeLogin">Deseja Salvar sua Senha?</string>
+    <string name="EntrarButtonTelaDeLogin">Entrar</string>
+    <string name="EsqueceuSenhaTextViewTelaDeLogin">Esqueci Minha Senha</string>
 </resources>
