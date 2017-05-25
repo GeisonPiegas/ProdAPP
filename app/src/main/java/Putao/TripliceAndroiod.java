@@ -9,7 +9,7 @@ import android.view.View;
 public class TripliceAndroiod implements View.OnClickListener {
     @Override
     public void onClick(View v) {
-
+        float Pohha ;
         int teste;
     }
 }
