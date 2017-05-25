@@ -5,4 +5,8 @@
     <string name="SalvarSenhaCheckBoxTelaDeLogin">Deseja Salvar sua Senha?</string>
     <string name="EntrarButtonTelaDeLogin">Entrar</string>
     <string name="EsqueceuSenhaTextViewTelaDeLogin">Esqueci Minha Senha</string>
+    <string name="nomeSilo">1</string>
+    <string name="quantidadeSilo">25.000</string>
+    <string name="produtoSilo">Milho</string>
+
 </resources>
