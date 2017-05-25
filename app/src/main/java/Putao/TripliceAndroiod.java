@@ -9,6 +9,7 @@ import android.view.View;
 public class TripliceAndroiod implements View.OnClickListener {
     @Override
     public void onClick(View v) {
+        String Celerépe ;
 
     }
 }
