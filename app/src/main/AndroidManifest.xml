@@ -3,8 +3,6 @@
     package="com.example.alunos.naopodequebrar">
 
     <application>
-        <!-- MARCOS ESTEVE AQUI, E AGORA NÃO ESTA MAIS, MAS ELE PODERIA AINDA ESTAR !! -->
-
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -17,13 +15,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            <!-- teu cu -->
         </activity>
     </application>
 
