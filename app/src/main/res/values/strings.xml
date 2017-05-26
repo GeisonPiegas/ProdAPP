@@ -9,4 +9,7 @@
     <string name="quantidadeSilo">25.000</string>
     <string name="produtoSilo">Milho</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
