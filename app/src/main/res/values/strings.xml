@@ -8,8 +8,12 @@
     <string name="nomeSilo">1</string>
     <string name="quantidadeSilo">25.000</string>
     <string name="produtoSilo">Milho</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="NomeTextViewTelaDeCadastro">Nome:</string>
+    <string name="EmailTextViewTelaDeCadastro">E-mail:</string>
+    <string name="ConfirmarEmailTextViewTelaDeCadastro">Informe seu E-mail Novamente:</string>
+    <string name="SenhaTextViewTelaDeCadastro">Senha:</string>
+    <string name="ConfirmarSenhaTextViewTelaDeCadastro">Informe sua Senha Novamente:</string>
+    <string name="CadastrarButtonTelaDeCadastro">Cadastrar-se</string>
 
 </resources>
