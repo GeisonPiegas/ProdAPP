@@ -36,7 +36,7 @@ public class ConexaoBD extends SQLiteOpenHelper{
 
         //INSERINDO DADOS PRÉ DEFINIDOS NA IMAGEM USUARIO
         sql = "insert into usuarios(id_usuario,nome_usuario,email_usuario,senha_usuario)" +
-                "values (1 , 'prodap , prod@gmail.com , 'prodap')";
+                "values (1 , 'prodap' , 'prod@gmail.com' , 'prodap')";
 
         db.execSQL(sql); // Executando a inserção dos dados
 
