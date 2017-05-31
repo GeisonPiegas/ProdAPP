@@ -152,12 +152,12 @@ public class TelaDeCadastro extends AppCompatActivity implements View.OnClickLis
 
                     //Se for Cadastro de Dados
                 } else {
-                   MensagemGeral.Msg(this, getString(R.string.mensagem_cadastrar));
+                    MensagemGeral.Msg(this, getString(R.string.mensagem_cadastrar));
                 }
 
                 finish();
 
-                //startActivity(new Intent(this, ListarUsuarioActivity.class));
+                startActivity(new Intent(this, TelaDeLogin.class));
 
                 // Caso de Algum Erro apresentará esta mensagem
             } else {
@@ -173,7 +173,11 @@ public class TelaDeCadastro extends AppCompatActivity implements View.OnClickLis
 
         this.cadastrarUsuarios();
 
+        /*
+
         if (CadastrarButtonTelaDeCadastro.isPressed()) {
+
+
 
             Intent intentUsuarios = new Intent(this, MainActivity.class); // criando um novo objeto da classe Intent e passado os parametros a outra activity
 
@@ -183,7 +187,10 @@ public class TelaDeCadastro extends AppCompatActivity implements View.OnClickLis
 
            overridePendingTransition(android.R.anim.slide_out_right, android.R.anim.slide_in_left);
 
-        }
 
+
+        }
+*/
     }
+
 }
