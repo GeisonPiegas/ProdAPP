@@ -15,5 +15,39 @@
     <string name="SenhaTextViewTelaDeCadastro">Senha:</string>
     <string name="ConfirmarSenhaTextViewTelaDeCadastro">Informe sua Senha Novamente:</string>
     <string name="CadastrarButtonTelaDeCadastro">Cadastrar-se</string>
+    <string name="CamposObrigatorios">Esses Campos são \n Obrigatórios !</string>
+
+    <!-- Copiados Direto do Projeto PARTIU_sb -->
+    <string name="Atualizar_Evento">Atualizar Eventos</string>
+    <string name="Campos_Obrigatorios">Campos Obrigatorios</string>
+    <string name="mensagem_cadastrar">Resgistro Cadastro com Sucesso ! </string>
+    <string name="mensagem_atualizar">Resgistro Atualizado com Sucesso ! </string>
+    <string name="mensagem_erro">Erro ao Salvar !! ! </string>
+    <string name="popin_textview_dataEvento">Informe a Data do Evento:</string>
+    <string name="popin_button_dataEvento">Confirmar</string>
+    <string name="popin_textview_Assunto">Assunto da Mensagem:</string>
+    <string name="popin_edittext_Assunto" />
+    <string name="popin_textview_Descricao">Descrição da Mensagem:</string>
+    <string name="popin_edittext_Descricao" />
+    <string name="popin_button_EnviarMensagem">Enviar Mensagem</string>
+    <string name="popin_textview_AvaliacaoOrganizador">Avaliação de Organizador de Organizador</string>
+    <string name="popin_textview_AvaliacaoOrganizadorDescricao">As avaliações feitas, vão pra um um Ranking Público de Qualidade.</string>
+    <string name="popin_textview_NotaOrganizador">Atribua uma nota para o Organizador:</string>
+    <string name="popin_textview_OrganizadorComentario">Escreva um breve comentário:</string>
+    <string name="popin_edittext_ComentarioOrganizador" />
+    <string name="popin_button_AvaliarOrganizador">Avaliar</string>
+    <string name="popin_textview_AvaliacaoEvento">Avaliação do Evento</string>
+    <string name="popin_textview_AvaliacaoEventoDescricao">As avaliações feitas neste campo, vão para um ranking público do evento.</string>
+    <string name="popin_textview_NotaEvento">Atribua uma nota para este evento:</string>
+    <string name="popin_textview_EventoComentario">Escreva um comentário sobre este evento:</string>
+    <string name="popin_edittext_ComentarioEvento">Avaliar</string>
+    <string name="popin_button_AvaliarEvento">Avaliar</string>
+    <string name="popin_textview_MensagemTitulo">Duvidas Sobre o Evento?</string>
+    <string name="popin_textview_MensagemDescricao">Envie uma mensagem para o organizador e tire suas duvidas.</string>
+    <string name="listarevento_textview_ListarEvento">Lista de Todos os Eventos</string>
+    <string name="categoria_lista_categoria">categoria_lista_categoria</string>
+    <!--   - - - - - - - - -->
+
+
 
 </resources>
