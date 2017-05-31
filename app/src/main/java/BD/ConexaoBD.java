@@ -5,6 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
+import android.support.annotation.StringRes;
 
 /**
  * Created by Marcos , Geison on 26/05/2017.
@@ -41,6 +42,21 @@ public class ConexaoBD extends SQLiteOpenHelper{
         db.execSQL(sql); // Executando a inserção dos dados
 
 
+        sql = "CREATE TABLE IF NOT EXISTS silos (" +
+                "id_usuario INTEGER REFERENCES usuarios (id_usuario) ON DELETE CASCADE NOT NULL," +
+                "id_silo INTEGER NOT NULL PRIMARY KEY UNIQUE," +
+                "nome_silo TEXT NOT NULL," +
+                "produto_silo TEXT NOT NULL," +
+                "tamanho_silo DOUBLE  NOT NULL" +
+                ")";
+
+        db.execSQL(sql);
+
+        sql = "INSERT INTO silos(id_usuario, id_silo, nome_silo, produto_silo, tamanho_silo)" +
+                "VALUES (1, 1, 'Siluzinho', 'Milhinho', 25000)";
+
+        db.execSQL(sql);
+
     }
 
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
@@ -59,4 +75,17 @@ public class ConexaoBD extends SQLiteOpenHelper{
                 ID_USUARIO, NOME_USUARIO, EMAIL_USUARIO, SENHA_USUARIO
         };
     }
+
+    public static class silos{
+        public static final String TABELA = "silos";
+        public static final String ID_USUARIO = "id_usuario";
+        public static final String ID_SILO = "id_silo";
+        public static final String NOME_SILO = "nome_silo";
+        public static final String PRODUTO_SILO = "produto_silo";
+        public static final String TAMANHO_SILO = "tamanho_silo";
+
+        public final static String [] COLUNAS = new String[]{
+                ID_USUARIO, ID_SILO, NOME_SILO, PRODUTO_SILO, TAMANHO_SILO
+        };
+    };
 }
