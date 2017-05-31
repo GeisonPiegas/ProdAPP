@@ -7,27 +7,38 @@ import android.os.Build;
 import android.support.annotation.RequiresApi;
 
 /**
- * Created by Alunos on 26/05/2017.
+ * Created by Marcos , Geison on 26/05/2017.
  */
 
 public class ConexaoBD extends SQLiteOpenHelper{
     private final static String BANCO_DE_DADOS = "ProdAPP";
     private final static int VERSAO = 1;
 
-    public ConexaoBD(Context context){
+    public ConexaoBD(Context context)
+    {
         super(context, BANCO_DE_DADOS, null, VERSAO);
+
     }
-    @RequiresApi(api = Build.VERSION_CODES.N)
+
     public void onCreate(SQLiteDatabase db) {
         /*
         * Cria a tabela "usuarios no SQLite"
         */
         String sql = "CREATE TABLE IF NOT EXISTS usuarios (" +
-                "id_usuario INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE NOT NULL," +
-                "nome_usuario TEXT(50) NOT NULL," +
-                "email_usuario TEXT(64) UNIQUE NOT NULL," +
-                "senha_usuario TEXT(64) NOT NULL" +
+                "id_usuario INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL UNIQUE," +
+                "nome_usuario TEXT(50) NULL," +
+                "email_usuario TEXT(64) NULL," +
+                "senha_usuario TEXT(64) NULL" +
                 ")";
+
+        db.execSQL(sql); // Executa o SQL, depois de definido a estrutura
+
+
+        //INSERINDO DADOS PRÉ DEFINIDOS NA IMAGEM USUARIO
+        sql = "insert into usuarios(id_usuario,nome_usuario,email_usuario,senha_usuario)" +
+                "values (1 , 'prodap , prod@gmail.com , 'prodap')";
+
+        db.execSQL(sql); // Executando a inserção dos dados
 
 
     }
