@@ -31,7 +31,7 @@ public class TelaDeLogin extends AppCompatActivity implements View.OnClickListen
     private CheckBox SalvarSenhaCheckBoxTelaDeLogin;
     private Button EntrarButtonTelaDeLogin;
     private TextView EsqueceuSenhaTextViewTelaDeLogin;
-
+    private TextView CriarContaUsuarioTextViewTelaDeLogin ;
     //-----------
     //Criando as contantes FINAL DEFINE QUE É UMA CONSTANTE
     private static final String MANTER_CONECTADO = "manter conectado";
@@ -62,10 +62,14 @@ public class TelaDeLogin extends AppCompatActivity implements View.OnClickListen
         EntrarButtonTelaDeLogin = (Button) findViewById(R.id.EntrarButtonTelaDeLogin);
         EsqueceuSenhaTextViewTelaDeLogin = (TextView) findViewById(R.id.EsqueceuSenhaTextViewTelaDeLogin);
 
+        CriarContaUsuarioTextViewTelaDeLogin = (TextView) findViewById(R.id.CriarContaUsuarioTextViewTelaDeLogin) ;
+
         //onclick's
 
        // SalvarSenhaCheckBoxTelaDeLogin.setOnClickListener(this);
         EntrarButtonTelaDeLogin.setOnClickListener(this);
+        CriarContaUsuarioTextViewTelaDeLogin.setOnClickListener(this);
+
 
         //------
         helper = new UsuariosBD(this) ; // Criando e Iniciando o Metodo Helper dentro do ON-CREATE
@@ -97,7 +101,24 @@ public class TelaDeLogin extends AppCompatActivity implements View.OnClickListen
 
     @Override
     public void onClick(View v) {
-        logar() ;
+
+        if (CriarContaUsuarioTextViewTelaDeLogin.isPressed()){
+
+            Intent intentTelaDeCadastro = new Intent(this, TelaDeCadastro.class); // criando um novo objeto da classe Intent e passado os parametros a outra activity
+
+            startActivity(intentTelaDeCadastro); // comecando a activity
+
+            finish(); // finaliza a activity anterior
+
+            overridePendingTransition(android.R.anim.slide_out_right, android.R.anim.slide_in_left); // Resposável pela animação da janela
+
+
+        }
+
+        if (EntrarButtonTelaDeLogin.isPressed()){
+            logar() ;
+        }
+
     }
 
     //--------
