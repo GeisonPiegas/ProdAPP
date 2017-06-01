@@ -65,6 +65,9 @@ public class TelaDeLogin extends AppCompatActivity implements View.OnClickListen
        // SalvarSenhaCheckBoxTelaDeLogin.setOnClickListener(this);
         EntrarButtonTelaDeLogin.setOnClickListener(this);
 
+        //------
+        helper = new UsuariosBD(this) ; // Criando e Iniciando o Metodo Helper dentro do ON-CREATE
+
         //------------------
         // Irá Pegar o Arquivo de Preferencia que foi salvo e testar
         SharedPreferences sharedPreferences = getSharedPreferences(PREFERENCE_NAME, MODE_PRIVATE);
@@ -84,7 +87,7 @@ public class TelaDeLogin extends AppCompatActivity implements View.OnClickListen
     // Criando um Metodo pra a partir de uma activity atual- chamar uma outra e encerrar a que chamou.
     public void chamarMenuNavegacao() {
         startActivity(new Intent(this, MainActivity.class)); // comando para iniciar a Activity que recebe 2 parametros( qual local que tá chamando ,  e qual tela que tá sendo chamada )
-        //finish(); // finalizando a activity que está chamando.
+        finish(); // finalizando a activity que está chamando.
 
     }
 
@@ -109,9 +112,17 @@ public class TelaDeLogin extends AppCompatActivity implements View.OnClickListen
         // Fazendo o teste logico e testanto se o usuario não digitou nada ou deixou nulo
         if ((email == null) || (email.equals(""))) {
             validacao = false;
-            EmailEditTextTelaDeLogin.setError("E-mail inválido !!"); // mostrando de erro criado no <String>
+            EmailEditTextTelaDeLogin.setError("E-mail inválido"); // mostrando de erro criado no <String>
 
         }
+
+        if (email.matches("[a-zA-Z0-9._-]+@[a-z]+.[a-z]+") && email.length() > 0) {
+            validacao = true;
+        } else {
+            validacao = false;
+            EmailEditTextTelaDeLogin.setError("Insira um E-mail Válido");
+        }
+
         if ((senha == null) || (senha.equals(""))) {
             validacao = false;
             SenhaEditTextTelaDeLogin.setError("Senha Inválida");
