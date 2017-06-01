@@ -157,7 +157,7 @@ public class TelaDeCadastro extends AppCompatActivity implements View.OnClickLis
 
                 finish();
 
-                startActivity(new Intent(this, TelaDeLogin.class));
+                startActivity(new Intent(this, ListaUsuarios.class));
 
                 // Caso de Algum Erro apresentará esta mensagem
             } else {
