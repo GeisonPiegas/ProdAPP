@@ -48,6 +48,8 @@
     <string name="categoria_lista_categoria">categoria_lista_categoria</string>
     <!--   - - - - - - - - -->
 
+    <string name="CamposEmailDiferentes">O E-mail não Confere com o que foi Digitado Acima!</string>
+    <string name="CamposSenhaDiferentes">A Senha não Confere com a que foi Digitada Acima!</string>
 
 
 </resources>

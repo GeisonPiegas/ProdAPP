@@ -6,7 +6,7 @@ import android.content.DialogInterface;
 import android.widget.Toast;
 
 /**
- * Created by pedro on 31/05/2017.
+ * Created by Marcos Martins on 31/05/2017.
  */
 
 public class MensagemGeral {

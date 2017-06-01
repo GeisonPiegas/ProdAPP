@@ -109,9 +109,17 @@ public class TelaDeLogin extends AppCompatActivity implements View.OnClickListen
         // Fazendo o teste logico e testanto se o usuario não digitou nada ou deixou nulo
         if ((email == null) || (email.equals(""))) {
             validacao = false;
-            EmailEditTextTelaDeLogin.setError("E-mail inválido !!"); // mostrando de erro criado no <String>
+            EmailEditTextTelaDeLogin.setError("E-mail inválido"); // mostrando de erro criado no <String>
 
         }
+
+        if (email.matches("[a-zA-Z0-9._-]+@[a-z]+.[a-z]+") && email.length() > 0) {
+            validacao = true;
+        } else {
+            validacao = false;
+            EmailEditTextTelaDeLogin.setError("Insira um E-mail Válido");
+        }
+
         if ((senha == null) || (senha.equals(""))) {
             validacao = false;
             SenhaEditTextTelaDeLogin.setError("Senha Inválida");

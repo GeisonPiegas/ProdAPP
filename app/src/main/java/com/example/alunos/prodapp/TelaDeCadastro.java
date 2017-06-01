@@ -106,10 +106,25 @@ public class TelaDeCadastro extends AppCompatActivity implements View.OnClickLis
         String nome_usuario = NomeEditTextTelaDeCadastro.getText().toString();
         String email_usuario = EmailEditTextTelaDeCadastro.getText().toString();
         String senha_usuario = SenhaEditTextTelaDeCadastro.getText().toString();
+        String confirma_email_usuario = ConfirmarEmailEditTextTelaDeCadastro.getText().toString();
+        String confirma_senha_usuario = ConfirmarSenhaEditTextTelaDeCadastro.getText().toString();
+
+        // Validação de E-mail e Confirmar Email (@ e .)
+        if (email_usuario.matches("[a-zA-Z0-9._-]+@[a-z]+.[a-z]+") && email_usuario.length() > 0) {
+            validacao = true;
+        } else {
+            validacao = false;
+            EmailEditTextTelaDeCadastro.setError("Insira um E-mail Válido");
+        }
+
+        if (confirma_email_usuario.matches("[a-zA-Z0-9._-]+@[a-z]+.[a-z]+") && confirma_email_usuario.length() > 0) {
+            validacao = true;
+        } else {
+            validacao = false;
+            ConfirmarEmailEditTextTelaDeCadastro.setError("Insira um E-mail Válido");
+        }
 
         // Resposável por fazer os Testes Lógicos e Exibir pro usuário ao se logar
-
-
         if ((nome_usuario == null) || (nome_usuario.equals(""))) {
             validacao = false;
             NomeEditTextTelaDeCadastro.setError(getString(R.string.CamposObrigatorios));
@@ -126,6 +141,16 @@ public class TelaDeCadastro extends AppCompatActivity implements View.OnClickLis
 
         }
 
+        // Validação da validação da senha e email, mas ta dando pau
+        /* if (confirma_email_usuario != email_usuario) {
+            validacao = false;
+            ConfirmarEmailEditTextTelaDeCadastro.setError(getString(R.string.CamposEmailDiferentes));
+        }
+
+        if (confirma_senha_usuario != senha_usuario) {
+            validacao = false;
+            ConfirmarSenhaEditTextTelaDeCadastro.setError(getString(R.string.CamposSenhaDiferentes));
+        } */
 
 
 
