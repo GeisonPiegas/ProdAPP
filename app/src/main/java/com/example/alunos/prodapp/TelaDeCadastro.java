@@ -32,6 +32,7 @@ public class TelaDeCadastro extends AppCompatActivity implements View.OnClickLis
     private TextView ConfirmarSenhaTextViewTelaDeCadastro;
     private EditText ConfirmarSenhaEditTextTelaDeCadastro;
     private Button CadastrarButtonTelaDeCadastro;
+    private TextView LoginTextViewTelaDeCadastro ;
 
     // Criando os atributos do usuário
     private Usuarios usuarios;
@@ -66,6 +67,12 @@ public class TelaDeCadastro extends AppCompatActivity implements View.OnClickLis
 
         CadastrarButtonTelaDeCadastro = (Button) findViewById(R.id.CadastrarButtonTelaDeCadastro) ;
         CadastrarButtonTelaDeCadastro.setOnClickListener(this);
+
+        LoginTextViewTelaDeCadastro = (TextView) findViewById(R.id.LoginTextViewTelaDeCadastro)  ;
+        LoginTextViewTelaDeCadastro.setOnClickListener(this);
+
+
+
 
         //---------------------
         // PARTE REFERENTE AO CRUD
@@ -196,26 +203,21 @@ public class TelaDeCadastro extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View v) {
 
-        this.cadastrarUsuarios();
+        if (LoginTextViewTelaDeCadastro.isPressed()) {
 
-        /*
+            Intent intentTelaLogin = new Intent(this, TelaDeLogin.class); // criando um novo objeto da classe Intent e passado os parametros a outra activity
 
-        if (CadastrarButtonTelaDeCadastro.isPressed()) {
+            startActivity(intentTelaLogin); // comecando a activity
 
-
-
-            Intent intentUsuarios = new Intent(this, MainActivity.class); // criando um novo objeto da classe Intent e passado os parametros a outra activity
-
-            startActivity(intentUsuarios); // comecando a activity
-
-            //finish(); // finaliza a activity anterior
+            finish(); // finaliza a activity anterior
 
            overridePendingTransition(android.R.anim.slide_out_right, android.R.anim.slide_in_left);
-
-
-
         }
-*/
+
+        if (CadastrarButtonTelaDeCadastro.isPressed()){
+            this.cadastrarUsuarios();
+        }
+
     }
 
 }

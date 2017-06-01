@@ -10,7 +10,10 @@
     <ScrollView
         android:id="@+id/ScrollViewTelaDeCadastro"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="55dp">
 
         <LinearLayout
             android:id="@+id/LinearLayoutVerticalTelaDeCadastro"
@@ -111,6 +114,15 @@
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
                 android:text="Cadastrar-se" />
+
+            <TextView
+                android:id="@+id/LoginTextViewTelaDeCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/LoginTextViewTelaDeCadastro"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@android:color/holo_orange_dark" />
 
         </LinearLayout>
     </ScrollView>

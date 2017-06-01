@@ -63,6 +63,7 @@ public class TelaDeLogin extends AppCompatActivity implements View.OnClickListen
         EsqueceuSenhaTextViewTelaDeLogin = (TextView) findViewById(R.id.EsqueceuSenhaTextViewTelaDeLogin);
 
         //onclick's
+
        // SalvarSenhaCheckBoxTelaDeLogin.setOnClickListener(this);
         EntrarButtonTelaDeLogin.setOnClickListener(this);
 
@@ -132,8 +133,6 @@ public class TelaDeLogin extends AppCompatActivity implements View.OnClickListen
         }
 
         if (validacao) { // A condição assim, significa que é Verdadeiro, pois no inicio do codigo da classe foi definido como True.
-
-             Toast.makeText(this, "Masoq?", Toast.LENGTH_SHORT).show();
 
             // Se a validação tiver sido POSITIVA irá fazer os comando abaixo e enviar os parametros para a classe UsuárioDB
             if (helper.logar(email, senha)) {
