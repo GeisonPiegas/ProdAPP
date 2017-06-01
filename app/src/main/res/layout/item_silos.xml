@@ -8,9 +8,10 @@
         android:id="@+id/imagenViewSilo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerInside"
-        android:transitionName="@drawable/icon_silos"
+        android:scaleType="centerInside"/>
+      <!--  android:transitionName="@drawable/icon_silos"
         app:srcCompat="@drawable/icon_silos" />
+        -->
 
     <TextView
         android:id="@+id/textViewnomeSilo"

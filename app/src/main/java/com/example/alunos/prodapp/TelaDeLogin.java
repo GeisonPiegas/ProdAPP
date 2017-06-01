@@ -14,6 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import BD.UsuariosBD;
 import Mensagem.MensagemGeral;
@@ -67,8 +68,9 @@ public class TelaDeLogin extends AppCompatActivity implements View.OnClickListen
 
         //------
         helper = new UsuariosBD(this) ; // Criando e Iniciando o Metodo Helper dentro do ON-CREATE
-
         //------------------
+
+
         // Irá Pegar o Arquivo de Preferencia que foi salvo e testar
         SharedPreferences sharedPreferences = getSharedPreferences(PREFERENCE_NAME, MODE_PRIVATE);
 
@@ -131,7 +133,7 @@ public class TelaDeLogin extends AppCompatActivity implements View.OnClickListen
 
         if (validacao) { // A condição assim, significa que é Verdadeiro, pois no inicio do codigo da classe foi definido como True.
 
-            // Toast.makeText(this, "OK", Toast.LENGTH_SHORT).show();
+             Toast.makeText(this, "Masoq?", Toast.LENGTH_SHORT).show();
 
             // Se a validação tiver sido POSITIVA irá fazer os comando abaixo e enviar os parametros para a classe UsuárioDB
             if (helper.logar(email, senha)) {

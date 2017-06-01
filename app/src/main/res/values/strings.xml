@@ -15,7 +15,19 @@
     <string name="SenhaTextViewTelaDeCadastro">Senha:</string>
     <string name="ConfirmarSenhaTextViewTelaDeCadastro">Informe sua Senha Novamente:</string>
     <string name="CadastrarButtonTelaDeCadastro">Cadastrar-se</string>
+
+
     <string name="CamposObrigatorios">Esses Campos são \n Obrigatórios !</string>
+    <string name="CampoSenhaUsuario">Você Deve Informar a Senha !</string>
+    <string name="CampoEmailUsuario">Você Deve Informar o E-mail !</string>
+    <string name="CampoNomeUsuario">Você Deve Informar o Nome !</string>
+
+    <string name="EmailNaoCorreponde">Os E-mails Informados São Diferentes !</string>
+    <string name="SenhaNaoCorreponde">As Senhas Informadas São Diferentes !</string>
+
+
+
+
 
     <!-- Copiados Direto do Projeto PARTIU_sb -->
     <string name="Atualizar_Evento">Atualizar Eventos</string>

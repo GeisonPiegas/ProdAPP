@@ -127,17 +127,17 @@ public class TelaDeCadastro extends AppCompatActivity implements View.OnClickLis
         // Resposável por fazer os Testes Lógicos e Exibir pro usuário ao se logar
         if ((nome_usuario == null) || (nome_usuario.equals(""))) {
             validacao = false;
-            NomeEditTextTelaDeCadastro.setError(getString(R.string.CamposObrigatorios));
+            NomeEditTextTelaDeCadastro.setError(getString(R.string.CampoNomeUsuario));
         }
 
         if ((email_usuario == null) || (email_usuario.equals(""))) {
             validacao = false;
-            EmailEditTextTelaDeCadastro.setError(getString(R.string.CamposObrigatorios));
+            EmailEditTextTelaDeCadastro.setError(getString(R.string.CampoEmailUsuario));
         }
 
         if ((senha_usuario == null) || (senha_usuario.equals(""))) {
             validacao = false;
-            SenhaEditTextTelaDeCadastro.setError(getString(R.string.CamposObrigatorios));
+            SenhaEditTextTelaDeCadastro.setError(getString(R.string.CampoSenhaUsuario));
 
         }
 
