@@ -9,18 +9,24 @@
         android:roundIcon="@mipmap/prod"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".MainActivity" />
-        <activity android:name=".TelaDeLogin" />
+        <activity android:name=".TelaDeCadastro" />
         <activity android:name=".TelaDeConfiguracaoDeSilo" />
-        <activity android:name=".TelaDeCadastro">
+
+        <activity android:name=".TelaDeLogin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".ListaUsuarios" />
-        <activity android:name=".ListaSilos"></activity>
+        <activity android:name=".ListaSilos" />
+        <activity
+            android:name=".MenuLateralActivity"
+            android:label="@string/title_activity_menu_lateral"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

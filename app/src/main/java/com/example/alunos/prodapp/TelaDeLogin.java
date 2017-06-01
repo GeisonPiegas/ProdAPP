@@ -93,7 +93,7 @@ public class TelaDeLogin extends AppCompatActivity implements View.OnClickListen
 
     // Criando um Metodo pra a partir de uma activity atual- chamar uma outra e encerrar a que chamou.
     public void chamarMenuNavegacao() {
-        startActivity(new Intent(this, MainActivity.class)); // comando para iniciar a Activity que recebe 2 parametros( qual local que tá chamando ,  e qual tela que tá sendo chamada )
+        startActivity(new Intent(this, MenuLateralActivity.class)); // comando para iniciar a Activity que recebe 2 parametros( qual local que tá chamando ,  e qual tela que tá sendo chamada )
         finish(); // finalizando a activity que está chamando.
 
     }

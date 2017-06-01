@@ -26,9 +26,6 @@
     <string name="SenhaNaoCorreponde">As Senhas Informadas São Diferentes !</string>
 
 
-
-
-
     <!-- Copiados Direto do Projeto PARTIU_sb -->
     <string name="Atualizar_Evento">Atualizar Eventos</string>
     <string name="Campos_Obrigatorios">Campos Obrigatorios</string>
@@ -64,5 +61,11 @@
     <string name="CamposSenhaDiferentes">A Senha não Confere com a que foi Digitada Acima!</string>
     <string name="LoginTextViewTelaDeCadastro">Já tem Conta? Clique e Faça Login</string>
     <string name="CriarContaUsuarioTextViewTelaDeLogin">Clique pra Criar Sua Conta.</string>
+    <string name="title_activity_menu_lateral">MenuLateralActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 
 </resources>

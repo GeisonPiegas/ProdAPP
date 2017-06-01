@@ -13,7 +13,7 @@ import android.support.annotation.StringRes;
 
 public class ConexaoBD extends SQLiteOpenHelper{
     private final static String BANCO_DE_DADOS = "ProdAPP";
-    private final static int VERSAO = 1;
+    private final static int VERSAO = 2;
 
     public ConexaoBD(Context context)
     {
@@ -37,7 +37,7 @@ public class ConexaoBD extends SQLiteOpenHelper{
 
         //INSERINDO DADOS PRÉ DEFINIDOS NA IMAGEM USUARIO
         sql = "insert into usuarios(id_usuario,nome_usuario,email_usuario,senha_usuario)" +
-                "values (1 , 'prodap' , 'prod@gmail.com' , 'prodap')";
+                "values (1 , 'prodap' , 'prodap@gmail.com' , 'prodap')";
 
         db.execSQL(sql); // Executando a inserção dos dados
 
