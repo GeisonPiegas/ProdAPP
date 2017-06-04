@@ -67,5 +67,11 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="IdentificacaoTextViewTelaDeCadastroSilo">Identificação do Silo:</string>
+    <string name="IdentificacaoEditTextTelaDeCadastroSilo" />
+    <string name="EstocagemTextViewTelaDeCadastroSilo">Tipo de Grão Estocado</string>
+    <string name="CapacidadeTextViewTelaDeCadastroSilo">Capacidade de Estocagem:</string>
+    <string name="CapacidadeEditTextTelaDeCadastroSilo" />
+    <string name="CadastrarButtonTelaDeCadastroSilo">Cadastrar Silo</string>
 
 </resources>
