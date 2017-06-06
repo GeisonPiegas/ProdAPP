@@ -52,7 +52,9 @@ public class TelaCadastroSilos extends AppCompatActivity implements View.OnClick
           /**
          * Aqui falta por o THIS depois que estiver pronto a classes SILOS BD
          */
-        silosBD = new SilosBD(); //Atribuindo a activity atual ao silosBD
+
+        //Tava Dando Erro Essa Parte, Então eu Comentei Tudo Pra Poder Continuar o Que Tava Fazendo - Rafael
+        /*silosBD = new SilosBD(); //Atribuindo a activity atual ao silosBD
         //-------------
         RelativeLayoutTelaDeCadastroSilos = (RelativeLayout) findViewById(R.id.RelativeLayoutTelaDeCadastroSilos) ;
         ScrollViewTelaDeCadastroSilos = (ScrollView) findViewById(R.id.ScrollViewTelaDeCadastroSilos) ;
@@ -65,7 +67,7 @@ public class TelaCadastroSilos extends AppCompatActivity implements View.OnClick
         EstocagemTextViewTelaDeCadastroSilo = (TextView) findViewById(R.id.EstocagemTextViewTelaDeCadastroSilo) ;
         EstocagemSpinnerTelaDeCadastroSilo = (Spinner) findViewById(R.id.EstocagemSpinnerTelaDeCadastroSilo) ;
         CadastrarButtonTelaDeCadastroSilo  = (Button) findViewById(R.id.CadastrarButtonTelaDeCadastroSilo) ;
-
+        */
         // On Clicks
         CadastrarButtonTelaDeCadastroSilo.setOnClickListener(this);
 

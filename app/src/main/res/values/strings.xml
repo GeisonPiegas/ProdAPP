@@ -73,5 +73,10 @@
     <string name="CapacidadeTextViewTelaDeCadastroSilo">Capacidade de Estocagem:</string>
     <string name="CapacidadeEditTextTelaDeCadastroSilo" />
     <string name="CadastrarButtonTelaDeCadastroSilo">Cadastrar Silo</string>
+    <string name="OpcoesTextViewTelaDeGerenciamentoDeSilos">O Que Deseja Fazer?</string>
+    <string name="TituloAdicaoDeProdutoTextViewTelaDeGerenciamentoDeSilos">Adicionar Produto Ao Silo:</string>
+    <string name="TipoDeProdutoTextViewTelaDeGerenciamentoDeSilos">Tipo do Produto:</string>
+    <string name="QuantidadeDoProdutoTextViewTelaDeGerenciamentoDeSilos">Quantidade do Produto:</string>
+    <string name="AdicionarButtonTelaDeGerenciamentoDeSilos">Adicionar Produto Ao Silo</string>
 
 </resources>
