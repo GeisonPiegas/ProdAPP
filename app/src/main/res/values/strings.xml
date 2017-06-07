@@ -75,8 +75,11 @@
     <string name="CadastrarButtonTelaDeCadastroSilo">Cadastrar Silo</string>
     <string name="OpcoesTextViewTelaDeGerenciamentoDeSilos">O Que Deseja Fazer?</string>
     <string name="TituloAdicaoDeProdutoTextViewTelaDeGerenciamentoDeSilos">Adicionar Produto Ao Silo:</string>
-    <string name="TipoDeProdutoTextViewTelaDeGerenciamentoDeSilos">Tipo do Produto:</string>
-    <string name="QuantidadeDoProdutoTextViewTelaDeGerenciamentoDeSilos">Quantidade do Produto:</string>
+    <string name="TipoDeProdutoAdicionarTextViewTelaDeGerenciamentoDeSilos">Tipo do Produto:</string>
+    <string name="QuantidadeDoProdutoAdicionarTextViewTelaDeGerenciamentoDeSilos">Quantidade do Produto:</string>
     <string name="AdicionarButtonTelaDeGerenciamentoDeSilos">Adicionar Produto Ao Silo</string>
+    <string name="TituloRemocaoDeProdutoTextViewTelaDeGerenciamentoDeSilos">Remover Produto do Silo</string>
+    <string name="QuantidadeDoProdutoRetirarTextViewTelaDeGerenciamentoDeSilos">Quantidade do Produto:</string>
+    <string name="RetirarButtonTelaDeGerenciamentoDeSilos">Retirar Produto do Silo</string>
 
 </resources>

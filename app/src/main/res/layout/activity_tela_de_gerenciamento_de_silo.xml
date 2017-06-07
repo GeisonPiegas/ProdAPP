@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout01TelaDeGerenciamentoDeSilos"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.alunos.prodapp.TelaDeGerenciamentoDeSilo">
 
     <ScrollView
+        android:id="@+id/ScrollView01TelaDeGerenciamentoDeSilos"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/LinearLayoutVertical01TelaDeGerenciamentoDeSilos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/IconeImageViewTelaDeGerenciamentoDeSilos"
                 android:layout_width="match_parent"
                 android:layout_height="192dp"
                 app:srcCompat="@android:drawable/btn_dialog" />
@@ -30,13 +32,15 @@
                 android:text="@string/OpcoesTextViewTelaDeGerenciamentoDeSilos" />
 
             <HorizontalScrollView
+                android:id="@+id/HorizontalScrollView01TelaDeGerenciamentoDeSilos"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <LinearLayout
+                    android:id="@+id/LinearLayoutVertical04TelaDeGerenciamentoDeSilos"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal" >
+                    android:orientation="horizontal">
 
                     <ImageButton
                         android:id="@+id/RetirarProdutoImageButtonTelaDeGerenciamentoDeSilos"
@@ -61,6 +65,7 @@
                 android:visibility="visible">
 
                 <LinearLayout
+                    android:id="@+id/LinearLayoutVertical02TelaDeGerenciamentoDeSilos"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -78,15 +83,14 @@
                         android:id="@+id/TituloAdicaoDeProdutoTextViewTelaDeGerenciamentoDeSilos"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
                         android:text="@string/TituloAdicaoDeProdutoTextViewTelaDeGerenciamentoDeSilos" />
 
                     <TextView
-                        android:id="@+id/TipoDeProdutoTextViewTelaDeGerenciamentoDeSilos"
+                        android:id="@+id/TipoDeProdutoAdicionarTextViewTelaDeGerenciamentoDeSilos"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="@string/TipoDeProdutoTextViewTelaDeGerenciamentoDeSilos" />
+                        android:text="@string/TipoDeProdutoAdicionarTextViewTelaDeGerenciamentoDeSilos" />
 
                     <Spinner
                         android:id="@+id/TipoDeProdutoSpinnerTelaDeGerenciamentoDeSilos"
@@ -95,14 +99,14 @@
                         android:layout_marginTop="10dp" />
 
                     <TextView
-                        android:id="@+id/QuantidadeDoProdutoTextViewTelaDeGerenciamentoDeSilos"
+                        android:id="@+id/QuantidadeDoProdutoAdicionarTextViewTelaDeGerenciamentoDeSilos"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="@string/QuantidadeDoProdutoTextViewTelaDeGerenciamentoDeSilos" />
+                        android:text="@string/QuantidadeDoProdutoAdicionarTextViewTelaDeGerenciamentoDeSilos" />
 
                     <EditText
-                        android:id="@+id/QuantidadeDoProdutoEditTextTelaDeGerenciamentoDeSilos"
+                        android:id="@+id/QuantidadeDoProdutoAdicionarEditTextTelaDeGerenciamentoDeSilos"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -120,7 +124,66 @@
                         android:id="@+id/AdicionarFimToolbarTelaDeGerenciamentoDeSilos"
                         android:layout_width="match_parent"
                         android:layout_height="33dp"
+                        android:background="?attr/colorPrimary"
+                        android:minHeight="?attr/actionBarSize"
+                        android:theme="?attr/actionBarTheme" />
+                </LinearLayout>
+            </ScrollView>
+
+
+            <ScrollView
+                android:id="@+id/RemoverScrollViewTelaDeGerenciamentoDeSilos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/LinearLayoutVertical03TelaDeGerenciamentoDeSilos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/RemoverInicioToolbarTelaDeGerenciamentoDeSilos"
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
                         android:layout_marginTop="10dp"
+                        android:background="?attr/colorPrimary"
+                        android:minHeight="?attr/actionBarSize"
+                        android:theme="?attr/actionBarTheme" />
+
+                    <TextView
+                        android:id="@+id/TituloRemocaoDeProdutoTextViewTelaDeGerenciamentoDeSilos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/TituloRemocaoDeProdutoTextViewTelaDeGerenciamentoDeSilos" />
+
+                    <TextView
+                        android:id="@+id/QuantidadeDoProdutoRetirarTextViewTelaDeGerenciamentoDeSilos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/QuantidadeDoProdutoRetirarTextViewTelaDeGerenciamentoDeSilos" />
+
+                    <EditText
+                        android:id="@+id/QuantidadeDoProdutoRetirarEditTextTelaDeGerenciamentoDeSilos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <Button
+                        android:id="@+id/RetirarButtonTelaDeGerenciamentoDeSilos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/RetirarButtonTelaDeGerenciamentoDeSilos" />
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/RemoverFimToolbarTelaDeGerenciamentoDeSilos"
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
                         android:background="?attr/colorPrimary"
                         android:minHeight="?attr/actionBarSize"
                         android:theme="?attr/actionBarTheme" />
