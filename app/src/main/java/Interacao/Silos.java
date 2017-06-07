@@ -1,36 +1,35 @@
 package Interacao;
 
 /**
- * Created by Geison e Adaptado por Marcos on 04/06/2017.
+ * Created by Geison on 01/06/2017.
  */
 
 public class Silos {
-    private int id_usuario ;
-    private int id_silo ;
-    private String nome_silo ;
-    private String produto_silo ;
-    private float tamanho_silo ;
+    // Criando os Atributos da Classes
+    private int id_silo;
+    private String nome_silo;
+    private String produto_silo;
+    private Double tamanho_silo;
 
-    public Silos(){
-        // Deixar este vazio, por que sem ele pode ser FATALL !!!
+
+    public Silos() {
+        // Por algum motivo divino esse método fica em branco
+
     }
 
-    public Silos(int id_usuario, int id_silo, String nome_silo, String produto_silo, float tamanho_silo){
-        this.id_usuario = id_usuario ;
-        this.id_silo = id_silo ;
-        this.nome_silo = nome_silo ;
-        this.produto_silo = produto_silo ;
-        this.tamanho_silo = tamanho_silo ;
+
+    // Criando metodo construtor que vai recebrer os parametros externos
+    public Silos(int id_silo, String nome_silo, String produto_silo, Double tamanho_silo){
+        //A variavel da classe Construtora vai receber a variavel que está vindo por parametro (This faz referencia a classe)
+        this.id_silo = id_silo;
+        this.nome_silo = nome_silo;
+        this.produto_silo = produto_silo;
+        this.tamanho_silo = tamanho_silo;
     }
 
-    public int getId_usuario() {
-        return id_usuario;
-    }
 
-    public void setId_usuario(int id_usuario) {
-        this.id_usuario = id_usuario;
-    }
 
+    // Métodos criados automáticamento pelos getters and Setters
     public int getId_silo() {
         return id_silo;
     }
@@ -55,15 +54,12 @@ public class Silos {
         this.produto_silo = produto_silo;
     }
 
-    public float getTamanho_silo() {
+    public Double getTamanho_silo() {
         return tamanho_silo;
     }
 
-    public void setTamanho_silo(float tamanho_silo) {
+    public void setTamanho_silo(Double tamanho_silo) {
         this.tamanho_silo = tamanho_silo;
     }
 
 }
-
-
-
