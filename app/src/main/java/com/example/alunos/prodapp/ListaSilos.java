@@ -68,5 +68,35 @@ public class ListaSilos extends AppCompatActivity implements AdapterView.OnItemC
 
     }
 
+    public void onClick(DialogInterface dialog, int which) { //recebendo por parametros o que foi clicado
+        int id  =  silosList.get(idPosicao).getId_silo() ; // enviando para id o a a posição do id que foi capturado pelo onclick
+
+        switch (which){
+
+            case 0 : //Editar
+                Intent intent = new Intent(this , TelaDeCadastro.class) ;
+                intent.putExtra("SILO_ID" , id) ; // no putExtra se utiliza (String name e short Value)
+                startActivity(intent);
+                finish();
+                break ;
+
+            case 1 :
+                alertConfirmacao.show();
+                break ;
+
+            //Remove os Silo pela posição do ID
+            case  DialogInterface.BUTTON_POSITIVE:
+                silosList.remove(idPosicao) ; //Remove apenas da lista o silo de acordo com o ID
+                silosBD.removerSilos(id) ; // Remove do Banco de Dados o silo de acordo com o ID
+                grid.invalidateViews(); // Atualiza os dados depois de feito as remoções.
+                break ;
+
+            case DialogInterface.BUTTON_NEGATIVE:
+                alertConfirmacao.dismiss(); // comando que faz com que ela não seja exibida, saia fora do alert confirmation.
+                break ;
+
+        }
+
+    }
 
 }
