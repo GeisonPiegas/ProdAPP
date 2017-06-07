@@ -1,5 +1,6 @@
 package BD;
 
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -9,10 +10,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Interacao.Silos;
-import Interacao.Usuarios;
 
 /**
- * Created by Marcos Martins on 01/06/2017.
+ * Created by Geison on 01/06/2017.
  */
 
 public class SilosBD {
@@ -52,24 +52,23 @@ public class SilosBD {
     }
 
 
-    // Criando um novo método que irá criar os novos Silos
+    // Criando um novo método que irá criar os novos silos
     private Silos criarSilos(Cursor cursor) {
 
-        //instanciando um novo objeto da classe Silos
-        Silos silos = new Silos(
+                //instanciando um novo objeto da classe SILOS
+                Silos silos = new Silos(
 
 
                 //Pega um valor inteiro - de dentro de um index(exemplo posição em um vetor)- chamado _ID que tá na classe
-                //Conecta e Sub-Classe -  Silos
+                //Conecta e Sub-Classe -  SILOS
 
                 // Esta parte manda para a Classe SILOS e manda para o metodo construtor que recebe parametros !
 
-                cursor.getInt(cursor.getColumnIndex(ConexaoBD.silos.ID_USUARIO)), // Tem que ser GET IN POIS SE TRATA DE UM ID
-                cursor.getInt(cursor.getColumnIndex(ConexaoBD.silos.ID_SILO)), // Tem que ser get String pois o tipo é este
-                cursor.getString(cursor.getColumnIndex(ConexaoBD.silos.NOME_SILO)),
+                cursor.getInt(cursor.getColumnIndex(ConexaoBD.silos.ID_SILO)), // Tem que ser GET IN POIS SE TRATA DE UM ID
+                cursor.getString(cursor.getColumnIndex(ConexaoBD.silos.NOME_SILO)), // Tem que ser get String pois o tipo é este
                 cursor.getString(cursor.getColumnIndex(ConexaoBD.silos.PRODUTO_SILO)),
-                cursor.getInt(cursor.getColumnIndex(ConexaoBD.silos.TAMANHO_SILO)));
-        return silos ;
+                cursor.getDouble(cursor.getColumnIndex(ConexaoBD.silos.TAMANHO_SILO)));
+        return silos;
     }
 
 
@@ -78,8 +77,7 @@ public class SilosBD {
 
         // Gerando um Cursor ( que via executar as QUERYS)
         Cursor cursor = getDataBase().query(ConexaoBD.silos.TABELA, //Cursor ta executando essa seleção que tá sendo feita
-                ConexaoBD.silos.COLUNAS, null, null, null, null, null);
-
+                ConexaoBD.silos.COLUNAS, null , null, null, null, null);
 
         //Criando uma Lista de Silos
         List<Silos> silos = new ArrayList<Silos>();
@@ -87,10 +85,10 @@ public class SilosBD {
         while (cursor.moveToNext()) { // Enquanto o cursos se mover para o proximo ou outra posição
 
             Silos modelo = criarSilos(cursor); // criando um novo objeto e passando parametros do cursor
-            silos.add(modelo); //adcionando um novo Silo a lista
+            silos.add(modelo); //adcionando um novo Silos a lista
         }
 
-        cursor.close(); // fechando o cursor e retornando para silos
+        cursor.close(); // fechando o cursor e retornando para enderecos
 
 
         return silos;
@@ -104,7 +102,7 @@ public class SilosBD {
 
         // Classe que recebe os valores que serão salvos no banco de dados
         //Tem que informar O nome da Coluna e a Tabela e tambem as informações que deseja salvar nessa Tabela
-        ContentValues valores = new ContentValues();
+        ContentValues silosValores = new ContentValues();
 
         /* AINDA FALTA CONSEGUIR PEGAR O ID MAIOR E SETAR ELE COMO CHAVE ESTRANGEIRA
         E FALTA PEGAR A DATA ATUAL DO SISTEMA TAMBEM
@@ -113,23 +111,20 @@ public class SilosBD {
          */
 
         //Metodo PUT recebe por parametro os tipos de dados String Key e Short Value
-        valores.put(ConexaoBD.silos.ID_USUARIO, silos.getId_usuario());
-        valores.put(ConexaoBD.silos.ID_SILO , silos.getId_silo());
-        valores.put(ConexaoBD.silos.NOME_SILO , silos.getNome_silo());
-        valores.put(ConexaoBD.silos.PRODUTO_SILO , silos.getProduto_silo());
-        valores.put(ConexaoBD.silos.TAMANHO_SILO , silos.getTamanho_silo());
+        silosValores.put(ConexaoBD.silos.ID_SILO, silos.getId_silo());
+        silosValores.put(ConexaoBD.silos.NOME_SILO, silos.getNome_silo());
+        silosValores.put(ConexaoBD.silos.PRODUTO_SILO, silos.getProduto_silo());
+        silosValores.put(ConexaoBD.silos.TAMANHO_SILO, silos.getTamanho_silo());
 
-//------------------------------------AINDA N TA FUNCIONANDO ------------------------------------------
-/*
-        if (silos.getId_silo() != null) {
-            return sqLiteDatabase.update(ConexaoBD.usuarios.TABELA, valores, "id_usuario = ?",
-                    new String[]{ConexaoBD.usuarios.getId_usuario().toString()});
+
+        if (silos.getNome_silo() != null) {
+            return sqLiteDatabase.update(ConexaoBD.silos.TABELA, silosValores, "id_silo = ?",
+                    new String[]{silos.getNome_silo().toString()});
 
         }
-        */
 
 
-        return getDataBase().insert(ConexaoBD.usuarios.TABELA, null, valores);
+        return getDataBase().insert(ConexaoBD.silos.TABELA, null, silosValores);
 
     }
 
@@ -137,44 +132,29 @@ public class SilosBD {
     // Maneira de REMOVER os dados no Banco de Dados seja eles não existente ou já existentes
 
     //REMOVENDO USUARIOS DE ACORDO COM O ID
-    public boolean removerUsuarios(int id) {
+    public boolean removerSilos(int id) {
 
-        return getDataBase().delete(ConexaoBD.usuarios.TABELA, "id_usuario = ?", new String[]{(Integer.toString(id))}) > 0;
+        return getDataBase().delete(ConexaoBD.silos.TABELA, "id_silo = ?", new String[]{(Integer.toString(id))}) > 0;
 
 
     }
-/*
+
     // Maneira de BUSCAR os dados no Banco de Dados seja eles não existente ou já existentes
 
     //BUSCANDO USUARIOS DE ACORDO COM O ID
-    public Usuarios buscarUsuarios(int id) {
-        Cursor cursor = getDataBase().query(ConexaoBD.usuarios.TABELA, ConexaoBD.usuarios.COLUNAS, "id_usuario = ?", new String[]{Integer.toString(id)}, null, null, null);
+    public Silos buscarSilos(int id) {
+        Cursor cursor = getDataBase().query(ConexaoBD.silos.TABELA, ConexaoBD.silos.COLUNAS, "id_silo = ?", new String[]{Integer.toString(id)}, null, null, null);
 
-        List<Usuarios> usuarios = new ArrayList<Usuarios>();
+        List<Silos> silos = new ArrayList<Silos>();
 
         while (cursor.moveToNext()) {
-            Usuarios modelo = criarUsuarios(cursor);
-            usuarios.add(modelo);
+            Silos modelo = criarSilos(cursor);
+            silos.add(modelo);
             cursor.close();
             return modelo;
         }
 
         return null;
     }
-    */
 
-/*
-    public boolean logar(String email, String senha) { // Criando novo objeto e recebendo parametros do "loginActivity"
-        Cursor cursor = getDataBase().query(ConexaoBD.usuarios.TABELA, null, "EMAIL_USUARIO = ? AND SENHA_USUARIO = ?", new String[]{email, senha}, null, null, null);
-
-        if (cursor.moveToFirst()) { // Procura e Retorna o Primeiro que for encontrado
-            return true;
-
-        } else {
-            return false;
-        }
-
-
-    }
-    */
 }
