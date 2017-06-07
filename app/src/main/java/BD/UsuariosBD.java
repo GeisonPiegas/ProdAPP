@@ -23,6 +23,10 @@ public class UsuariosBD {
     private ConexaoBD dataBaseHelper;
 
 
+
+    //blahblah
+
+
     //Criando variavel que Permite que interações sejam feitas no Banco IMPORTA AUTOMATICAMENTE
     private SQLiteDatabase sqLiteDatabase;
 
