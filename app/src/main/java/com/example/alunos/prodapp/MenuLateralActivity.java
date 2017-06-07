@@ -1,5 +1,6 @@
 package com.example.alunos.prodapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -81,16 +82,34 @@ public class MenuLateralActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
+            Intent intentTelaCadastroSilos = new Intent(this, TelaCadastroSilos.class);
+            startActivity(intentTelaCadastroSilos);
+            //finish();
+
         } else if (id == R.id.nav_gallery) {
+            Intent intentDeTelaCadastro = new Intent(this, TelaDeCadastro.class);
+            startActivity(intentDeTelaCadastro);
+            //finish();
 
         } else if (id == R.id.nav_slideshow) {
+            Intent intentTelaDeConfiguracaoDeSilo = new Intent(this, TelaDeConfiguracaoDeSilo.class);
+            startActivity(intentTelaDeConfiguracaoDeSilo);
+            //finish();
 
         } else if (id == R.id.nav_manage) {
+            Intent intentTelaDeDetalhesDoSilo = new Intent(this, TelaDeDetalhesDoSilo.class);
+            startActivity(intentTelaDeDetalhesDoSilo);
+            //finish();
 
         } else if (id == R.id.nav_share) {
+            Intent intentTelaDeGerenciamentoDeSilo = new Intent(this, TelaDeGerenciamentoDeSilo.class);
+            startActivity(intentTelaDeGerenciamentoDeSilo);
+            //finish();
 
         } else if (id == R.id.nav_send) {
+            Intent intentTelaDeLogin = new Intent(this, TelaDeLogin.class);
+            startActivity(intentTelaDeLogin);
+            //finish();
 
         }
 
