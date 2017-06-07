@@ -39,13 +39,14 @@ public class ListaSilos extends AppCompatActivity implements AdapterView.OnItemC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_silos);
 
+        //Essa Parte Ta Com Erro, tive qquee comentar pra poder continuar
 
-        silosBD = new SilosBD(this);
+        /*silosBD = new SilosBD(this);
         silosList = silosBD.ListaSilos();
         adapterSilos = new AdapterSilos(this, silosList); // ta passando a lista do banco de dados para o adaptador
 
         grid = (GridView) findViewById(R.id.gridViewSilo);
-        grid.setAdapter(adapterSilos);
+        grid.setAdapter(adapterSilos); */
 
         grid.setOnItemClickListener(this); // Setando a maneira SetonClick para interagir com a lista.
     }

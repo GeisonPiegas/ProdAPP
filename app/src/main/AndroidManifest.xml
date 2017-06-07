@@ -20,9 +20,11 @@
             android:label="@string/title_activity_menu_lateral"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".TelaCadastroSilos" />
-        <activity android:name=".TelaDeGerenciamentoDeSilo">
+        <activity android:name=".TelaDeGerenciamentoDeSilo" />
+        <activity android:name=".TelaDeDetalhesDoSilo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

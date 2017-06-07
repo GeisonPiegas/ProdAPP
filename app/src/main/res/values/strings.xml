@@ -82,4 +82,15 @@
     <string name="QuantidadeDoProdutoRetirarTextViewTelaDeGerenciamentoDeSilos">Quantidade do Produto:</string>
     <string name="RetirarButtonTelaDeGerenciamentoDeSilos">Retirar Produto do Silo</string>
 
+    <string name="NomeDetalheTextViewTelaDeDetalhesDoSilo">Nome/Detalhe</string>
+    <string name="TipoDeGraoTextViewTelaDeDetalhesDoSilo">Tipo de Grão</string>
+    <string name="PorteDoSiloTextViewTelaDeDetalhesDoSilo">Porte do Silo</string>
+    <string name="FiltroTextViewTelaDeDetalhesDoSilo">Filtro</string>
+    <string name="KgRadioButtonTelaDeDetalhesDoSilo">Kg</string>
+    <string name="TonRadioButtonTelaDeDetalhesDoSilo">Ton</string>
+    <string name="CapacidadeTotalTextViewTelaDeDetalhesDoSilo">Capacidade Total</string>
+    <string name="CapacidadeUtilizadaTextViewTelaDeDetalhesDoSilo">Capacidade Utilizada</string>
+    <string name="CapacidadeDisponivelTextViewTelaDeDetalhesDoSilo">Capacidade Disponível</string>
+    <string name="DataDaCriacaoTextViewTelaDeDetalhesDoSilo">Data de Criação</string>
+
 </resources>
