@@ -93,4 +93,11 @@
     <string name="CapacidadeDisponivelTextViewTelaDeDetalhesDoSilo">Capacidade Disponível</string>
     <string name="DataDaCriacaoTextViewTelaDeDetalhesDoSilo">Data de Criação</string>
 
+    <string-array name="ProdutosSpinnerTelaCadastroSilo">
+        <item>Arroz</item>
+        <item>Milho</item>
+        <item>Soja</item>
+        <item>Trigo</item>
+    </string-array>
+
 </resources>

@@ -46,7 +46,7 @@
                 android:value=".MenuLateralActivity" />
         </activity>
 
-        <activity android:name=".MenuLateralActivity"
+        <activity android:name=".TelaCadastroSilos"
             android:label="@string/title_activity_menu_lateral"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -59,7 +59,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".TelaCadastroSilos">
+        <activity android:name=".MenuLateralActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
