@@ -75,11 +75,11 @@ public class SilosBD {
     // Maneira de Listar Todos os SILOS do Banco de
 
     //Pega id do usuario para achar os silos cadastrados por ele
-    public List<Silos> ListaSilos(String id) {
+    public List<Silos> ListaSilos() {
 
         // Gerando um Cursor ( que via executar as QUERYS)
         Cursor cursor = getDataBase().query(ConexaoBD.silos.TABELA, //Cursor ta executando essa seleção que tá sendo feita
-                ConexaoBD.silos.COLUNAS, "id_silo = ?" , new String[]{id}, null, null, null);
+                ConexaoBD.silos.COLUNAS, null, null, null, null, null);
 
         //Criando uma Lista de Silos
         List<Silos> silos = new ArrayList<Silos>();

@@ -24,8 +24,6 @@ public class ListaSilos extends AppCompatActivity implements AdapterView.OnItemC
     private SilosBD silosBD;
     public Integer id_pedido;
 
-
-
     //----------
 
     private int idPosicao;
@@ -39,14 +37,13 @@ public class ListaSilos extends AppCompatActivity implements AdapterView.OnItemC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_silos);
 
-        //Essa Parte Ta Com Erro, tive qquee comentar pra poder continuar
 
-        /*silosBD = new SilosBD(this);
+        silosBD = new SilosBD(this);
         silosList = silosBD.ListaSilos();
         adapterSilos = new AdapterSilos(this, silosList); // ta passando a lista do banco de dados para o adaptador
 
         grid = (GridView) findViewById(R.id.gridViewSilo);
-        grid.setAdapter(adapterSilos); */
+        grid.setAdapter(adapterSilos);
 
         grid.setOnItemClickListener(this); // Setando a maneira SetonClick para interagir com a lista.
     }
@@ -76,7 +73,7 @@ public class ListaSilos extends AppCompatActivity implements AdapterView.OnItemC
 
             case 0 : //Editar
                 Intent intent = new Intent(this , TelaDeCadastro.class) ;
-                intent.putExtra("SILO_ID" , id) ; // no putExtra se utiliza (String name e short Value)
+                intent.putExtra("id" , 1) ; // no putExtra se utiliza (String name e short Value)
                 startActivity(intent);
                 finish();
                 break ;
