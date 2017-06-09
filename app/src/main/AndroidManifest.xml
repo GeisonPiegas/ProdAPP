@@ -34,13 +34,13 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
         </activity>
-        <activity android:name=".ListaSilos">
+        <activity android:name=".TelaCadastroSilos">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
         </activity>
         <activity
-            android:name=".TelaCadastroSilos"
+            android:name=".ListaSilos"
             android:label="@string/title_activity_menu_lateral"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
