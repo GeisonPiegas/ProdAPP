@@ -9,44 +9,38 @@
         android:roundIcon="@mipmap/prod"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
         </activity>
-
         <activity android:name=".TelaDeCadastro">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
         </activity>
-
         <activity android:name=".TelaDeConfiguracaoDeSilo">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
         </activity>
-
         <activity android:name=".TelaDeLogin">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
         </activity>
-
         <activity android:name=".ListaUsuarios">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
         </activity>
-
         <activity android:name=".ListaSilos">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
         </activity>
-
-        <activity android:name=".TelaCadastroSilos"
+        <activity
+            android:name=".TelaCadastroSilos"
             android:label="@string/title_activity_menu_lateral"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -55,27 +49,26 @@
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".MenuLateralActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
         </activity>
-
         <activity android:name=".TelaDeGerenciamentoDeSilo">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
         </activity>
-
         <activity android:name=".TelaDeDetalhesDoSilo">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
         </activity>
+        <activity android:name=".TelaDeEpocasDasPlantacoes"></activity>
     </application>
 
 </manifest>

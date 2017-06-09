@@ -66,9 +66,13 @@ public class TelaCadastroSilos extends AppCompatActivity implements View.OnClick
         CapacidadeTextViewTelaDeCadastroSilo = (TextView) findViewById(R.id.CapacidadeTextViewTelaDeCadastroSilo);
         CapacidadeEditTextTelaDeCadastroSilo = (EditText) findViewById(R.id.CapacidadeEditTextTelaDeCadastroSilo);
         EstocagemTextViewTelaDeCadastroSilo = (TextView) findViewById(R.id.EstocagemTextViewTelaDeCadastroSilo);
+
+
         EstocagemSpinnerTelaDeCadastroSilo = (Spinner) findViewById(R.id.EstocagemSpinnerTelaDeCadastroSilo);
-        ArrayAdapter adapterSpinner = ArrayAdapter.createFromResource(this, R.array.ProdutosSpinnerTelaCadastroSilo, android.R.layout.simple_spinner_item);
+        ArrayAdapter adapterSpinner = ArrayAdapter.createFromResource(this, R.array.ProdutosSpinnerTelaCadastroSilo, android.R.layout.simple_spinner_dropdown_item);
+        adapterSpinner.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         EstocagemSpinnerTelaDeCadastroSilo.setAdapter(adapterSpinner);
+
         CadastrarButtonTelaDeCadastroSilo = (Button) findViewById(R.id.CadastrarButtonTelaDeCadastroSilo);
 
         // On Clicks
@@ -84,16 +88,17 @@ public class TelaCadastroSilos extends AppCompatActivity implements View.OnClick
         // -----------------------------------------------------------------------------------------
 
         // Esta com problema aqui!!!!!!
+        Integer id_usuario = 1;
         String nome_silo = IdentificacaoEditTextTelaDeCadastroSilo.getText().toString();
         String produto_silo = EstocagemSpinnerTelaDeCadastroSilo.toString();
-        Double tamanho_silo = Double.valueOf(CapacidadeEditTextTelaDeCadastroSilo.toString());
+        Double tamanho_silo = Double.parseDouble(CapacidadeEditTextTelaDeCadastroSilo.getText().toString());
 
         // -----------------------------------------------------------------------------------------
 
         if (validacaoSilo) {
 
             silos = new Silos();
-
+            silos.setId_usuario(id_usuario);
             silos.setNome_silo(nome_silo);
             silos.setProduto_silo(produto_silo);
             silos.setTamanho_silo(tamanho_silo);

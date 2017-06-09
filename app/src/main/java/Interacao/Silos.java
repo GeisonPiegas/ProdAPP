@@ -6,6 +6,7 @@ package Interacao;
 
 public class Silos {
     // Criando os Atributos da Classes
+    private int id_usuario;
     private int id_silo;
     private String nome_silo;
     private String produto_silo;
@@ -19,8 +20,9 @@ public class Silos {
 
 
     // Criando metodo construtor que vai recebrer os parametros externos
-    public Silos(int id_silo, String nome_silo, String produto_silo, Double tamanho_silo){
+    public Silos(int id_usuario, int id_silo, String nome_silo, String produto_silo, Double tamanho_silo){
         //A variavel da classe Construtora vai receber a variavel que está vindo por parametro (This faz referencia a classe)
+        this.id_usuario = id_usuario;
         this.id_silo = id_silo;
         this.nome_silo = nome_silo;
         this.produto_silo = produto_silo;
@@ -30,6 +32,14 @@ public class Silos {
 
 
     // Métodos criados automáticamento pelos getters and Setters
+    public int getId_usuario(){
+        return  id_usuario;
+    }
+
+    public void setId_usuario(int id_usuario){
+        this.id_usuario = id_usuario;
+    }
+
     public int getId_silo() {
         return id_silo;
     }
