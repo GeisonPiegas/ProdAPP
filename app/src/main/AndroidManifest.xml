@@ -68,8 +68,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
         </activity>
-        <activity android:name=".TelaDeEpocasDasPlantacoes" />
-        <activity android:name=".TelaListaProdutos"></activity>
+        <activity android:name=".TelaEpocasDePlantacao"></activity>
     </application>
 
 </manifest>

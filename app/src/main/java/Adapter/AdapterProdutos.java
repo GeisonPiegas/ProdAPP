@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.alunos.prodapp.R;
-import com.example.alunos.prodapp.TelaListaProdutos;
 
 import java.util.ArrayList;
 import java.util.List;

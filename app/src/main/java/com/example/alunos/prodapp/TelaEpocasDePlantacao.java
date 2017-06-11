@@ -10,12 +10,12 @@ import java.util.ArrayList;
 import Adapter.AdapterProdutos;
 import Interacao.Produtos;
 
-public class TelaListaProdutos extends AppCompatActivity {
+public class TelaEpocasDePlantacao extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tela_lista_produtos);
+        setContentView(R.layout.activity_tela_epocas_de_plantacao);
 
         GridView lista = (GridView) findViewById(R.id.GridViewTelaListaProdutos);
         ArrayAdapter adapter = new AdapterProdutos(this, adicionarProdutos());
