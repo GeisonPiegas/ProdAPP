@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <GridView
+        android:id="@+id/GridViewTelaListaProdutos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:columnWidth="160dp"
+        android:focusable="true"
+        android:horizontalSpacing="2dp"
+        android:numColumns="auto_fit"
+        android:padding="2dp"
+        android:paddingRight="2dp" />
+</LinearLayout>

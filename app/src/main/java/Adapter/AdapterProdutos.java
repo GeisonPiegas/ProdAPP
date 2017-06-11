@@ -8,7 +8,10 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+<<<<<<< HEAD
 import com.example.alunos.prodapp.ListaSilos;
+=======
+>>>>>>> origin/master
 import com.example.alunos.prodapp.R;
 
 import java.util.ArrayList;
@@ -31,8 +34,14 @@ public class AdapterProdutos extends ArrayAdapter<Produtos> {
         this.elementos = elementos;
     }
 
+<<<<<<< HEAD
     public View getView(int position, View convertView, ViewGroup parent){
         Produtos produtos = elementos.get(position);
+=======
+
+
+    public View getView(int position, View convertView, ViewGroup parent){
+>>>>>>> origin/master
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
         View rowView = inflater.inflate(R.layout.item_produtos, parent, false);
@@ -45,8 +54,12 @@ public class AdapterProdutos extends ArrayAdapter<Produtos> {
 
         return rowView;
     }
+<<<<<<< HEAD
 
 
 
 
 }
+=======
+}
+>>>>>>> origin/master

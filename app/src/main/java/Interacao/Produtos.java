@@ -29,6 +29,9 @@ public class Produtos{
     public void setProduto(String produto) {
         this.produto = produto;
     }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/master
 }
