@@ -40,7 +40,7 @@
                 android:value=".MenuLateralActivity" />
         </activity>
         <activity
-            android:name=".TelaDeEpocasDasPlantacoes"
+            android:name=".TelaEpocasDePlantacao"
             android:label="@string/title_activity_menu_lateral"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
