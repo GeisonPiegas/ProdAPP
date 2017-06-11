@@ -40,7 +40,7 @@
                 android:value=".MenuLateralActivity" />
         </activity>
         <activity
-            android:name=".ListaSilos"
+            android:name=".TelaDeEpocasDasPlantacoes"
             android:label="@string/title_activity_menu_lateral"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -68,7 +68,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
         </activity>
-        <activity android:name=".TelaDeEpocasDasPlantacoes"></activity>
+        <activity android:name=".ListaSilos"></activity>
     </application>
 
 </manifest>
