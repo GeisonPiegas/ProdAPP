@@ -24,14 +24,7 @@ public class MenuLateralActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -81,37 +74,28 @@ public class MenuLateralActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            Intent intentTelaCadastroSilos = new Intent(this, TelaCadastroSilos.class);
-            startActivity(intentTelaCadastroSilos);
-            //finish();
-
-        } else if (id == R.id.nav_gallery) {
-            Intent intentDeTelaCadastro = new Intent(this, TelaDeCadastro.class);
-            startActivity(intentDeTelaCadastro);
-            //finish();
-
-        } else if (id == R.id.nav_slideshow) {
-            Intent intentTelaDeConfiguracaoDeSilo = new Intent(this, TelaDeConfiguracaoDeSilo.class);
-            startActivity(intentTelaDeConfiguracaoDeSilo);
-            //finish();
-
-        } else if (id == R.id.nav_manage) {
-            Intent intentTelaDeDetalhesDoSilo = new Intent(this, TelaDeDetalhesDoSilo.class);
-            startActivity(intentTelaDeDetalhesDoSilo);
-            //finish();
-
-        } else if (id == R.id.nav_share) {
-            Intent intentTelaDeGerenciamentoDeSilo = new Intent(this, TelaDeGerenciamentoDeSilo.class);
-            startActivity(intentTelaDeGerenciamentoDeSilo);
-            //finish();
-
-        } else if (id == R.id.nav_send) {
+      if (id == R.id.login_usuario) {
             Intent intentTelaDeLogin = new Intent(this, TelaDeLogin.class);
             startActivity(intentTelaDeLogin);
             //finish();
 
-        }
+        } else if (id == R.id.cadastrar_usuario) {
+            Intent intentCadastrarUsuario = new Intent(this, TelaDeCadastro.class);
+            startActivity(intentCadastrarUsuario);
+            //finish();
+
+        } else if (id == R.id.cadastrar_silo) {
+            Intent intentCadastrarSilo = new Intent(this, TelaCadastroSilos.class);
+            startActivity(intentCadastrarSilo);
+            //finish();
+
+        } else if (id == R.id.listar_silo) {
+          Intent intentListarSilo = new Intent(this, ListaSilos.class);
+          startActivity(intentListarSilo);
+          //finish();
+
+
+      }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
