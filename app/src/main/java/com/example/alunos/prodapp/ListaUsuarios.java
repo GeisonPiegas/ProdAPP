@@ -11,16 +11,18 @@ import android.widget.ListView;
 import java.util.List;
 
 import Adapter.AdapterUsuarios;
+import BD.SilosBD;
 import BD.UsuariosBD;
+import Interacao.Silos;
 import Interacao.Usuarios;
 import Mensagem.MensagemGeral;
 
 public class ListaUsuarios extends AppCompatActivity  implements AdapterView.OnItemClickListener {
 
     private ListView lista;
-    private List<Usuarios> usuarioList;
+    private List<Silos> silosList;
     private AdapterUsuarios adapterUsuarios;
-    private UsuariosBD usuarioBD;
+    private SilosBD silosBD;
 
     //----------
 
@@ -36,9 +38,9 @@ public class ListaUsuarios extends AppCompatActivity  implements AdapterView.OnI
         setContentView(R.layout.activity_lista_usuarios);
 
 
-        usuarioBD = new UsuariosBD(this);
-        usuarioList = usuarioBD.ListaUsuarios();
-        adapterUsuarios = new AdapterUsuarios(this, usuarioList); // ta passando a lista do banco de dados para o adaptador
+        silosBD = new SilosBD(this);
+        silosList = silosBD.ListaSilos();
+        adapterUsuarios = new AdapterUsuarios(this, silosList); // ta passando a lista do banco de dados para o adaptador
 
         lista = (ListView) findViewById(R.id.listViewUsuarios);
         lista.setAdapter(adapterUsuarios);

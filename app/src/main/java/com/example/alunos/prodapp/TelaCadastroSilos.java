@@ -88,9 +88,9 @@ public class TelaCadastroSilos extends AppCompatActivity implements View.OnClick
         // -----------------------------------------------------------------------------------------
 
         // Esta com problema aqui!!!!!!
-        Integer id_usuario = 1;
+
         String nome_silo = IdentificacaoEditTextTelaDeCadastroSilo.getText().toString();
-        String produto_silo = EstocagemSpinnerTelaDeCadastroSilo.toString();
+        String produto_silo = EstocagemSpinnerTelaDeCadastroSilo.getSelectedItem().toString();
         Double tamanho_silo = Double.parseDouble(CapacidadeEditTextTelaDeCadastroSilo.getText().toString());
 
         // -----------------------------------------------------------------------------------------
@@ -98,7 +98,6 @@ public class TelaCadastroSilos extends AppCompatActivity implements View.OnClick
         if (validacaoSilo) {
 
             silos = new Silos();
-            silos.setId_usuario(id_usuario);
             silos.setNome_silo(nome_silo);
             silos.setProduto_silo(produto_silo);
             silos.setTamanho_silo(tamanho_silo);
@@ -139,4 +138,6 @@ public class TelaCadastroSilos extends AppCompatActivity implements View.OnClick
             this.cadastrarSilos();
         }
     }
+
+    //TESTE "APAGAR"
 }

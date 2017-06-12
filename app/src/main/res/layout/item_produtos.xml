@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="200dp">
 
     <ImageView
-        android:id="@+id/imagenViewSilo"
+        android:id="@+id/ImagemViewTelaListaProdutos"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:adjustViewBounds="true"
         android:cropToPadding="true"
         android:scaleType="centerInside"
-        app:srcCompat="@drawable/icon_silos" />
-
-    <!-- Essa parte aqui, veio com erro pra mim, pq n achou a foto do silo, ai eu coloquei essa
-    que ja tava por aqui -->
-
+        tools:ignore="ContentDescription" />
 
     <TextView
-        android:id="@+id/textViewnomeSilo"
+        android:id="@+id/TextViewTelaListaProdutos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
@@ -28,5 +25,4 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
         android:textColor="@android:color/black"
         android:textStyle="bold" />
-
 </FrameLayout>
