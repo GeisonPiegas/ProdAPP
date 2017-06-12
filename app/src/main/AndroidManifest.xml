@@ -95,9 +95,16 @@
                 android:value=".MenuLateralActivity" />
         </activity>
 
+        <activity android:name=".TelaEpocaDeArroz"></activity>
+        <activity android:name=".TelaEpocaDeSoja"></activity>
+        <activity android:name=".TelaEpocaDeTrigo"></activity>
+        <activity android:name=".TelaEpocaDeMilho"></activity>
+
 
 
         <activity android:name=".TelaEpocasDePlantacao"></activity>
     </application>
+
+
 
 </manifest>

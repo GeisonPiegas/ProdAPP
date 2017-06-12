@@ -106,7 +106,7 @@ public class MenuLateralActivity extends AppCompatActivity
         //finish();
 
       } else if (id == R.id.Teste_02) {
-        Intent intentListarSilo = new Intent(this, TelaDeDetalhesDoSilo.class);
+        Intent intentListarSilo = new Intent(this, TelaEpocasDePlantacao.class);
         startActivity(intentListarSilo);
         //finish();
         }
