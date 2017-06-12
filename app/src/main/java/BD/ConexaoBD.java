@@ -53,7 +53,7 @@ public class ConexaoBD extends SQLiteOpenHelper{
         db.execSQL(sql);
 
         sql = "INSERT INTO silos(id_usuario, id_silo, nome_silo, produto_silo, tamanho_silo)" +
-                "VALUES (1, 1, 'Siluzinho', 'Milhinho', 25000)";
+                "VALUES (1, , 'Siluzinho', 'Trigo', 25000)";
 
         db.execSQL(sql);
 
