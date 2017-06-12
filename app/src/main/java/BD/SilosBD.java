@@ -115,7 +115,6 @@ public class SilosBD {
 
         //Metodo PUT recebe por parametro os tipos de dados String Key e Short Value
         silosValores.put(ConexaoBD.silos.ID_USUARIO, "1");
-        silosValores.put(ConexaoBD.silos.ID_SILO, silos.getId_silo());
         silosValores.put(ConexaoBD.silos.NOME_SILO, silos.getNome_silo());
         silosValores.put(ConexaoBD.silos.PRODUTO_SILO, silos.getProduto_silo());
         silosValores.put(ConexaoBD.silos.TAMANHO_SILO, silos.getTamanho_silo());
