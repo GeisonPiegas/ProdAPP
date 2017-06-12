@@ -90,12 +90,26 @@ public class MenuLateralActivity extends AppCompatActivity
             //finish();
 
         } else if (id == R.id.listar_silo) {
-          Intent intentListarSilo = new Intent(this, ListaSilos.class);
+        Intent intentListarSilo = new Intent(this, ListaSilos.class);
+        startActivity(intentListarSilo);
+        //finish();
+
+      } else if (id == R.id.listar_usuarios) {
+          Intent intentListarSilo = new Intent(this, ListaUsuarios.class);
           startActivity(intentListarSilo);
           //finish();
 
 
-      }
+    } else if (id == R.id.Teste_01) {
+        Intent intentListarSilo = new Intent(this, TelaDeGerenciamentoDeSilo.class);
+        startActivity(intentListarSilo);
+        //finish();
+
+      } else if (id == R.id.Teste_02) {
+        Intent intentListarSilo = new Intent(this, TelaDeDetalhesDoSilo.class);
+        startActivity(intentListarSilo);
+        //finish();
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

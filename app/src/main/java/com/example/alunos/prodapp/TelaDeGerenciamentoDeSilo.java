@@ -1,5 +1,6 @@
 package com.example.alunos.prodapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -14,6 +15,10 @@ import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import BD.SilosBD;
+import Interacao.Silos;
+import Mensagem.MensagemGeral;
 
 public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View.OnClickListener{
     private ScrollView AdicionarScrollViewTelaDeGerenciamentoDeSilos;
@@ -44,6 +49,13 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
 
     private Boolean teste1;
     private Boolean teste2;
+
+    // Criando os atributos do SILO
+    private Silos silos;
+    private SilosBD silosBD;
+    private int id_silo;
+    //-------------------------------
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,6 +104,104 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
 
     }
 
+    //-------------- Parte Referente ao Cadastro e edição de Dados de um Silo //----------------
+
+    // Diminuir Quantidade do Silo
+
+    public void AumentarQuntidadeSilo() {
+
+        boolean validacaoSilo = true;
+
+        // -----------------------------------------------------------------------------------------
+        String produto_silo = TipoDeProdutoSpinnerTelaDeGerenciamentoDeSilos.getSelectedItem().toString();
+        Double tamanho_silo = Double.parseDouble(QuantidadeDoProdutoAdicionarEditTextTelaDeGerenciamentoDeSilos.getText().toString());
+        // -----------------------------------------------------------------------------------------
+
+        if (validacaoSilo) {
+
+            silos = new Silos();
+            silos.setProduto_silo(produto_silo);
+            silos.setTamanho_silo(tamanho_silo);
+
+            // Se for Alteração de Dados
+            if (id_silo > 0) {
+                silos.setId_silo(id_silo);
+            }
+
+            long resultado = silosBD.salvarSilos(silos);
+
+            if (resultado != -1) {
+
+                if (id_silo > 0) {
+                    MensagemGeral.Msg(this, getString(R.string.mensagem_atualizar));
+
+                    //Se for Cadastro de Dados
+                } else {
+                    MensagemGeral.Msg(this, getString(R.string.mensagem_cadastrar));
+                }
+
+                finish();
+
+                startActivity(new Intent(this, ListaUsuarios.class));
+
+                // Caso de Algum Erro apresentará esta mensagem
+            } else {
+                MensagemGeral.Msg(this, getString(R.string.mensagem_erro));
+            }
+
+        }
+
+    }
+
+    // Diminuir Quantidade do Silo
+
+    public void DiminuirValorSilo() {
+
+        boolean validacaoSilo = true;
+
+        // -----------------------------------------------------------------------------------------
+
+        String produto_silo = TipoDeProdutoSpinnerTelaDeGerenciamentoDeSilos.getSelectedItem().toString();
+        Double tamanho_silo = Double.parseDouble(QuantidadeDoProdutoRetirarEditTextTelaDeGerenciamentoDeSilos.getText().toString());
+
+        // -----------------------------------------------------------------------------------------
+
+        if (validacaoSilo) {
+
+            silos = new Silos();
+            silos.setProduto_silo(produto_silo);
+            silos.setTamanho_silo(tamanho_silo);
+
+            // Se for Alteração de Dados
+            if (id_silo > 0) {
+                silos.setId_silo(id_silo);
+            }
+
+            long resultado = silosBD.salvarSilos(silos);
+
+            if (resultado != -1) {
+
+                if (id_silo > 0) {
+                    MensagemGeral.Msg(this, getString(R.string.mensagem_atualizar));
+
+                    //Se for Cadastro de Dados
+                } else {
+                    MensagemGeral.Msg(this, getString(R.string.mensagem_cadastrar));
+                }
+
+                finish();
+
+                startActivity(new Intent(this, ListaUsuarios.class));
+
+                // Caso de Algum Erro apresentará esta mensagem
+            } else {
+                MensagemGeral.Msg(this, getString(R.string.mensagem_erro));
+            }
+
+        }
+
+    }
+
     @Override
     public void onClick(View v) {
         if (RetirarProdutoImageButtonTelaDeGerenciamentoDeSilos.isPressed()) {
@@ -100,9 +210,15 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
                 RemoverScrollViewTelaDeGerenciamentoDeSilos.setVisibility(View.GONE);
                 teste1 = true;
                 teste2 = false;
+                //-----
+                if (RetirarButtonTelaDeGerenciamentoDeSilos.isPressed()){
+                    this.DiminuirValorSilo();
+                }
             } else {
                 AdicionarScrollViewTelaDeGerenciamentoDeSilos.setVisibility(View.GONE);
                 teste1 = false;
+
+
             }
 
         }
@@ -113,9 +229,15 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
                 AdicionarScrollViewTelaDeGerenciamentoDeSilos.setVisibility(View.GONE);
                 teste2 = true;
                 teste1 = false;
+                //----
+                if (AdicionarButtonTelaDeGerenciamentoDeSilos.isPressed()){
+                    this.AumentarQuntidadeSilo();
+                }
+
             } else {
                 RemoverScrollViewTelaDeGerenciamentoDeSilos.setVisibility(View.GONE);
                 teste2 = false;
+
             }
 
         }

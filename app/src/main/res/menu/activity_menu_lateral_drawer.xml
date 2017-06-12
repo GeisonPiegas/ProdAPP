@@ -19,18 +19,28 @@
             android:id="@+id/listar_silo"
             android:icon="@drawable/ic_menu_manage"
             android:title="Listar os Silos" />
+        <item
+            android:id="@+id/listar_usuarios"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Listar os Usuários " />
+
+        <item
+            android:id="@+id/listar_silos_descricao"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Listar o Conteúdos Silos " />
     </group>
-<!--
-    <item android:title="Communicate">
+
+
+    <item android:title="Testes e outras Caralhas">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:id="@+id/Teste_01"
+                android:icon="@drawable/arroz"
+                android:title="Teste 01" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:id="@+id/Teste_02"
+                android:icon="@drawable/soja"
+                android:title="Teste 02" />
         </menu>
     </item>
 

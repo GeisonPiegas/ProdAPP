@@ -211,7 +211,7 @@ public class TelaDeCadastro extends AppCompatActivity implements View.OnClickLis
 
             finish(); // finaliza a activity anterior
 
-           overridePendingTransition(android.R.anim.slide_out_right, android.R.anim.slide_in_left);
+          // overridePendingTransition(android.R.anim.slide_out_right, android.R.anim.slide_in_left);
         }
 
         if (CadastrarButtonTelaDeCadastro.isPressed()){

@@ -53,7 +53,7 @@ public class ListaSilos extends AppCompatActivity implements AdapterView.OnItemC
         int id  =  item.getItemId() ;
 
         if(id == R.id.gridViewSilo){ // fazendo os testes logicos apos escolher um botão, neste caso manda para outra activity, mas poderia fazer outras funções.
-            startActivity(new Intent(this , ListaUsuarios.class)); // se o teste der certo, inicia uma activity especifica.
+            startActivity(new Intent(this , TelaDeLogin.class)); // se o teste der certo, inicia uma activity especifica.
         }
         return super.onOptionsItemSelected(item);
     }
@@ -62,21 +62,40 @@ public class ListaSilos extends AppCompatActivity implements AdapterView.OnItemC
     //Metodos gerados automaticamente pelo "Implemets"
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         idPosicao = position ;
-        alertDialog.show() ;
 
+        // ESTA PARTE AQUI, MANDA PRA TELA DE GRECIA DE SILOS. MAS NÃO ESTÁ PEGNDO PELO ID ACEDITO !!
+
+      //  if (idPosicao == id){ // Essa poha, so eu tentanto pegar o id do silo clickado kkkk
+
+            Intent intent = new Intent(this , TelaDeGerenciamentoDeSilo.class) ;
+           // intent.putExtra("id" , 1) ; // no putExtra se utiliza (String name e short Value)
+            startActivity(intent);
+           // finish();
+
+
+       // }
     }
+
+
+
+
 
     public void onClick(DialogInterface dialog, int which) { //recebendo por parametros o que foi clicado
         int id  =  silosList.get(idPosicao).getId_silo() ; // enviando para id o a a posição do id que foi capturado pelo onclick
 
+        // DENTRO DESTE MÉTODO É QUE DEVERIA PELAR O ID, E AI SI MANDR PRA TELA PARA EDIÇÃO ( EU ACHO 0
+    }
+        /*
         switch (which){
 
             case 0 : //Editar
-                Intent intent = new Intent(this , TelaDeCadastro.class) ;
+                Intent intent = new Intent(this , TelaDeGerenciamentoDeSilo.class) ;
                 intent.putExtra("id" , 1) ; // no putExtra se utiliza (String name e short Value)
                 startActivity(intent);
                 finish();
                 break ;
+
+
 
             case 1 :
                 alertConfirmacao.show();
@@ -92,9 +111,12 @@ public class ListaSilos extends AppCompatActivity implements AdapterView.OnItemC
             case DialogInterface.BUTTON_NEGATIVE:
                 alertConfirmacao.dismiss(); // comando que faz com que ela não seja exibida, saia fora do alert confirmation.
                 break ;
-
         }
 
     }
+       */
 
-}
+
+
+      }
+
