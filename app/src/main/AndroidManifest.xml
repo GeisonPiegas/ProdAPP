@@ -59,7 +59,7 @@
 
 
         <activity
-            android:name=".TelaDeLogin"
+            android:name=".MenuLateralActivity"
             android:label="@string/title_activity_menu_lateral"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -75,7 +75,7 @@
 
 
 
-        <activity android:name=".MenuLateralActivity">
+        <activity android:name=".TelaDeLogin">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
@@ -97,7 +97,7 @@
 
 
 
-        <activity android:name=".TelaDeEpocasDasPlantacoes"></activity>
+        <activity android:name=".TelaEpocasDePlantacao"></activity>
     </application>
 
 </manifest>

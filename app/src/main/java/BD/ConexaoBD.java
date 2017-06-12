@@ -44,7 +44,7 @@ public class ConexaoBD extends SQLiteOpenHelper{
 
         sql = "CREATE TABLE IF NOT EXISTS silos (" +
                 "id_usuario INTEGER REFERENCES usuarios (id_usuario) ON DELETE CASCADE NOT NULL," +
-                "id_silo INTEGER NOT NULL PRIMARY KEY UNIQUE," +
+                "id_silo INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE," +
                 "nome_silo TEXT NOT NULL," +
                 "produto_silo TEXT NOT NULL," +
                 "tamanho_silo DOUBLE  NOT NULL" +

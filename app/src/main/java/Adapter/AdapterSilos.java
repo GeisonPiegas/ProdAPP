@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 import com.example.alunos.prodapp.R;
 
@@ -23,6 +24,7 @@ public class AdapterSilos extends BaseAdapter {
     //Criando novos objetos
     private Context context;
     private List<Silos> lista;
+    private String nomeProduto;
 
 
     //Criando o metodo construtor
@@ -65,7 +67,31 @@ public class AdapterSilos extends BaseAdapter {
         /* AINDA NÃO É POSSIVEL CHAMAR INFORMAÇÕES DE OUTRAS TABELAS E ENVIAR PARA O TEXTVIEW E GRIDVIEW  */
 
         TextView textView = (TextView) convertView.findViewById(R.id.textViewnomeSilo);
-        textView.setText(silos.getNome_silo());
+        textView.setText(silos.getProduto_silo());
+
+        // nomeProduto é uma variavel que recebe o nome do produto pra poder fazer os teste seguintes.
+        nomeProduto = silos.getProduto_silo();
+
+        //Testes pra ve que produto é, e ja coloca a IMAGEM do PRODUTO que ele é
+        if(nomeProduto.equals("Arroz")) {
+            ImageView imageView = (ImageView) convertView.findViewById(R.id.imagenViewSilo);
+            imageView.setImageResource(R.drawable.icon_silos_arroz);
+        }else{
+            if(nomeProduto.equals("Soja")) {
+                ImageView imageView = (ImageView) convertView.findViewById(R.id.imagenViewSilo);
+                imageView.setImageResource(R.drawable.icon_silos_soja);
+            }else{
+                if(nomeProduto.equals("Trigo")) {
+                    ImageView imageView = (ImageView) convertView.findViewById(R.id.imagenViewSilo);
+                    imageView.setImageResource(R.drawable.icon_silos_trigo);
+                }else{
+                    if(nomeProduto.equals("Milho")) {
+                        ImageView imageView = (ImageView) convertView.findViewById(R.id.imagenViewSilo);
+                        imageView.setImageResource(R.drawable.icon_silos_milho);
+                    }
+                }
+            }
+        }
 
         return convertView ;
     }
