@@ -34,22 +34,22 @@ public class TelaEpocasDePlantacao extends AppCompatActivity {
                 //IF: Fazem o teste de qual posição o usuario clickou, e leva para a pagina indicada.
                 //Ele pega a POSIÇÂO do click e nao ID, e a posição comeca em "0"
                 if(position == 0){
-                    Intent intent = new Intent(TelaEpocasDePlantacao.this, ListaSilos.class) ;
+                    Intent intent = new Intent(TelaEpocasDePlantacao.this, TelaEpocaDeArroz.class) ;
                     startActivity(intent);
                     finish();
                 }else{
                     if(position == 1){
-                        Intent intent = new Intent(TelaEpocasDePlantacao.this, ListaSilos.class) ;
+                        Intent intent = new Intent(TelaEpocasDePlantacao.this, TelaEpocaDeSoja.class) ;
                         startActivity(intent);
                         finish();
                     }else{
                         if(position == 2){
-                            Intent intent = new Intent(TelaEpocasDePlantacao.this, ListaSilos.class) ;
+                            Intent intent = new Intent(TelaEpocasDePlantacao.this, TelaEpocaDeTrigo.class) ;
                             startActivity(intent);
                             finish();
                         }else{
                             if(position == 3){
-                                Intent intent = new Intent(TelaEpocasDePlantacao.this, ListaSilos.class) ;
+                                Intent intent = new Intent(TelaEpocasDePlantacao.this, TelaEpocaDeMilho.class) ;
                                 startActivity(intent);
                                 finish();
                             }
