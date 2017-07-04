@@ -94,8 +94,8 @@ public class MenuLateralActivity extends AppCompatActivity
         startActivity(intentListarSilo);
         //finish();
 
-      } else if (id == R.id.listar_usuarios) {
-          Intent intentListarSilo = new Intent(this, ListaUsuarios.class);
+      } else if (id == R.id.epoca_de_plantacoes) {
+          Intent intentListarSilo = new Intent(this, TelaEpocasDePlantacao.class);
           startActivity(intentListarSilo);
           //finish();
 

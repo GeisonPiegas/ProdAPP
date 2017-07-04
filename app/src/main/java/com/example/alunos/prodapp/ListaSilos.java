@@ -9,12 +9,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.Toast;
 
 import java.util.List;
 
 import Adapter.AdapterSilos;
 import BD.SilosBD;
 import Interacao.Silos;
+import util.Contexto;
 
 public class ListaSilos extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
@@ -25,6 +27,7 @@ public class ListaSilos extends AppCompatActivity implements AdapterView.OnItemC
     public Integer id_pedido;
 
     //----------
+public long pega  ;
 
     private int idPosicao;
     private android.app.AlertDialog alertDialog;
@@ -46,46 +49,71 @@ public class ListaSilos extends AppCompatActivity implements AdapterView.OnItemC
         grid.setAdapter(adapterSilos);
 
         grid.setOnItemClickListener(this); // Setando a maneira SetonClick para interagir com a lista.
+
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) { // Criando o menu e recebendo os parametros
-        int id  =  item.getItemId() ;
+        /**
+         * Não está funcionando essa
+         */
+        int id = item.getItemId();
 
-        if(id == R.id.gridViewSilo){ // fazendo os testes logicos apos escolher um botão, neste caso manda para outra activity, mas poderia fazer outras funções.
-            startActivity(new Intent(this , TelaDeLogin.class)); // se o teste der certo, inicia uma activity especifica.
+        if (id == R.id.gridViewSilo) { // fazendo os testes logicos apos escolher um botão, neste caso manda para outra activity, mas poderia fazer outras funções.
+            startActivity(new Intent(this, TelaDeGerenciamentoDeSilo.class)); // se o teste der certo, inicia uma activity especifica.
         }
         return super.onOptionsItemSelected(item);
     }
 
 
     //Metodos gerados automaticamente pelo "Implemets"
+
+    /**
+     *Este método pega o id e a posição do item que foi clickado, ambos são iguais
+     */
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        idPosicao = position ;
 
-        // ESTA PARTE AQUI, MANDA PRA TELA DE GRECIA DE SILOS. MAS NÃO ESTÁ PEGNDO PELO ID ACEDITO !!
+        Toast.makeText(getBaseContext(), "Silo" + position, Toast.LENGTH_SHORT).show(); // mensagem é apenas temporaria.
 
-      //  if (idPosicao == id){ // Essa poha, so eu tentanto pegar o id do silo clickado kkkk
+        pega = id ;
 
-            Intent intent = new Intent(this , TelaDeGerenciamentoDeSilo.class) ;
-           // intent.putExtra("id" , 1) ; // no putExtra se utiliza (String name e short Value)
-            startActivity(intent);
-           // finish();
+        // Está testando a posição que o usuário clickou
+        switch (position) {
+            case 0:
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10:
 
+                // Pegando a posição e adcionando em um objetivo do tipo Contexto.
+                Contexto.dados.put("indice",position) ;
 
-       // }
+                // Inicia a activity desejada
+                Intent intentPosi = new Intent(this, TelaDeGerenciamentoDeSilo.class);
+                startActivity(intentPosi);
+                break;
+
+            /**
+             * AQUI SERVE COMO UM LIMITE PARA O USUÁRIO N FICA CRIANDo
+             */
+            default:
+                Toast.makeText(getBaseContext(), "ERRO " + position, Toast.LENGTH_SHORT).show();
+                break ;
+
+        }
     }
 
 
+    public void onClick(DialogInterface dialog, int which) { //recebendo por parametros o que foi clicado,
 
-
-
-    public void onClick(DialogInterface dialog, int which) { //recebendo por parametros o que foi clicado
-        int id  =  silosList.get(idPosicao).getId_silo() ; // enviando para id o a a posição do id que foi capturado pelo onclick
-
-        // DENTRO DESTE MÉTODO É QUE DEVERIA PELAR O ID, E AI SI MANDR PRA TELA PARA EDIÇÃO ( EU ACHO 0
     }
-        /*
+/*
         switch (which){
 
             case 0 : //Editar
@@ -113,10 +141,13 @@ public class ListaSilos extends AppCompatActivity implements AdapterView.OnItemC
                 break ;
         }
 
-    }
-       */
+        */
+
+}
 
 
 
-      }
+
+
+
 

@@ -19,11 +19,13 @@ import android.widget.TextView;
 import BD.SilosBD;
 import Interacao.Silos;
 import Mensagem.MensagemGeral;
+import util.Contexto;
 
 public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View.OnClickListener{
     private ScrollView AdicionarScrollViewTelaDeGerenciamentoDeSilos;
     private ImageButton RetirarProdutoImageButtonTelaDeGerenciamentoDeSilos;
     private ImageButton AdicionarProdutoImageButtonTelaDeGerenciamentoDeSilos;
+    private TextView OpcoesTextViewTelaDeGerenciamentoDeSilos ;
     private TextView TituloAdicaoDeProdutoTextViewTelaDeGerenciamentoDeSilos;
     private TextView TipoDeProdutoAdicionarTextViewTelaDeGerenciamentoDeSilos;
     private Spinner TipoDeProdutoSpinnerTelaDeGerenciamentoDeSilos;
@@ -63,6 +65,7 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
         setContentView(R.layout.activity_tela_de_gerenciamento_de_silo);
 
         //FindView
+        OpcoesTextViewTelaDeGerenciamentoDeSilos = (TextView) findViewById(R.id.OpcoesTextViewTelaDeGerenciamentoDeSilos) ;
         AdicionarScrollViewTelaDeGerenciamentoDeSilos = (ScrollView) findViewById(R.id.AdicionarScrollViewTelaDeGerenciamentoDeSilos);
         RetirarProdutoImageButtonTelaDeGerenciamentoDeSilos = (ImageButton) findViewById(R.id.RetirarProdutoImageButtonTelaDeGerenciamentoDeSilos);
         AdicionarProdutoImageButtonTelaDeGerenciamentoDeSilos = (ImageButton) findViewById(R.id.AdicionarProdutoImageButtonTelaDeGerenciamentoDeSilos);
@@ -102,6 +105,9 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
         teste1 = false;
         teste2 = false;
 
+        // Alterando o valor dos SETTEXT e passando o objeto que foi pego
+        TituloAdicaoDeProdutoTextViewTelaDeGerenciamentoDeSilos.setText("Adicionar Produto do Silo( "+Contexto.dados.remove("indice")+""+" )");
+        TituloRemocaoDeProdutoTextViewTelaDeGerenciamentoDeSilos.setText("Remover Produto do Silo( "+Contexto.dados.remove("indice")+""+" )");
     }
 
     //-------------- Parte Referente ao Cadastro e edição de Dados de um Silo //----------------
@@ -163,6 +169,7 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
 
         String produto_silo = TipoDeProdutoSpinnerTelaDeGerenciamentoDeSilos.getSelectedItem().toString();
         Double tamanho_silo = Double.parseDouble(QuantidadeDoProdutoRetirarEditTextTelaDeGerenciamentoDeSilos.getText().toString());
+        OpcoesTextViewTelaDeGerenciamentoDeSilos.setText("teste");
 
         // -----------------------------------------------------------------------------------------
 

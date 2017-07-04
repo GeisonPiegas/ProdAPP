@@ -25,9 +25,9 @@
             android:title="Listar os Usuários " />
 
         <item
-            android:id="@+id/listar_silos_descricao"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Listar o Conteúdos Silos " />
+            android:id="@+id/epoca_de_plantacoes"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Época de Plantações " />
     </group>
 
 
