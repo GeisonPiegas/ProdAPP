@@ -101,7 +101,7 @@ public class MenuLateralActivity extends AppCompatActivity
 
 
     } else if (id == R.id.Teste_01) {
-        Intent intentListarSilo = new Intent(this, TelaDeGerenciamentoDeSilo.class);
+        Intent intentListarSilo = new Intent(this, ListaUsuarios.class);
         startActivity(intentListarSilo);
         //finish();
 

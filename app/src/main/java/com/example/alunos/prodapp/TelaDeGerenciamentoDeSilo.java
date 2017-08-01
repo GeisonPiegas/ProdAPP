@@ -49,6 +49,8 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
     private Toolbar RemoverFimToolbarTelaDeGerenciamentoDeSilos;
     private LinearLayout LinearLayoutVertical04TelaDeGerenciamentoDeSilos;
 
+
+
     private Boolean teste1;
     private Boolean teste2;
 
@@ -91,6 +93,7 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
         RemoverFimToolbarTelaDeGerenciamentoDeSilos = (Toolbar) findViewById(R.id.RemoverFimToolbarTelaDeGerenciamentoDeSilos);
         LinearLayoutVertical04TelaDeGerenciamentoDeSilos = (LinearLayout) findViewById(R.id.LinearLayoutVertical04TelaDeGerenciamentoDeSilos);
 
+
         //OnClick
         RetirarProdutoImageButtonTelaDeGerenciamentoDeSilos.setOnClickListener(this);
         AdicionarProdutoImageButtonTelaDeGerenciamentoDeSilos.setOnClickListener(this);
@@ -110,121 +113,24 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
         TituloRemocaoDeProdutoTextViewTelaDeGerenciamentoDeSilos.setText("Remover Produto do Silo( "+Contexto.dados.remove("indice")+""+" )");
     }
 
-    //-------------- Parte Referente ao Cadastro e edição de Dados de um Silo //----------------
-
-    // Diminuir Quantidade do Silo
-
-    public void AumentarQuntidadeSilo() {
-
-        boolean validacaoSilo = true;
-
-        // -----------------------------------------------------------------------------------------
-        String produto_silo = TipoDeProdutoSpinnerTelaDeGerenciamentoDeSilos.getSelectedItem().toString();
-        Double tamanho_silo = Double.parseDouble(QuantidadeDoProdutoAdicionarEditTextTelaDeGerenciamentoDeSilos.getText().toString());
-        // -----------------------------------------------------------------------------------------
-
-        if (validacaoSilo) {
-
-            silos = new Silos();
-            silos.setProduto_silo(produto_silo);
-            silos.setTamanho_silo(tamanho_silo);
-
-            // Se for Alteração de Dados
-            if (id_silo > 0) {
-                silos.setId_silo(id_silo);
-            }
-
-            long resultado = silosBD.salvarSilos(silos);
-
-            if (resultado != -1) {
-
-                if (id_silo > 0) {
-                    MensagemGeral.Msg(this, getString(R.string.mensagem_atualizar));
-
-                    //Se for Cadastro de Dados
-                } else {
-                    MensagemGeral.Msg(this, getString(R.string.mensagem_cadastrar));
-                }
-
-                finish();
-
-                startActivity(new Intent(this, ListaUsuarios.class));
-
-                // Caso de Algum Erro apresentará esta mensagem
-            } else {
-                MensagemGeral.Msg(this, getString(R.string.mensagem_erro));
-            }
-
-        }
-
-    }
-
-    // Diminuir Quantidade do Silo
-
-    public void DiminuirValorSilo() {
-
-        boolean validacaoSilo = true;
-
-        // -----------------------------------------------------------------------------------------
-
-        String produto_silo = TipoDeProdutoSpinnerTelaDeGerenciamentoDeSilos.getSelectedItem().toString();
-        Double tamanho_silo = Double.parseDouble(QuantidadeDoProdutoRetirarEditTextTelaDeGerenciamentoDeSilos.getText().toString());
-        OpcoesTextViewTelaDeGerenciamentoDeSilos.setText("teste");
-
-        // -----------------------------------------------------------------------------------------
-
-        if (validacaoSilo) {
-
-            silos = new Silos();
-            silos.setProduto_silo(produto_silo);
-            silos.setTamanho_silo(tamanho_silo);
-
-            // Se for Alteração de Dados
-            if (id_silo > 0) {
-                silos.setId_silo(id_silo);
-            }
-
-            long resultado = silosBD.salvarSilos(silos);
-
-            if (resultado != -1) {
-
-                if (id_silo > 0) {
-                    MensagemGeral.Msg(this, getString(R.string.mensagem_atualizar));
-
-                    //Se for Cadastro de Dados
-                } else {
-                    MensagemGeral.Msg(this, getString(R.string.mensagem_cadastrar));
-                }
-
-                finish();
-
-                startActivity(new Intent(this, ListaUsuarios.class));
-
-                // Caso de Algum Erro apresentará esta mensagem
-            } else {
-                MensagemGeral.Msg(this, getString(R.string.mensagem_erro));
-            }
-
-        }
-
-    }
 
     @Override
     public void onClick(View v) {
+
+
         if (RetirarProdutoImageButtonTelaDeGerenciamentoDeSilos.isPressed()) {
             if(teste1 == false) {
                 AdicionarScrollViewTelaDeGerenciamentoDeSilos.setVisibility(View.VISIBLE);
                 RemoverScrollViewTelaDeGerenciamentoDeSilos.setVisibility(View.GONE);
                 teste1 = true;
-                teste2 = false;
+                teste2 = false ;
                 //-----
                 if (RetirarButtonTelaDeGerenciamentoDeSilos.isPressed()){
-                    this.DiminuirValorSilo();
+                    //MensagemGeral.Msg(this, getString(R.string.mensagem_erro));
                 }
             } else {
                 AdicionarScrollViewTelaDeGerenciamentoDeSilos.setVisibility(View.GONE);
                 teste1 = false;
-
 
             }
 
@@ -236,9 +142,12 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
                 AdicionarScrollViewTelaDeGerenciamentoDeSilos.setVisibility(View.GONE);
                 teste2 = true;
                 teste1 = false;
+
                 //----
                 if (AdicionarButtonTelaDeGerenciamentoDeSilos.isPressed()){
-                    this.AumentarQuntidadeSilo();
+                   // MensagemGeral.Msg(this, getString(R.string.mensagem_erro));
+
+
                 }
 
             } else {

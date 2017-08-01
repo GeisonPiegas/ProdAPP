@@ -93,12 +93,6 @@ public class TelaDeCadastro extends AppCompatActivity implements View.OnClickLis
 
     }
 
-    //-----------------------------------------
-
-
-
-    //--------------------------
-
     protected void onDestroyUsuarios() {
 
         usuariosBD.fechar();
