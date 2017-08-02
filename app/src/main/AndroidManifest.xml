@@ -14,50 +14,31 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
         </activity>
-
-
-
         <activity android:name=".TelaDeCadastro">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
         </activity>
-
-
-
         <activity android:name=".TelaDeConfiguracaoDeSilo">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
         </activity>
-
-
-
         <activity android:name=".TelaCadastroSilos">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
         </activity>
-
-
-
         <activity android:name=".ListaUsuarios">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
         </activity>
-
-
-
         <activity android:name=".ListaSilos">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
         </activity>
-
-
-
-
         <activity
             android:name=".MenuLateralActivity"
             android:label="@string/title_activity_menu_lateral"
@@ -65,6 +46,63 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaDeLogin" />
+        </activity>
+        <activity android:name=".TelaDeLogin">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuLateralActivity" />
+        </activity>
+        <activity android:name=".TelaDeGerenciamentoDeSilo">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuLateralActivity" />
+        </activity>
+        <activity android:name=".TelaDeDetalhesDoSilo">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuLateralActivity" />
+        </activity>
+        <activity android:name=".TelaEpocaDeArroz">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuLateralActivity" />
+        </activity>
+        <activity android:name=".TelaEpocaDeSoja">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuLateralActivity" />
+        </activity>
+        <activity android:name=".TelaEpocaDeTrigo">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuLateralActivity" />
+        </activity>
+        <activity android:name=".TelaEpocaDeMilho">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuLateralActivity" />
+        </activity>
+        <activity android:name=".TelaEpocasDePlantacao">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuLateralActivity" />
+        </activity>
+        <activity android:name=".MenuCentral">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuLateralActivity" />
+        </activity>
+        <activity android:name=".SiloPrincipal">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuLateralActivity" />
+
+        </activity>
+
+        <activity android:name=".PragaSoja1">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuLateralActivity" />
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -72,39 +110,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
-
-        <activity android:name=".TelaDeLogin">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MenuLateralActivity" />
-        </activity>
-
-
-        <activity android:name=".TelaDeGerenciamentoDeSilo">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MenuLateralActivity" />
-        </activity>
-
-
-        <activity android:name=".TelaDeDetalhesDoSilo">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MenuLateralActivity" />
-        </activity>
-
-        <activity android:name=".TelaEpocaDeArroz"></activity>
-        <activity android:name=".TelaEpocaDeSoja"></activity>
-        <activity android:name=".TelaEpocaDeTrigo"></activity>
-        <activity android:name=".TelaEpocaDeMilho"></activity>
-
-
-
-        <activity android:name=".TelaEpocasDePlantacao"></activity>
     </application>
-
-
 
 </manifest>
