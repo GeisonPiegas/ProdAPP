@@ -92,6 +92,9 @@
     <string name="CapacidadeUtilizadaTextViewTelaDeDetalhesDoSilo">Capacidade Utilizada</string>
     <string name="CapacidadeDisponivelTextViewTelaDeDetalhesDoSilo">Capacidade Disponível</string>
     <string name="DataDaCriacaoTextViewTelaDeDetalhesDoSilo">Data de Criação</string>
+    <string name="textViewTitulo">Ácaro-Branco</string>
+    <string name="textViewTituloAbaixo">Polyphagotarsonemus latus</string>
+    <string name="textViewSobreSoja1">Esse ácaro possui tamanho reduzido de 0,2 mm de comprimento e coloração clara, quase transparente. Vive na face inferior das folhas e é de difícil visualização sem lente de aumento. Ao contrário de outras espécies, esta não produz teia. Os machos carregam as ninfas das fêmeas nas costas e as fecundam logo que elas passam à fase adulta. A postura dos ovos ocorre preferencialmente na face inferior das folhas. As larvas também são claras e se movimentam rapidamente pela folha. Em razão do curto ciclo biológico desse ácaro, de 3 a 5 dias, é importante que sejam feitas inspeções periódicas na lavoura, com o objetivo de identificar os primeiros focos de infestação e contê-la no início. Essa praga é encontrada em diversas culturas. Na soja, causa o bronzeamento de folhas, hastes, caule e principalmente brotações. As folhas atacadas ficam com cor castanha, brilhante e podem apresentar as bordas dobradas para baixo, consistência alterada e ficar quebradiças. Condições climáticas com muitas chuvas e temperaturas altas favorecem seu desenvolvimento.</string>
 
     <string-array name="ProdutosSpinnerTelaCadastroSilo">
         <item>Arroz</item>

@@ -32,12 +32,12 @@
         <activity android:name=".ListaUsuarios">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MenuLateralActivity" />
+                android:value=".MenuCentral" />
         </activity>
         <activity android:name=".ListaSilos">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MenuLateralActivity" />
+                android:value=".MenuCentral" />
         </activity>
         <activity
             android:name=".MenuLateralActivity"
@@ -46,11 +46,6 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaDeLogin" />
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".TelaDeLogin">
             <meta-data
@@ -93,23 +88,24 @@
                 android:value=".MenuLateralActivity" />
         </activity>
         <activity android:name=".MenuCentral">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MenuLateralActivity" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".SiloPrincipal">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
-
         </activity>
-
         <activity android:name=".PragaSoja1">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MenuLateralActivity" />
-
+                android:value=".MenuCentral" />
         </activity>
+        <activity android:name=".PragaSoja2" />
+        <activity android:name=".SubMenuPragas"></activity>
     </application>
 
 </manifest>
