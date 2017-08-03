@@ -9,29 +9,29 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 public class SubMenuPragas extends AppCompatActivity implements View.OnClickListener{
-    private LinearLayout LinearLayoutSoja;
+    private LinearLayout LinearLayoutArroz;
     private LinearLayout LinearLayoutMilho;
-    private LinearLayout LinearLayoutTrigo;
+    private LinearLayout LinearLayoutSoja;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sub_menu_pragas);
 
-        LinearLayoutSoja = (LinearLayout) findViewById(R.id.LinearLayoutSoja);
+        LinearLayoutArroz = (LinearLayout) findViewById(R.id.LinearLayoutArroz);
         LinearLayoutMilho = (LinearLayout) findViewById(R.id.LinearLayoutMilho);
-        LinearLayoutTrigo = (LinearLayout) findViewById(R.id.LinearLayoutTrigo);
+        LinearLayoutSoja = (LinearLayout) findViewById(R.id.LinearLayoutSoja);
 
-        LinearLayoutSoja.setOnClickListener(this);
+        LinearLayoutArroz.setOnClickListener(this);
         LinearLayoutMilho.setOnClickListener(this);
-        LinearLayoutTrigo.setOnClickListener(this);
+        LinearLayoutSoja.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        if (LinearLayoutSoja.isPressed()) {
-            Intent intentPragaSoja1 = new Intent(this, PragaSoja1.class);
-            startActivity(intentPragaSoja1);
+        if (LinearLayoutArroz.isPressed()) {
+            Intent intentPragaArroz1 = new Intent(this, PragaArroz1.class);
+            startActivity(intentPragaArroz1);
             Context contexto = getApplicationContext();
             String texto = "1";
             int duracao = Toast.LENGTH_SHORT;
@@ -49,7 +49,14 @@ public class SubMenuPragas extends AppCompatActivity implements View.OnClickList
             toast.show();
 
         }
-        if (LinearLayoutTrigo.isPressed()) {
+        if (LinearLayoutSoja.isPressed()) {
+            Intent intentPragaSoja1 = new Intent(this, PragaSoja1.class);
+            startActivity(intentPragaSoja1);
+            Context contexto = getApplicationContext();
+            String texto = "1";
+            int duracao = Toast.LENGTH_SHORT;
+            Toast toast = Toast.makeText(contexto, texto,duracao);
+            toast.show();
 
         }
     }

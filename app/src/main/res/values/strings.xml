@@ -112,6 +112,10 @@
     <string name="PragaMilho2Parte2">Os alados, mais raros, são os responsáveis pela dispersão da espécie em condições ambientais desfavoráveis e falta de alimento. Na reprodução, não há necessidade de fecundação das fêmeas e os novos pulgões já nascem completamente formados.</string>
     <string name="PragaMilho2Parte3">Não há postura de ovos. Locais e períodos com baixa umidade, ventos de baixa velocidade e temperatura ao redor de 20 °C são ideais para o seu desenvolvimento. Nessas condições, o ciclo biológico dessa espécie varia de 20 a 30 dias e cada fêmea origina cerca de 70 novos pulgões.</string>
     <string name="PragaMilho2Parte4">Alimentam-se da seiva das plantas, o que esgota as reservas hídricas e nutricionais e causa deformações nas folhas. Além desses danos, ainda há a transmissão de vírus, como o mosaico, e a formação da fumagina sobre folhas, espigas e outras partes.</string>
+    <string name="PragaMilho1Parte6">Pulverizações com os inseticidas à base de Carbaryl, Triclofom e Cloropirifós etil, Paratiom metil (Folido 600). 10 lagartas (com mais de 2cm. de comprimento) por metro quadrado.</string>
+    <string name="PragaArroz1Parte1">É um inseto de ocorrência cíclica, causa danos às raízes antes da inundação da lavoura. Na fase larval, alimentam-se das raízes e na fase adulta danificam a base da planta. O inseto adulto após a hibernação favorecido pelo aumento da temperatura e irrigação entra na lavoura.</string>
+    <string name="PragaArroz2Parte1">É um inseto-praga de grande importância para a agricultura, provoca alguns danos diretos ao se alimentar e injeta toxinas e suga a seiva, causando o amarelecimento das folhas, paralisando o crescimento da planta.</string>
+    <string name="PragaArroz2Parte2">A utilização de plantas daninhas como hospedeiras alternativas durante a entressafra é um dos fatores que pode explicar o rápido crescimento populacional desse inseto, após a implantação da cultura, pois muitas vezes a praga está dentro da área cultivada.</string>
 
     <string-array name="ProdutosSpinnerTelaCadastroSilo">
         <item>Arroz</item>

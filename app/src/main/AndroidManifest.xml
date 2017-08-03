@@ -115,11 +115,21 @@
                 android:value=".MenuCentral" />
         </activity>
         <activity android:name=".PragaMilho1">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".SubMenuPragas" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SubMenuPragas" />
         </activity>
         <activity android:name=".PragaMilho2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SubMenuPragas" />
+        </activity>
+        <activity android:name=".PragaArroz1">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SubMenuPragas" />
+        </activity>
+        <activity android:name=".PragaArroz2">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SubMenuPragas" />
