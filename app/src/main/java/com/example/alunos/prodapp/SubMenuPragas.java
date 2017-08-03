@@ -32,9 +32,21 @@ public class SubMenuPragas extends AppCompatActivity implements View.OnClickList
         if (LinearLayoutSoja.isPressed()) {
             Intent intentPragaSoja1 = new Intent(this, PragaSoja1.class);
             startActivity(intentPragaSoja1);
+            Context contexto = getApplicationContext();
+            String texto = "1";
+            int duracao = Toast.LENGTH_SHORT;
+            Toast toast = Toast.makeText(contexto, texto,duracao);
+            toast.show();
 
         }
         if (LinearLayoutMilho.isPressed()) {
+            Intent intentPragaMilho1 = new Intent(this, PragaMilho1.class);
+            startActivity(intentPragaMilho1);
+            Context contexto = getApplicationContext();
+            String texto = "1";
+            int duracao = Toast.LENGTH_SHORT;
+            Toast toast = Toast.makeText(contexto, texto,duracao);
+            toast.show();
 
         }
         if (LinearLayoutTrigo.isPressed()) {

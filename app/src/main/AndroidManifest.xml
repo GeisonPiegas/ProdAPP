@@ -102,10 +102,28 @@
         <activity android:name=".PragaSoja1">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SubMenuPragas" />
+        </activity>
+        <activity android:name=".PragaSoja2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SubMenuPragas" />
+        </activity>
+        <activity android:name=".SubMenuPragas">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuCentral" />
         </activity>
-        <activity android:name=".PragaSoja2" />
-        <activity android:name=".SubMenuPragas"></activity>
+        <activity android:name=".PragaMilho1">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".SubMenuPragas" />
+        </activity>
+        <activity android:name=".PragaMilho2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SubMenuPragas" />
+        </activity>
     </application>
 
 </manifest>

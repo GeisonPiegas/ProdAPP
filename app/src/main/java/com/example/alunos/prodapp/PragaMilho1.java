@@ -13,29 +13,30 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class PragaSoja1 extends AppCompatActivity implements View.OnClickListener{
+public class PragaMilho1 extends AppCompatActivity implements View.OnClickListener{
     private RelativeLayout RelativeLayout;
     private ImageButton imageButtonEsquerda;
     private ImageButton imageButtonDireita;
-    private ScrollView ScrollView;
+    private android.widget.ScrollView ScrollView;
     private LinearLayout LinearLayoutVertical;
     private LinearLayout LinearLayoutHorizontal1;
     private TextView textViewTitulo;
     private TextView textViewTituloAbaixo;
-    private HorizontalScrollView HorizontalScrollView;
+    private android.widget.HorizontalScrollView HorizontalScrollView;
     private LinearLayout LinerLayoutHorizontal2;
-    private ImageButton imageViewSoja1;
-    private ImageButton imageViewSoja2;
-    private ImageButton imageViewSoja3;
-    private ImageButton imageViewSoja4;
+    private ImageButton imageViewMilho1;
+    private ImageButton imageViewMilho2;
+    private ImageButton imageViewMilho3;
+    private ImageButton imageViewMilho4;
     private TextView textViewSobre;
     private TextView textViewSubTitulo;
     private TextView textViewSubSobre;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_praga_soja1);
+        setContentView(R.layout.activity_praga_milho1);
 
         imageButtonDireita = (ImageButton) findViewById(R.id.imageButtonDireita);
         imageButtonEsquerda = (ImageButton) findViewById(R.id.imageButtonEsquerda);
@@ -47,8 +48,8 @@ public class PragaSoja1 extends AppCompatActivity implements View.OnClickListene
     @Override
     public void onClick(View v) {
         if (imageButtonDireita.isPressed()) {
-            Intent intentPragaSoja2 = new Intent(this, PragaSoja2.class);
-            startActivity(intentPragaSoja2);
+            Intent intentPragaMilho2 = new Intent(this, PragaMilho2.class);
+            startActivity(intentPragaMilho2);
 
             Context contexto = getApplicationContext();
             String texto = "2";

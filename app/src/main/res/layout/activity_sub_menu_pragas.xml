@@ -20,7 +20,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Soja"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView12"
@@ -44,7 +45,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Milho"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView15"
@@ -67,7 +69,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Trigo"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView16"

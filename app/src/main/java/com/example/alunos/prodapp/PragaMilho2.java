@@ -5,37 +5,36 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class PragaSoja1 extends AppCompatActivity implements View.OnClickListener{
-    private RelativeLayout RelativeLayout;
+public class PragaMilho2 extends AppCompatActivity implements View.OnClickListener{
+    private android.widget.RelativeLayout RelativeLayout;
     private ImageButton imageButtonEsquerda;
     private ImageButton imageButtonDireita;
-    private ScrollView ScrollView;
+    private android.widget.ScrollView ScrollView;
     private LinearLayout LinearLayoutVertical;
     private LinearLayout LinearLayoutHorizontal1;
     private TextView textViewTitulo;
     private TextView textViewTituloAbaixo;
-    private HorizontalScrollView HorizontalScrollView;
+    private android.widget.HorizontalScrollView HorizontalScrollView;
     private LinearLayout LinerLayoutHorizontal2;
-    private ImageButton imageViewSoja1;
-    private ImageButton imageViewSoja2;
-    private ImageButton imageViewSoja3;
-    private ImageButton imageViewSoja4;
+    private ImageButton imageViewMilho1;
+    private ImageButton imageViewMilho2;
+    private ImageButton imageViewMilho3;
+    private ImageButton imageViewMilho4;
     private TextView textViewSobre;
     private TextView textViewSubTitulo;
     private TextView textViewSubSobre;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_praga_soja1);
+        setContentView(R.layout.activity_praga_milho2);
 
         imageButtonDireita = (ImageButton) findViewById(R.id.imageButtonDireita);
         imageButtonEsquerda = (ImageButton) findViewById(R.id.imageButtonEsquerda);
@@ -47,9 +46,6 @@ public class PragaSoja1 extends AppCompatActivity implements View.OnClickListene
     @Override
     public void onClick(View v) {
         if (imageButtonDireita.isPressed()) {
-            Intent intentPragaSoja2 = new Intent(this, PragaSoja2.class);
-            startActivity(intentPragaSoja2);
-
             Context contexto = getApplicationContext();
             String texto = "2";
             int duracao = Toast.LENGTH_SHORT;
@@ -57,6 +53,9 @@ public class PragaSoja1 extends AppCompatActivity implements View.OnClickListene
             toast.show();
         }
         if (imageButtonEsquerda.isPressed()) {
+            Intent intentPragaMilho1 = new Intent(this, PragaMilho1.class);
+            startActivity(intentPragaMilho1);
+
             Context contexto = getApplicationContext();
             String texto = "1";
             int duracao = Toast.LENGTH_SHORT;
