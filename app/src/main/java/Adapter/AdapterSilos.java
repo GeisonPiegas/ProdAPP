@@ -75,19 +75,19 @@ public class AdapterSilos extends BaseAdapter {
         //Testes pra ve que produto é, e ja coloca a IMAGEM do PRODUTO que ele é
         if(nomeProduto.equals("Arroz")) {
             ImageView imageView = (ImageView) convertView.findViewById(R.id.imagenViewSilo);
-            imageView.setImageResource(R.drawable.icon_silos_arroz);
+            imageView.setImageResource(R.drawable.iconearroz);
         }else{
             if(nomeProduto.equals("Soja")) {
                 ImageView imageView = (ImageView) convertView.findViewById(R.id.imagenViewSilo);
-                imageView.setImageResource(R.drawable.icon_silos_soja);
+                imageView.setImageResource(R.drawable.iconesoja);
             }else{
                 if(nomeProduto.equals("Trigo")) {
                     ImageView imageView = (ImageView) convertView.findViewById(R.id.imagenViewSilo);
-                    imageView.setImageResource(R.drawable.icon_silos_trigo);
+                    imageView.setImageResource(R.drawable.iconetrigo);
                 }else{
                     if(nomeProduto.equals("Milho")) {
                         ImageView imageView = (ImageView) convertView.findViewById(R.id.imagenViewSilo);
-                        imageView.setImageResource(R.drawable.icon_silos_milho);
+                        imageView.setImageResource(R.drawable.iconemilho);
                     }
                 }
             }
