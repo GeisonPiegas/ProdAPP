@@ -19,22 +19,25 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
         </activity>
-        <activity android:name=".TelaDeConfiguracaoDeSilo">
+        <activity android:name=".TelaDeConfiguracaoDeSilo"
+            android:label="Meus Silos">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
         </activity>
-        <activity android:name=".TelaCadastroSilos">
+        <activity android:name=".TelaCadastroSilos"
+            android:label="Meus Silos">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MenuLateralActivity" />
+                android:value=".ListaSilos" />
         </activity>
         <activity android:name=".ListaUsuarios">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuCentral" />
         </activity>
-        <activity android:name=".ListaSilos">
+        <activity android:name=".ListaSilos"
+            android:label="Meus Silos">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuCentral" />
@@ -52,15 +55,17 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
         </activity>
-        <activity android:name=".TelaDeGerenciamentoDeSilo">
+        <activity android:name=".TelaDeGerenciamentoDeSilo"
+            android:label="Meus Silos">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MenuLateralActivity" />
+                android:value=".SiloPrincipal" />
         </activity>
-        <activity android:name=".TelaDeDetalhesDoSilo">
+        <activity android:name=".TelaDeDetalhesDoSilo"
+            android:label="Meus Silos">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MenuLateralActivity" />
+                android:value=".SiloPrincipal" />
         </activity>
         <activity android:name=".TelaEpocaDeArroz">
             <meta-data
@@ -98,7 +103,7 @@
                   android:label="Meus Silos">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MenuLateralActivity" />
+                android:value=".ListaSilos" />
         </activity>
         <activity android:name=".PragaSoja1"
             android:label="Pragas da Soja">

@@ -1,11 +1,13 @@
 package com.example.alunos.prodapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -32,6 +34,8 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
     private TextView textView9;
     private TextView textView10;
     private TextView textViewNomeSilo;
+    private ImageButton imageButtonEsquerda;
+    private ImageButton imageButtonDireita;
 
     private EditText editText;
     private Button button2;
@@ -64,11 +68,15 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
         textView9 = (TextView) findViewById(R.id.textView9);
         textView10 = (TextView) findViewById(R.id.textView10);
         textViewNomeSilo = (TextView) findViewById(R.id.textViewNomeSilo);
+        imageButtonEsquerda = (ImageButton) findViewById(R.id.imageButtonEsquerda);
+        imageButtonDireita = (ImageButton) findViewById(R.id.imageButtonDireita);
 
         editText = (EditText) findViewById(R.id.editText);
         button2 = (Button) findViewById(R.id.button2);
 
         button2.setOnClickListener(this);
+        imageButtonEsquerda.setOnClickListener(this);
+        imageButtonDireita.setOnClickListener(this);
     }
 
     @Override
@@ -391,6 +399,14 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
 
             }
 
+        }
+        if (imageButtonEsquerda.isPressed()) {
+            Intent intentGerenciamentoSilo = new Intent(this, TelaDeGerenciamentoDeSilo.class);
+            startActivity(intentGerenciamentoSilo);
+        }
+        if (imageButtonDireita.isPressed()) {
+            Intent intentDetalheSilo = new Intent(this, TelaDeDetalhesDoSilo.class);
+            startActivity(intentDetalheSilo);
         }
 
     }

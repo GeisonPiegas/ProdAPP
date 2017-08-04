@@ -121,7 +121,7 @@ public class TelaCadastroSilos extends AppCompatActivity implements View.OnClick
 
                 finish();
 
-                startActivity(new Intent(this, MenuLateralActivity.class));
+                startActivity(new Intent(this, ListaSilos.class));
 
                 // Caso de Algum Erro apresentará esta mensagem
             } else {

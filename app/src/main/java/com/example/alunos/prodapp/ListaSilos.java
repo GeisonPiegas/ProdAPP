@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import java.util.List;
@@ -18,13 +19,14 @@ import BD.SilosBD;
 import Interacao.Silos;
 import util.Contexto;
 
-public class ListaSilos extends AppCompatActivity implements AdapterView.OnItemClickListener {
+public class ListaSilos extends AppCompatActivity implements AdapterView.OnItemClickListener, View.OnClickListener{
 
     private GridView grid;
     private List<Silos> silosList;
     private AdapterSilos adapterSilos;
     private SilosBD silosBD;
     public Integer id_pedido;
+    private ImageButton imageButtonMaisSilo;
 
     //----------
 public long pega  ;
@@ -40,6 +42,7 @@ public long pega  ;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_silos);
 
+        imageButtonMaisSilo = (ImageButton) findViewById(R.id.imageButtonMaisSilo);
 
         silosBD = new SilosBD(this);
         silosList = silosBD.ListaSilos();
@@ -49,7 +52,7 @@ public long pega  ;
         grid.setAdapter(adapterSilos);
 
         grid.setOnItemClickListener(this); // Setando a maneira SetonClick para interagir com a lista.
-
+        imageButtonMaisSilo.setOnClickListener(this);
     }
 
     @Override
@@ -95,7 +98,7 @@ public long pega  ;
                 Contexto.dados.put("indice",position) ;
 
                 // Inicia a activity desejada
-                Intent intentPosi = new Intent(this, TelaDeGerenciamentoDeSilo.class);
+                Intent intentPosi = new Intent(this, SiloPrincipal.class);
                 startActivity(intentPosi);
                 break;
 
@@ -143,6 +146,16 @@ public long pega  ;
 
         */
 
+    //Metodo que veio quando foi implementado o segundo negocio depois da virgula la em cima em "implements"...
+    //Metodo para o flout falso...
+    @Override
+    public void onClick(View v) {
+        if (imageButtonMaisSilo.isPressed()) {
+            Intent intentCadastroSilo = new Intent(this, TelaCadastroSilos.class);
+            startActivity(intentCadastroSilo);
+        }
+
+    }
 }
 
 
