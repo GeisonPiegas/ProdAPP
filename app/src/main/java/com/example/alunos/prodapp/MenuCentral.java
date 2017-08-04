@@ -57,7 +57,8 @@ public class MenuCentral extends AppCompatActivity implements View.OnClickListen
 
         }
         if (imageButtonCalendario.isPressed()) {
-
+            Intent intentListaS = new Intent(this, SiloPrincipal.class);
+            startActivity(intentListaS);
         }
         if (imageButtonPragas.isPressed()) {
             Intent intentSubMenuPragas = new Intent(this, SubMenuPragas.class);

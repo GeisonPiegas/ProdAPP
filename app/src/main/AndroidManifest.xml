@@ -94,42 +94,50 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SiloPrincipal">
+        <activity android:name=".SiloPrincipal"
+                  android:label="Meus Silos">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
         </activity>
-        <activity android:name=".PragaSoja1">
+        <activity android:name=".PragaSoja1"
+            android:label="Pragas da Soja">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SubMenuPragas" />
         </activity>
-        <activity android:name=".PragaSoja2">
+        <activity android:name=".PragaSoja2"
+            android:label="Pragas da Soja">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SubMenuPragas" />
         </activity>
-        <activity android:name=".SubMenuPragas">
+        <activity android:name=".SubMenuPragas"
+            android:label="Pragas">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuCentral" />
         </activity>
-        <activity android:name=".PragaMilho1">
+        <activity android:name=".PragaMilho1"
+            android:label="Pragas do Milho">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SubMenuPragas" />
         </activity>
-        <activity android:name=".PragaMilho2">
+        <activity android:name=".PragaMilho2"
+            android:label="Pragas do Milho">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SubMenuPragas" />
         </activity>
-        <activity android:name=".PragaArroz1">
+        <activity android:name=".PragaArroz1"
+            android:label="Pragas do Arroz">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SubMenuPragas" />
         </activity>
-        <activity android:name=".PragaArroz2">
+        <activity android:name=".PragaArroz2"
+            android:label="Pragas do Arroz">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SubMenuPragas" />
