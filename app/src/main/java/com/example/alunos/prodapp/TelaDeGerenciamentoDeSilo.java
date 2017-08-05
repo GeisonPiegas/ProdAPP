@@ -85,12 +85,12 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
         LinearLayoutVertical02TelaDeGerenciamentoDeSilos = (LinearLayout) findViewById(R.id.LinearLayoutVertical02TelaDeGerenciamentoDeSilos);
         LinearLayoutVertical03TelaDeGerenciamentoDeSilos = (LinearLayout) findViewById(R.id.LinearLayoutVertical03TelaDeGerenciamentoDeSilos);
         RemoverScrollViewTelaDeGerenciamentoDeSilos = (ScrollView) findViewById(R.id.RemoverScrollViewTelaDeGerenciamentoDeSilos);
-        RemoverInicioToolbarTelaDeGerenciamentoDeSilos = (Toolbar) findViewById(R.id.RemoverInicioToolbarTelaDeGerenciamentoDeSilos);
+        //RemoverInicioToolbarTelaDeGerenciamentoDeSilos = (Toolbar) findViewById(R.id.RemoverInicioToolbarTelaDeGerenciamentoDeSilos);
         TituloRemocaoDeProdutoTextViewTelaDeGerenciamentoDeSilos = (TextView) findViewById(R.id.TituloRemocaoDeProdutoTextViewTelaDeGerenciamentoDeSilos);
         QuantidadeDoProdutoRetirarTextViewTelaDeGerenciamentoDeSilos = (TextView) findViewById(R.id.QuantidadeDoProdutoRetirarTextViewTelaDeGerenciamentoDeSilos);
         QuantidadeDoProdutoRetirarEditTextTelaDeGerenciamentoDeSilos = (EditText) findViewById(R.id.QuantidadeDoProdutoRetirarEditTextTelaDeGerenciamentoDeSilos);
         RetirarButtonTelaDeGerenciamentoDeSilos = (Button) findViewById(R.id.RetirarButtonTelaDeGerenciamentoDeSilos);
-        RemoverFimToolbarTelaDeGerenciamentoDeSilos = (Toolbar) findViewById(R.id.RemoverFimToolbarTelaDeGerenciamentoDeSilos);
+        //RemoverFimToolbarTelaDeGerenciamentoDeSilos = (Toolbar) findViewById(R.id.RemoverFimToolbarTelaDeGerenciamentoDeSilos);
         LinearLayoutVertical04TelaDeGerenciamentoDeSilos = (LinearLayout) findViewById(R.id.LinearLayoutVertical04TelaDeGerenciamentoDeSilos);
 
 

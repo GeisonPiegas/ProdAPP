@@ -42,13 +42,6 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <Button
-                        android:id="@+id/atoa"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Teste Atoa" />
-
                     <ImageButton
                         android:id="@+id/RetirarProdutoImageButtonTelaDeGerenciamentoDeSilos"
                         android:layout_width="180dp"
@@ -77,20 +70,13 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <android.support.v7.widget.Toolbar
-                        android:id="@+id/AdicionarInicioToolbarTelaDeGerenciamentoDeSilos"
-                        android:layout_width="match_parent"
-                        android:layout_height="33dp"
-                        android:layout_marginTop="10dp"
-                        android:background="?attr/colorPrimary"
-                        android:minHeight="?attr/actionBarSize"
-                        android:theme="?attr/actionBarTheme" />
-
                     <TextView
                         android:id="@+id/TituloAdicaoDeProdutoTextViewTelaDeGerenciamentoDeSilos"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/TituloAdicaoDeProdutoTextViewTelaDeGerenciamentoDeSilos" />
+                        android:layout_marginTop="10dp"
+                        android:text="@string/TituloAdicaoDeProdutoTextViewTelaDeGerenciamentoDeSilos"
+                        android:textSize="24sp" />
 
                     <TextView
                         android:id="@+id/TipoDeProdutoAdicionarTextViewTelaDeGerenciamentoDeSilos"
@@ -127,13 +113,6 @@
                         android:layout_marginTop="10dp"
                         android:text="@string/AdicionarButtonTelaDeGerenciamentoDeSilos" />
 
-                    <android.support.v7.widget.Toolbar
-                        android:id="@+id/AdicionarFimToolbarTelaDeGerenciamentoDeSilos"
-                        android:layout_width="match_parent"
-                        android:layout_height="33dp"
-                        android:background="?attr/colorPrimary"
-                        android:minHeight="?attr/actionBarSize"
-                        android:theme="?attr/actionBarTheme" />
                 </LinearLayout>
             </ScrollView>
 
@@ -150,20 +129,12 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <android.support.v7.widget.Toolbar
-                        android:id="@+id/RemoverInicioToolbarTelaDeGerenciamentoDeSilos"
-                        android:layout_width="match_parent"
-                        android:layout_height="33dp"
-                        android:layout_marginTop="10dp"
-                        android:background="?attr/colorPrimary"
-                        android:minHeight="?attr/actionBarSize"
-                        android:theme="?attr/actionBarTheme" />
-
                     <TextView
                         android:id="@+id/TituloRemocaoDeProdutoTextViewTelaDeGerenciamentoDeSilos"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/TituloRemocaoDeProdutoTextViewTelaDeGerenciamentoDeSilos" />
+                        android:text="@string/TituloRemocaoDeProdutoTextViewTelaDeGerenciamentoDeSilos"
+                        android:textSize="24sp" />
 
                     <TextView
                         android:id="@+id/QuantidadeDoProdutoRetirarTextViewTelaDeGerenciamentoDeSilos"
@@ -187,13 +158,6 @@
                         android:layout_marginTop="10dp"
                         android:text="@string/RetirarButtonTelaDeGerenciamentoDeSilos" />
 
-                    <android.support.v7.widget.Toolbar
-                        android:id="@+id/RemoverFimToolbarTelaDeGerenciamentoDeSilos"
-                        android:layout_width="match_parent"
-                        android:layout_height="33dp"
-                        android:background="?attr/colorPrimary"
-                        android:minHeight="?attr/actionBarSize"
-                        android:theme="?attr/actionBarTheme" />
                 </LinearLayout>
             </ScrollView>
 
