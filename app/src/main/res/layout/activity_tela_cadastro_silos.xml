@@ -65,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="7.8 Toneladas"
-                android:inputType="textPersonName"
+                android:inputType="textPersonName|number"
                 android:text="@string/CapacidadeEditTextTelaDeCadastroSilo" />
 
             <Button
