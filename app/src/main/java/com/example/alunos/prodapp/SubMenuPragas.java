@@ -12,6 +12,7 @@ public class SubMenuPragas extends AppCompatActivity implements View.OnClickList
     private LinearLayout LinearLayoutArroz;
     private LinearLayout LinearLayoutMilho;
     private LinearLayout LinearLayoutSoja;
+    private LinearLayout LinearLayoutTrigo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +22,12 @@ public class SubMenuPragas extends AppCompatActivity implements View.OnClickList
         LinearLayoutArroz = (LinearLayout) findViewById(R.id.LinearLayoutArroz);
         LinearLayoutMilho = (LinearLayout) findViewById(R.id.LinearLayoutMilho);
         LinearLayoutSoja = (LinearLayout) findViewById(R.id.LinearLayoutSoja);
+        LinearLayoutTrigo = (LinearLayout) findViewById(R.id.LinearLayoutTrigo);
 
         LinearLayoutArroz.setOnClickListener(this);
         LinearLayoutMilho.setOnClickListener(this);
         LinearLayoutSoja.setOnClickListener(this);
+        LinearLayoutTrigo.setOnClickListener(this);
     }
 
     @Override
@@ -58,6 +61,13 @@ public class SubMenuPragas extends AppCompatActivity implements View.OnClickList
             Toast toast = Toast.makeText(contexto, texto,duracao);
             toast.show();
 
+        }
+        if (LinearLayoutTrigo.isPressed()) {
+            Context contexto = getApplicationContext();
+            String texto = "Não Possui Pragas Cadastradas!";
+            int duracao = Toast.LENGTH_SHORT;
+            Toast toast = Toast.makeText(contexto, texto,duracao);
+            toast.show();
         }
     }
 }

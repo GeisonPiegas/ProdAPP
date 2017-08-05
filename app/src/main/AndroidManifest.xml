@@ -9,35 +9,41 @@
         android:roundIcon="@mipmap/prod"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MenuLateralActivity" />
+                android:value=".MenuCentral" />
         </activity>
-        <activity android:name=".TelaDeCadastro">
+        <activity android:name=".TelaDeCadastro"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MenuLateralActivity" />
+                android:value=".MenuCentral" />
         </activity>
         <activity android:name=".TelaDeConfiguracaoDeSilo"
-            android:label="Meus Silos">
+            android:label="Meus Silos"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MenuLateralActivity" />
+                android:value=".MenuCentral" />
         </activity>
         <activity android:name=".TelaCadastroSilos"
-            android:label="Meus Silos">
+            android:label="Meus Silos"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ListaSilos" />
         </activity>
-        <activity android:name=".ListaUsuarios">
+        <activity android:name=".ListaUsuarios"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuCentral" />
         </activity>
         <activity android:name=".ListaSilos"
-            android:label="Meus Silos">
+            android:label="Meus Silos"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuCentral" />
@@ -45,54 +51,64 @@
         <activity
             android:name=".MenuLateralActivity"
             android:label="@string/title_activity_menu_lateral"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaDeLogin" />
         </activity>
-        <activity android:name=".TelaDeLogin">
+        <activity android:name=".TelaDeLogin"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
         </activity>
         <activity android:name=".TelaDeGerenciamentoDeSilo"
-            android:label="Meus Silos">
+            android:label="Meus Silos"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SiloPrincipal" />
         </activity>
         <activity android:name=".TelaDeDetalhesDoSilo"
-            android:label="Meus Silos">
+            android:label="Meus Silos"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SiloPrincipal" />
         </activity>
-        <activity android:name=".TelaEpocaDeArroz">
+        <activity android:name=".TelaEpocaDeArroz"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MenuLateralActivity" />
+                android:value=".TelaEpocasDePlantacao" />
         </activity>
-        <activity android:name=".TelaEpocaDeSoja">
+        <activity android:name=".TelaEpocaDeSoja"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MenuLateralActivity" />
+                android:value=".TelaEpocasDePlantacao" />
         </activity>
-        <activity android:name=".TelaEpocaDeTrigo">
+        <activity android:name=".TelaEpocaDeTrigo"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MenuLateralActivity" />
+                android:value=".TelaEpocasDePlantacao" />
         </activity>
-        <activity android:name=".TelaEpocaDeMilho">
+        <activity android:name=".TelaEpocaDeMilho"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MenuLateralActivity" />
+                android:value=".TelaEpocasDePlantacao" />
         </activity>
-        <activity android:name=".TelaEpocasDePlantacao">
+        <activity android:name=".TelaEpocasDePlantacao"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MenuLateralActivity" />
+                android:value=".MenuCentral" />
         </activity>
-        <activity android:name=".MenuCentral">
+        <activity android:name=".MenuCentral"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -100,49 +116,57 @@
             </intent-filter>
         </activity>
         <activity android:name=".SiloPrincipal"
+            android:screenOrientation="portrait"
                   android:label="Meus Silos">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ListaSilos" />
         </activity>
         <activity android:name=".PragaSoja1"
-            android:label="Pragas da Soja">
+            android:label="Pragas da Soja"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SubMenuPragas" />
         </activity>
         <activity android:name=".PragaSoja2"
-            android:label="Pragas da Soja">
+            android:label="Pragas da Soja"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SubMenuPragas" />
         </activity>
         <activity android:name=".SubMenuPragas"
-            android:label="Pragas">
+            android:label="Pragas"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuCentral" />
         </activity>
         <activity android:name=".PragaMilho1"
-            android:label="Pragas do Milho">
+            android:label="Pragas do Milho"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SubMenuPragas" />
         </activity>
         <activity android:name=".PragaMilho2"
-            android:label="Pragas do Milho">
+            android:label="Pragas do Milho"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SubMenuPragas" />
         </activity>
         <activity android:name=".PragaArroz1"
-            android:label="Pragas do Arroz">
+            android:label="Pragas do Arroz"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SubMenuPragas" />
         </activity>
         <activity android:name=".PragaArroz2"
-            android:label="Pragas do Arroz">
+            android:label="Pragas do Arroz"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SubMenuPragas" />
