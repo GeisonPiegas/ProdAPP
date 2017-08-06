@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -16,13 +17,14 @@ import BD.UsuariosBD;
 import Interacao.Silos;
 import Interacao.Usuarios;
 import Mensagem.MensagemGeral;
+import util.Contexto;
 
 public class ListaUsuarios extends AppCompatActivity  implements AdapterView.OnItemClickListener {
 
     private ListView lista;
-    private List<Silos> silosList;
+    private List<Usuarios> usuariosList;
     private AdapterUsuarios adapterUsuarios;
-    private SilosBD silosBD;
+    private UsuariosBD usuariosBD;
 
     //----------
 
@@ -38,9 +40,9 @@ public class ListaUsuarios extends AppCompatActivity  implements AdapterView.OnI
         setContentView(R.layout.activity_lista_usuarios);
 
 
-        silosBD = new SilosBD(this);
-        silosList = silosBD.ListaSilos();
-        adapterUsuarios = new AdapterUsuarios(this, silosList); // ta passando a lista do banco de dados para o adaptador
+        usuariosBD = new UsuariosBD(this);
+        usuariosList = usuariosBD.ListaUsuarios();
+        adapterUsuarios = new AdapterUsuarios(this, usuariosList); // ta passando a lista do banco de dados para o adaptador
 
         lista = (ListView) findViewById(R.id.listViewUsuarios);
         lista.setAdapter(adapterUsuarios);
@@ -50,10 +52,10 @@ public class ListaUsuarios extends AppCompatActivity  implements AdapterView.OnI
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) { // Criando o menu e recebendo os parametros
-        int id  =  item.getItemId() ;
+        int id = item.getItemId();
 
-        if(id == R.id.listViewUsuarios){ // fazendo os testes logicos apos escolher um botão, neste caso manda para outra activity, mas poderia fazer outras funções.
-            startActivity(new Intent(this , MainActivity.class)); // se o teste der certo, inicia uma activity especifica.
+        if (id == R.id.listViewUsuarios) { // fazendo os testes logicos apos escolher um botão, neste caso manda para outra activity, mas poderia fazer outras funções.
+            startActivity(new Intent(this, MainActivity.class)); // se o teste der certo, inicia uma activity especifica.
         }
         return super.onOptionsItemSelected(item);
     }
@@ -61,8 +63,39 @@ public class ListaUsuarios extends AppCompatActivity  implements AdapterView.OnI
 
     //Metodos gerados automaticamente pelo "Implemets"
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        idPosicao = position ;
-        alertDialog.show() ;
 
+        // ESSA PARTE ESTÁ EXATAMENTE IGUAL AO LISTAR SILOS, POREM ELA LEVA PRA TELA DE CADASTRO DE USUÁRIOS!!
+
+        Toast.makeText(getBaseContext(), "Usuário" + position, Toast.LENGTH_SHORT).show(); // mensagem é apenas temporaria.
+
+        // Está testando a posição que o usuário clickou
+        switch (position) {
+            case 0:
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10:
+
+                // Pegando a posição e adcionando em um objetivo do tipo Contexto.
+                Contexto.dados.put("indice", position);
+
+                // Inicia a activity desejada
+                Intent intentPosi = new Intent(this, TelaDeCadastro.class);
+                startActivity(intentPosi);
+                break;
+
+            /**
+             * AQUI SERVE COMO UM LIMITE PARA O USUÁRIO N FICA CRIANDo
+             */
+            default:
+                Toast.makeText(getBaseContext(), "ERRO " + position, Toast.LENGTH_SHORT).show();
+                break;
+        }
     }
 }

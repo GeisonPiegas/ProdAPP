@@ -14,6 +14,7 @@ import com.example.alunos.prodapp.R;
 import java.util.List;
 
 import Interacao.Silos;
+import util.Contexto;
 
 
 /**
@@ -70,6 +71,8 @@ public class AdapterSilos extends BaseAdapter {
         // Pegando o nome do silo e setando na listagem
         TextView nomeDoSilo = (TextView) convertView.findViewById(R.id.textViewnomeSilo);
         nomeDoSilo.setText(silos.getNome_silo());
+
+        Contexto.dados.put("nomeSilo",nomeDoSilo) ;
 
         // nomeProduto é uma variavel que recebe o nome do produto pra poder fazer os teste seguintes.
         nomeProduto = silos.getProduto_silo();

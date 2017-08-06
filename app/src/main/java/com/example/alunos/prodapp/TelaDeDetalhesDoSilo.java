@@ -1,5 +1,6 @@
 package com.example.alunos.prodapp;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,7 +9,13 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import java.util.List;
+
+import Interacao.Silos;
+import util.Contexto;
+
 public class TelaDeDetalhesDoSilo extends AppCompatActivity implements View.OnClickListener{
+
     private TextView FiltroTextViewTelaDeDetalhesDoSilo;
     private RadioGroup FiltroRadioGroupTelaDeDetalhesDoSilo;
     private RadioButton KgRadioButtonTelaDeDetalhesDoSilo;
@@ -52,7 +59,16 @@ public class TelaDeDetalhesDoSilo extends AppCompatActivity implements View.OnCl
         RecebeCapacidadeDisponivelTextViewTelaDeDetalhesDoSilo = (TextView) findViewById(R.id.RecebeCapacidadeDisponivelTextViewTelaDeDetalhesDoSilo);
         DataDaCriacaoTextViewTelaDeDetalhesDoSilo = (TextView) findViewById(R.id.DataDaCriacaoTextViewTelaDeDetalhesDoSilo);
         RecebeDataDaCriacaoTextViewTelaDeDetalhesDoSilo = (TextView) findViewById(R.id.RecebeDataDaCriacaoTextViewTelaDeDetalhesDoSilo);
+
+
+        Silos s = new Silos() ;
+
+        RecebeNomeDetalheTextViewTelaDeDetalhesDoSilo.setText(Contexto.dados.remove("nomeSilo")+"");
+
     }
+
+
+
 
     @Override
     public void onClick(View v) {

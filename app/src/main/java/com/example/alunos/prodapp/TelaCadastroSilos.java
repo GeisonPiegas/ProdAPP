@@ -19,6 +19,7 @@ import BD.UsuariosBD;
 import Interacao.Silos;
 import Interacao.Usuarios;
 import Mensagem.MensagemGeral;
+import util.Contexto;
 
 /**
  * Criado por MARCOS MARTINS
@@ -116,6 +117,9 @@ public class TelaCadastroSilos extends AppCompatActivity implements View.OnClick
 
                     //Se for Cadastro de Dados
                 } else {
+
+                    // Pegando a posição e adcionando em um objetivo do tipo Contexto.
+
                     MensagemGeral.Msg(this, getString(R.string.mensagem_cadastrar));
                 }
 
