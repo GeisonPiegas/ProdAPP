@@ -66,8 +66,10 @@ public class AdapterSilos extends BaseAdapter {
 
         /* AINDA NÃO É POSSIVEL CHAMAR INFORMAÇÕES DE OUTRAS TABELAS E ENVIAR PARA O TEXTVIEW E GRIDVIEW  */
 
-        TextView textView = (TextView) convertView.findViewById(R.id.textViewnomeSilo);
-        textView.setText(silos.getProduto_silo());
+
+        // Pegando o nome do silo e setando na listagem
+        TextView nomeDoSilo = (TextView) convertView.findViewById(R.id.textViewnomeSilo);
+        nomeDoSilo.setText(silos.getNome_silo());
 
         // nomeProduto é uma variavel que recebe o nome do produto pra poder fazer os teste seguintes.
         nomeProduto = silos.getProduto_silo();
@@ -88,6 +90,8 @@ public class AdapterSilos extends BaseAdapter {
                     if(nomeProduto.equals("Milho")) {
                         ImageView imageView = (ImageView) convertView.findViewById(R.id.imagenViewSilo);
                         imageView.setImageResource(R.drawable.iconemilho);
+
+
                     }
                 }
             }
