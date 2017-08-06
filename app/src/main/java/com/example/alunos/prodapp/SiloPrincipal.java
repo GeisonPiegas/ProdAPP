@@ -11,6 +11,8 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import util.Contexto;
+
 public class SiloPrincipal extends AppCompatActivity implements View.OnClickListener{
     private ImageView imageView3;
     private Toolbar toolbar1;
@@ -77,6 +79,10 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
         button2.setOnClickListener(this);
         imageButtonEsquerda.setOnClickListener(this);
         imageButtonDireita.setOnClickListener(this);
+
+        // Ainda Falta Ageitar aqui, pois ao voltar a activity, está zerando o valor que foi pego!!
+        textViewNomeSilo.setText(Contexto.dados.get("nomeDoSilo")+"");
+
     }
 
     @Override

@@ -8,7 +8,11 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import Interacao.Silos;
@@ -60,14 +64,32 @@ public class TelaDeDetalhesDoSilo extends AppCompatActivity implements View.OnCl
         DataDaCriacaoTextViewTelaDeDetalhesDoSilo = (TextView) findViewById(R.id.DataDaCriacaoTextViewTelaDeDetalhesDoSilo);
         RecebeDataDaCriacaoTextViewTelaDeDetalhesDoSilo = (TextView) findViewById(R.id.RecebeDataDaCriacaoTextViewTelaDeDetalhesDoSilo);
 
+        // PEGANDO O TAMANHO DO SILO, FAZENDO TESTES LÓGICOS E SETANDO O TIPO DE PORTE
+        double quantidade = (double) Contexto.dados.get("tamanhoDoSilo") ;
 
-        Silos s = new Silos() ;
+        if (quantidade > 0 & (quantidade <= 5000)){
+        RecebePorteDoSiloTextViewTelaDeDetalhesDoSilo.setText("Pequeno");
+        }if(quantidade > 5000 & (quantidade <= 10000)){
+        RecebePorteDoSiloTextViewTelaDeDetalhesDoSilo.setText("Médio");
+        }if(quantidade > 10000 & (quantidade <= 100000)){
+            RecebePorteDoSiloTextViewTelaDeDetalhesDoSilo.setText("Grande");
+        }
 
-        RecebeNomeDetalheTextViewTelaDeDetalhesDoSilo.setText(Contexto.dados.remove("nomeSilo")+"");
+        //PARTE RESPONSÁVEL POR SETAR OS VALORES CORRETOS NOS TEXTFILED E FAZER OS CALCULOS LÓGICOS
+
+        RecebeNomeDetalheTextViewTelaDeDetalhesDoSilo.setText(Contexto.dados.remove("nomeDoSilo")+"");
+        RecebeTipoDeGraoTextViewTelaDeDetalhesDoSilo.setText(Contexto.dados.remove("produtoDoSilo")+"");
+        RecebeCapacidadeTotalTextViewTelaDeDetalhesDoSilo.setText(Contexto.dados.remove("tamanhoDoSilo")+"");
+
+        // Setando a Data atual, está pegando a mesma data certa, porem ele poem em todos os registros, não tem
+        // Nada haver como banco de dados
+        long date = System.currentTimeMillis();
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        String dateString = sdf.format(date);
+        RecebeDataDaCriacaoTextViewTelaDeDetalhesDoSilo.setText(dateString);
+
 
     }
-
-
 
 
     @Override

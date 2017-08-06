@@ -10,8 +10,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DateFormat;
+import java.util.Date;
 import java.util.List;
 
 import Adapter.AdapterSilos;
@@ -53,17 +56,17 @@ public long pega  ;
 
         grid.setOnItemClickListener(this); // Setando a maneira SetonClick para interagir com a lista.
         imageButtonMaisSilo.setOnClickListener(this);
+
+
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) { // Criando o menu e recebendo os parametros
-        /**
-         * Não está funcionando essa
-         */
+
         int id = item.getItemId();
 
         if (id == R.id.gridViewSilo) { // fazendo os testes logicos apos escolher um botão, neste caso manda para outra activity, mas poderia fazer outras funções.
-            startActivity(new Intent(this, TelaDeGerenciamentoDeSilo.class)); // se o teste der certo, inicia uma activity especifica.
+
         }
         return super.onOptionsItemSelected(item);
     }
@@ -76,39 +79,202 @@ public long pega  ;
      */
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
+        Silos silo = silosList.get(position) ;
+
         Toast.makeText(getBaseContext(), "Silo" + position, Toast.LENGTH_SHORT).show(); // mensagem é apenas temporaria.
 
         pega = id ;
 
-        // Está testando a posição que o usuário clickou
-        switch (position) {
+
+
+        switch (position){
             case 0:
-            case 1:
-            case 2:
-            case 3:
-            case 4:
-            case 5:
-            case 6:
-            case 7:
-            case 8:
-            case 9:
-            case 10:
-
-                // Pegando a posição e adcionando em um objetivo do tipo Contexto.
-                Contexto.dados.put("indice",position) ;
-
-                // Inicia a activity desejada
+                Contexto.dados.put("nomeDoSilo",silo.getNome_silo()) ;
+                Contexto.dados.put("tamanhoDoSilo",silo.getTamanho_silo()) ;
+                Contexto.dados.put("produtoDoSilo",silo.getProduto_silo()) ;
                 Intent intentPosi = new Intent(this, SiloPrincipal.class);
                 startActivity(intentPosi);
                 break;
+        }
 
-            /**
-             * AQUI SERVE COMO UM LIMITE PARA O USUÁRIO N FICA CRIANDo
-             */
-            default:
-                Toast.makeText(getBaseContext(), "ERRO " + position, Toast.LENGTH_SHORT).show();
-                break ;
+        switch (position){
+            case 1:
+                Contexto.dados.put("nomeDoSilo",silo.getNome_silo()) ;
+                Contexto.dados.put("tamanhoDoSilo",silo.getTamanho_silo()) ;
+                Contexto.dados.put("produtoDoSilo",silo.getProduto_silo()) ;
+                Intent intentPosi = new Intent(this, SiloPrincipal.class);
+                startActivity(intentPosi);
+                break;
+        }
 
+        switch (position){
+            case 2:
+                Contexto.dados.put("nomeDoSilo",silo.getNome_silo()) ;
+                Contexto.dados.put("tamanhoDoSilo",silo.getTamanho_silo()) ;
+                Contexto.dados.put("produtoDoSilo",silo.getProduto_silo()) ;
+                Intent intentPosi = new Intent(this, SiloPrincipal.class);
+                startActivity(intentPosi);
+                break;
+        }
+        switch (position){
+            case 3:
+                Contexto.dados.put("nomeDoSilo",silo.getNome_silo()) ;
+                Contexto.dados.put("tamanhoDoSilo",silo.getTamanho_silo()) ;
+                Contexto.dados.put("produtoDoSilo",silo.getProduto_silo()) ;
+                Intent intentPosi = new Intent(this, SiloPrincipal.class);
+                startActivity(intentPosi);
+                break;
+        }
+        switch (position){
+            case 4:
+                Contexto.dados.put("nomeDoSilo",silo.getNome_silo()) ;
+                Contexto.dados.put("tamanhoDoSilo",silo.getTamanho_silo()) ;
+                Contexto.dados.put("produtoDoSilo",silo.getProduto_silo()) ;
+                Intent intentPosi = new Intent(this, SiloPrincipal.class);
+                startActivity(intentPosi);
+                break;
+        }
+        switch (position){
+            case 5:
+                Contexto.dados.put("nomeDoSilo",silo.getNome_silo()) ;
+                Contexto.dados.put("tamanhoDoSilo",silo.getTamanho_silo()) ;
+                Contexto.dados.put("produtoDoSilo",silo.getProduto_silo()) ;
+                Intent intentPosi = new Intent(this, SiloPrincipal.class);
+                startActivity(intentPosi);
+                break;
+        }
+        switch (position){
+            case 6:
+                Contexto.dados.put("nomeDoSilo",silo.getNome_silo()) ;
+                Contexto.dados.put("tamanhoDoSilo",silo.getTamanho_silo()) ;
+                Contexto.dados.put("produtoDoSilo",silo.getProduto_silo()) ;
+                Intent intentPosi = new Intent(this, SiloPrincipal.class);
+                startActivity(intentPosi);
+                break;
+        }
+        switch (position){
+            case 7:
+                Contexto.dados.put("nomeDoSilo",silo.getNome_silo()) ;
+                Contexto.dados.put("tamanhoDoSilo",silo.getTamanho_silo()) ;
+                Contexto.dados.put("produtoDoSilo",silo.getProduto_silo()) ;
+                Intent intentPosi = new Intent(this, SiloPrincipal.class);
+                startActivity(intentPosi);
+                break;
+        }
+        switch (position){
+            case 8:
+                Contexto.dados.put("nomeDoSilo",silo.getNome_silo()) ;
+                Contexto.dados.put("tamanhoDoSilo",silo.getTamanho_silo()) ;
+                Contexto.dados.put("produtoDoSilo",silo.getProduto_silo()) ;
+                Intent intentPosi = new Intent(this, SiloPrincipal.class);
+                startActivity(intentPosi);
+                break;
+        }
+        switch (position){
+            case 9:
+                Contexto.dados.put("nomeDoSilo",silo.getNome_silo()) ;
+                Contexto.dados.put("tamanhoDoSilo",silo.getTamanho_silo()) ;
+                Contexto.dados.put("produtoDoSilo",silo.getProduto_silo()) ;
+                Intent intentPosi = new Intent(this, SiloPrincipal.class);
+                startActivity(intentPosi);
+                break;
+        }
+        switch (position){
+            case 10:
+                Contexto.dados.put("nomeDoSilo",silo.getNome_silo()) ;
+                Contexto.dados.put("tamanhoDoSilo",silo.getTamanho_silo()) ;
+                Contexto.dados.put("produtoDoSilo",silo.getProduto_silo()) ;
+                Intent intentPosi = new Intent(this, SiloPrincipal.class);
+                startActivity(intentPosi);
+                break;
+        }
+        switch (position){
+            case 11:
+                Contexto.dados.put("nomeDoSilo",silo.getNome_silo()) ;
+                Contexto.dados.put("tamanhoDoSilo",silo.getTamanho_silo()) ;
+                Contexto.dados.put("produtoDoSilo",silo.getProduto_silo()) ;
+                Intent intentPosi = new Intent(this, SiloPrincipal.class);
+                startActivity(intentPosi);
+                break;
+        }
+        switch (position){
+            case 12:
+                Contexto.dados.put("nomeDoSilo",silo.getNome_silo()) ;
+                Contexto.dados.put("tamanhoDoSilo",silo.getTamanho_silo()) ;
+                Contexto.dados.put("produtoDoSilo",silo.getProduto_silo()) ;
+                Intent intentPosi = new Intent(this, SiloPrincipal.class);
+                startActivity(intentPosi);
+                break;
+        }
+        switch (position){
+            case 13:
+                Contexto.dados.put("nomeDoSilo",silo.getNome_silo()) ;
+                Contexto.dados.put("tamanhoDoSilo",silo.getTamanho_silo()) ;
+                Contexto.dados.put("produtoDoSilo",silo.getProduto_silo()) ;
+                Intent intentPosi = new Intent(this, SiloPrincipal.class);
+                startActivity(intentPosi);
+                break;
+        }
+        switch (position){
+            case 14:
+                Contexto.dados.put("nomeDoSilo",silo.getNome_silo()) ;
+                Contexto.dados.put("tamanhoDoSilo",silo.getTamanho_silo()) ;
+                Contexto.dados.put("produtoDoSilo",silo.getProduto_silo()) ;
+                Intent intentPosi = new Intent(this, SiloPrincipal.class);
+                startActivity(intentPosi);
+                break;
+        }
+        switch (position){
+            case 15:
+                Contexto.dados.put("nomeDoSilo",silo.getNome_silo()) ;
+                Contexto.dados.put("tamanhoDoSilo",silo.getTamanho_silo()) ;
+                Contexto.dados.put("produtoDoSilo",silo.getProduto_silo()) ;
+                Intent intentPosi = new Intent(this, SiloPrincipal.class);
+                startActivity(intentPosi);
+                break;
+        }
+        switch (position){
+            case 16:
+                Contexto.dados.put("nomeDoSilo",silo.getNome_silo()) ;
+                Contexto.dados.put("tamanhoDoSilo",silo.getTamanho_silo()) ;
+                Contexto.dados.put("produtoDoSilo",silo.getProduto_silo()) ;
+                Intent intentPosi = new Intent(this, SiloPrincipal.class);
+                startActivity(intentPosi);
+                break;
+        }
+        switch (position){
+            case 17:
+                Contexto.dados.put("nomeDoSilo",silo.getNome_silo()) ;
+                Intent intentPosi = new Intent(this, SiloPrincipal.class);
+                startActivity(intentPosi);
+                break;
+        }
+        switch (position){
+            case 18:
+                Contexto.dados.put("nomeDoSilo",silo.getNome_silo()) ;
+                Contexto.dados.put("tamanhoDoSilo",silo.getTamanho_silo()) ;
+                Contexto.dados.put("produtoDoSilo",silo.getProduto_silo()) ;
+                Intent intentPosi = new Intent(this, SiloPrincipal.class);
+                startActivity(intentPosi);
+                break;
+        }
+        switch (position){
+            case 19:
+                Contexto.dados.put("nomeDoSilo",silo.getNome_silo()) ;
+                Contexto.dados.put("tamanhoDoSilo",silo.getTamanho_silo()) ;
+                Contexto.dados.put("produtoDoSilo",silo.getProduto_silo()) ;
+                Intent intentPosi = new Intent(this, SiloPrincipal.class);
+                startActivity(intentPosi);
+                break;
+        }
+        switch (position){
+            case 20:
+                Contexto.dados.put("nomeDoSilo",silo.getNome_silo()) ;
+                Contexto.dados.put("tamanhoDoSilo",silo.getTamanho_silo()) ;
+                Contexto.dados.put("produtoDoSilo",silo.getProduto_silo()) ;
+                Intent intentPosi = new Intent(this, SiloPrincipal.class);
+                startActivity(intentPosi);
+                break;
         }
     }
 
