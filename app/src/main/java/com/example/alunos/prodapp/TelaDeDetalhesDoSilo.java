@@ -81,14 +81,34 @@ public class TelaDeDetalhesDoSilo extends AppCompatActivity implements View.OnCl
         RecebeTipoDeGraoTextViewTelaDeDetalhesDoSilo.setText(Contexto.dados.remove("produtoDoSilo")+"");
         RecebeCapacidadeTotalTextViewTelaDeDetalhesDoSilo.setText(Contexto.dados.remove("tamanhoDoSilo")+"");
 
+        RecebeCapacidadeUtilizadaTextViewTelaDeDetalhesDoSilo.setText(Contexto.dados.remove("QuantidadeDouble")+"");
+
+        /*
+        Double recebeTotal = (Double) Contexto.dados.remove("tamanhoDoSilo");
+        Double recebeValorUsado = (Double) Contexto.dados.remove("QuantidadeDouble");
+        Double valorDisponivel = recebeTotal - recebeValorUsado ;
+
+        String ValorConvertido = String.valueOf(valorDisponivel);
+
+        Toast.makeText(getBaseContext(), "Valor Informado: " + ValorConvertido, Toast.LENGTH_SHORT).show(); // mensagem é apenas temporaria.
+
+        //RecebeCapacidadeDisponivelTextViewTelaDeDetalhesDoSilo.setText(valorDisponivel)+"";
+
+
+        */
+
+        RecebeCapacidadeDisponivelTextViewTelaDeDetalhesDoSilo.setText("Jocá");
+
+
+
+
+
         // Setando a Data atual, está pegando a mesma data certa, porem ele poem em todos os registros, não tem
         // Nada haver como banco de dados
         long date = System.currentTimeMillis();
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         String dateString = sdf.format(date);
         RecebeDataDaCriacaoTextViewTelaDeDetalhesDoSilo.setText(dateString);
-
-
     }
 
 

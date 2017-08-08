@@ -83,13 +83,20 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
         // Ainda Falta Ageitar aqui, pois ao voltar a activity, está zerando o valor que foi pego!!
         textViewNomeSilo.setText(Contexto.dados.get("nomeDoSilo")+"");
 
+
     }
 
     @Override
     public void onClick(View v) {
-        if (button2.isPressed()) {
-            teste = editText.getText().toString();
 
+        //Contexto.dados.get("QuantidadeString");
+        //Contexto.dados.get("QuantidadeDouble");
+
+        // EditText string = (EditText) Contexto.dados.remove("QuantidadeString");
+
+
+        if (button2.isPressed()) {
+             teste = editText.getText().toString();
             switch (teste) {
                 case "0":
                     imageView3.setImageResource(R.drawable.silo);

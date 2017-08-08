@@ -15,17 +15,18 @@ import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import BD.SilosBD;
 import Interacao.Silos;
 import Mensagem.MensagemGeral;
 import util.Contexto;
 
-public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View.OnClickListener{
+public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View.OnClickListener {
     private ScrollView AdicionarScrollViewTelaDeGerenciamentoDeSilos;
     private ImageButton RetirarProdutoImageButtonTelaDeGerenciamentoDeSilos;
     private ImageButton AdicionarProdutoImageButtonTelaDeGerenciamentoDeSilos;
-    private TextView OpcoesTextViewTelaDeGerenciamentoDeSilos ;
+    private TextView OpcoesTextViewTelaDeGerenciamentoDeSilos;
     private TextView TituloAdicaoDeProdutoTextViewTelaDeGerenciamentoDeSilos;
     private TextView TipoDeProdutoAdicionarTextViewTelaDeGerenciamentoDeSilos;
     private Spinner TipoDeProdutoSpinnerTelaDeGerenciamentoDeSilos;
@@ -50,6 +51,9 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
     private LinearLayout LinearLayoutVertical04TelaDeGerenciamentoDeSilos;
 
 
+    private EditText apenasTeste ;
+    private Button buttonTeste  ;
+
 
     private Boolean teste1;
     private Boolean teste2;
@@ -58,6 +62,8 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
     private Silos silos;
     private SilosBD silosBD;
     private int id_silo;
+
+    private double QuantidadeDoubleConvertido;
     //-------------------------------
 
 
@@ -67,13 +73,13 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
         setContentView(R.layout.activity_tela_de_gerenciamento_de_silo);
 
         //FindView
-        OpcoesTextViewTelaDeGerenciamentoDeSilos = (TextView) findViewById(R.id.OpcoesTextViewTelaDeGerenciamentoDeSilos) ;
+        OpcoesTextViewTelaDeGerenciamentoDeSilos = (TextView) findViewById(R.id.OpcoesTextViewTelaDeGerenciamentoDeSilos);
         AdicionarScrollViewTelaDeGerenciamentoDeSilos = (ScrollView) findViewById(R.id.AdicionarScrollViewTelaDeGerenciamentoDeSilos);
         RetirarProdutoImageButtonTelaDeGerenciamentoDeSilos = (ImageButton) findViewById(R.id.RetirarProdutoImageButtonTelaDeGerenciamentoDeSilos);
         AdicionarProdutoImageButtonTelaDeGerenciamentoDeSilos = (ImageButton) findViewById(R.id.AdicionarProdutoImageButtonTelaDeGerenciamentoDeSilos);
         TituloAdicaoDeProdutoTextViewTelaDeGerenciamentoDeSilos = (TextView) findViewById(R.id.TituloAdicaoDeProdutoTextViewTelaDeGerenciamentoDeSilos);
-        TipoDeProdutoAdicionarTextViewTelaDeGerenciamentoDeSilos = (TextView) findViewById(R.id.TipoDeProdutoAdicionarTextViewTelaDeGerenciamentoDeSilos);
-        TipoDeProdutoSpinnerTelaDeGerenciamentoDeSilos = (Spinner) findViewById(R.id.TipoDeProdutoSpinnerTelaDeGerenciamentoDeSilos);
+
+
         QuantidadeDoProdutoAdicionarTextViewTelaDeGerenciamentoDeSilos = (TextView) findViewById(R.id.QuantidadeDoProdutoAdicionarTextViewTelaDeGerenciamentoDeSilos);
         QuantidadeDoProdutoAdicionarEditTextTelaDeGerenciamentoDeSilos = (EditText) findViewById(R.id.QuantidadeDoProdutoAdicionarEditTextTelaDeGerenciamentoDeSilos);
         AdicionarButtonTelaDeGerenciamentoDeSilos = (Button) findViewById(R.id.AdicionarButtonTelaDeGerenciamentoDeSilos);
@@ -94,11 +100,17 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
         LinearLayoutVertical04TelaDeGerenciamentoDeSilos = (LinearLayout) findViewById(R.id.LinearLayoutVertical04TelaDeGerenciamentoDeSilos);
 
 
+        buttonTeste =  (Button) findViewById(R.id.buttonTeste) ;
+        apenasTeste = (EditText) findViewById(R.id.apenasTeste) ;
+
+
         //OnClick
         RetirarProdutoImageButtonTelaDeGerenciamentoDeSilos.setOnClickListener(this);
         AdicionarProdutoImageButtonTelaDeGerenciamentoDeSilos.setOnClickListener(this);
         AdicionarButtonTelaDeGerenciamentoDeSilos.setOnClickListener(this);
         RetirarButtonTelaDeGerenciamentoDeSilos.setOnClickListener(this);
+
+        buttonTeste.setOnClickListener(this);
 
         //Visibilidade
         AdicionarScrollViewTelaDeGerenciamentoDeSilos.setVisibility(View.GONE);
@@ -109,13 +121,37 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
         teste2 = false;
 
         // Alterando o valor dos SETTEXT e passando o objeto que foi pego
-        TituloAdicaoDeProdutoTextViewTelaDeGerenciamentoDeSilos.setText("Adicionar Produto do Silo( "+Contexto.dados.remove("indice")+""+" )");
-        TituloRemocaoDeProdutoTextViewTelaDeGerenciamentoDeSilos.setText("Remover Produto do Silo( "+Contexto.dados.remove("indice")+""+" )");
+        TituloAdicaoDeProdutoTextViewTelaDeGerenciamentoDeSilos.setText("Adicionar Produto do Silo( " + Contexto.dados.remove("indice") + "" + " )");
+        TituloRemocaoDeProdutoTextViewTelaDeGerenciamentoDeSilos.setText("Remover Produto do Silo( " + Contexto.dados.remove("indice") + "" + " )");
     }
 
 
     @Override
     public void onClick(View v) {
+
+        buttonTeste.setText("Masoq ?");
+
+        if (buttonTeste.isPressed()){
+
+            // Eesta parte, está tentando pegar o vaslor digitado pelo usuário no EditText e
+            // Setando dentro de uma variavél para o context e enviando para a outra tela !!
+
+
+            String QuantidadePega = apenasTeste.getText().toString();
+            Contexto.dados.put("QuantidadeString",QuantidadePega) ;
+
+            String QuantidadeDouble = apenasTeste.getText().toString() ;
+
+            QuantidadeDoubleConvertido = Double.parseDouble(QuantidadeDouble) ;
+            Contexto.dados.put("QuantidadeDouble",QuantidadeDoubleConvertido) ;
+
+
+            Toast.makeText(getBaseContext(), "Valor Informado: " + QuantidadePega, Toast.LENGTH_SHORT).show(); // mensagem é apenas temporaria.
+            Toast.makeText(getBaseContext(), "Valor Informado: " + QuantidadeDoubleConvertido, Toast.LENGTH_SHORT).show(); // mensagem é apenas temporaria.
+        }
+
+
+        /*
 
 
         if (RetirarProdutoImageButtonTelaDeGerenciamentoDeSilos.isPressed()) {
@@ -159,3 +195,9 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
         }
     }
 }
+
+*/
+    }
+}
+
+

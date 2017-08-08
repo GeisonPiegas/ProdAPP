@@ -31,6 +31,19 @@
                 android:layout_marginTop="10dp"
                 android:text="@string/OpcoesTextViewTelaDeGerenciamentoDeSilos" />
 
+            <EditText
+                android:id="@+id/apenasTeste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/buttonTeste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
             <HorizontalScrollView
                 android:id="@+id/HorizontalScrollView01TelaDeGerenciamentoDeSilos"
                 android:layout_width="match_parent"
@@ -77,19 +90,6 @@
                         android:layout_marginTop="10dp"
                         android:text="@string/TituloAdicaoDeProdutoTextViewTelaDeGerenciamentoDeSilos"
                         android:textSize="24sp" />
-
-                    <TextView
-                        android:id="@+id/TipoDeProdutoAdicionarTextViewTelaDeGerenciamentoDeSilos"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="@string/TipoDeProdutoAdicionarTextViewTelaDeGerenciamentoDeSilos" />
-
-                    <Spinner
-                        android:id="@+id/TipoDeProdutoSpinnerTelaDeGerenciamentoDeSilos"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp" />
 
                     <TextView
                         android:id="@+id/QuantidadeDoProdutoAdicionarTextViewTelaDeGerenciamentoDeSilos"
