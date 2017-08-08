@@ -1,26 +1,200 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.alunos.prodapp.TelaEpocaDeArroz">
+    tools:context="com.example.alunos.prodapp.MenuCentral">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="151dp"
-        android:layout_height="75dp"
-        android:layout_marginLeft="8dp"
-        android:text="Arroz"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="60sp"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent" />
-</android.support.constraint.ConstraintLayout>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="500dp"
+        android:layout_height="600dp"
+        android:clipToPadding="false"
+        android:fillViewport="false"
+        android:padding="1dp"
+        android:paddingBottom="1dp"
+        android:paddingEnd="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingStart="0dp"
+        android:paddingTop="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutVertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutHorizontal2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.33"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="130dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="Janeiro" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="130dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="Fevereiro" />
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="130dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="Março" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutHorizontal1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal"
+                android:paddingEnd="0dp">
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="130dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="Abril" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="130dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_red_dark"
+                    android:text="Maio" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="130dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_red_dark"
+                    android:text="Junho" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutHorizontal1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="0.33"
+                android:orientation="horizontal"
+                android:paddingEnd="0dp">
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="130dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_red_dark"
+                    android:text="julho" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="130dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_red_dark"
+                    android:text="Agosto" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="130dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_red_dark"
+                    android:text="Setembro" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutHorizontal1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.33"
+                android:orientation="horizontal"
+                android:paddingEnd="0dp">
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="130dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_green_light"
+                    android:text="OUtubro" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="130dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_green_light"
+                    android:text="novembro" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="130dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_green_light"
+                    android:text="dezembro" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>
