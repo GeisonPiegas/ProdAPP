@@ -64,16 +64,16 @@ public class TelaEpocasDePlantacao extends AppCompatActivity {
 
     private ArrayList<Produtos> adicionarProdutos(){
         ArrayList<Produtos> produtos = new ArrayList<Produtos>();
-        Produtos e = new Produtos(R.drawable.arroz, "Arroz");
+        Produtos e = new Produtos(R.drawable.arroz2, "Arroz");
         produtos.add(e);
 
-        e = new Produtos(R.drawable.soja, "Soja");
+        e = new Produtos(R.drawable.soja2, "Soja");
         produtos.add(e);
 
-        e = new Produtos(R.drawable.trigo, "Trigo");
+        e = new Produtos(R.drawable.trigo2, "Trigo");
         produtos.add(e);
 
-        e = new Produtos(R.drawable.milho, "Milho");
+        e = new Produtos(R.drawable.milho2, "Milho");
         produtos.add(e);
 
         return produtos;

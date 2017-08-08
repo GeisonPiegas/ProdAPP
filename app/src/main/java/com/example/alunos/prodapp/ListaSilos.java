@@ -24,6 +24,7 @@ import util.Contexto;
 
 public class ListaSilos extends AppCompatActivity implements AdapterView.OnItemClickListener, View.OnClickListener{
 
+    //Adicionado o "implements View.OnClickListener" que é pra capturar o clique do flout falso
     private GridView grid;
     private List<Silos> silosList;
     private AdapterSilos adapterSilos;
@@ -313,7 +314,7 @@ public long pega  ;
         */
 
     //Metodo que veio quando foi implementado o segundo negocio depois da virgula la em cima em "implements"...
-    //Metodo para o flout falso...
+    //Metodo só para o flout falso, ou pra qualquer outro button ou imagembutton normal...
     @Override
     public void onClick(View v) {
         if (imageButtonMaisSilo.isPressed()) {

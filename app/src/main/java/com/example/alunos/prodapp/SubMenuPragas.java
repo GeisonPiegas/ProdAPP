@@ -24,12 +24,15 @@ public class SubMenuPragas extends AppCompatActivity implements View.OnClickList
         LinearLayoutSoja = (LinearLayout) findViewById(R.id.LinearLayoutSoja);
         LinearLayoutTrigo = (LinearLayout) findViewById(R.id.LinearLayoutTrigo);
 
+        //Setando os layouts na lista de cliques
         LinearLayoutArroz.setOnClickListener(this);
         LinearLayoutMilho.setOnClickListener(this);
         LinearLayoutSoja.setOnClickListener(this);
         LinearLayoutTrigo.setOnClickListener(this);
     }
 
+    //testando se cada um dos layouts foram clicados, se sim, eles levão a uma determinada activity
+    // cada layout foi diminuido o tamanho pra parecer tipo uma lista na parte grafica dessa activity
     @Override
     public void onClick(View v) {
         if (LinearLayoutArroz.isPressed()) {

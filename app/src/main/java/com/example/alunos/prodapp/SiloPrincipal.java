@@ -94,13 +94,18 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
 
         // EditText string = (EditText) Contexto.dados.remove("QuantidadeString");
 
-
+        //Em cada Case, esta setando uma imagem diferente e ativando e desatvando a visibilidade dos toolbar
+        // que vão aparecer dentro do silo. e tambem ele zera o que foi colocado no edittext, essa parte do edittext
+        // é so pra testar e subir as porcentagens, não estara no app final...
         if (button2.isPressed()) {
              teste = editText.getText().toString();
             switch (teste) {
                 case "0":
+                    //setando a imagem de fundo, diferente a cada 10% com excessão dos 90 e 100% que sao os mesmos...
+                    // é pra da uma sensação de que os toolbars estão dentro o silo...
                     imageView3.setImageResource(R.drawable.silo);
 
+                    //visibilidade referente aos toolbars contidos na activity...
                     toolbar1.setVisibility(View.INVISIBLE);
                     toolbar2.setVisibility(View.INVISIBLE);
                     toolbar3.setVisibility(View.INVISIBLE);
@@ -112,6 +117,7 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
                     toolbar9.setVisibility(View.INVISIBLE);
                     toolbar10.setVisibility(View.INVISIBLE);
 
+                    //visibilidade referente aos textviews contidos na activity, eles possuem a escrita da porcentagem...
                     textView1.setVisibility(View.INVISIBLE);
                     textView2.setVisibility(View.INVISIBLE);
                     textView3.setVisibility(View.INVISIBLE);
@@ -123,6 +129,7 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
                     textView9.setVisibility(View.INVISIBLE);
                     textView10.setVisibility(View.INVISIBLE);
 
+                    //parte que ta aqui so pra limpar o que foi ecrito no edittext, essa parte é dispensavel depois...
                     editText.setText("");
                     break;
 
@@ -413,6 +420,7 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
             }
 
         }
+        //Esse IF é referente as setas de mudança de activity em cima do silo...
         if (imageButtonEsquerda.isPressed()) {
             Intent intentGerenciamentoSilo = new Intent(this, TelaDeGerenciamentoDeSilo.class);
             startActivity(intentGerenciamentoSilo);
