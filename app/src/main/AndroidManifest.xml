@@ -161,7 +161,12 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SubMenuPragas" />
         </activity>
-        <activity android:name=".TelaDeNovidades"></activity>
+        <activity android:name=".TelaDeNovidades"
+                  android:label="Novidades">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuCentral" />
+        </activity>
     </application>
 
 </manifest>

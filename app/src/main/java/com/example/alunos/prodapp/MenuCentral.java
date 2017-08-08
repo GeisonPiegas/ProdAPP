@@ -54,7 +54,8 @@ public class MenuCentral extends AppCompatActivity implements View.OnClickListen
             startActivity(intentListaUsuarios);
         }
         if (imageButtonNoticias.isPressed()) {
-
+            Intent intentNovidades = new Intent(this, TelaDeNovidades.class);
+            startActivity(intentNovidades);
         }
         if (imageButtonCalendario.isPressed()) {
             Intent intentEpocas = new Intent(this, TelaEpocasDePlantacao.class);
