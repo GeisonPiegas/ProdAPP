@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alunos.prodapp.NoticiaDeklab">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Dekalb lança milho com tecnologias YieldGard e Roundup Ready 2"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="match_parent"
+                android:layout_height="245dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/imagem1noticiadeklab" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="A empresa de biotecnologia de sementes Dekalb lançará híbridos de milho com a tecnologia Roundup Ready 2 (RR2), da Monsanto, na safrinha 2011. A modificação torna o vegetal tolerante herbicidas à base de glifosato e resistente a insetos, graças ao uso de outra tecnologia em conjunto, a YieldGard (YG)." />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Os híbridos DKB 390 RR2, DKB 330 RR2 e DKB 177 RR2 permitirão controlar, de forma mais eficaz, as plantas daninhas que competem com a cultura do milho. Já o híbrido DKB 390 YGRR2 une a proteção contra algumas pragas — broca do colmo (Diatraea saccarallis), lagartas da espiga (Helicoverpa zea) e do cartucho (Spodoptera frugiperda) — com o controle das plantas daninhas pelo glifosato aplicado em pós-emergência." />
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="De acordo com a Dekalb, o glifosato em pós-emergência de milho já está liberado pelo Ministério da Agricultura, Pecuária e Abastecimento (Mapa) nos estados de Mato Grosso do Sul, Goiás e São Paulo. O cultivo do milho RR2 também está aprovado para plantio comercial em países como Estados Unidos, Canadá, Argentina, África do Sul, Filipinas e Colômbia, enquanto a tecnologia YGRR2 (fusão da YG com a RR2) foi liberada em países como Argentina, Estados Unidos, Japão, Coreia do Sul, e México." />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="-GLOBO RURAL"
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:id="@+id/textViewLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="Para mais informações sobre a Deklab e seus produtos clique aqui."
+                android:textAllCaps="false"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

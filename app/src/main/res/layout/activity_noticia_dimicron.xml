@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alunos.prodapp.NoticiaDimicron">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Dimicron realiza quinta edição da sua Rota Tecnológica na região Sul"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="match_parent"
+                android:layout_height="202dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/imagem1noticiadimicron" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="A Dimicron, uma das maiores empresas de nutrição de plantas do Brasil, realiza até o dia 3 de fevereiro sua quinta edição da Rota Tecnológica no Sul do Brasil. A ação, que contempla palestra, em Nova Prata (RS), sobre a questão da qualidade do solo, com o professor doutor de solos, titular da Universidade Federal de Santa Maria (UFSM), Telmo Amado, passará por municípios do Rio Grande do Sul e de Santa Catarina e reunirá uma equipe de mais de 100 profissionais do agronegócio, entre produtores, revendedores, técnicos e agrônomos." />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Além de conhecer soluções da Dimicron para a lavoura em propriedades dedicadas à soja e ao milho, pela primeira vez, os participantes da Rota Tecnológica visitarão sementeiras nas cidades de Campos Novos (SC), Erechim (RS), Paulo Bento (RS) e Quatro Irmãos (RS). Lá, a Dimicron apresentará seu programa Sementes de Verdade, cujo foco é garantir a germinação da semente em seu pleno potencial, o que significa alto vigor da plantação e maior produtividade. Segundo dados divulgados pela Embrapa, o uso de semente de qualidade amplia a capacidade de produção entre 20% e 35% por safra. " />
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="A empresa também apresentará in loco resultados do uso por um a dois anos do DimiLOM, produto direcionado para condicionamento do solo e que pode ser usado em todo tipo de cultivo, seja anual ou perene. “Oferecemos ao produtor conhecimento e soluções para que ele tenha o que é essencial para uma produtividade consistente e em constante melhoria. Além da qualidade da semente, o produtor rural precisa para isso de um solo vivo, com equilíbrio físico, químico e biológico, não apenas na superfície, mas também em profundidade”, diz Alyson Pereira, Gerente de Desenvolvimento da Dimicron." />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="“Vamos mostrar ao vivo e em cores o efeito do uso do ácido fúlvico, princípio do DimiLOM, no solo e sua capacidade de atuar na estrutura física e química, auxiliar na liberação dos nutrientes e contribuir para o melhor desenvolvimento da planta ao longo dos anos”, diz Pereira." />
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="As apresentações focadas em solo ocorrerão em propriedades rurais das cidades de Nova Prata (RS), Lagoa Vermelha (RS), Capão Bonito do Sul (RS) e Campos Novos (SC)." />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="-Notícias Agrícolas"
+                android:textAlignment="textEnd"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/textViewLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="Para mais informações sobre a Dimicron e seus produtos clique aqui."
+                android:textAllCaps="false"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

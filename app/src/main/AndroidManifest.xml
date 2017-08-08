@@ -17,7 +17,7 @@
         <activity android:name=".TelaDeCadastro">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MenuLateralActivity" />
+                android:value=".TelaDeLogin" />
         </activity>
         <activity
             android:name=".TelaDeConfiguracaoDeSilo"
@@ -53,11 +53,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaDeLogin" />
         </activity>
-        <activity android:name=".TelaDeLogin">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MenuLateralActivity" />
-        </activity>
+        <activity android:name=".TelaDeLogin" />
         <activity
             android:name=".TelaDeGerenciamentoDeSilo"
             android:label="Meus Silos">
@@ -72,31 +68,36 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SiloPrincipal" />
         </activity>
-        <activity android:name=".TelaEpocaDeArroz"
-                  android:label="Calendario">
+        <activity
+            android:name=".TelaEpocaDeArroz"
+            android:label="Plantio de Arroz">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaEpocasDePlantacao" />
         </activity>
-        <activity android:name=".TelaEpocaDeSoja">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MenuLateralActivity" />
-        </activity>
-        <activity android:name=".TelaEpocaDeTrigo">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MenuLateralActivity" />
-        </activity>
-        <activity android:name=".TelaEpocaDeMilho">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MenuLateralActivity" />
-        </activity>
-        <activity android:name=".TelaEpocasDePlantacao">
+        <activity android:name=".TelaEpocaDeSoja"
+            android:label="Plantio de Soja">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaEpocasDePlantacao" />
+        </activity>
+        <activity android:name=".TelaEpocaDeTrigo"
+            android:label="Plantio de Trigo">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TelaEpocasDePlantacao" />
+        </activity>
+        <activity android:name=".TelaEpocaDeMilho"
+            android:label="Plantio de Milho">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TelaEpocasDePlantacao" />
+        </activity>
+        <activity android:name=".TelaEpocasDePlantacao"
+            android:label="Calendario de Plantio">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuCentral" />
         </activity>
         <activity android:name=".MenuCentral">
             <intent-filter>
@@ -161,11 +162,36 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SubMenuPragas" />
         </activity>
-        <activity android:name=".TelaDeNovidades"
-                  android:label="Novidades">
+        <activity
+            android:name=".TelaDeNovidades"
+            android:label="Novidades">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuCentral" />
+        </activity>
+        <activity android:name=".NoticiaAgroeste"
+            android:label="Agroeste">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TelaDeNovidades" />
+        </activity>
+        <activity android:name=".NoticiaDeklab"
+            android:label="Deklab">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TelaDeNovidades" />
+        </activity>
+        <activity android:name=".NoticiaDimicron"
+            android:label="Dimicron">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TelaDeNovidades" />
+        </activity>
+        <activity android:name=".NoticiaSementesEstrela"
+            android:label="Sementes Estrela">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TelaDeNovidades" />
         </activity>
     </application>
 

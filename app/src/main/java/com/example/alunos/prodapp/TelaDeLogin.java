@@ -86,15 +86,15 @@ public class TelaDeLogin extends AppCompatActivity implements View.OnClickListen
 
 
         if (conectado==true) {
-            chamarMenuNavegacao(); // Se o teste for correto, irá chamar a Activity Desejada.
+            chamarMenuCentral(); // Se o teste for correto, irá chamar a Activity Desejada.
         }
 
     }
 
 
     // Criando um Metodo pra a partir de uma activity atual- chamar uma outra e encerrar a que chamou.
-    public void chamarMenuNavegacao() {
-        startActivity(new Intent(this, MenuLateralActivity.class)); // comando para iniciar a Activity que recebe 2 parametros( qual local que tá chamando ,  e qual tela que tá sendo chamada )
+    public void chamarMenuCentral() {
+        startActivity(new Intent(this, MenuCentral.class)); // comando para iniciar a Activity que recebe 2 parametros( qual local que tá chamando ,  e qual tela que tá sendo chamada )
 
         //finish(); // finalizando a activity que está chamando.
 
@@ -161,7 +161,7 @@ public class TelaDeLogin extends AppCompatActivity implements View.OnClickListen
             if (helper.logar(email, senha)) {
 
                 //   startActivity(new Intent(this, MenuNavegacaoActivity.class));
-                chamarMenuNavegacao(); // chamando a Activity Expecifica
+                chamarMenuCentral(); // chamando a Activity Expecifica
             } else {
                 // Se o Login for Incorreto ele cai nesta condição, E chama o metodo mensagem - o objeto criado - por parametros recebe obrigatoriamente
                 // (A Activity que deseja que apareça a mensagem neste caso usa-se THIS pois é nesta activity atual 'LoginActivity', com o comando 'getString' está sendo

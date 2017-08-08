@@ -7,14 +7,6 @@
     android:layout_height="match_parent"
     tools:context="com.example.alunos.prodapp.MenuCentral">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar11"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme" />
-
     <ScrollView
         android:id="@+id/ScrollView"
         android:layout_width="500dp"
@@ -36,9 +28,6 @@
             android:id="@+id/LinearLayoutVertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="0dp"
-            android:layout_marginLeft="0dp"
-            android:layout_marginTop="0dp"
             android:orientation="vertical"
             android:weightSum="1">
 
@@ -46,35 +35,34 @@
                 android:id="@+id/LinearLayoutHorizontal2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="3dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="3dp"
                 android:layout_weight="0.33"
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button5"
+                    android:id="@+id/buttonJaneiro"
                     android:layout_width="130dp"
-                    android:layout_height="110dp"
+                    android:layout_height="105dp"
                     android:layout_weight="1"
-                    android:background="@android:color/holo_orange_light"
+                    android:background="#d6d7d7"
                     android:text="Janeiro" />
 
                 <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/buttonFevereiro"
                     android:layout_width="130dp"
-                    android:layout_height="110dp"
+                    android:layout_height="105dp"
                     android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
                     android:layout_weight="1"
-                    android:background="@android:color/holo_orange_light"
+                    android:background="#d6d7d7"
                     android:text="Fevereiro" />
 
                 <Button
-                    android:id="@+id/button9"
+                    android:id="@+id/buttonMarco"
                     android:layout_width="130dp"
-                    android:layout_height="110dp"
-                    android:layout_marginLeft="3dp"
+                    android:layout_height="105dp"
                     android:layout_weight="1"
-                    android:background="@android:color/holo_orange_light"
+                    android:background="#d6d7d7"
                     android:text="Março" />
 
             </LinearLayout>
@@ -83,36 +71,33 @@
                 android:id="@+id/LinearLayoutHorizontal1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="3dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginTop="0dp"
-                android:orientation="horizontal"
-                android:paddingEnd="0dp">
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button8"
+                    android:id="@+id/buttonAbril"
                     android:layout_width="130dp"
-                    android:layout_height="110dp"
+                    android:layout_height="105dp"
                     android:layout_weight="1"
-                    android:background="@android:color/holo_orange_light"
+                    android:background="#d6d7d7"
                     android:text="Abril" />
 
                 <Button
-                    android:id="@+id/button7"
+                    android:id="@+id/buttonMaio"
                     android:layout_width="130dp"
-                    android:layout_height="110dp"
+                    android:layout_height="105dp"
                     android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
                     android:layout_weight="1"
-                    android:background="@android:color/holo_red_dark"
+                    android:background="#d6d7d7"
                     android:text="Maio" />
 
                 <Button
-                    android:id="@+id/button6"
+                    android:id="@+id/buttonJunho"
                     android:layout_width="130dp"
-                    android:layout_height="110dp"
-                    android:layout_marginLeft="3dp"
+                    android:layout_height="105dp"
                     android:layout_weight="1"
-                    android:background="@android:color/holo_red_dark"
+                    android:background="#d6d7d7"
                     android:text="Junho" />
             </LinearLayout>
 
@@ -120,37 +105,35 @@
                 android:id="@+id/LinearLayoutHorizontal1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="0dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginTop="0dp"
+                android:layout_marginTop="3dp"
                 android:layout_weight="0.33"
                 android:orientation="horizontal"
                 android:paddingEnd="0dp">
 
                 <Button
-                    android:id="@+id/button8"
+                    android:id="@+id/buttonJulho"
                     android:layout_width="130dp"
-                    android:layout_height="110dp"
+                    android:layout_height="105dp"
                     android:layout_weight="1"
-                    android:background="@android:color/holo_red_dark"
+                    android:background="#d6d7d7"
                     android:text="julho" />
 
                 <Button
-                    android:id="@+id/button7"
+                    android:id="@+id/buttonAgosto"
                     android:layout_width="130dp"
-                    android:layout_height="110dp"
+                    android:layout_height="105dp"
                     android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
                     android:layout_weight="1"
-                    android:background="@android:color/holo_red_dark"
+                    android:background="#d6d7d7"
                     android:text="Agosto" />
 
                 <Button
-                    android:id="@+id/button6"
+                    android:id="@+id/buttonSetembro"
                     android:layout_width="130dp"
-                    android:layout_height="110dp"
-                    android:layout_marginLeft="3dp"
+                    android:layout_height="105dp"
                     android:layout_weight="1"
-                    android:background="@android:color/holo_red_dark"
+                    android:background="#d6d7d7"
                     android:text="Setembro" />
             </LinearLayout>
 
@@ -158,38 +141,79 @@
                 android:id="@+id/LinearLayoutHorizontal1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="0dp"
-                android:layout_marginEnd="0dp"
                 android:layout_marginTop="3dp"
                 android:layout_weight="0.33"
                 android:orientation="horizontal"
                 android:paddingEnd="0dp">
 
                 <Button
-                    android:id="@+id/button8"
+                    android:id="@+id/buttonOutubro"
                     android:layout_width="130dp"
-                    android:layout_height="110dp"
+                    android:layout_height="105dp"
                     android:layout_weight="1"
-                    android:background="@android:color/holo_green_light"
+                    android:background="#d6d7d7"
                     android:text="OUtubro" />
 
                 <Button
-                    android:id="@+id/button7"
+                    android:id="@+id/buttonNovembro"
                     android:layout_width="130dp"
-                    android:layout_height="110dp"
+                    android:layout_height="105dp"
                     android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
                     android:layout_weight="1"
-                    android:background="@android:color/holo_green_light"
+                    android:background="#d6d7d7"
                     android:text="novembro" />
 
                 <Button
-                    android:id="@+id/button6"
+                    android:id="@+id/buttonDezembro"
                     android:layout_width="130dp"
-                    android:layout_height="110dp"
-                    android:layout_marginLeft="3dp"
+                    android:layout_height="105dp"
                     android:layout_weight="1"
-                    android:background="@android:color/holo_green_light"
+                    android:background="#d6d7d7"
                     android:text="dezembro" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.33"
+                android:text="Escolha a Época" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutHorizontal1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:paddingEnd="0dp">
+
+                <Button
+                    android:id="@+id/buttonAmarelo"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="#f2f302"
+                    android:text="Seila" />
+
+                <Button
+                    android:id="@+id/buttonVermelho"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="#cc0000"
+                    android:text="Não Plantavel" />
+
+                <Button
+                    android:id="@+id/buttonVerde"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="#11772d"
+                    android:text="Plantavel" />
             </LinearLayout>
 
 
