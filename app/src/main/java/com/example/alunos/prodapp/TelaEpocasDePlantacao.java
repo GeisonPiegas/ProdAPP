@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -21,7 +22,7 @@ public class TelaEpocasDePlantacao extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_epocas_de_plantacao);
 
-        GridView lista = (GridView) findViewById(R.id.GridViewTelaListaProdutos);
+        ListView lista = (ListView) findViewById(R.id.GridViewTelaListaProdutos);
         ArrayAdapter adapter = new AdapterProdutos(this, adicionarProdutos());
         lista.setAdapter(adapter);
 
