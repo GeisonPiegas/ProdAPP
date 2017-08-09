@@ -128,7 +128,7 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
     @Override
     public void onClick(View v) {
 
-        buttonTeste.setText("Masoq ?");
+
 
         if (buttonTeste.isPressed()){
 
@@ -144,6 +144,8 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
 
             QuantidadeDoubleConvertido = Double.parseDouble(QuantidadeDouble) ;
             Contexto.dados.put("QuantidadeDouble",QuantidadeDoubleConvertido) ;
+
+            buttonTeste.setText("Cadastrou = "+QuantidadePega);
         }
 
         /*

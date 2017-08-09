@@ -50,7 +50,7 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_silo_principal);
 
-        Toast.makeText(getBaseContext(), "Cadastre um Valor qualquer no Gerenciamento de silos, para não bugar !!! ao entrar no Detalhe silos!!" + null, Toast.LENGTH_SHORT).show(); // mensagem é apenas temporaria.
+        Toast.makeText(getBaseContext(), "Cadastre um Valor qualquer no Gerenciamento de silos, para não bugar !!! ao entrar no Detalhe silos!!", Toast.LENGTH_LONG).show(); // mensagem é apenas temporaria.
 
 
         imageView3 = (ImageView) findViewById(R.id.imageView3);
