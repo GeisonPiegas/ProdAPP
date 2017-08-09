@@ -10,10 +10,11 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import util.Contexto;
 
-public class SiloPrincipal extends AppCompatActivity implements View.OnClickListener{
+public class SiloPrincipal extends AppCompatActivity implements View.OnClickListener {
     private ImageView imageView3;
     private Toolbar toolbar1;
     private Toolbar toolbar2;
@@ -39,14 +40,18 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
     private ImageButton imageButtonEsquerda;
     private ImageButton imageButtonDireita;
 
-    private EditText editText;
+    private EditText editText ;
     private Button button2;
     private String teste;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_silo_principal);
+
+        Toast.makeText(getBaseContext(), "Cadastre um Valor qualquer no Gerenciamento de silos, para não bugar !!! ao entrar no Detalhe silos!!" + null, Toast.LENGTH_SHORT).show(); // mensagem é apenas temporaria.
+
 
         imageView3 = (ImageView) findViewById(R.id.imageView3);
         toolbar1 = (Toolbar) findViewById(R.id.toolbar1);
@@ -81,18 +86,13 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
         imageButtonDireita.setOnClickListener(this);
 
         // Ainda Falta Ageitar aqui, pois ao voltar a activity, está zerando o valor que foi pego!!
-        textViewNomeSilo.setText(Contexto.dados.get("nomeDoSilo")+"");
+        textViewNomeSilo.setText(Contexto.dados.get("nomeDoSilo") + "");
 
 
     }
 
     @Override
     public void onClick(View v) {
-
-        //Contexto.dados.get("QuantidadeString");
-        //Contexto.dados.get("QuantidadeDouble");
-
-        // EditText string = (EditText) Contexto.dados.remove("QuantidadeString");
 
         //Em cada Case, esta setando uma imagem diferente e ativando e desatvando a visibilidade dos toolbar
         // que vão aparecer dentro do silo. e tambem ele zera o que foi colocado no edittext, essa parte do edittext
@@ -419,16 +419,19 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
 
             }
 
-        }
-        //Esse IF é referente as setas de mudança de activity em cima do silo...
-        if (imageButtonEsquerda.isPressed()) {
-            Intent intentGerenciamentoSilo = new Intent(this, TelaDeGerenciamentoDeSilo.class);
-            startActivity(intentGerenciamentoSilo);
-        }
-        if (imageButtonDireita.isPressed()) {
-            Intent intentDetalheSilo = new Intent(this, TelaDeDetalhesDoSilo.class);
-            startActivity(intentDetalheSilo);
-        }
 
+
+            }
+            //Esse IF é referente as setas de mudança de activity em cima do silo...
+            if (imageButtonEsquerda.isPressed()) {
+                Intent intentGerenciamentoSilo = new Intent(this, TelaDeGerenciamentoDeSilo.class);
+                startActivity(intentGerenciamentoSilo);
+            }
+            if (imageButtonDireita.isPressed()) {
+                Intent intentDetalheSilo = new Intent(this, TelaDeDetalhesDoSilo.class);
+                startActivity(intentDetalheSilo);
+            }
+
+        }
     }
-}
+

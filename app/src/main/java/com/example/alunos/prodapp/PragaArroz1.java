@@ -76,14 +76,20 @@ public class PragaArroz1 extends AppCompatActivity implements View.OnClickListen
         //Teste logico pra abrir e fechar o menuzinho dos produtos que combatem cada praga, e estou
         // setando um texto diferente em cada clique no button ...
         if (buttonVerProdutos.isPressed()) {
+
+           // Toast.makeText(getBaseContext(), "Deslize a Tela para Baixo." + null, Toast.LENGTH_SHORT).show(); // mensagem é apenas temporaria.
+
             if(teste == true){
                 RelativeLayoutVerMais.setVisibility(View.VISIBLE);
                 buttonVerProdutos.setText("FECHAR PRODUTOS PARA CONTROLE");
                 teste = false;
+                Toast.makeText(getBaseContext(), "Para Visualizar, Deslize Para Baixo." , Toast.LENGTH_LONG).show();
+
             }else{
                 RelativeLayoutVerMais.setVisibility(View.GONE);
                 buttonVerProdutos.setText("VER PRODUTOS PARA CONTROLE");
                 teste = true;
+
             }
         }
 

@@ -52,14 +52,21 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaDeLogin" />
+
         </activity>
-        <activity android:name=".TelaDeLogin" />
+
+        <activity android:name=".TelaDeLogin">
+
+            </activity>
+
+
         <activity
             android:name=".TelaDeGerenciamentoDeSilo"
             android:label="Meus Silos">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SiloPrincipal" />
+
         </activity>
         <activity
             android:name=".TelaDeDetalhesDoSilo"
@@ -100,11 +107,13 @@
                 android:value=".MenuCentral" />
         </activity>
         <activity android:name=".MenuCentral">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
             android:name=".SiloPrincipal"

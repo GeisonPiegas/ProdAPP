@@ -81,6 +81,7 @@ public class PragaMilho2 extends AppCompatActivity implements View.OnClickListen
                 RelativeLayoutVerMais.setVisibility(View.VISIBLE);
                 buttonVerProdutos.setText("FECHAR PRODUTOS PARA CONTROLE");
                 teste = false;
+                Toast.makeText(getBaseContext(), "Para Visualizar, Deslize Para Baixo." , Toast.LENGTH_LONG).show();
             }else{
                 RelativeLayoutVerMais.setVisibility(View.GONE);
                 buttonVerProdutos.setText("VER PRODUTOS PARA CONTROLE");

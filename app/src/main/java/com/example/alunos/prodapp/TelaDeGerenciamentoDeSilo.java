@@ -79,7 +79,6 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
         AdicionarProdutoImageButtonTelaDeGerenciamentoDeSilos = (ImageButton) findViewById(R.id.AdicionarProdutoImageButtonTelaDeGerenciamentoDeSilos);
         TituloAdicaoDeProdutoTextViewTelaDeGerenciamentoDeSilos = (TextView) findViewById(R.id.TituloAdicaoDeProdutoTextViewTelaDeGerenciamentoDeSilos);
 
-
         QuantidadeDoProdutoAdicionarTextViewTelaDeGerenciamentoDeSilos = (TextView) findViewById(R.id.QuantidadeDoProdutoAdicionarTextViewTelaDeGerenciamentoDeSilos);
         QuantidadeDoProdutoAdicionarEditTextTelaDeGerenciamentoDeSilos = (EditText) findViewById(R.id.QuantidadeDoProdutoAdicionarEditTextTelaDeGerenciamentoDeSilos);
         AdicionarButtonTelaDeGerenciamentoDeSilos = (Button) findViewById(R.id.AdicionarButtonTelaDeGerenciamentoDeSilos);
@@ -133,9 +132,10 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
 
         if (buttonTeste.isPressed()){
 
-            // Eesta parte, está tentando pegar o vaslor digitado pelo usuário no EditText e
+            // Esta parte, está tentando pegar o vaslor digitado pelo usuário no EditText e
             // Setando dentro de uma variavél para o context e enviando para a outra tela !!
 
+            // A variavel "apenasteste" é deve ser modificada para o EditText final
 
             String QuantidadePega = apenasTeste.getText().toString();
             Contexto.dados.put("QuantidadeString",QuantidadePega) ;
@@ -144,16 +144,9 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
 
             QuantidadeDoubleConvertido = Double.parseDouble(QuantidadeDouble) ;
             Contexto.dados.put("QuantidadeDouble",QuantidadeDoubleConvertido) ;
-
-
-            Toast.makeText(getBaseContext(), "Valor Informado: " + QuantidadePega, Toast.LENGTH_SHORT).show(); // mensagem é apenas temporaria.
-            Toast.makeText(getBaseContext(), "Valor Informado: " + QuantidadeDoubleConvertido, Toast.LENGTH_SHORT).show(); // mensagem é apenas temporaria.
         }
 
-
         /*
-
-
         if (RetirarProdutoImageButtonTelaDeGerenciamentoDeSilos.isPressed()) {
             if(teste1 == false) {
                 AdicionarScrollViewTelaDeGerenciamentoDeSilos.setVisibility(View.VISIBLE);

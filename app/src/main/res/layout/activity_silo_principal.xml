@@ -275,11 +275,11 @@
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView3"
-        android:layout_alignParentStart="true"
         android:ems="10"
         android:hint="0 até 100, de 10 em 10"
-        android:inputType="number" />
+        android:inputType="number"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/button2"

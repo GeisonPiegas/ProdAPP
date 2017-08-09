@@ -45,10 +45,7 @@ public class TelaDeDetalhesDoSilo extends AppCompatActivity implements View.OnCl
         setContentView(R.layout.activity_tela_de_detalhes_do_silo);
 
         //FindView
-        FiltroTextViewTelaDeDetalhesDoSilo = (TextView) findViewById(R.id.FiltroTextViewTelaDeDetalhesDoSilo);
-        FiltroRadioGroupTelaDeDetalhesDoSilo = (RadioGroup) findViewById(R.id.FiltroRadioGroupTelaDeDetalhesDoSilo);
-        KgRadioButtonTelaDeDetalhesDoSilo = (RadioButton) findViewById(R.id.KgRadioButtonTelaDeDetalhesDoSilo);
-        TonRadioButtonTelaDeDetalhesDoSilo = (RadioButton) findViewById(R.id.TonRadioButtonTelaDeDetalhesDoSilo);
+
         NomeDetalheTextViewTelaDeDetalhesDoSilo = (TextView) findViewById(R.id.NomeDetalheTextViewTelaDeDetalhesDoSilo);
         RecebeNomeDetalheTextViewTelaDeDetalhesDoSilo = (TextView) findViewById(R.id.RecebeNomeDetalheTextViewTelaDeDetalhesDoSilo);
         TipoDeGraoTextViewTelaDeDetalhesDoSilo = (TextView) findViewById(R.id.TipoDeGraoTextViewTelaDeDetalhesDoSilo);
@@ -76,31 +73,32 @@ public class TelaDeDetalhesDoSilo extends AppCompatActivity implements View.OnCl
         }
 
         //PARTE RESPONSÁVEL POR SETAR OS VALORES CORRETOS NOS TEXTFILED E FAZER OS CALCULOS LÓGICOS
+        RecebeNomeDetalheTextViewTelaDeDetalhesDoSilo.setText(Contexto.dados.get("nomeDoSilo")+"");
+        RecebeTipoDeGraoTextViewTelaDeDetalhesDoSilo.setText(Contexto.dados.get("produtoDoSilo")+"");
+        RecebeCapacidadeTotalTextViewTelaDeDetalhesDoSilo.setText(Contexto.dados.get("tamanhoDoSilo")+"");
 
-        RecebeNomeDetalheTextViewTelaDeDetalhesDoSilo.setText(Contexto.dados.remove("nomeDoSilo")+"");
-        RecebeTipoDeGraoTextViewTelaDeDetalhesDoSilo.setText(Contexto.dados.remove("produtoDoSilo")+"");
-        RecebeCapacidadeTotalTextViewTelaDeDetalhesDoSilo.setText(Contexto.dados.remove("tamanhoDoSilo")+"");
+        RecebeCapacidadeUtilizadaTextViewTelaDeDetalhesDoSilo.setText(Contexto.dados.get("QuantidadeDouble")+"");
 
-        RecebeCapacidadeUtilizadaTextViewTelaDeDetalhesDoSilo.setText(Contexto.dados.remove("QuantidadeDouble")+"");
+        // Recebendo o VALOR TOTAL DO SILO em String e convertendo para Double
+        String pegaValorTotal = Contexto.dados.get("tamanhoDoSilo").toString();
+        double converteemDoubleValorTotal = Double.parseDouble(pegaValorTotal);
 
-        /*
-        Double recebeTotal = (Double) Contexto.dados.remove("tamanhoDoSilo");
-        Double recebeValorUsado = (Double) Contexto.dados.remove("QuantidadeDouble");
-        Double valorDisponivel = recebeTotal - recebeValorUsado ;
+        // Recebendo o valor informado na adição e convertendo para double
+        String pegaValorAdicao = Contexto.dados.get("QuantidadeString").toString();
+        double converteemDoubleValorAdicao = Double.parseDouble(pegaValorAdicao);
 
-        String ValorConvertido = String.valueOf(valorDisponivel);
+        // Fazendo o calculo para descontar o valor informado do total e exibir no Espaço Disponível
+        double valorDisponivel = converteemDoubleValorTotal - converteemDoubleValorAdicao ;
 
-        Toast.makeText(getBaseContext(), "Valor Informado: " + ValorConvertido, Toast.LENGTH_SHORT).show(); // mensagem é apenas temporaria.
+        // Convertendo para String
+        String valorDisponivelParaString = String.valueOf(valorDisponivel);
 
-        //RecebeCapacidadeDisponivelTextViewTelaDeDetalhesDoSilo.setText(valorDisponivel)+"";
-
-
-        */
-
-        RecebeCapacidadeDisponivelTextViewTelaDeDetalhesDoSilo.setText("Jocá");
+                    //Enviando o valor Convertido para um Context para ser usado no Cilo Principal
+                   // Contexto.dados.put("ValorConvertido",valorDisponivelParaString) ;
 
 
-
+        // Setando este valor no EditText
+        RecebeCapacidadeDisponivelTextViewTelaDeDetalhesDoSilo.setText(valorDisponivelParaString);
 
 
         // Setando a Data atual, está pegando a mesma data certa, porem ele poem em todos os registros, não tem
@@ -110,7 +108,6 @@ public class TelaDeDetalhesDoSilo extends AppCompatActivity implements View.OnCl
         String dateString = sdf.format(date);
         RecebeDataDaCriacaoTextViewTelaDeDetalhesDoSilo.setText(dateString);
     }
-
 
     @Override
     public void onClick(View v) {
