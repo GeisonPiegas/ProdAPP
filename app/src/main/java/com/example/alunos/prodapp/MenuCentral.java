@@ -20,6 +20,7 @@ public class MenuCentral extends AppCompatActivity implements View.OnClickListen
     private ImageButton imageButtonNoticias;
     private ImageButton imageButtonCalendario;
     private LinearLayout LinearLayoutHorizontal3;
+    private ImageButton imageButtonAgrotoxicos;
     private ImageButton imageButtonPragas;
     private ImageButton imageButtonSair;
 
@@ -32,6 +33,7 @@ public class MenuCentral extends AppCompatActivity implements View.OnClickListen
         imageButtonUsuario = (ImageButton) findViewById(R.id.imageButtonUsuario);
         imageButtonNoticias = (ImageButton) findViewById(R.id.imageButtonNoticias);
         imageButtonCalendario = (ImageButton) findViewById(R.id.imageButtonCalendario);
+        imageButtonAgrotoxicos = (ImageButton) findViewById(R.id.imageButtonAgrotoxicos);
         imageButtonPragas = (ImageButton) findViewById(R.id.imageButtonPragas);
         imageButtonSair = (ImageButton) findViewById(R.id.imageButtonSair);
 
@@ -39,6 +41,7 @@ public class MenuCentral extends AppCompatActivity implements View.OnClickListen
         imageButtonUsuario.setOnClickListener(this);
         imageButtonNoticias.setOnClickListener(this);
         imageButtonCalendario.setOnClickListener(this);
+        imageButtonAgrotoxicos.setOnClickListener(this);
         imageButtonPragas.setOnClickListener(this);
         imageButtonSair.setOnClickListener(this);
     }
@@ -61,6 +64,12 @@ public class MenuCentral extends AppCompatActivity implements View.OnClickListen
             Intent intentEpocas = new Intent(this, TelaEpocasDePlantacao.class);
             startActivity(intentEpocas);
         }
+
+        if (imageButtonAgrotoxicos.isPressed()) {
+            Intent intentAgrotoxicos = new Intent(this, TelaColetaAgrotoxicos.class);
+            startActivity(intentAgrotoxicos);
+        }
+
         if (imageButtonPragas.isPressed()) {
             Intent intentSubMenuPragas = new Intent(this, SubMenuPragas.class);
             startActivity(intentSubMenuPragas);

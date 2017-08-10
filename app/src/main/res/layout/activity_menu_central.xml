@@ -91,7 +91,7 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/imageButton343"
+                    android:id="@+id/imageButtonAgrotoxicos"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginLeft="15dp"

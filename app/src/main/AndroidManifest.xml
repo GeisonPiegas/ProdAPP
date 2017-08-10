@@ -52,21 +52,14 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaDeLogin" />
-
         </activity>
-
-        <activity android:name=".TelaDeLogin">
-
-            </activity>
-
-
+        <activity android:name=".TelaDeLogin" />
         <activity
             android:name=".TelaDeGerenciamentoDeSilo"
             android:label="Meus Silos">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SiloPrincipal" />
-
         </activity>
         <activity
             android:name=".TelaDeDetalhesDoSilo"
@@ -82,38 +75,40 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaEpocasDePlantacao" />
         </activity>
-        <activity android:name=".TelaEpocaDeSoja"
+        <activity
+            android:name=".TelaEpocaDeSoja"
             android:label="Plantio de Soja">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaEpocasDePlantacao" />
         </activity>
-        <activity android:name=".TelaEpocaDeTrigo"
+        <activity
+            android:name=".TelaEpocaDeTrigo"
             android:label="Plantio de Trigo">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaEpocasDePlantacao" />
         </activity>
-        <activity android:name=".TelaEpocaDeMilho"
+        <activity
+            android:name=".TelaEpocaDeMilho"
             android:label="Plantio de Milho">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaEpocasDePlantacao" />
         </activity>
-        <activity android:name=".TelaEpocasDePlantacao"
+        <activity
+            android:name=".TelaEpocasDePlantacao"
             android:label="Calendario de Plantio">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuCentral" />
         </activity>
         <activity android:name=".MenuCentral">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".SiloPrincipal"
@@ -178,29 +173,42 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuCentral" />
         </activity>
-        <activity android:name=".NoticiaAgroeste"
+        <activity
+            android:name=".NoticiaAgroeste"
             android:label="Agroeste">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaDeNovidades" />
         </activity>
-        <activity android:name=".NoticiaDeklab"
+        <activity
+            android:name=".NoticiaDeklab"
             android:label="Deklab">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaDeNovidades" />
         </activity>
-        <activity android:name=".NoticiaDimicron"
+        <activity
+            android:name=".NoticiaDimicron"
             android:label="Dimicron">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaDeNovidades" />
         </activity>
-        <activity android:name=".NoticiaSementesEstrela"
+        <activity
+            android:name=".NoticiaSementesEstrela"
             android:label="Sementes Estrela">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaDeNovidades" />
+        </activity>
+        <activity android:name=".TelaColetaAgrotoxicos" />
+        <activity android:name=".TelaComoDescartar" />
+        <activity android:name=".TelaOndeDescartar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
