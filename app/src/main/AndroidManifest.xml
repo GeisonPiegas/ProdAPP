@@ -194,6 +194,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaDeNovidades" />
         </activity>
+
         <activity
             android:name=".NoticiaSementesEstrela"
             android:label="Sementes Estrela">
@@ -201,15 +202,28 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaDeNovidades" />
         </activity>
-        <activity android:name=".TelaColetaAgrotoxicos" />
-        <activity android:name=".TelaComoDescartar" />
-        <activity android:name=".TelaOndeDescartar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".TelaColetaAgrotoxicos"
+                  android:label="Descarte de Agrotoxicos">
+           <meta-data
+               android:name="android.support.PARENT_ACTIVITY"
+               android:value=".MenuCentral" />
         </activity>
+
+        <activity android:name=".TelaComoDescartar"
+                  android:label="Como Descartar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TelaColetaAgrotoxicos" />
+        </activity>
+
+        <activity android:name=".TelaOndeDescartar"
+                  android:label="Onde Descartar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TelaColetaAgrotoxicos" />
+        </activity>
+
     </application>
 
 </manifest>
