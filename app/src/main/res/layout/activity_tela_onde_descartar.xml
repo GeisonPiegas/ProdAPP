@@ -29,6 +29,30 @@
                     android:orientation="vertical"
                     android:weightSum="1">
 
+                    <TextView
+                        android:id="@+id/textView51"
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:text="Rio Grande do Sul  UNIDADE POSTO - SÃO BORJA  Endereço da Central Estrada Mato Grande, 3 km do trevo.   CEP 97670-000  Gerenciador (nome da associação) ASDA - Associação Samborjense de Distribuidores de Agrotóxicos   Nome do Responsável Charles Aurelio Dalmaso"
+                        android:textAlignment="viewStart" />
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="280dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/localdescarte3" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="290dp"
+                        android:scaleType="fitStart"
+                        app:srcCompat="@drawable/localdescarte1" />
                 </LinearLayout>
             </ScrollView>
 
