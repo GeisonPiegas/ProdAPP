@@ -42,49 +42,49 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="A AGROESTE, realizou na Fazenda Gávea, um Dia de Campo lançamento da variedade de soja: AS 3680 IPRO, com meta de produção acima de 75 sacas por hectares." />
+                android:text="@string/NoticiaAgroesteParte1" />
 
             <TextView
                 android:id="@+id/textView39"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="Durante o Dia de Campo, o Representante Comercial da AGROESTE, Nogueira, apresentou a variedade AS 3680 IPRO, plantada em duas áreas comerciais, sendo uma sobre palhada de Nabo e outra de Sorgo." />
+                android:text="@string/NoticiaAgroesteParte2" />
 
             <TextView
                 android:id="@+id/textView40"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="A variedade de soja AS 3680 IPRO, é uma variedade ideal para abertura de plantio, final de setembro a meados de outubro e possui Precocidade, Sanidade e Potencial Produtivo." />
+                android:text="@string/NoticiaAgroesteParte3" />
 
             <TextView
                 android:id="@+id/textView41"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="Na área plantada em 25/09/2016 sobre palhada nabo forrageiro, já em colheita, a média de produção é de 72 sacas de soja por hectare, com 105 dias após o plantio. Vale ressaltar que é a primeira área de soja colhida no município nessa safra." />
+                android:text="@string/NoticiaAgroesteParte4" />
 
             <TextView
                 android:id="@+id/textView42"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="Já na área ao lado com a mesma variedade, plantada em 05/10/2016 sobre palhada de sorgo, a previsão é de mais de 80 sacas por hectare." />
+                android:text="@string/NoticiaAgroesteParte5" />
 
             <TextView
                 android:id="@+id/textView43"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="Outra característica da AS 3680 IPRO é o sistema de engalhamento e alta quantidade de vargem em média de 80 vargem por pés." />
+                android:text="@string/NoticiaAgroesteParte6" />
 
             <TextView
                 android:id="@+id/textView44"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="Segundo o Eng. Agrônomo Paulo Buzolin, responsável pela Fazenda, além das qualidades da nova variedade AS 3680 IPRO, o manejo utilizado antes do plantio da soja, aplicação de TRICHODERMIL + EQUI-SOLO, na palhada do sorgo mostrou um resultado surpreendente, onde a lavoura de soja apresenta uniformidade de plantas, sistema radicular mais vigoroso, e maior número de vagens por planta, quando comparado a área testemunha sem os produtos." />
+                android:text="@string/NoticiaAgroesteParte7" />
 
             <TextView
                 android:id="@+id/textView45"
@@ -102,7 +102,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:layout_marginLeft="5dp"
-                android:text="Para mais informações sobre a Agroeste e seus produtos clique aqui."
+                android:text="@string/NoticiaAgroesteParte8"
                 android:textAllCaps="false"
                 android:textColor="@android:color/black" />
         </LinearLayout>

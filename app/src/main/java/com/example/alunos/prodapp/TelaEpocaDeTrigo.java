@@ -21,6 +21,7 @@ public class TelaEpocaDeTrigo extends AppCompatActivity implements View.OnClickL
     private Button buttonAmarelo;
     private Button buttonVermelho;
     private Button buttonVerde;
+    private Button buttonPadraoCinza;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,10 +43,12 @@ public class TelaEpocaDeTrigo extends AppCompatActivity implements View.OnClickL
         buttonAmarelo = (Button) findViewById(R.id.buttonAmarelo);
         buttonVermelho = (Button) findViewById(R.id.buttonVermelho);
         buttonVerde = (Button) findViewById(R.id.buttonVerde);
+        buttonPadraoCinza = (Button) findViewById(R.id.buttonPadraoCinza);
 
         buttonAmarelo.setOnClickListener(this);
         buttonVermelho.setOnClickListener(this);
         buttonVerde.setOnClickListener(this);
+        buttonPadraoCinza.setOnClickListener(this);
     }
 
     //Modifiicando as cores dos botões referente a epoca selecionada...
@@ -99,6 +102,21 @@ public class TelaEpocaDeTrigo extends AppCompatActivity implements View.OnClickL
             buttonAgosto.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
             buttonSetembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
 
+        }
+        if (buttonPadraoCinza.isPressed()) {
+
+            buttonJaneiro.setBackgroundColor(getResources().getColor(R.color.Amarelo));
+            buttonFevereiro.setBackgroundColor(getResources().getColor(R.color.Amarelo));
+            buttonMarco.setBackgroundColor(getResources().getColor(R.color.Amarelo));
+            buttonAbril.setBackgroundColor(getResources().getColor(R.color.Amarelo));
+            buttonMaio.setBackgroundColor(getResources().getColor(R.color.Vermelho));
+            buttonJunho.setBackgroundColor(getResources().getColor(R.color.Vermelho));
+            buttonJulho.setBackgroundColor(getResources().getColor(R.color.Vermelho));
+            buttonAgosto.setBackgroundColor(getResources().getColor(R.color.Vermelho));
+            buttonSetembro.setBackgroundColor(getResources().getColor(R.color.Vermelho));
+            buttonOutubro.setBackgroundColor(getResources().getColor(R.color.Verde));
+            buttonNovembro.setBackgroundColor(getResources().getColor(R.color.Verde));
+            buttonDezembro.setBackgroundColor(getResources().getColor(R.color.Verde));
         }
 
     }

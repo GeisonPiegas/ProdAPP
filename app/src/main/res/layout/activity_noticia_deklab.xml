@@ -43,21 +43,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="A empresa de biotecnologia de sementes Dekalb lançará híbridos de milho com a tecnologia Roundup Ready 2 (RR2), da Monsanto, na safrinha 2011. A modificação torna o vegetal tolerante herbicidas à base de glifosato e resistente a insetos, graças ao uso de outra tecnologia em conjunto, a YieldGard (YG)." />
+                android:text="@string/NoticiaDeklabParte1" />
 
             <TextView
                 android:id="@+id/textView47"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="Os híbridos DKB 390 RR2, DKB 330 RR2 e DKB 177 RR2 permitirão controlar, de forma mais eficaz, as plantas daninhas que competem com a cultura do milho. Já o híbrido DKB 390 YGRR2 une a proteção contra algumas pragas — broca do colmo (Diatraea saccarallis), lagartas da espiga (Helicoverpa zea) e do cartucho (Spodoptera frugiperda) — com o controle das plantas daninhas pelo glifosato aplicado em pós-emergência." />
+                android:text="@string/NoticiaDeklabParte2" />
 
             <TextView
                 android:id="@+id/textView48"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="De acordo com a Dekalb, o glifosato em pós-emergência de milho já está liberado pelo Ministério da Agricultura, Pecuária e Abastecimento (Mapa) nos estados de Mato Grosso do Sul, Goiás e São Paulo. O cultivo do milho RR2 também está aprovado para plantio comercial em países como Estados Unidos, Canadá, Argentina, África do Sul, Filipinas e Colômbia, enquanto a tecnologia YGRR2 (fusão da YG com a RR2) foi liberada em países como Argentina, Estados Unidos, Japão, Coreia do Sul, e México." />
+                android:text="@string/NoticiaDeklabParte3" />
 
             <TextView
                 android:id="@+id/textView45"
@@ -75,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:layout_marginLeft="5dp"
-                android:text="Para mais informações sobre a Deklab e seus produtos clique aqui."
+                android:text="@string/NoticiaDeklabParte4"
                 android:textAllCaps="false"
                 android:textColor="@android:color/black" />
         </LinearLayout>

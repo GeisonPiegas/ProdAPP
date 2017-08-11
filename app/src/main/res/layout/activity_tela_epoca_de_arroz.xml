@@ -52,41 +52,36 @@
 
                 <Button
                     android:id="@+id/buttonVerde"
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
                     android:background="#11772d"
                     android:text="Plantio" />
 
                 <Button
                     android:id="@+id/buttonAmarelo"
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
                     android:layout_height="50dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginEnd="5dp"
+                    android:layout_marginLeft="3dp"
                     android:background="#f2f302"
-                    android:text="Crescimento" />
+                    android:text="Colheita" />
 
                 <Button
                     android:id="@+id/buttonVermelho"
                     android:layout_width="130dp"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="3dp"
                     android:layout_weight="1"
                     android:background="#cc0000"
-                    android:text="Colheita" />
+                    android:text="Fora de Época" />
 
                 <Button
                     android:id="@+id/buttonPadraoCinza"
-                    android:layout_width="130dp"
+                    android:layout_width="70dp"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
+                    android:layout_marginLeft="3dp"
                     android:background="@color/PadraoBotao"
-                    android:text="TODAS" />
+                    android:text="TODAS"
+                    android:textAllCaps="false" />
 
             </LinearLayout>
 

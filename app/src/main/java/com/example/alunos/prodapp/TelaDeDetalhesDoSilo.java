@@ -18,6 +18,8 @@ import java.util.List;
 import Interacao.Silos;
 import util.Contexto;
 
+import static com.example.alunos.prodapp.R.drawable.silo;
+
 public class TelaDeDetalhesDoSilo extends AppCompatActivity implements View.OnClickListener{
 
     private TextView FiltroTextViewTelaDeDetalhesDoSilo;
@@ -61,6 +63,7 @@ public class TelaDeDetalhesDoSilo extends AppCompatActivity implements View.OnCl
         DataDaCriacaoTextViewTelaDeDetalhesDoSilo = (TextView) findViewById(R.id.DataDaCriacaoTextViewTelaDeDetalhesDoSilo);
         RecebeDataDaCriacaoTextViewTelaDeDetalhesDoSilo = (TextView) findViewById(R.id.RecebeDataDaCriacaoTextViewTelaDeDetalhesDoSilo);
 
+
         // PEGANDO O TAMANHO DO SILO, FAZENDO TESTES LÓGICOS E SETANDO O TIPO DE PORTE
         double quantidade = (double) Contexto.dados.get("tamanhoDoSilo") ;
 
@@ -77,7 +80,12 @@ public class TelaDeDetalhesDoSilo extends AppCompatActivity implements View.OnCl
         RecebeTipoDeGraoTextViewTelaDeDetalhesDoSilo.setText(Contexto.dados.get("produtoDoSilo")+"");
         RecebeCapacidadeTotalTextViewTelaDeDetalhesDoSilo.setText(Contexto.dados.get("tamanhoDoSilo")+"");
 
-        RecebeCapacidadeUtilizadaTextViewTelaDeDetalhesDoSilo.setText(Contexto.dados.get("QuantidadeDouble")+"");
+        //------------
+        String pegaDouble = Contexto.dados.get("QuantidadeDouble").toString();
+        double converteDouble = Double.parseDouble(pegaDouble);
+        String vslorFinalString = String.valueOf(converteDouble);
+        RecebeCapacidadeUtilizadaTextViewTelaDeDetalhesDoSilo.setText(vslorFinalString);
+
 
         // Recebendo o VALOR TOTAL DO SILO em String e convertendo para Double
         String pegaValorTotal = Contexto.dados.get("tamanhoDoSilo").toString();
@@ -106,6 +114,7 @@ public class TelaDeDetalhesDoSilo extends AppCompatActivity implements View.OnCl
         long date = System.currentTimeMillis();
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         String dateString = sdf.format(date);
+        RecebeDataDaCriacaoTextViewTelaDeDetalhesDoSilo.setText("0");
         RecebeDataDaCriacaoTextViewTelaDeDetalhesDoSilo.setText(dateString);
     }
 

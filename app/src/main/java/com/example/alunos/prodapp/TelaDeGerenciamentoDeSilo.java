@@ -51,6 +51,8 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
     private LinearLayout LinearLayoutVertical04TelaDeGerenciamentoDeSilos;
 
 
+
+
     private EditText apenasTeste ;
     private Button buttonTeste  ;
 
@@ -127,16 +129,21 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
 
     @Override
     public void onClick(View v) {
+        if (RetirarProdutoImageButtonTelaDeGerenciamentoDeSilos.isPressed()) {
+            String QuantidadePega = apenasTeste.getText().toString();
+            Contexto.dados.put("QuantidadeString",QuantidadePega) ;
 
 
+            String QuantidadeDouble = apenasTeste.getText().toString() ;
+            QuantidadeDoubleConvertido = Double.parseDouble(QuantidadeDouble) ;
+            QuantidadeDoubleConvertido = QuantidadeDoubleConvertido*(-1);
 
-        if (buttonTeste.isPressed()){
+            Contexto.dados.put("QuantidadeDouble",QuantidadeDoubleConvertido) ;
 
-            // Esta parte, está tentando pegar o vaslor digitado pelo usuário no EditText e
-            // Setando dentro de uma variavél para o context e enviando para a outra tela !!
+            buttonTeste.setText("Cadastrou = "+QuantidadePega);
+        }
 
-            // A variavel "apenasteste" é deve ser modificada para o EditText final
-
+        if (AdicionarProdutoImageButtonTelaDeGerenciamentoDeSilos.isPressed()) {
             String QuantidadePega = apenasTeste.getText().toString();
             Contexto.dados.put("QuantidadeString",QuantidadePega) ;
 
@@ -148,51 +155,10 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
             buttonTeste.setText("Cadastrou = "+QuantidadePega);
         }
 
-        /*
-        if (RetirarProdutoImageButtonTelaDeGerenciamentoDeSilos.isPressed()) {
-            if(teste1 == false) {
-                AdicionarScrollViewTelaDeGerenciamentoDeSilos.setVisibility(View.VISIBLE);
-                RemoverScrollViewTelaDeGerenciamentoDeSilos.setVisibility(View.GONE);
-                teste1 = true;
-                teste2 = false ;
-                //-----
-                if (RetirarButtonTelaDeGerenciamentoDeSilos.isPressed()){
-                    //MensagemGeral.Msg(this, getString(R.string.mensagem_erro));
-                }
-            } else {
-                AdicionarScrollViewTelaDeGerenciamentoDeSilos.setVisibility(View.GONE);
-                teste1 = false;
-
-            }
-
-        }
-
-        if (AdicionarProdutoImageButtonTelaDeGerenciamentoDeSilos.isPressed()) {
-            if(teste2 == false) {
-                RemoverScrollViewTelaDeGerenciamentoDeSilos.setVisibility(View.VISIBLE);
-                AdicionarScrollViewTelaDeGerenciamentoDeSilos.setVisibility(View.GONE);
-                teste2 = true;
-                teste1 = false;
-
-                //----
-                if (AdicionarButtonTelaDeGerenciamentoDeSilos.isPressed()){
-                   // MensagemGeral.Msg(this, getString(R.string.mensagem_erro));
-
-
-                }
-
-            } else {
-                RemoverScrollViewTelaDeGerenciamentoDeSilos.setVisibility(View.GONE);
-                teste2 = false;
-
-            }
-
-        }
     }
 }
 
-*/
-    }
-}
+
+
 
 

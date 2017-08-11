@@ -150,19 +150,19 @@
     <string name="NoticiaDeklabParte3">De acordo com a Dekalb, o glifosato em pós-emergência de milho já está liberado pelo Ministério da Agricultura, Pecuária e Abastecimento (Mapa) nos estados de Mato Grosso do Sul, Goiás e São Paulo. O cultivo do milho RR2 também está aprovado para plantio comercial em países como Estados Unidos, Canadá, Argentina, África do Sul, Filipinas e Colômbia, enquanto a tecnologia YGRR2 (fusão da YG com a RR2) foi liberada em países como Argentina, Estados Unidos, Japão, Coreia do Sul, e México.</string>
     <string name="NoticiaDeklabParte4">Para mais informações sobre a Deklab e seus produtos clique aqui.</string>
     <!-- Dimicron -->
-    <string name="NoticiaDimicronParte1"></string>
-    <string name="NoticiaDimicronParte2"></string>
-    <string name="NoticiaDimicronParte3"></string>
-    <string name="NoticiaDimicronParte4"></string>
-    <string name="NoticiaDimicronParte5"></string>
-    <string name="NoticiaDimicronParte6"></string>
+    <string name="NoticiaDimicronParte1">A Dimicron, uma das maiores empresas de nutrição de plantas do Brasil, realiza até o dia 3 de fevereiro sua quinta edição da Rota Tecnológica no Sul do Brasil. A ação, que contempla palestra, em Nova Prata (RS), sobre a questão da qualidade do solo, com o professor doutor de solos, titular da Universidade Federal de Santa Maria (UFSM), Telmo Amado, passará por municípios do Rio Grande do Sul e de Santa Catarina e reunirá uma equipe de mais de 100 profissionais do agronegócio, entre produtores, revendedores, técnicos e agrônomos.</string>
+    <string name="NoticiaDimicronParte2">Além de conhecer soluções da Dimicron para a lavoura em propriedades dedicadas à soja e ao milho, pela primeira vez, os participantes da Rota Tecnológica visitarão sementeiras nas cidades de Campos Novos (SC), Erechim (RS), Paulo Bento (RS) e Quatro Irmãos (RS).Lá, a Dimicron apresentará seu programa Sementes de Verdade, cujo foco é garantir a germinação da semente em seu pleno potencial, o que significa alto vigor da plantação e maior produtividade. Segundo dados divulgados pela Embrapa, o uso de semente de qualidade amplia a capacidade de produção entre 20 e 35% por safra.</string>
+    <string name="NoticiaDimicronParte3">A empresa também apresentará in loco resultados do uso por um a dois anos do DimiLOM, produto direcionado para condicionamento do solo e que pode ser usado em todo tipo de cultivo, seja anual ou perene. “Oferecemos ao produtor conhecimento e soluções para que ele tenha o que é essencial para uma produtividade consistente e em constante melhoria. Além da qualidade da semente, o produtor rural precisa para isso de um solo vivo, com equilíbrio físico, químico e biológico, não apenas na superfície, mas também em profundidade”, diz Alyson Pereira, Gerente de Desenvolvimento da Dimicron.</string>
+    <string name="NoticiaDimicronParte4">“Vamos mostrar ao vivo e em cores o efeito do uso do ácido fúlvico, princípio do DimiLOM, no solo e sua capacidade de atuar na estrutura física e química, auxiliar na liberação dos nutrientes e contribuir para o melhor desenvolvimento da planta ao longo dos anos”, diz Pereira.</string>
+    <string name="NoticiaDimicronParte5">As apresentações focadas em solo ocorrerão em propriedades rurais das cidades de Nova Prata (RS), Lagoa Vermelha (RS), Capão Bonito do Sul (RS) e Campos Novos (SC).</string>
+    <string name="NoticiaDimicronParte6">Para mais informações sobre a Dimicron e seus produtos clique aqui.</string>
     <!-- Sementes Estrela -->
-    <string name="NoticiaSementesEstrelaParte1"></string>
-    <string name="NoticiaSementesEstrelaParte2"></string>
-    <string name="NoticiaSementesEstrelaParte3"></string>
-    <string name="NoticiaSementesEstrelaParte4"></string>
-    <string name="NoticiaSementesEstrelaParte5"></string>
-    <string name="NoticiaSementesEstrelaParte6"></string>
+    <string name="NoticiaSementesEstrelaParte1">Em Erechim (RS), durante a Rota Tecnológica da Dimicron, a jornalista Fernanda Custódio, do Notícias Agrícolas, conversou com Aluízio Cominetti, Gerente Comercial da Sementes Estrela e Futura Agrícola, para debater a qualidade de sementes, os cuidados necessários e também a importância do vigor.</string>
+    <string name="NoticiaSementesEstrelaParte2">Cominetti destaca que "não é qualquer grão que pode virar semente", uma vez que o tratamento é diferenciado desde o início, considerando o manejo e o tipo da produção em si. Uma das maiores preocupações da empresa, segundo ele, é "atentar para os detalhes", realizando um controle de qualidade e uma seleção bem feita para entregar um resultado final adequado para os clientes.</string>
+    <string name="NoticiaSementesEstrelaParte3">Na produtividade final, a semente também depende do trabalho no campo. "Os tratos culturais mantêm a produtividade", aponta, sendo o solo um dos detalhes mais importantes para criar um bom ambiente produtivo.</string>
+    <string name="NoticiaSementesEstrelaParte4">A empresa entrega aos clientes tanto a semente nua quanto a semente tratada. Em parceria com a Dimicron, é possível oferecer também um acréscimo nutricional que cria melhor ambiente para a semente se desenvolver quando for implantada. Também há uma preocupação maior com o vigor, que a empresa procura trabalhar com uma porcentagem acima das exigências de mercado, ou seja, acima de 80%.</string>
+    <string name="NoticiaSementesEstrelaParte5">Para Cominetti, o ano de 2017 será um ano no qual os produtores, após boas safras, vão estar capitalizados e não devem deixar de investir na produção. Algumas tecnologias novas vão possibilitar a empresa a melhorar o seu índice de qualidade, na intenção de contribuir cada vez mais para um maior rendimento.</string>
+    <string name="NoticiaSementesEstrelaParte6">Para mais informações sobre a Sementes Estrela e seus produtos clique aqui.</string>
 
     <!-- TelaCadastroSilo -->
     <string-array name="ProdutosSpinnerTelaCadastroSilo">
