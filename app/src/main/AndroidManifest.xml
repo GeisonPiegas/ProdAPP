@@ -94,7 +94,7 @@
             android:label="Plantio de Milho">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".TelaEpocasDePlantacao" />
+                android:value=".TelaColetaAgrotoxicos" />
         </activity>
         <activity
             android:name=".TelaEpocasDePlantacao"

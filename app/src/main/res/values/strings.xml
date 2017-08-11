@@ -1,14 +1,20 @@
 <resources>
+    <!-- Nome do Aplicativo -->
     <string name="app_name">ProdAPP</string>
+
+    <!-- TelaDeLogin -->
     <string name="EmailTextViewTelaDeLogin">E-mail</string>
     <string name="SenhaTextViewTelaDeLogin">Senha</string>
     <string name="SalvarSenhaCheckBoxTelaDeLogin">Deseja Salvar sua Senha?</string>
     <string name="EntrarButtonTelaDeLogin">Entrar</string>
     <string name="EsqueceuSenhaTextViewTelaDeLogin">Esqueci Minha Senha</string>
+
+    <!-- Silo já Cadastrado -->
     <string name="nomeSilo">1</string>
     <string name="quantidadeSilo">25.000</string>
     <string name="produtoSilo">Milho</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- TelaDeCadastro -->
     <string name="NomeTextViewTelaDeCadastro">Nome:</string>
     <string name="EmailTextViewTelaDeCadastro">E-mail:</string>
     <string name="ConfirmarEmailTextViewTelaDeCadastro">Informe seu E-mail Novamente:</string>
@@ -16,15 +22,13 @@
     <string name="ConfirmarSenhaTextViewTelaDeCadastro">Informe sua Senha Novamente:</string>
     <string name="CadastrarButtonTelaDeCadastro">Cadastrar-se</string>
 
-
+    <!-- TelaDeCadastro -->
     <string name="CamposObrigatorios">Esses Campos são \n Obrigatórios !</string>
     <string name="CampoSenhaUsuario">Você Deve Informar a Senha !</string>
     <string name="CampoEmailUsuario">Você Deve Informar o E-mail !</string>
     <string name="CampoNomeUsuario">Você Deve Informar o Nome !</string>
-
     <string name="EmailNaoCorreponde">Os E-mails Informados São Diferentes !</string>
     <string name="SenhaNaoCorreponde">As Senhas Informadas São Diferentes !</string>
-
 
     <!-- Copiados Direto do Projeto PARTIU_sb -->
     <string name="Atualizar_Evento">Atualizar Eventos</string>
@@ -55,24 +59,31 @@
     <string name="popin_textview_MensagemDescricao">Envie uma mensagem para o organizador e tire suas duvidas.</string>
     <string name="listarevento_textview_ListarEvento">Lista de Todos os Eventos</string>
     <string name="categoria_lista_categoria">categoria_lista_categoria</string>
-    <!--   - - - - - - - - -->
 
+    <!-- TelaDeCadastro -->
     <string name="CamposEmailDiferentes">O E-mail não Confere com o que foi Digitado Acima!</string>
     <string name="CamposSenhaDiferentes">A Senha não Confere com a que foi Digitada Acima!</string>
     <string name="LoginTextViewTelaDeCadastro">Já tem Conta? Clique e Faça Login</string>
-    <string name="CriarContaUsuarioTextViewTelaDeLogin">Clique pra Criar Sua Conta.</string>
-    <string name="title_activity_menu_lateral">MenuLateralActivity</string>
 
+    <!-- TelaDeLogin -->
+    <string name="CriarContaUsuarioTextViewTelaDeLogin">Clique pra Criar Sua Conta.</string>
+
+    <!-- Adicionado na Implementação do MenuLateralActivity -->
+    <string name="title_activity_menu_lateral">MenuLateralActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
     <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- TelaDeCadastroSilo -->
     <string name="IdentificacaoTextViewTelaDeCadastroSilo">Identificação do Silo:</string>
     <string name="IdentificacaoEditTextTelaDeCadastroSilo" />
     <string name="EstocagemTextViewTelaDeCadastroSilo">Tipo de Grão Estocado</string>
     <string name="CapacidadeTextViewTelaDeCadastroSilo">Capacidade de Estocagem:</string>
     <string name="CapacidadeEditTextTelaDeCadastroSilo" />
     <string name="CadastrarButtonTelaDeCadastroSilo">Cadastrar Silo</string>
+
+    <!-- TelaDeGerenciamentoDeSilo -->
     <string name="OpcoesTextViewTelaDeGerenciamentoDeSilos">O Que Deseja Fazer?</string>
     <string name="TituloAdicaoDeProdutoTextViewTelaDeGerenciamentoDeSilos">Adicionar Produto Ao Silo:</string>
     <string name="TipoDeProdutoAdicionarTextViewTelaDeGerenciamentoDeSilos">Tipo do Produto:</string>
@@ -82,6 +93,7 @@
     <string name="QuantidadeDoProdutoRetirarTextViewTelaDeGerenciamentoDeSilos">Quantidade do Produto:</string>
     <string name="RetirarButtonTelaDeGerenciamentoDeSilos">Retirar Produto do Silo</string>
 
+    <!-- TelaDeDetalhesDoSilo -->
     <string name="NomeDetalheTextViewTelaDeDetalhesDoSilo">Nome/Detalhe</string>
     <string name="TipoDeGraoTextViewTelaDeDetalhesDoSilo">Tipo de Grão</string>
     <string name="PorteDoSiloTextViewTelaDeDetalhesDoSilo">Porte do Silo</string>
@@ -92,6 +104,9 @@
     <string name="CapacidadeUtilizadaTextViewTelaDeDetalhesDoSilo">Capacidade Utilizada</string>
     <string name="CapacidadeDisponivelTextViewTelaDeDetalhesDoSilo">Capacidade Disponível</string>
     <string name="DataDaCriacaoTextViewTelaDeDetalhesDoSilo">Data de Criação</string>
+
+    <!-- Textos Pragas -->
+    <!-- Soja -->
     <string name="textViewTitulo">Ácaro-Branco</string>
     <string name="textViewTituloAbaixo">Polyphagotarsonemus latus</string>
     <string name="PragaSoja1Parte1">Esse ácaro possui tamanho reduzido de 0,2 mm de comprimento e coloração clara, quase transparente. Vive na face inferior das folhas e é de difícil visualização sem lente de aumento. </string>
@@ -103,6 +118,7 @@
     <string name="PragaSoja2Parte3">O clima quente e úmido favorece o seu desenvolvimento. As moscas-brancas atacam mais de 500 espécies de plantas, de diversas famílias. Causam danos pela retirada de nutrientes e água e pela transmissão de doenças. As plantas infestadas mostram-se enfraquecidas, as folhas caem e os frutos ficam murchos, amadurecem irregularmente e também podem cair precocemente. Em consequência da sua presença, também há a formação de fumagina – fungo que se desenvolve sobre as excreções dos insetos na superfície das folhas –, que prejudica a fotossíntese e a respiração vegetal.</string>
     <string name="PragaSoja2Parte4">Entretanto, o dano mais importante é a transmissão de vírus, como o causador da haste-negra-da-soja ou necrose-da-haste. Esse inseto era conhecido como Bemisia argentifolii, mas após avaliações taxonômicas foi classificado como sendo uma variação da Bemisia tabaci. No Brasil, os biótipos da espécie B. tabaci de importância agronômica são o “A” e o “B”.</string>
     <string name="PragaSoja2Parte5">Algumas importantes características da raça “B”, que a diferem da “A”, são: maior capacidade de proliferação e adaptação a diferentes hospedeiras; capacidade de criar resistência a inseticidas com maior facilidade, especial - mente se forem aplicados de forma incorreta; e formação de fumagina em maior quantidade.</string>
+    <!-- Milho -->
     <string name="PragaMilho1Parte1">Os insetos adultos são mariposas de hábitos noturnos com até 4 cm de envergadura. Suas asas anteriores são cinza-escuras e as posteriores cinza-claro. As fêmeas depositam os ovos nas folhas das plantas hospedeiras e depois os cobrem com pelos e escamas que retiram do próprio corpo. Geralmente se encontra apenas uma lagarta grande por planta, pois são canibais. A duração do período larval pode chegar a 30 dias, quando as lagartas medem aproximadamente 5 cm de comprimento. Possuem três pares de pernas no tórax, quatro no abdome e um par anal. A coloração pode ser pardo-escura, esverdeada ou preta. </string>
     <string name="PragaMilho1Parte2">Na região dorsal, existem três linhas longitudinais de cor clara e nas laterais duas faixas mais escuras. No topo da cabeça, origina-se um Y invertido de cor clara que facilita sua identificação. As pupas, de cor avermelhada, são encontradas no solo, a poucos centímetros de profundidade. O ciclo do ovo ao adulto dura de 20 a 60 dias, dependendo das condições climáticas.</string>
     <string name="PragaMilho1Parte3">Trata-se de uma importante praga do milho. As lagartas, inicialmente, apenas raspam a superfície foliar e deixam uma membrana translúcida para trás. Quando maiores, alojam-se no cartucho do milho e começam a devorar as folhas novas e a parte apical do colmo. Os sinais de seu ataque são folhas que já nascem recortadas e detritos no interior do cartucho. Quando as plantas já estão maiores, as lagartas podem se alimentar do pendão e das espigas. </string>
@@ -113,10 +129,42 @@
     <string name="PragaMilho2Parte3">Não há postura de ovos. Locais e períodos com baixa umidade, ventos de baixa velocidade e temperatura ao redor de 20 °C são ideais para o seu desenvolvimento. Nessas condições, o ciclo biológico dessa espécie varia de 20 a 30 dias e cada fêmea origina cerca de 70 novos pulgões.</string>
     <string name="PragaMilho2Parte4">Alimentam-se da seiva das plantas, o que esgota as reservas hídricas e nutricionais e causa deformações nas folhas. Além desses danos, ainda há a transmissão de vírus, como o mosaico, e a formação da fumagina sobre folhas, espigas e outras partes.</string>
     <string name="PragaMilho1Parte6">Pulverizações com os inseticidas à base de Carbaryl, Triclofom e Cloropirifós etil, Paratiom metil (Folido 600). 10 lagartas (com mais de 2cm. de comprimento) por metro quadrado.</string>
+    <!-- Arroz -->
     <string name="PragaArroz1Parte1">É um inseto de ocorrência cíclica, causa danos às raízes antes da inundação da lavoura. Na fase larval, alimentam-se das raízes e na fase adulta danificam a base da planta. O inseto adulto após a hibernação favorecido pelo aumento da temperatura e irrigação entra na lavoura.</string>
     <string name="PragaArroz2Parte1">É um inseto-praga de grande importância para a agricultura, provoca alguns danos diretos ao se alimentar e injeta toxinas e suga a seiva, causando o amarelecimento das folhas, paralisando o crescimento da planta.</string>
     <string name="PragaArroz2Parte2">A utilização de plantas daninhas como hospedeiras alternativas durante a entressafra é um dos fatores que pode explicar o rápido crescimento populacional desse inseto, após a implantação da cultura, pois muitas vezes a praga está dentro da área cultivada.</string>
 
+    <!-- Textos Noticias -->
+    <!-- Agroeste -->
+    <string name="NoticiaAgroesteParte1">A AGROESTE, realizou na Fazenda Gávea, um Dia de Campo lançamento da variedade de soja: AS 3680 IPRO, com meta de produção acima de 75 sacas por hectares.</string>
+    <string name="NoticiaAgroesteParte2">Durante o Dia de Campo, o Representante Comercial da AGROESTE, Nogueira, apresentou a variedade AS 3680 IPRO, plantada em duas áreas comerciais, sendo uma sobre palhada de Nabo e outra de Sorgo.</string>
+    <string name="NoticiaAgroesteParte3">A variedade de soja AS 3680 IPRO, é uma variedade ideal para abertura de plantio, final de setembro a meados de outubro e possui Precocidade, Sanidade e Potencial Produtivo.</string>
+    <string name="NoticiaAgroesteParte4">Na área plantada em 25/09/2016 sobre palhada nabo forrageiro, já em colheita, a média de produção é de 72 sacas de soja por hectare, com 105 dias após o plantio. Vale ressaltar que é a primeira área de soja colhida no município nessa safra.</string>
+    <string name="NoticiaAgroesteParte5">Já na área ao lado com a mesma variedade, plantada em 05/10/2016 sobre palhada de sorgo, a previsão é de mais de 80 sacas por hectare.</string>
+    <string name="NoticiaAgroesteParte6">Outra característica da AS 3680 IPRO é o sistema de engalhamento e alta quantidade de vargem em média de 80 vargem por pés.</string>
+    <string name="NoticiaAgroesteParte7">Segundo o Eng. Agrônomo Paulo Buzolin, responsável pela Fazenda, além das qualidades da nova variedade AS 3680 IPRO, o manejo utilizado antes do plantio da soja, aplicação de TRICHODERMIL + EQUI-SOLO, na palhada do sorgo mostrou um resultado surpreendente, onde a lavoura de soja apresenta uniformidade de plantas, sistema radicular mais vigoroso, e maior número de vagens por planta, quando comparado a área testemunha sem os produtos.</string>
+    <string name="NoticiaAgroesteParte8">Para mais informações sobre a Agroeste e seus produtos clique aqui.</string>
+    <!-- Deklab -->
+    <string name="NoticiaDeklabParte1">A empresa de biotecnologia de sementes Dekalb lançará híbridos de milho com a tecnologia Roundup Ready 2 (RR2), da Monsanto, na safrinha 2011. A modificação torna o vegetal tolerante herbicidas à base de glifosato e resistente a insetos, graças ao uso de outra tecnologia em conjunto, a YieldGard (YG).</string>
+    <string name="NoticiaDeklabParte2">Os híbridos DKB 390 RR2, DKB 330 RR2 e DKB 177 RR2 permitirão controlar, de forma mais eficaz, as plantas daninhas que competem com a cultura do milho. Já o híbrido DKB 390 YGRR2 une a proteção contra algumas pragas — broca do colmo (Diatraea saccarallis), lagartas da espiga (Helicoverpa zea) e do cartucho (Spodoptera frugiperda) — com o controle das plantas daninhas pelo glifosato aplicado em pós-emergência.</string>
+    <string name="NoticiaDeklabParte3">De acordo com a Dekalb, o glifosato em pós-emergência de milho já está liberado pelo Ministério da Agricultura, Pecuária e Abastecimento (Mapa) nos estados de Mato Grosso do Sul, Goiás e São Paulo. O cultivo do milho RR2 também está aprovado para plantio comercial em países como Estados Unidos, Canadá, Argentina, África do Sul, Filipinas e Colômbia, enquanto a tecnologia YGRR2 (fusão da YG com a RR2) foi liberada em países como Argentina, Estados Unidos, Japão, Coreia do Sul, e México.</string>
+    <string name="NoticiaDeklabParte4">Para mais informações sobre a Deklab e seus produtos clique aqui.</string>
+    <!-- Dimicron -->
+    <string name="NoticiaDimicronParte1"></string>
+    <string name="NoticiaDimicronParte2"></string>
+    <string name="NoticiaDimicronParte3"></string>
+    <string name="NoticiaDimicronParte4"></string>
+    <string name="NoticiaDimicronParte5"></string>
+    <string name="NoticiaDimicronParte6"></string>
+    <!-- Sementes Estrela -->
+    <string name="NoticiaSementesEstrelaParte1"></string>
+    <string name="NoticiaSementesEstrelaParte2"></string>
+    <string name="NoticiaSementesEstrelaParte3"></string>
+    <string name="NoticiaSementesEstrelaParte4"></string>
+    <string name="NoticiaSementesEstrelaParte5"></string>
+    <string name="NoticiaSementesEstrelaParte6"></string>
+
+    <!-- TelaCadastroSilo -->
     <string-array name="ProdutosSpinnerTelaCadastroSilo">
         <item>Arroz</item>
         <item>Milho</item>
