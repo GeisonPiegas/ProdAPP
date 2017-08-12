@@ -11,7 +11,7 @@ public class Silos {
     private String nome_silo;
     private String produto_silo;
     private Double tamanho_silo;
-    private Double guarda_valor ;
+   // private Double guarda_valor ;
 
 
     public Silos() {
@@ -21,14 +21,14 @@ public class Silos {
 
 
     // Criando metodo construtor que vai recebrer os parametros externos
-    public Silos(int id_usuario, int id_silo, String nome_silo, String produto_silo, Double tamanho_silo, Double guarda_valor){
+    public Silos(int id_usuario, int id_silo, String nome_silo, String produto_silo, Double tamanho_silo){
         //A variavel da classe Construtora vai receber a variavel que está vindo por parametro (This faz referencia a classe)
         this.id_usuario = id_usuario;
         this.id_silo = id_silo;
         this.nome_silo = nome_silo;
         this.produto_silo = produto_silo;
         this.tamanho_silo = tamanho_silo;
-        this.guarda_valor = guarda_valor ;
+      //  this.guarda_valor = guarda_valor ;
     }
 
 
@@ -74,7 +74,7 @@ public class Silos {
         this.tamanho_silo = tamanho_silo;
     }
 
-
+/*
     public Double getGuarda_valor() {
         return guarda_valor;
     }
@@ -82,5 +82,7 @@ public class Silos {
     public void setGuarda_valor(Double guarda_valor) {
         this.guarda_valor = guarda_valor;
     }
+
+    */
 
 }

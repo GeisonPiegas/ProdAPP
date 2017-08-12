@@ -51,9 +51,7 @@ public class TelaCadastroSilos extends AppCompatActivity implements View.OnClick
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_cadastro_silos);
 
-        /**
-         * Aqui falta por o THIS depois que estiver pronto a classes SILOS BD
-         */
+
 
         //Tava Dando Erro Essa Parte, Então eu Comentei Tudo Pra Poder Continuar o Que Tava Fazendo - Rafael
         silosBD = new SilosBD(this); //Atribuindo a activity atual ao silosBD

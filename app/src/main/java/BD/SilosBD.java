@@ -5,6 +5,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -67,8 +68,8 @@ public class SilosBD {
                 cursor.getInt(cursor.getColumnIndex(ConexaoBD.silos.ID_USUARIO)),
                 cursor.getString(cursor.getColumnIndex(ConexaoBD.silos.NOME_SILO)), // Tem que ser get String pois o tipo é este
                 cursor.getString(cursor.getColumnIndex(ConexaoBD.silos.PRODUTO_SILO)),
-                cursor.getDouble(cursor.getColumnIndex(ConexaoBD.silos.TAMANHO_SILO)),
-                        cursor.getDouble(cursor.getColumnIndex(ConexaoBD.silos.GUARDA_VALOR)));
+                cursor.getDouble(cursor.getColumnIndex(ConexaoBD.silos.TAMANHO_SILO)));
+                       // cursor.getDouble(cursor.getColumnIndex(ConexaoBD.silos.GUARDA_VALOR)));
         return silos;
     }
 
@@ -118,9 +119,9 @@ public class SilosBD {
         silosValores.put(ConexaoBD.silos.NOME_SILO, silos.getNome_silo());
         silosValores.put(ConexaoBD.silos.PRODUTO_SILO, silos.getProduto_silo());
         silosValores.put(ConexaoBD.silos.TAMANHO_SILO, silos.getTamanho_silo());
-        silosValores.put(ConexaoBD.silos.GUARDA_VALOR, silos.getGuarda_valor());
+        //silosValores.put(ConexaoBD.silos.GUARDA_VALOR, silos.getGuarda_valor());
 
-
+        Log.e("Silos Vaffsdf", silosValores.toString()) ;
         return getDataBase().insert(ConexaoBD.silos.TABELA, null, silosValores);
 
     }

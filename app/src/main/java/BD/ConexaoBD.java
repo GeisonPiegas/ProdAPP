@@ -47,14 +47,13 @@ public class ConexaoBD extends SQLiteOpenHelper{
                 "id_silo INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL UNIQUE," +
                 "nome_silo TEXT NOT NULL," +
                 "produto_silo TEXT NOT NULL," +
-                "tamanho_silo DOUBLE  NOT NULL," +
-                "guarda_valor DOUBLE NOT NULL"+
+                "tamanho_silo DOUBLE  NOT NULL" +
                 ")";
 
         db.execSQL(sql);
 
-        sql = "INSERT INTO silos(id_usuario, id_silo, nome_silo, produto_silo, tamanho_silo, guarda_valor)" +
-                "VALUES (1, 1, 'Prodapp', 'Trigo', 25000, 1000)";
+        sql = "INSERT INTO silos(id_usuario, id_silo, nome_silo, produto_silo, tamanho_silo)" +
+                "VALUES (1, 1, 'Prodapp', 'Trigo', 25000)";
 
         db.execSQL(sql);
 
@@ -84,10 +83,10 @@ public class ConexaoBD extends SQLiteOpenHelper{
         public static final String NOME_SILO = "nome_silo";
         public static final String PRODUTO_SILO = "produto_silo";
         public static final String TAMANHO_SILO = "tamanho_silo";
-        public static final String GUARDA_VALOR = "guarda_valor";
+      //  public static final String GUARDA_VALOR = "guarda_valor";
 
         public final static String [] COLUNAS = new String[]{
-                ID_USUARIO, ID_SILO, NOME_SILO, PRODUTO_SILO, TAMANHO_SILO, GUARDA_VALOR
+                ID_USUARIO, ID_SILO, NOME_SILO, PRODUTO_SILO, TAMANHO_SILO,
         };
     };
 }

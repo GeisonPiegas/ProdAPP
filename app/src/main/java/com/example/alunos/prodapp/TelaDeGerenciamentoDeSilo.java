@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,10 +16,10 @@ import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import BD.SilosBD;
 import Interacao.Silos;
+
 import Mensagem.MensagemGeral;
 import util.Contexto;
 
@@ -51,10 +52,8 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
     private LinearLayout LinearLayoutVertical04TelaDeGerenciamentoDeSilos;
 
 
-
-
-    private EditText apenasTeste ;
-    private Button buttonTeste  ;
+    private EditText apenasTeste;
+    private Button buttonTeste;
 
 
     private Boolean teste1;
@@ -63,10 +62,12 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
     private double QuantidadeDoubleConvertido;
     //-------------------------------
 
-    // Criando os atributos do usuário
+    /* Criando os atributos do usuário
     private Silos silos;
     private SilosBD silosBD;
     private int id_silo;
+
+    */
 
 
     @Override
@@ -101,8 +102,8 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
         LinearLayoutVertical04TelaDeGerenciamentoDeSilos = (LinearLayout) findViewById(R.id.LinearLayoutVertical04TelaDeGerenciamentoDeSilos);
 
 
-        buttonTeste =  (Button) findViewById(R.id.buttonTeste) ;
-        apenasTeste = (EditText) findViewById(R.id.apenasTeste) ;
+        buttonTeste = (Button) findViewById(R.id.buttonTeste);
+        apenasTeste = (EditText) findViewById(R.id.apenasTeste);
 
 
         //OnClick
@@ -125,44 +126,101 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
         TituloAdicaoDeProdutoTextViewTelaDeGerenciamentoDeSilos.setText("Adicionar Produto do Silo( " + Contexto.dados.remove("indice") + "" + " )");
         TituloRemocaoDeProdutoTextViewTelaDeGerenciamentoDeSilos.setText("Remover Produto do Silo( " + Contexto.dados.remove("indice") + "" + " )");
 
-
     }
+
+
+    /*public void cadastrarValorUnico() {
+
+        boolean validacao = true;
+
+        Double valor_unico = Double.parseDouble(apenasTeste.getText().toString());
+
+        Log.e("meu erro",apenasTeste.getText().toString()) ;
+
+
+
+
+
+        if (validacao) {
+
+            silos = new Silos();
+            silos.setGuarda_valor(valor_unico);
+
+            // Se for Alteração de Dados
+            if (id_silo > 0) {
+                silos.setId_silo(id_silo);
+            }
+
+            silosBD.salvarSilos(silos);
+
+
+
+                if (id_silo > 0) {
+                    MensagemGeral.Msg(this, getString(R.string.mensagem_atualizar));
+
+                    //Se for Cadastro de Dados
+                } else {
+
+                    // Pegando a posição e adcionando em um objetivo do tipo Contexto.
+
+                    MensagemGeral.Msg(this, getString(R.string.mensagem_cadastrar));
+                }
+
+                finish();
+
+                startActivity(new Intent(this, ListaSilos.class));
+
+                // Caso de Algum Erro apresentará esta mensagem
+
+
+        }
+    }
+
+*/
 
 
     @Override
     public void onClick(View v) {
         if (RetirarProdutoImageButtonTelaDeGerenciamentoDeSilos.isPressed()) {
             String QuantidadePega = apenasTeste.getText().toString();
-            Contexto.dados.put("QuantidadeString",QuantidadePega) ;
+            Contexto.dados.put("QuantidadeString", QuantidadePega);
 
 
-            String QuantidadeDouble = apenasTeste.getText().toString() ;
-            QuantidadeDoubleConvertido = Double.parseDouble(QuantidadeDouble) ;
-            QuantidadeDoubleConvertido = QuantidadeDoubleConvertido*(-1);
+            String QuantidadeDouble = apenasTeste.getText().toString();
+            QuantidadeDoubleConvertido = Double.parseDouble(QuantidadeDouble);
+            QuantidadeDoubleConvertido = QuantidadeDoubleConvertido * (-1);
 
-            Contexto.dados.put("QuantidadeDouble",QuantidadeDoubleConvertido) ;
+            Contexto.dados.put("QuantidadeDouble", QuantidadeDoubleConvertido);
 
-            buttonTeste.setText("Cadastrou = "+QuantidadePega);
+            buttonTeste.setText("Cadastrou = " + QuantidadePega);
+
+                //cadastrarValorUnico() ;
+
+
         }
 
-
-
+/*
         if (AdicionarProdutoImageButtonTelaDeGerenciamentoDeSilos.isPressed()) {
             String QuantidadePega = apenasTeste.getText().toString();
-            Contexto.dados.put("QuantidadeString",QuantidadePega) ;
+            Contexto.dados.put("QuantidadeString", QuantidadePega);
 
-            String QuantidadeDouble = apenasTeste.getText().toString() ;
+            String QuantidadeDouble = apenasTeste.getText().toString();
 
-            QuantidadeDoubleConvertido = Double.parseDouble(QuantidadeDouble) ;
-            Contexto.dados.put("QuantidadeDouble",QuantidadeDoubleConvertido) ;
+            QuantidadeDoubleConvertido = Double.parseDouble(QuantidadeDouble);
+            Contexto.dados.put("QuantidadeDouble", QuantidadeDoubleConvertido);
 
-            buttonTeste.setText("Cadastrou = "+QuantidadePega);
+            buttonTeste.setText("Cadastrou = " + QuantidadePega);
         }
 
+        */
 
 
     }
+
+
 }
+
+
 
 
 
