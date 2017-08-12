@@ -60,13 +60,13 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
     private Boolean teste1;
     private Boolean teste2;
 
-    // Criando os atributos do SILO
+    private double QuantidadeDoubleConvertido;
+    //-------------------------------
+
+    // Criando os atributos do usuário
     private Silos silos;
     private SilosBD silosBD;
     private int id_silo;
-
-    private double QuantidadeDoubleConvertido;
-    //-------------------------------
 
 
     @Override
@@ -124,6 +124,8 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
         // Alterando o valor dos SETTEXT e passando o objeto que foi pego
         TituloAdicaoDeProdutoTextViewTelaDeGerenciamentoDeSilos.setText("Adicionar Produto do Silo( " + Contexto.dados.remove("indice") + "" + " )");
         TituloRemocaoDeProdutoTextViewTelaDeGerenciamentoDeSilos.setText("Remover Produto do Silo( " + Contexto.dados.remove("indice") + "" + " )");
+
+
     }
 
 
@@ -143,6 +145,8 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
             buttonTeste.setText("Cadastrou = "+QuantidadePega);
         }
 
+
+
         if (AdicionarProdutoImageButtonTelaDeGerenciamentoDeSilos.isPressed()) {
             String QuantidadePega = apenasTeste.getText().toString();
             Contexto.dados.put("QuantidadeString",QuantidadePega) ;
@@ -154,6 +158,8 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
 
             buttonTeste.setText("Cadastrou = "+QuantidadePega);
         }
+
+
 
     }
 }

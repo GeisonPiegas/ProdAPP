@@ -12,7 +12,7 @@ import java.util.List;
 import Interacao.Silos;
 
 /**
- * Created by Geison on 01/06/2017.
+ * Created by Marcos o PRO on 01/06/2017.
  */
 
 public class SilosBD {
@@ -63,12 +63,12 @@ public class SilosBD {
                 //Conecta e Sub-Classe -  SILOS
 
                 // Esta parte manda para a Classe SILOS e manda para o metodo construtor que recebe parametros !
-
                 cursor.getInt(cursor.getColumnIndex(ConexaoBD.silos.ID_SILO)), // Tem que ser GET IN POIS SE TRATA DE UM ID
                 cursor.getInt(cursor.getColumnIndex(ConexaoBD.silos.ID_USUARIO)),
                 cursor.getString(cursor.getColumnIndex(ConexaoBD.silos.NOME_SILO)), // Tem que ser get String pois o tipo é este
                 cursor.getString(cursor.getColumnIndex(ConexaoBD.silos.PRODUTO_SILO)),
-                cursor.getDouble(cursor.getColumnIndex(ConexaoBD.silos.TAMANHO_SILO)));
+                cursor.getDouble(cursor.getColumnIndex(ConexaoBD.silos.TAMANHO_SILO)),
+                        cursor.getDouble(cursor.getColumnIndex(ConexaoBD.silos.GUARDA_VALOR)));
         return silos;
     }
 
@@ -118,6 +118,7 @@ public class SilosBD {
         silosValores.put(ConexaoBD.silos.NOME_SILO, silos.getNome_silo());
         silosValores.put(ConexaoBD.silos.PRODUTO_SILO, silos.getProduto_silo());
         silosValores.put(ConexaoBD.silos.TAMANHO_SILO, silos.getTamanho_silo());
+        silosValores.put(ConexaoBD.silos.GUARDA_VALOR, silos.getGuarda_valor());
 
 
         return getDataBase().insert(ConexaoBD.silos.TABELA, null, silosValores);
