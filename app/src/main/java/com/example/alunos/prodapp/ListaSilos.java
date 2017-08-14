@@ -117,6 +117,8 @@ public long pega  ;
                 startActivity(intentPosi);
                 break;
         }
+
+
         switch (position){
             case 3:
                 Contexto.dados.put("nomeDoSilo",silo.getNome_silo()) ;
@@ -283,35 +285,6 @@ public long pega  ;
     public void onClick(DialogInterface dialog, int which) { //recebendo por parametros o que foi clicado,
 
     }
-/*
-        switch (which){
-
-            case 0 : //Editar
-                Intent intent = new Intent(this , TelaDeGerenciamentoDeSilo.class) ;
-                intent.putExtra("id" , 1) ; // no putExtra se utiliza (String name e short Value)
-                startActivity(intent);
-                finish();
-                break ;
-
-
-
-            case 1 :
-                alertConfirmacao.show();
-                break ;
-
-            //Remove os Silo pela posição do ID
-            case  DialogInterface.BUTTON_POSITIVE:
-                silosList.remove(idPosicao) ; //Remove apenas da lista o silo de acordo com o ID
-                silosBD.removerSilos(id) ; // Remove do Banco de Dados o silo de acordo com o ID
-                grid.invalidateViews(); // Atualiza os dados depois de feito as remoções.
-                break ;
-
-            case DialogInterface.BUTTON_NEGATIVE:
-                alertConfirmacao.dismiss(); // comando que faz com que ela não seja exibida, saia fora do alert confirmation.
-                break ;
-        }
-
-        */
 
     //Metodo que veio quando foi implementado o segundo negocio depois da virgula la em cima em "implements"...
     //Metodo só para o flout falso, ou pra qualquer outro button ou imagembutton normal...

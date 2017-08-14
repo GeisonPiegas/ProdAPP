@@ -11,14 +11,11 @@ public class Silos {
     private String nome_silo;
     private String produto_silo;
     private Double tamanho_silo;
-   // private Double guarda_valor ;
-
 
     public Silos() {
         // Por algum motivo divino esse método fica em branco
 
     }
-
 
     // Criando metodo construtor que vai recebrer os parametros externos
     public Silos(int id_usuario, int id_silo, String nome_silo, String produto_silo, Double tamanho_silo){
@@ -28,10 +25,7 @@ public class Silos {
         this.nome_silo = nome_silo;
         this.produto_silo = produto_silo;
         this.tamanho_silo = tamanho_silo;
-      //  this.guarda_valor = guarda_valor ;
     }
-
-
 
     // Métodos criados automáticamento pelos getters and Setters
     public int getId_usuario(){
@@ -73,16 +67,4 @@ public class Silos {
     public void setTamanho_silo(Double tamanho_silo) {
         this.tamanho_silo = tamanho_silo;
     }
-
-/*
-    public Double getGuarda_valor() {
-        return guarda_valor;
-    }
-
-    public void setGuarda_valor(Double guarda_valor) {
-        this.guarda_valor = guarda_valor;
-    }
-
-    */
-
 }

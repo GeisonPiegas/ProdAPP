@@ -18,10 +18,17 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import BD.SilosBD;
+import BD.ValorBD;
 import Interacao.Silos;
 
+import Interacao.Usuarios;
+import Interacao.Valor;
 import Mensagem.MensagemGeral;
 import util.Contexto;
+
+import static com.example.alunos.prodapp.R.id.ConfirmarEmailEditTextTelaDeCadastro;
+import static com.example.alunos.prodapp.R.id.EmailEditTextTelaDeCadastro;
+import static com.example.alunos.prodapp.R.id.NomeEditTextTelaDeCadastro;
 
 public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View.OnClickListener {
     private ScrollView AdicionarScrollViewTelaDeGerenciamentoDeSilos;
@@ -60,14 +67,10 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
     private Boolean teste2;
 
     private double QuantidadeDoubleConvertido;
-    //-------------------------------
 
-    /* Criando os atributos do usuário
-    private Silos silos;
-    private SilosBD silosBD;
-    private int id_silo;
-
-    */
+    Valor valor ;
+    ValorBD valorBD ;
+    private int id_valor ;
 
 
     @Override
@@ -108,6 +111,8 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
 
         //OnClick
         RetirarProdutoImageButtonTelaDeGerenciamentoDeSilos.setOnClickListener(this);
+
+
         AdicionarProdutoImageButtonTelaDeGerenciamentoDeSilos.setOnClickListener(this);
         AdicionarButtonTelaDeGerenciamentoDeSilos.setOnClickListener(this);
         RetirarButtonTelaDeGerenciamentoDeSilos.setOnClickListener(this);
@@ -126,58 +131,39 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
         TituloAdicaoDeProdutoTextViewTelaDeGerenciamentoDeSilos.setText("Adicionar Produto do Silo( " + Contexto.dados.remove("indice") + "" + " )");
         TituloRemocaoDeProdutoTextViewTelaDeGerenciamentoDeSilos.setText("Remover Produto do Silo( " + Contexto.dados.remove("indice") + "" + " )");
 
+        //---------------------
+
+        }
+
+    protected void onDestroyValor() {
+
+        valorBD.fechar();
+        super.onDestroy();
     }
 
 
-    /*public void cadastrarValorUnico() {
+    public void cadastrarValor() {
 
         boolean validacao = true;
 
-        Double valor_unico = Double.parseDouble(apenasTeste.getText().toString());
-
-        Log.e("meu erro",apenasTeste.getText().toString()) ;
-
-
-
+        String valor_pego = apenasTeste.getText().toString();
 
 
         if (validacao) {
 
-            silos = new Silos();
-            silos.setGuarda_valor(valor_unico);
+            valor = new Valor();
+
+            valor.setId_valor(id_valor);
 
             // Se for Alteração de Dados
-            if (id_silo > 0) {
-                silos.setId_silo(id_silo);
+            if (id_valor > 0) {
+                valor.setValor(valor_pego);
             }
 
-            silosBD.salvarSilos(silos);
-
-
-
-                if (id_silo > 0) {
-                    MensagemGeral.Msg(this, getString(R.string.mensagem_atualizar));
-
-                    //Se for Cadastro de Dados
-                } else {
-
-                    // Pegando a posição e adcionando em um objetivo do tipo Contexto.
-
-                    MensagemGeral.Msg(this, getString(R.string.mensagem_cadastrar));
-                }
-
-                finish();
-
-                startActivity(new Intent(this, ListaSilos.class));
-
-                // Caso de Algum Erro apresentará esta mensagem
-
+            valorBD.salvarValor(valor);
 
         }
     }
-
-*/
-
 
     @Override
     public void onClick(View v) {
@@ -194,9 +180,10 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
 
             buttonTeste.setText("Cadastrou = " + QuantidadePega);
 
-                //cadastrarValorUnico() ;
+        }
 
-
+        if (buttonTeste.isPressed()){
+            this.cadastrarValor();
         }
 
 /*

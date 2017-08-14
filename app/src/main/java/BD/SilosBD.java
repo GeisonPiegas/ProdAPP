@@ -69,7 +69,9 @@ public class SilosBD {
                 cursor.getString(cursor.getColumnIndex(ConexaoBD.silos.NOME_SILO)), // Tem que ser get String pois o tipo é este
                 cursor.getString(cursor.getColumnIndex(ConexaoBD.silos.PRODUTO_SILO)),
                 cursor.getDouble(cursor.getColumnIndex(ConexaoBD.silos.TAMANHO_SILO)));
-                       // cursor.getDouble(cursor.getColumnIndex(ConexaoBD.silos.GUARDA_VALOR)));
+
+
+
         return silos;
     }
 
@@ -119,13 +121,11 @@ public class SilosBD {
         silosValores.put(ConexaoBD.silos.NOME_SILO, silos.getNome_silo());
         silosValores.put(ConexaoBD.silos.PRODUTO_SILO, silos.getProduto_silo());
         silosValores.put(ConexaoBD.silos.TAMANHO_SILO, silos.getTamanho_silo());
-        //silosValores.put(ConexaoBD.silos.GUARDA_VALOR, silos.getGuarda_valor());
 
-        Log.e("Silos Vaffsdf", silosValores.toString()) ;
+        //Log.e("Silos Vaffsdf", silosValores.toString()) ;
+
         return getDataBase().insert(ConexaoBD.silos.TABELA, null, silosValores);
-
     }
-
 
     // Maneira de REMOVER os dados no Banco de Dados seja eles não existente ou já existentes
 
@@ -133,8 +133,6 @@ public class SilosBD {
     public boolean removerSilos(int id) {
 
         return getDataBase().delete(ConexaoBD.silos.TABELA, "id_silo = ?", new String[]{(Integer.toString(id))}) > 0;
-
-
     }
 
     // Maneira de BUSCAR os dados no Banco de Dados seja eles não existente ou já existentes
@@ -154,7 +152,5 @@ public class SilosBD {
 
         return null;
     }
-
-    //TESTE "APAGAR"
 
 }

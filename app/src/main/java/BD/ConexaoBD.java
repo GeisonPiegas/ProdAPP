@@ -57,6 +57,24 @@ public class ConexaoBD extends SQLiteOpenHelper{
 
         db.execSQL(sql);
 
+        //----------------------
+
+         sql = "CREATE TABLE IF NOT EXISTS valor (" +
+                "id_valor INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL UNIQUE," +
+                "valor DOUBLE NOT NULL" +
+                ")";
+
+        db.execSQL(sql); // Executa o SQL, depois de definido a estrutura
+
+
+        //INSERINDO DADOS PRÉ DEFINIDOS NA IMAGEM USUARIO
+        sql = "insert into valor(id_valor,valor)" +
+                "values (1 , 200)";
+
+        db.execSQL(sql); // Executando a inserção dos dados
+
+
+
     }
 
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
@@ -76,6 +94,19 @@ public class ConexaoBD extends SQLiteOpenHelper{
         };
     }
 
+    public static class valor{
+        public static final String TABELA = "valor";
+        public static final String ID_VALOR = "id_valor";
+        public static final String VALOR = "valor" ;
+
+
+        public final static String [] COLUNAS = new String[]{
+                ID_VALOR, VALOR
+        };
+    }
+
+
+
     public static class silos{
         public static final String TABELA = "silos";
         public static final String ID_USUARIO = "id_usuario";
@@ -83,10 +114,10 @@ public class ConexaoBD extends SQLiteOpenHelper{
         public static final String NOME_SILO = "nome_silo";
         public static final String PRODUTO_SILO = "produto_silo";
         public static final String TAMANHO_SILO = "tamanho_silo";
-      //  public static final String GUARDA_VALOR = "guarda_valor";
+
 
         public final static String [] COLUNAS = new String[]{
-                ID_USUARIO, ID_SILO, NOME_SILO, PRODUTO_SILO, TAMANHO_SILO,
+                ID_USUARIO, ID_SILO, NOME_SILO, PRODUTO_SILO, TAMANHO_SILO
         };
-    };
+    }
 }
