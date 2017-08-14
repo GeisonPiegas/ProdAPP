@@ -36,10 +36,9 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginTop="10dp"
-                        android:text="1 – Lavagem: é necessário, primeiro, esvaziar completamente as embalagens no tanque do pulverizador. Depois, deve-se adicionar água limpa em até um quarto do volume do frasco, tampe e agite por 30 segundos. Esta água também deve ser jogada no tanque do pulverizador. Repita a operação três vezes. Ela é chamada de tríplice lavagem."
+                        android:text="@string/DescarteAgrotoxicoParte1"
                         android:textAppearance="@style/TextAppearance.AppCompat"
                         android:textSize="18sp"
-                        android:textStyle="bold"
                         android:typeface="sans" />
 
                     <TextView
@@ -50,14 +49,13 @@
                         android:layout_marginLeft="5dp"
                         android:layout_marginTop="10dp"
                         android:background="@android:color/darker_gray"
-                        android:text="2 – Após passarem pelo processo da tríplice lavagem, todas as embalagens devem ser inutilizadas (danificadas para que não sejam usadas como recipiente novamente). Para isso, corte o fundo da embalagem ou faça furos no fundo, atentando para ter a certeza de que ela não terá mais utilidade."
+                        android:text="@string/DescarteAgrotoxicoParte2"
                         android:textAppearance="@style/TextAppearance.AppCompat"
                         android:textSize="18sp"
-                        android:textStyle="bold"
                         android:typeface="sans" />
 
                     <ImageView
-                        android:id="@+id/imageView12"
+                        android:id="@+id/imageViewLavagem"
                         android:layout_width="match_parent"
                         android:layout_height="254dp"
                         android:layout_marginBottom="10dp"
@@ -71,15 +69,13 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
                         android:layout_marginLeft="5dp"
-                        android:layout_marginTop="10dp"
-                        android:text="3 – Armazene os frascos lavados e inutilizados em um local adequado e verifique com o revendedor do produto se ele pode recolher as embalagens, ou se você deve levá-las até um local indicado, geralmente um posto de recebimento ou na própria loja."
+                        android:text="@string/DescarteAgrotoxicoParte3"
                         android:textAppearance="@style/TextAppearance.AppCompat"
                         android:textSize="18sp"
-                        android:textStyle="bold"
                         android:typeface="sans" />
 
                     <ImageView
-                        android:id="@+id/imageView13"
+                        android:id="@+id/imageViewDescarte"
                         android:layout_width="match_parent"
                         android:layout_height="190dp"
                         android:layout_marginBottom="10dp"

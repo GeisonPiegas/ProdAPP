@@ -9,221 +9,357 @@
         android:roundIcon="@mipmap/prod"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MenuLateralActivity" />
-        </activity>
-        <activity android:name=".TelaDeCadastro">
+
+        <!-- ................................................................................... -->
+        <!-- Não esta em uso -->
+        <activity android:name=".MainActivity" />
+        <!-- ................................................................................... -->
+        <!-- CADASTRO -->
+        <activity
+            android:name=".TelaDeCadastro"
+            android:theme="@style/TemaMenuCentral">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaDeLogin" />
         </activity>
+        <!-- ................................................................................... -->
+        <!-- CONFIGURAÇÃO DE SILOS -->
         <activity
             android:name=".TelaDeConfiguracaoDeSilo"
-            android:label="Meus Silos">
+            android:label="Meus Silos"
+            android:theme="@style/TemaMenuSilo">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
         </activity>
+        <!-- ................................................................................... -->
+        <!-- CADASTRO DE SILOS -->
         <activity
             android:name=".TelaCadastroSilos"
-            android:label="Meus Silos">
+            android:label="Meus Silos"
+            android:theme="@style/TemaMenuSilo">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ListaSilos" />
         </activity>
-        <activity android:name=".ListaUsuarios">
+        <!-- ................................................................................... -->
+        <!-- LISTAR USUARIOS -->
+        <activity
+            android:name=".ListaUsuarios"
+            android:theme="@style/TemaMenuUsuario">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuCentral" />
         </activity>
+        <!-- ................................................................................... -->
+        <!-- LISTAR SILOS -->
         <activity
             android:name=".ListaSilos"
-            android:label="Meus Silos">
+            android:label="Meus Silos"
+            android:theme="@style/TemaMenuSilo">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuCentral" />
         </activity>
+        <!-- ................................................................................... -->
+        <!-- Não esta em uso -->
         <activity
             android:name=".MenuLateralActivity"
             android:label="@string/title_activity_menu_lateral"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".TelaDeLogin" />
-        </activity>
-        <activity android:name=".TelaDeLogin" />
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- ................................................................................... -->
+        <!-- TELA DE LOGIN -->
         <activity
-            android:name=".TelaDeGerenciamentoDeSilo"
-            android:label="Meus Silos">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".SiloPrincipal" />
-        </activity>
-        <activity
-            android:name=".TelaDeDetalhesDoSilo"
-            android:label="Meus Silos">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".SiloPrincipal" />
-        </activity>
-        <activity
-            android:name=".TelaEpocaDeArroz"
-            android:label="Plantio de Arroz">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".TelaEpocasDePlantacao" />
-        </activity>
-        <activity
-            android:name=".TelaEpocaDeSoja"
-            android:label="Plantio de Soja">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".TelaEpocasDePlantacao" />
-        </activity>
-        <activity
-            android:name=".TelaEpocaDeTrigo"
-            android:label="Plantio de Trigo">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".TelaEpocasDePlantacao" />
-        </activity>
-        <activity
-            android:name=".TelaEpocaDeMilho"
-            android:label="Plantio de Milho">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".TelaColetaAgrotoxicos" />
-        </activity>
-        <activity
-            android:name=".TelaEpocasDePlantacao"
-            android:label="Calendario de Plantio">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MenuCentral" />
-        </activity>
-        <activity android:name=".MenuCentral">
+            android:name=".TelaDeLogin"
+            android:theme="@style/TemaMenuCentral">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- ................................................................................... -->
+        <!-- GERENCIAMENTO DE SILOS -->
+        <activity
+            android:name=".TelaDeGerenciamentoDeSilo"
+            android:label="Meus Silos"
+            android:theme="@style/TemaMenuSilo">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SiloPrincipal" />
+        </activity>
+        <!-- ................................................................................... -->
+        <!-- DETALHES DO SILO -->
+        <activity
+            android:name=".TelaDeDetalhesDoSilo"
+            android:label="Meus Silos"
+            android:theme="@style/TemaMenuSilo">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SiloPrincipal" />
+        </activity>
+        <!-- ................................................................................... -->
+        <!-- EPOCA DE ARROZ -->
+        <activity
+            android:name=".TelaEpocaDeArroz"
+            android:label="Plantio de Arroz"
+            android:theme="@style/TemaMenuEpocas">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TelaEpocasDePlantacao" />
+        </activity>
+        <!-- ................................................................................... -->
+        <!-- EPOCA DE SOJA -->
+        <activity
+            android:name=".TelaEpocaDeSoja"
+            android:label="Plantio de Soja"
+            android:theme="@style/TemaMenuEpocas">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TelaEpocasDePlantacao" />
+        </activity>
+        <!-- ................................................................................... -->
+        <!-- EPOCA DE TRIGO -->
+        <activity
+            android:name=".TelaEpocaDeTrigo"
+            android:label="Plantio de Trigo"
+            android:theme="@style/TemaMenuEpocas">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TelaEpocasDePlantacao" />
+        </activity>
+        <!-- ................................................................................... -->
+        <!-- EPOCA DE MILHO -->
+        <activity
+            android:name=".TelaEpocaDeMilho"
+            android:label="Plantio de Milho"
+            android:theme="@style/TemaMenuEpocas">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TelaColetaAgrotoxicos" />
+        </activity>
+        <!-- ................................................................................... -->
+        <!-- EPOCAS DE PLANTAÇÃO -->
+        <activity
+            android:name=".TelaEpocasDePlantacao"
+            android:label="Calendario de Plantio"
+            android:theme="@style/TemaMenuEpocas">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuCentral" />
+        </activity>
+        <!-- ................................................................................... -->
+        <!-- MENU CENTRAL -->
+        <activity
+            android:name=".MenuCentral"
+            android:theme="@style/TemaMenuCentral">
+        </activity>
+        <!-- ................................................................................... -->
+        <!-- SILO PRINCIPAL -->
         <activity
             android:name=".SiloPrincipal"
-            android:label="Meus Silos">
+            android:label="Meus Silos"
+            android:theme="@style/TemaMenuSilo">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ListaSilos" />
         </activity>
+        <!-- ................................................................................... -->
+        <!-- PRAGA SOJA 1 -->
         <activity
             android:name=".PragaSoja1"
-            android:label="Pragas da Soja">
+            android:label="Pragas da Soja"
+            android:theme="@style/TemaMenuPragas">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".SubMenuPragas" />
+                android:value=".SubSubMenuSoja" />
         </activity>
+        <!-- ................................................................................... -->
+        <!-- PRAGA SOJA 2 -->
         <activity
             android:name=".PragaSoja2"
-            android:label="Pragas da Soja">
+            android:label="Pragas da Soja"
+            android:theme="@style/TemaMenuPragas">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".SubMenuPragas" />
+                android:value=".SubSubMenuSoja" />
         </activity>
+        <!-- ................................................................................... -->
+        <!-- SUB MENU PRAGAS -->
         <activity
             android:name=".SubMenuPragas"
-            android:label="Pragas">
+            android:label="Reconhecimento de Pragas"
+            android:theme="@style/TemaMenuPragas">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuCentral" />
         </activity>
+        <!-- ................................................................................... -->
+        <!-- PRAGA MILHO 1 -->
         <activity
             android:name=".PragaMilho1"
-            android:label="Pragas do Milho">
+            android:label="Pragas do Milho"
+            android:theme="@style/TemaMenuPragas">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".SubMenuPragas" />
+                android:value=".SubSubMenuMilho" />
         </activity>
+        <!-- ................................................................................... -->
+        <!-- PRAGA MILHO 2 -->
         <activity
             android:name=".PragaMilho2"
-            android:label="Pragas do Milho">
+            android:label="Pragas do Milho"
+            android:theme="@style/TemaMenuPragas">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".SubMenuPragas" />
+                android:value=".SubSubMenuMilho" />
         </activity>
+        <!-- ................................................................................... -->
+        <!-- PRAGA ARROZ 1 -->
         <activity
             android:name=".PragaArroz1"
-            android:label="Pragas do Arroz">
+            android:label="Pragas do Arroz"
+            android:theme="@style/TemaMenuPragas">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".SubMenuPragas" />
+                android:value=".SubSubMenuArroz" />
         </activity>
+        <!-- ................................................................................... -->
+        <!-- PRAGA ARROZ 2 -->
         <activity
             android:name=".PragaArroz2"
-            android:label="Pragas do Arroz">
+            android:label="Pragas do Arroz"
+            android:theme="@style/TemaMenuPragas">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".SubMenuPragas" />
+                android:value=".SubSubMenuArroz" />
         </activity>
+        <!-- ................................................................................... -->
+        <!-- TELA DE NOVIDADES -->
         <activity
             android:name=".TelaDeNovidades"
-            android:label="Novidades">
+            android:label="Novidades"
+            android:theme="@style/TemaMenuNoticias">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuCentral" />
         </activity>
+        <!-- ................................................................................... -->
+        <!-- NOTICIA AGROESTE -->
         <activity
             android:name=".NoticiaAgroeste"
-            android:label="Agroeste">
+            android:label="Agroeste"
+            android:theme="@style/TemaMenuNoticias">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaDeNovidades" />
         </activity>
+        <!-- ................................................................................... -->
+        <!-- NOTICIA DAKLAB -->
         <activity
             android:name=".NoticiaDeklab"
-            android:label="Deklab">
+            android:label="Deklab"
+            android:theme="@style/TemaMenuNoticias">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaDeNovidades" />
         </activity>
+        <!-- ................................................................................... -->
+        <!-- NOTICIA DIMICRON -->
         <activity
             android:name=".NoticiaDimicron"
-            android:label="Dimicron">
+            android:label="Dimicron"
+            android:theme="@style/TemaMenuNoticias">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaDeNovidades" />
         </activity>
-
+        <!-- ................................................................................... -->
+        <!-- NOTICIA SEMENTES ESTRELA -->
         <activity
             android:name=".NoticiaSementesEstrela"
-            android:label="Sementes Estrela">
+            android:label="Sementes Estrela"
+            android:theme="@style/TemaMenuNoticias">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaDeNovidades" />
         </activity>
-
-        <activity android:name=".TelaColetaAgrotoxicos"
-                  android:label="Descarte de Agrotoxicos">
-           <meta-data
-               android:name="android.support.PARENT_ACTIVITY"
-               android:value=".MenuCentral" />
+        <!-- ................................................................................... -->
+        <!-- COLETA DE AGROTOXICOS -->
+        <activity
+            android:name=".TelaColetaAgrotoxicos"
+            android:label="Descarte de Agrotoxicos"
+            android:theme="@style/TemaMenuDescarte">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuCentral" />
         </activity>
-
-        <activity android:name=".TelaComoDescartar"
-                  android:label="Como Descartar">
+        <!-- ................................................................................... -->
+        <!-- COMO DESCARTAR -->
+        <activity
+            android:name=".TelaComoDescartar"
+            android:label="Como Descartar"
+            android:theme="@style/TemaMenuDescarte">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaColetaAgrotoxicos" />
         </activity>
-
-        <activity android:name=".TelaOndeDescartar"
-                  android:label="Onde Descartar">
+        <!-- ................................................................................... -->
+        <!-- ONDE DESCARTAR -->
+        <activity
+            android:name=".TelaOndeDescartar"
+            android:label="Pontos de Descarte"
+            android:theme="@style/TemaMenuDescarte">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaColetaAgrotoxicos" />
         </activity>
-
+        <!-- ................................................................................... -->
+        <!-- SUB SUB MENU ARROZ -->
+        <activity
+            android:name=".SubSubMenuArroz"
+            android:label="Pragas do Arroz"
+            android:theme="@style/TemaMenuPragas">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SubMenuPragas" />
+        </activity>
+        <!-- ................................................................................... -->
+        <!-- SUB SUB MENU MILHO -->
+        <activity
+            android:name=".SubSubMenuMilho"
+            android:label="Pragas do Milho"
+            android:theme="@style/TemaMenuPragas">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SubMenuPragas" />
+        </activity>
+        <!-- ................................................................................... -->
+        <!-- SUB SUB MENU SOJA -->
+        <activity
+            android:name=".SubSubMenuSoja"
+            android:label="Pragas da Soja"
+            android:theme="@style/TemaMenuPragas">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SubMenuPragas" />
+        </activity>
+        <!-- ................................................................................... -->
+        <!-- ZOOM DESCARTE 1 -->
+        <activity
+            android:name=".ZoomDescarte1"
+            android:theme="@style/TemaMenuDescarte"
+            android:label=""
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- ................................................................................... -->
+        <!-- ZOOM DESCARTE 2 -->
+        <activity android:name=".ZoomDescarte2"
+            android:theme="@style/TemaMenuDescarte"
+            android:label=""
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- ................................................................................... -->
     </application>
 
 </manifest>

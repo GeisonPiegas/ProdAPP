@@ -126,7 +126,7 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="?attr/colorAccent"
+                    android:background="#ff4081"
                     app:srcCompat="@drawable/pragas2" />
 
                 <ImageButton
@@ -135,7 +135,7 @@
                     android:layout_height="150dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
-                    android:background="?attr/colorPrimary"
+                    android:background="#3f51b5"
                     app:srcCompat="@drawable/sair" />
 
             </LinearLayout>

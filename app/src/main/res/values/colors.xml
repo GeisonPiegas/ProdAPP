@@ -8,4 +8,15 @@
     <color name="Amarelo">#f2f302</color>
     <color name="Vermelho">#cc0000</color>
     <color name="PadraoBotao">#d6d7d7</color>
+
+    <color name="MenuCentral">#492c01</color>
+    <color name="MenuSilo">#96d2cc</color>
+    <color name="MenuUsuario">#669900</color>
+    <color name="MenuNoticias">#ff8800</color>
+    <color name="MenuEpocas">#cc0000</color>
+    <color name="MenuDescarte">#aa66cc</color>
+    <color name="MenuRotacao">#f2f302</color>
+    <color name="MenuPraga">#ff4081</color>
+    <color name="MenuSair">#3f51b5</color>
+
 </resources>

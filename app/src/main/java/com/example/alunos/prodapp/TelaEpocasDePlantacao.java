@@ -30,7 +30,7 @@ public class TelaEpocasDePlantacao extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView parent, View view, int position, long id) {
                 // Toast: Mostra uma menssagem na tela com a posição da imagem, so pra teste!
-                Toast.makeText(getBaseContext(), "Imagem" + position, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getBaseContext(), "Imagem" + position, Toast.LENGTH_SHORT).show();
 
                 //IF: Fazem o teste de qual posição o usuario clickou, e leva para a pagina indicada.
                 //Ele pega a POSIÇÂO do click e nao ID, e a posição comeca em "0"
@@ -40,17 +40,17 @@ public class TelaEpocasDePlantacao extends AppCompatActivity {
                     finish();
                 }else{
                     if(position == 1){
-                        Intent intent = new Intent(TelaEpocasDePlantacao.this, TelaEpocaDeSoja.class) ;
+                        Intent intent = new Intent(TelaEpocasDePlantacao.this, TelaEpocaDeMilho.class) ;
                         startActivity(intent);
                         finish();
                     }else{
                         if(position == 2){
-                            Intent intent = new Intent(TelaEpocasDePlantacao.this, TelaEpocaDeTrigo.class) ;
+                            Intent intent = new Intent(TelaEpocasDePlantacao.this, TelaEpocaDeSoja.class) ;
                             startActivity(intent);
                             finish();
                         }else{
                             if(position == 3){
-                                Intent intent = new Intent(TelaEpocasDePlantacao.this, TelaEpocaDeMilho.class) ;
+                                Intent intent = new Intent(TelaEpocasDePlantacao.this, TelaEpocaDeTrigo.class) ;
                                 startActivity(intent);
                                 finish();
                             }
@@ -64,17 +64,19 @@ public class TelaEpocasDePlantacao extends AppCompatActivity {
 
     private ArrayList<Produtos> adicionarProdutos(){
         ArrayList<Produtos> produtos = new ArrayList<Produtos>();
-        Produtos e = new Produtos(R.drawable.arroz2, "Arroz");
+        Produtos e = new Produtos(R.drawable.arrozquadrado, "Arroz");
         produtos.add(e);
 
-        e = new Produtos(R.drawable.soja2, "Soja");
+        e = new Produtos(R.drawable.milhoquadrado, "Milho");
         produtos.add(e);
 
-        e = new Produtos(R.drawable.trigo2, "Trigo");
+        e = new Produtos(R.drawable.sojaquadrado, "Soja");
         produtos.add(e);
 
-        e = new Produtos(R.drawable.milho2, "Milho");
+        e = new Produtos(R.drawable.trigoquadrado, "Trigo");
         produtos.add(e);
+
+
 
         return produtos;
     }

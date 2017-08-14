@@ -33,16 +33,49 @@
                         android:id="@+id/textView54"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="     Para os agricultores e administradores de propriedades agrícolas, o descarte correto de embalagens vazias de agrotóxicos não é apenas uma atitude consciente. Trata-se de estar em dia com a Lei 9.974/2000 e Decreto 4.074/2002, que afirma de forma explícita que as embalagens de agroquímicos, após o uso dos produtos, devem ser descartadas no prazo de um ano a partir da data da compra.  O descarte fora do prazo determinado em lei ou de forma incorreta pode implicar em multa para o agricultor, o revendedor e até o fabricante do agroquímico. Dependendo da gravidade do descaso, pode ocorrer até a detenção, uma vez que as irregularidades caracterizariam crime ambiental. "
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/ColetaAgrotoxicoParte1"
                         android:textAppearance="@style/TextAppearance.AppCompat"
                         android:textSize="18sp"
-                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                    <TextView
+                        android:id="@+id/textView53"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/ColetaAgrotoxicoParte2"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textSize="18sp"
+                        android:typeface="sans" />
+
+                    <TextView
+                        android:id="@+id/textView58"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/ColetaAgrotoxicoParte3"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textSize="18sp"
+                        android:typeface="sans" />
+
+                    <TextView
+                        android:id="@+id/textView57"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/ColetaAgrotoxicoParte4"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textSize="18sp"
                         android:typeface="sans" />
 
                     <ImageButton
                         android:id="@+id/imageButtonComoDescartar"
                         android:layout_width="match_parent"
                         android:layout_height="183dp"
+                        android:layout_marginTop="10dp"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/comodescartar" />
 
@@ -50,6 +83,8 @@
                         android:id="@+id/imageButtonOndeDescartar"
                         android:layout_width="match_parent"
                         android:layout_height="183dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/pontolocalizacao" />
                 </LinearLayout>

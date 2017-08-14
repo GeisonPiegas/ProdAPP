@@ -37,7 +37,7 @@ public class ConexaoBD extends SQLiteOpenHelper{
 
         //INSERINDO DADOS PRÉ DEFINIDOS NA IMAGEM USUARIO
         sql = "insert into usuarios(id_usuario,nome_usuario,email_usuario,senha_usuario)" +
-                "values (1 , 'prodap' , 'prodap@gmail.com' , 'prodap')";
+                "values (1 , 'prodapp' , 'prodapp@gmail.com' , 'prodapp')";
 
         db.execSQL(sql); // Executando a inserção dos dados
 
@@ -47,13 +47,13 @@ public class ConexaoBD extends SQLiteOpenHelper{
                 "id_silo INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL UNIQUE," +
                 "nome_silo TEXT NOT NULL," +
                 "produto_silo TEXT NOT NULL," +
-                "tamanho_silo DOUBLE  NOT NULL" +
+                "tamanho_silo DOUBLE NOT NULL" +
                 ")";
 
         db.execSQL(sql);
 
         sql = "INSERT INTO silos(id_usuario, id_silo, nome_silo, produto_silo, tamanho_silo)" +
-                "VALUES (1, 1, 'Prodapp', 'Trigo', 25000)";
+                "VALUES (1, 1, 'ProdaPP', 'Trigo', 25000)";
 
         db.execSQL(sql);
 

@@ -8,6 +8,70 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- Tema Menu Central. -->
+    <style name="TemaMenuCentral" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/MenuCentral</item>
+        <item name="colorPrimaryDark">@color/MenuCentral</item>
+        <item name="colorAccent">@color/MenuCentral</item>
+    </style>
+
+    <!-- Tema Menu Silo. -->
+    <style name="TemaMenuSilo" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/MenuSilo</item>
+        <item name="colorPrimaryDark">@color/MenuSilo</item>
+        <item name="colorAccent">@color/MenuSilo</item>
+    </style>
+
+    <!-- Tema Menu Usuario. -->
+    <style name="TemaMenuUsuario" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/MenuUsuario</item>
+        <item name="colorPrimaryDark">@color/MenuUsuario</item>
+        <item name="colorAccent">@color/MenuUsuario</item>
+    </style>
+
+    <!-- Tema Menu Noticias. -->
+    <style name="TemaMenuNoticias" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/MenuNoticias</item>
+        <item name="colorPrimaryDark">@color/MenuNoticias</item>
+        <item name="colorAccent">@color/MenuNoticias</item>
+    </style>
+
+    <!-- Tema Menu Epocas. -->
+    <style name="TemaMenuEpocas" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/MenuEpocas</item>
+        <item name="colorPrimaryDark">@color/MenuEpocas</item>
+        <item name="colorAccent">@color/MenuEpocas</item>
+    </style>
+
+    <!-- Tema Menu Descarte. -->
+    <style name="TemaMenuDescarte" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/MenuDescarte</item>
+        <item name="colorPrimaryDark">@color/MenuDescarte</item>
+        <item name="colorAccent">@color/MenuDescarte</item>
+    </style>
+
+    <!-- Tema Menu Rotação. -->
+    <style name="TemaMenuRotacao" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/MenuRotacao</item>
+        <item name="colorPrimaryDark">@color/MenuRotacao</item>
+        <item name="colorAccent">@color/MenuRotacao</item>
+    </style>
+
+    <!-- Tema Menu Pragas. -->
+    <style name="TemaMenuPragas" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/MenuPraga</item>
+        <item name="colorPrimaryDark">@color/MenuPraga</item>
+        <item name="colorAccent">@color/MenuPraga</item>
+    </style>
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

@@ -61,8 +61,6 @@ public class TelaEpocaDeArroz extends AppCompatActivity implements View.OnClickL
         if (buttonAmarelo.isPressed()) {
 
             if (teste == true) {
-                teste = false;
-
                 buttonJaneiro.setBackgroundColor(getResources().getColor(R.color.Amarelo));
                 buttonFevereiro.setBackgroundColor(getResources().getColor(R.color.Amarelo));
                 buttonMarco.setBackgroundColor(getResources().getColor(R.color.Amarelo));
@@ -79,11 +77,10 @@ public class TelaEpocaDeArroz extends AppCompatActivity implements View.OnClickL
 
                 buttonVermelho.setVisibility(View.INVISIBLE);
                 buttonVerde.setVisibility(View.INVISIBLE);
-                buttonVerde.setVisibility(View.INVISIBLE);
                 buttonPadraoCinza.setVisibility(View.INVISIBLE);
-            }else{
-                teste = true;
 
+                teste = false;
+            }else{
                 buttonJaneiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonFevereiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonMarco.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
@@ -100,8 +97,9 @@ public class TelaEpocaDeArroz extends AppCompatActivity implements View.OnClickL
 
                 buttonVermelho.setVisibility(View.VISIBLE);
                 buttonVerde.setVisibility(View.VISIBLE);
-                buttonVerde.setVisibility(View.VISIBLE);
                 buttonPadraoCinza.setVisibility(View.VISIBLE);
+
+                teste = true;
             }
 
         }
@@ -109,8 +107,6 @@ public class TelaEpocaDeArroz extends AppCompatActivity implements View.OnClickL
         if (buttonVermelho.isPressed()) {
 
             if (teste == true) {
-                teste = false;
-
                 buttonMaio.setBackgroundColor(getResources().getColor(R.color.Vermelho));
                 buttonJunho.setBackgroundColor(getResources().getColor(R.color.Vermelho));
                 buttonJulho.setBackgroundColor(getResources().getColor(R.color.Vermelho));
@@ -127,12 +123,10 @@ public class TelaEpocaDeArroz extends AppCompatActivity implements View.OnClickL
 
                 buttonAmarelo.setVisibility(View.INVISIBLE);
                 buttonVerde.setVisibility(View.INVISIBLE);
-                buttonVerde.setVisibility(View.INVISIBLE);
                 buttonPadraoCinza.setVisibility(View.INVISIBLE);
 
-            }else{
                 teste = false;
-
+            }else{
                 buttonMaio.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonJunho.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonJulho.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
@@ -149,8 +143,9 @@ public class TelaEpocaDeArroz extends AppCompatActivity implements View.OnClickL
 
                 buttonAmarelo.setVisibility(View.VISIBLE);
                 buttonVerde.setVisibility(View.VISIBLE);
-                buttonVerde.setVisibility(View.VISIBLE);
                 buttonPadraoCinza.setVisibility(View.VISIBLE);
+
+                teste = true;
             }
 
 
@@ -158,8 +153,6 @@ public class TelaEpocaDeArroz extends AppCompatActivity implements View.OnClickL
         if (buttonVerde.isPressed()) {
 
             if (teste == true) {
-                teste = false;
-
                 buttonOutubro.setBackgroundColor(getResources().getColor(R.color.Verde));
                 buttonNovembro.setBackgroundColor(getResources().getColor(R.color.Verde));
                 buttonDezembro.setBackgroundColor(getResources().getColor(R.color.Verde));
@@ -176,12 +169,10 @@ public class TelaEpocaDeArroz extends AppCompatActivity implements View.OnClickL
 
                 buttonVermelho.setVisibility(View.INVISIBLE);
                 buttonAmarelo.setVisibility(View.INVISIBLE);
-                buttonVerde.setVisibility(View.INVISIBLE);
                 buttonPadraoCinza.setVisibility(View.INVISIBLE);
 
+                teste = false;
             }else{
-                teste = true;
-
                 buttonOutubro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonNovembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonDezembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
@@ -198,16 +189,14 @@ public class TelaEpocaDeArroz extends AppCompatActivity implements View.OnClickL
 
                 buttonVermelho.setVisibility(View.VISIBLE);
                 buttonAmarelo.setVisibility(View.VISIBLE);
-                buttonVerde.setVisibility(View.VISIBLE);
                 buttonPadraoCinza.setVisibility(View.VISIBLE);
 
+                teste = true;
             }
         }
         if (buttonPadraoCinza.isPressed()) {
 
             if (teste == true) {
-                teste = false;
-
                 buttonJaneiro.setBackgroundColor(getResources().getColor(R.color.Amarelo));
                 buttonFevereiro.setBackgroundColor(getResources().getColor(R.color.Amarelo));
                 buttonMarco.setBackgroundColor(getResources().getColor(R.color.Amarelo));
@@ -221,13 +210,13 @@ public class TelaEpocaDeArroz extends AppCompatActivity implements View.OnClickL
                 buttonNovembro.setBackgroundColor(getResources().getColor(R.color.Verde));
                 buttonDezembro.setBackgroundColor(getResources().getColor(R.color.Verde));
 
-                buttonVermelho.setVisibility(View.INVISIBLE);
-                buttonVerde.setVisibility(View.INVISIBLE);
-                buttonVerde.setVisibility(View.INVISIBLE);
-                buttonAmarelo.setVisibility(View.INVISIBLE);
-            }else{
-                teste = true;
+                buttonVermelho.setVisibility(View.VISIBLE);
+                buttonVerde.setVisibility(View.VISIBLE);
+                buttonPadraoCinza.setVisibility(View.VISIBLE);
+                buttonAmarelo.setVisibility(View.VISIBLE);
 
+                teste = false;
+            }else{
                 buttonJaneiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonFevereiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonMarco.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
@@ -243,8 +232,10 @@ public class TelaEpocaDeArroz extends AppCompatActivity implements View.OnClickL
 
                 buttonVermelho.setVisibility(View.VISIBLE);
                 buttonVerde.setVisibility(View.VISIBLE);
-                buttonVerde.setVisibility(View.VISIBLE);
+                buttonPadraoCinza.setVisibility(View.VISIBLE);
                 buttonAmarelo.setVisibility(View.VISIBLE);
+
+                teste = true;
             }
 
         }

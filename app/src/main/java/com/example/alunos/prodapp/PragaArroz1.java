@@ -56,22 +56,22 @@ public class PragaArroz1 extends AppCompatActivity implements View.OnClickListen
     @Override
     public void onClick(View v) {
         if (imageButtonDireita.isPressed()) {
-            Intent intentPragaArroz2 = new Intent(this, PragaArroz2.class);
-            startActivity(intentPragaArroz2);
+            //Intent intentPragaArroz2 = new Intent(this, PragaArroz2.class);
+            //startActivity(intentPragaArroz2);
 
             //setando a mensagemzinha que aparece quando troca ou entra na activity de pragas...
-            Context contexto = getApplicationContext();
-            String texto = "2";
-            int duracao = Toast.LENGTH_SHORT;
-            Toast toast = Toast.makeText(contexto, texto,duracao);
-            toast.show();
+            //Context contexto = getApplicationContext();
+            //String texto = "2";
+            //int duracao = Toast.LENGTH_SHORT;
+            //Toast toast = Toast.makeText(contexto, texto,duracao);
+            //toast.show();
         }
         if (imageButtonEsquerda.isPressed()) {
-            Context contexto = getApplicationContext();
-            String texto = "1";
-            int duracao = Toast.LENGTH_SHORT;
-            Toast toast = Toast.makeText(contexto, texto,duracao);
-            toast.show();
+            //Context contexto = getApplicationContext();
+            //String texto = "1";
+            //int duracao = Toast.LENGTH_SHORT;
+            //Toast toast = Toast.makeText(contexto, texto,duracao);
+            //toast.show();
         }
         //Teste logico pra abrir e fechar o menuzinho dos produtos que combatem cada praga, e estou
         // setando um texto diferente em cada clique no button ...

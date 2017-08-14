@@ -22,6 +22,7 @@ public class TelaEpocaDeMilho extends AppCompatActivity implements View.OnClickL
     private Button buttonVermelho;
     private Button buttonVerde;
     private Button buttonPadraoCinza;
+    boolean teste;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,75 +50,194 @@ public class TelaEpocaDeMilho extends AppCompatActivity implements View.OnClickL
         buttonVermelho.setOnClickListener(this);
         buttonVerde.setOnClickListener(this);
         buttonPadraoCinza.setOnClickListener(this);
+
+        teste = true;
     }
 
     //Modifiicando as cores dos botões referente a epoca selecionada...
     @Override
     public void onClick(View v) {
-        if (buttonAmarelo.isPressed()) {
-            buttonJaneiro.setBackgroundColor(getResources().getColor(R.color.Amarelo));
-            buttonFevereiro.setBackgroundColor(getResources().getColor(R.color.Amarelo));
-            buttonMarco.setBackgroundColor(getResources().getColor(R.color.Amarelo));
-            buttonAbril.setBackgroundColor(getResources().getColor(R.color.Amarelo));
 
-            buttonMaio.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
-            buttonJunho.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
-            buttonJulho.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
-            buttonAgosto.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
-            buttonSetembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
-            buttonOutubro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
-            buttonNovembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
-            buttonDezembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+        if (buttonAmarelo.isPressed()) {
+
+            if (teste == true) {
+                buttonMarco.setBackgroundColor(getResources().getColor(R.color.Amarelo));
+                buttonAbril.setBackgroundColor(getResources().getColor(R.color.Amarelo));
+                buttonMaio.setBackgroundColor(getResources().getColor(R.color.Amarelo));
+                buttonJunho.setBackgroundColor(getResources().getColor(R.color.Amarelo));
+
+                buttonJaneiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonFevereiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonJulho.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonAgosto.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonSetembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonOutubro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonNovembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonDezembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+
+                buttonVermelho.setVisibility(View.INVISIBLE);
+                buttonVerde.setVisibility(View.INVISIBLE);
+                buttonPadraoCinza.setVisibility(View.INVISIBLE);
+
+                teste = false;
+            }else{
+                buttonMarco.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonAbril.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonMaio.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonJunho.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+
+                buttonFevereiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonJaneiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonJulho.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonAgosto.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonSetembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonOutubro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonNovembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonDezembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+
+                buttonVermelho.setVisibility(View.VISIBLE);
+                buttonVerde.setVisibility(View.VISIBLE);
+                buttonPadraoCinza.setVisibility(View.VISIBLE);
+
+                teste = true;
+            }
+
         }
+
         if (buttonVermelho.isPressed()) {
 
-            buttonMaio.setBackgroundColor(getResources().getColor(R.color.Vermelho));
-            buttonJunho.setBackgroundColor(getResources().getColor(R.color.Vermelho));
-            buttonJulho.setBackgroundColor(getResources().getColor(R.color.Vermelho));
-            buttonAgosto.setBackgroundColor(getResources().getColor(R.color.Vermelho));
-            buttonSetembro.setBackgroundColor(getResources().getColor(R.color.Vermelho));
+            if (teste == true) {
+                buttonJaneiro.setBackgroundColor(getResources().getColor(R.color.Vermelho));
+                buttonFevereiro.setBackgroundColor(getResources().getColor(R.color.Vermelho));
+                buttonJulho.setBackgroundColor(getResources().getColor(R.color.Vermelho));
+                buttonAgosto.setBackgroundColor(getResources().getColor(R.color.Vermelho));
+                buttonDezembro.setBackgroundColor(getResources().getColor(R.color.Vermelho));
 
-            buttonJaneiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
-            buttonFevereiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
-            buttonMarco.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
-            buttonAbril.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
-            buttonOutubro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
-            buttonNovembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
-            buttonDezembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonMaio.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonJunho.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonMarco.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonAbril.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonOutubro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonNovembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonSetembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+
+                buttonAmarelo.setVisibility(View.INVISIBLE);
+                buttonVerde.setVisibility(View.INVISIBLE);
+                buttonPadraoCinza.setVisibility(View.INVISIBLE);
+
+                teste = false;
+            }else{
+                buttonJaneiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonFevereiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonJulho.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonAgosto.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonSetembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+
+                buttonMaio.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonJunho.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonMarco.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonAbril.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonOutubro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonNovembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonDezembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+
+                buttonAmarelo.setVisibility(View.VISIBLE);
+                buttonVerde.setVisibility(View.VISIBLE);
+                buttonPadraoCinza.setVisibility(View.VISIBLE);
+
+                teste = true;
+            }
+
 
         }
         if (buttonVerde.isPressed()) {
 
-            buttonOutubro.setBackgroundColor(getResources().getColor(R.color.Verde));
-            buttonNovembro.setBackgroundColor(getResources().getColor(R.color.Verde));
-            buttonDezembro.setBackgroundColor(getResources().getColor(R.color.Verde));
+            if (teste == true) {
+                buttonOutubro.setBackgroundColor(getResources().getColor(R.color.Verde));
+                buttonNovembro.setBackgroundColor(getResources().getColor(R.color.Verde));
+                buttonSetembro.setBackgroundColor(getResources().getColor(R.color.Verde));
 
-            buttonJaneiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
-            buttonFevereiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
-            buttonMarco.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
-            buttonAbril.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
-            buttonMaio.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
-            buttonJunho.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
-            buttonJulho.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
-            buttonAgosto.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
-            buttonSetembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonJaneiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonFevereiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonMarco.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonAbril.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonMaio.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonJunho.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonJulho.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonAgosto.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonDezembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
 
+                buttonVermelho.setVisibility(View.INVISIBLE);
+                buttonAmarelo.setVisibility(View.INVISIBLE);
+                buttonPadraoCinza.setVisibility(View.INVISIBLE);
+
+                teste = false;
+            }else{
+                buttonOutubro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonNovembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonSetembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+
+                buttonJaneiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonFevereiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonMarco.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonAbril.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonMaio.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonJunho.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonJulho.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonAgosto.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonDezembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+
+                buttonVermelho.setVisibility(View.VISIBLE);
+                buttonAmarelo.setVisibility(View.VISIBLE);
+                buttonPadraoCinza.setVisibility(View.VISIBLE);
+
+                teste = true;
+            }
         }
         if (buttonPadraoCinza.isPressed()) {
 
-            buttonJaneiro.setBackgroundColor(getResources().getColor(R.color.Amarelo));
-            buttonFevereiro.setBackgroundColor(getResources().getColor(R.color.Amarelo));
-            buttonMarco.setBackgroundColor(getResources().getColor(R.color.Amarelo));
-            buttonAbril.setBackgroundColor(getResources().getColor(R.color.Amarelo));
-            buttonMaio.setBackgroundColor(getResources().getColor(R.color.Vermelho));
-            buttonJunho.setBackgroundColor(getResources().getColor(R.color.Vermelho));
-            buttonJulho.setBackgroundColor(getResources().getColor(R.color.Vermelho));
-            buttonAgosto.setBackgroundColor(getResources().getColor(R.color.Vermelho));
-            buttonSetembro.setBackgroundColor(getResources().getColor(R.color.Vermelho));
-            buttonOutubro.setBackgroundColor(getResources().getColor(R.color.Verde));
-            buttonNovembro.setBackgroundColor(getResources().getColor(R.color.Verde));
-            buttonDezembro.setBackgroundColor(getResources().getColor(R.color.Verde));
-        }
+            if (teste == true) {
+                buttonMarco.setBackgroundColor(getResources().getColor(R.color.Amarelo));
+                buttonAbril.setBackgroundColor(getResources().getColor(R.color.Amarelo));
+                buttonMaio.setBackgroundColor(getResources().getColor(R.color.Amarelo));
+                buttonJunho.setBackgroundColor(getResources().getColor(R.color.Amarelo));
+                buttonJaneiro.setBackgroundColor(getResources().getColor(R.color.Vermelho));
+                buttonFevereiro.setBackgroundColor(getResources().getColor(R.color.Vermelho));
+                buttonJulho.setBackgroundColor(getResources().getColor(R.color.Vermelho));
+                buttonAgosto.setBackgroundColor(getResources().getColor(R.color.Vermelho));
+                buttonDezembro.setBackgroundColor(getResources().getColor(R.color.Vermelho));
+                buttonOutubro.setBackgroundColor(getResources().getColor(R.color.Verde));
+                buttonNovembro.setBackgroundColor(getResources().getColor(R.color.Verde));
+                buttonSetembro.setBackgroundColor(getResources().getColor(R.color.Verde));
 
+                buttonVermelho.setVisibility(View.VISIBLE);
+                buttonVerde.setVisibility(View.VISIBLE);
+                buttonPadraoCinza.setVisibility(View.VISIBLE);
+                buttonAmarelo.setVisibility(View.VISIBLE);
+
+                teste = false;
+            }else{
+                buttonJaneiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonFevereiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonMarco.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonAbril.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonMaio.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonJunho.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonJulho.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonAgosto.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonSetembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonOutubro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonNovembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+                buttonDezembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+
+                buttonVermelho.setVisibility(View.VISIBLE);
+                buttonVerde.setVisibility(View.VISIBLE);
+                buttonPadraoCinza.setVisibility(View.VISIBLE);
+                buttonAmarelo.setVisibility(View.VISIBLE);
+
+                teste = true;
+            }
+
+        }
     }
 }

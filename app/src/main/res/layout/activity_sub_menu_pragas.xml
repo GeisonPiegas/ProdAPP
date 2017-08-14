@@ -38,6 +38,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Arroz"
+                    android:textColor="@android:color/black"
                     android:textSize="30sp"
                     android:textStyle="bold" />
 
@@ -48,7 +49,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_weight="1"
                     android:text="2 Pragas"
-                    android:textStyle="italic" />
+                    android:textStyle="bold|italic" />
             </LinearLayout>
 
         </LinearLayout>
@@ -59,8 +60,8 @@
         android:id="@+id/LinearLayoutMilho"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="360dp"
-        android:layout_marginTop="75dp"
+        android:layout_marginBottom="355dp"
+        android:layout_marginTop="80dp"
         android:orientation="vertical">
 
         <LinearLayout
@@ -85,6 +86,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Milho"
+                    android:textColor="@android:color/black"
                     android:textSize="30sp"
                     android:textStyle="bold" />
 
@@ -94,7 +96,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:text="2 Pragas"
-                    android:textStyle="italic" />
+                    android:textStyle="bold|italic" />
             </LinearLayout>
         </LinearLayout>
 
@@ -104,8 +106,8 @@
         android:id="@+id/LinearLayoutSoja"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="285dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginBottom="275dp"
+        android:layout_marginTop="160dp"
         android:orientation="vertical">
 
         <LinearLayout
@@ -130,6 +132,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Soja"
+                    android:textColor="@android:color/black"
                     android:textSize="30sp"
                     android:textStyle="bold" />
 
@@ -139,7 +142,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:text="2 Pragas"
-                    android:textStyle="italic" />
+                    android:textStyle="bold|italic" />
 
             </LinearLayout>
         </LinearLayout>
@@ -150,8 +153,8 @@
         android:id="@+id/LinearLayoutTrigo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="210dp"
-        android:layout_marginTop="225dp"
+        android:layout_marginBottom="195dp"
+        android:layout_marginTop="240dp"
         android:orientation="vertical">
 
         <LinearLayout
@@ -176,6 +179,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Trigo"
+                    android:textColor="@android:color/black"
                     android:textSize="30sp"
                     android:textStyle="bold" />
 
@@ -185,7 +189,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:text="0 Pragas"
-                    android:textStyle="italic" />
+                    android:textStyle="bold|italic" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
