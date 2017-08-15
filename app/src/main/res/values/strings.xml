@@ -175,6 +175,31 @@
     <string name="ColetaAgrotoxicoParte3">O descarte fora do prazo determinado em lei ou de forma incorreta pode implicar em multa para o agricultor, o revendedor e até o fabricante do agroquímico. </string>
     <string name="ColetaAgrotoxicoParte4">Dependendo da gravidade do descaso, pode ocorrer até a detenção, uma vez que as irregularidades caracterizariam crime ambiental.</string>
 
+    <!-- TelaDePerguntasESobreNos -->
+    <!-- Perguntas -->
+    <string name="PerguntaBug">Desejo relatar um erro ou reclamação!</string>
+    <string name="Pergunta1">O que o gato disse para o rato?</string>
+    <string name="Pergunta2">Quem é que vai ir ao lago?</string>
+    <string name="Pergunta3">Quem é Jailson na fila do pão?</string>
+    <string name="Pergunta4">A Xuxa fez pacto?</string>
+    <string name="Pergunta5">Funk é musica?</string>
+    <string name="Pergunta6">Chimbinha é o novo Slash?</string>
+    <string name="Pergunta7">O filho falso do Kratos vai estraga o jogo?</string>
+    <string name="Pergunta8">Voce acredita em vida apos a vida?</string>
+    <string name="Pergunta9">Quem manda na parte norte de Los Street?</string>
+    <string name="Pergunta10">O que o sapo putão falo pro Bart?</string>
+    <!-- Respostas -->
+    <string name="RespostaBug">Para relatar qualquer tipo de bug, mal funcionamento do aplicativo, erro de digitação, sugestão de melhoria, adição de produtos, duvidas, reclamação ou até mesmo entrar em contato com os desenvolvedores, basta informar seus dados abaixo, se desejar (o campo "E-mail" e "Nome" não são obrigatorios) e escrever um breve resumo sobre o seu problema ou sugestão que entraremos em contato com você (caso tenha preenchido o campo "E-mail") o mais rapido possivel.</string>
+    <string name="Resposta1">Voce sabe a resposta dessa pergunta mesmo que ela seja aquela em quem voce sabe que nao e uma pergunta e sim com varias respostas diferentes de etinias.</string>
+    <string name="Resposta2">As vezes temos qu escrever coisas das quais nao fazem o menor sentido ate acharmos alguem que vire uma banana.</string>
+    <string name="Resposta3">Porcos nao voam, explica a ciencia da matematica quantica aplicada em processadores arduinos da quadcore enterprise.</string>
+    <string name="Resposta4">Musicas ganhaam um local na parte norte de oclaroma quando o indigena negao pegou o expelho e queimou o rosto.</string>
+    <string name="Resposta5">Deuses sao reais se acredita neles, mas mesmo assim voce pode não passar o video e asisistir tudo o que vai acontece na serie por um anuncio no youtube.</string>
+    <string name="Resposta6">O que sao dragoes perto de galinhas andand em circulo chamadas de nova guine das 3 pernas, não sabem responder coisas desse tipo pois est]ao locaos de acido mané.</string>
+    <string name="Resposta7">Quem viu o meteoro jamais esquece o lado escuro da lua, pois os mesmos estao ligados aos decepticons e autobots programados a objeto.</string>
+    <string name="Resposta8">Jamais olhe para onde um humano esta uivando, pois voce pode sentir o que eu sinto, e entao poderemos uivar juntos para a lua.</string>
+    <string name="Resposta9">Porque a agua nao tem cor, nem cheiro e nem seja la o que o dinheiro pode estar causando a parte branca do seu dente, alerta dentistas de todo o mordor.</string>
+    <string name="Resposta10">Se o batman é preto, porque o batman nao consegue perseguir o juliao atras das curtinas do novo pedreiro, jamilton? Nem a ciencia sabe explicar as explosoes em massa no arroz.</string>
 
     <!-- TelaCadastroSilo -->
     <string-array name="ProdutosSpinnerTelaCadastroSilo">
@@ -182,6 +207,18 @@
         <item>Milho</item>
         <item>Soja</item>
         <item>Trigo</item>
+    </string-array>
+
+    <!-- TelaDePerguntasESobreNos -->
+    <string-array name="Problemas">
+        <item>Bug</item>
+        <item>Duvidas</item>
+        <item>Reclamação</item>
+        <item>Mal Funcionamento</item>
+        <item>Erro de Digitação</item>
+        <item>Entrar em Contato</item>
+        <item>Adição de Produtos</item>
+        <item>Sugestão de Melhoria</item>
     </string-array>
 
 </resources>

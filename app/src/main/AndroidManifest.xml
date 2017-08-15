@@ -71,13 +71,7 @@
         <!-- TELA DE LOGIN -->
         <activity
             android:name=".TelaDeLogin"
-            android:theme="@style/TemaMenuCentral">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/TemaMenuCentral"></activity>
         <!-- ................................................................................... -->
         <!-- GERENCIAMENTO DE SILOS -->
         <activity
@@ -153,6 +147,11 @@
         <activity
             android:name=".MenuCentral"
             android:theme="@style/TemaMenuCentral">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <!-- ................................................................................... -->
         <!-- SILO PRINCIPAL -->
@@ -348,16 +347,19 @@
         <!-- ZOOM DESCARTE 1 -->
         <activity
             android:name=".ZoomDescarte1"
-            android:theme="@style/TemaMenuDescarte"
             android:label=""
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"
+            android:theme="@style/TemaMenuDescarte"></activity>
         <!-- ................................................................................... -->
         <!-- ZOOM DESCARTE 2 -->
-        <activity android:name=".ZoomDescarte2"
-            android:theme="@style/TemaMenuDescarte"
+        <activity
+            android:name=".ZoomDescarte2"
             android:label=""
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/TemaMenuDescarte"></activity>
+        <!-- ................................................................................... -->
+        <!-- PERGUNTAS E SOBRE -->
+        <activity android:name=".TelaDePerguntasESobre">
         </activity>
         <!-- ................................................................................... -->
     </application>
