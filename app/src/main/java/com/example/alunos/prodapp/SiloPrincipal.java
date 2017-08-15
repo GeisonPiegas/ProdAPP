@@ -40,6 +40,9 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
     private ImageButton imageButtonEsquerda;
     private ImageButton imageButtonDireita;
 
+    private Button buttonDetalhe;
+    private Button buttonRemover;
+
     private EditText pegaValorInformado;
     private Button botaoAdicionar;
     private String teste;
@@ -75,12 +78,18 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
         imageButtonEsquerda = (ImageButton) findViewById(R.id.imageButtonEsquerda);
         imageButtonDireita = (ImageButton) findViewById(R.id.imageButtonDireita);
 
+        buttonDetalhe = (Button) findViewById(R.id.buttonDetalhe);
+        buttonRemover = (Button) findViewById(R.id.buttonRemover);
+
         pegaValorInformado = (EditText) findViewById(R.id.pegaValorInformado);
         botaoAdicionar = (Button) findViewById(R.id.botaoAdicionar);
 
         botaoAdicionar.setOnClickListener(this);
         imageButtonEsquerda.setOnClickListener(this);
         imageButtonDireita.setOnClickListener(this);
+
+        //buttonDetalhe.setOnClickListener(this);
+        //buttonRemover.setOnClickListener(this);
 
         textViewNomeSilo.setText(Contexto.dados.get("nomeDoSilo") + "");
     }
