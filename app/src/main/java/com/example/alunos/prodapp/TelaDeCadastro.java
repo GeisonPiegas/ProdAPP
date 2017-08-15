@@ -54,7 +54,7 @@ public class TelaDeCadastro extends AppCompatActivity implements View.OnClickLis
         IconeImageViewTelaDeCadastro = (ImageView) findViewById(R.id.IconeImageViewTelaDeCadastro) ;
 
 
-         NomeTextViewTelaDeCadastro = (TextView) findViewById(R.id.NomeTextViewTelaDeCadastro) ;
+         /*NomeTextViewTelaDeCadastro = (TextView) findViewById(R.id.NomeTextViewTelaDeCadastro) ;
         NomeEditTextTelaDeCadastro = (EditText) findViewById(R.id.NomeEditTextTelaDeCadastro) ;
         EmailTextViewTelaDeCadastro =  (TextView) findViewById(R.id.EmailTextViewTelaDeCadastro) ;
          EmailEditTextTelaDeCadastro =  (EditText) findViewById(R.id.EmailEditTextTelaDeCadastro) ;
@@ -72,7 +72,7 @@ public class TelaDeCadastro extends AppCompatActivity implements View.OnClickLis
         LoginTextViewTelaDeCadastro.setOnClickListener(this);
 
 
-
+*/
 
         //---------------------
         // PARTE REFERENTE AO CRUD

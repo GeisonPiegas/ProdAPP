@@ -27,7 +27,7 @@ import Interacao.Valor;
 import Mensagem.MensagemGeral;
 import util.Contexto;
 
-import static com.example.alunos.prodapp.R.id.ConfirmarEmailEditTextTelaDeCadastro;
+//import static com.example.alunos.prodapp.R.id.ConfirmarEmailEditTextTelaDeCadastro;
 import static com.example.alunos.prodapp.R.id.EmailEditTextTelaDeCadastro;
 import static com.example.alunos.prodapp.R.id.NomeEditTextTelaDeCadastro;
 

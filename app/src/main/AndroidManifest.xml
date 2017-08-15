@@ -71,7 +71,13 @@
         <!-- TELA DE LOGIN -->
         <activity
             android:name=".TelaDeLogin"
-            android:theme="@style/TemaMenuCentral"></activity>
+            android:theme="@style/TemaMenuCentral">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <!-- ................................................................................... -->
         <!-- GERENCIAMENTO DE SILOS -->
         <activity
@@ -147,11 +153,6 @@
         <activity
             android:name=".MenuCentral"
             android:theme="@style/TemaMenuCentral">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <!-- ................................................................................... -->
         <!-- SILO PRINCIPAL -->
@@ -162,6 +163,7 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ListaSilos" />
+
         </activity>
         <!-- ................................................................................... -->
         <!-- PRAGA SOJA 1 -->
@@ -360,6 +362,7 @@
         <!-- ................................................................................... -->
         <!-- PERGUNTAS E SOBRE -->
         <activity android:name=".TelaDePerguntasESobre">
+
         </activity>
         <!-- ................................................................................... -->
     </application>
