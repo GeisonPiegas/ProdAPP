@@ -37,13 +37,16 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
     private TextView textView9;
     private TextView textView10;
     private TextView textViewNomeSilo;
-    
+    private ImageButton imageButtonEsquerda;
+    private ImageButton imageButtonDireita;
+
+    private Button buttonDetalhe;
+    private Button buttonRemover;
+
     private EditText pegaValorInformado;
     private Button botaoAdicionar;
     private String teste;
-    
-    private ImageButton imagemButtonDescricaoSilo ;
-    private double QuantidadeDoubleConvertido;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,26 +75,25 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
         textView9 = (TextView) findViewById(R.id.textView9);
         textView10 = (TextView) findViewById(R.id.textView10);
         textViewNomeSilo = (TextView) findViewById(R.id.textViewNomeSilo);
-        
-        
-        imagemButtonDescricaoSilo = (ImageButton) findViewById(R.id.imagemButtonDescricaoSilo) ;  
+        imageButtonEsquerda = (ImageButton) findViewById(R.id.imageButtonEsquerda);
+        imageButtonDireita = (ImageButton) findViewById(R.id.imageButtonDireita);
+
+        buttonDetalhe = (Button) findViewById(R.id.buttonDetalhe);
+        buttonRemover = (Button) findViewById(R.id.buttonRemover);
 
         pegaValorInformado = (EditText) findViewById(R.id.pegaValorInformado);
         botaoAdicionar = (Button) findViewById(R.id.botaoAdicionar);
 
         botaoAdicionar.setOnClickListener(this);
-        imagemButtonDescricaoSilo.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
-                Intent i = new Intent(SiloPrincipal.this,TelaDeDetalhesDoSilo.class);
-                startActivity(i);
-                finish() ;
-            }
+        imageButtonEsquerda.setOnClickListener(this);
+        imageButtonDireita.setOnClickListener(this);
 
-        });
-        
+        //buttonDetalhe.setOnClickListener(this);
+        //buttonRemover.setOnClickListener(this);
+
         textViewNomeSilo.setText(Contexto.dados.get("nomeDoSilo") + "");
     }
+
     @Override
     public void onClick(View v) {
 
@@ -103,20 +105,6 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
         //Pegando o valor informado pelo usuário que é do tipo EditText e depois vira String e
         // convertendo isso e Double
         double valorConvertido = Double.valueOf(pegaValorInformado.getText().toString());
-        
-        //------------------------------------------------------
-        /* Esta pegando o valor informado e mandando para a outra tela atraves de um contexto */
-        String QuantidadePega = pegaValorInformado.getText().toString();
-        Contexto.dados.put("QuantidadeString", QuantidadePega);
-
-
-        String QuantidadeDouble = pegaValorInformado.getText().toString();
-        QuantidadeDoubleConvertido = Double.parseDouble(QuantidadeDouble);
-        QuantidadeDoubleConvertido = QuantidadeDoubleConvertido * (-1);
-
-        Contexto.dados.put("QuantidadeDouble", QuantidadeDoubleConvertido);
-
-        //--------------------------------------------------------
 
         // Recebendo o VALOR TOTAL DO SILO em String e convertendo para Double
         String pegaValorTotal = Contexto.dados.get("tamanhoDoSilo").toString();
@@ -494,7 +482,15 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
             }
 
             }
-
+            //Esse IF é referente as setas de mudança de activity em cima do silo...
+            if (imageButtonEsquerda.isPressed()) {
+                Intent intentGerenciamentoSilo = new Intent(this, TelaDeGerenciamentoDeSilo.class);
+                startActivity(intentGerenciamentoSilo);
+            }
+            if (imageButtonDireita.isPressed()) {
+                Intent intentDetalheSilo = new Intent(this, TelaDeDetalhesDoSilo.class);
+                startActivity(intentDetalheSilo);
+            }
 
         }
     }

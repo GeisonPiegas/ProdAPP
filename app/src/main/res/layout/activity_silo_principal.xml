@@ -266,8 +266,25 @@
         android:text="Adicionar"
         android:layout_alignBaseline="@+id/pegaValorInformado"
         android:layout_alignBottom="@+id/pegaValorInformado"
-        android:layout_toStartOf="@+id/imageButtonDireita"
-        android:layout_marginEnd="14dp" />
+        android:layout_toEndOf="@+id/textViewNomeSilo"
+        android:layout_marginStart="14dp" />
+
+    <Button
+        android:id="@+id/buttonRemover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/botaoAdicionar"
+        android:layout_below="@+id/toolbar2"
+        android:text="rEMOVER" />
+
+    <Button
+        android:id="@+id/buttonDetalhe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textViewNomeSilo"
+        android:layout_marginTop="11dp"
+        android:text="DETALHE" />
 
     <ImageButton
         android:id="@+id/imagemButtonDescricaoSilo"
