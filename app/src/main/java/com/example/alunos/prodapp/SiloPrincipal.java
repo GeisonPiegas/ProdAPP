@@ -40,8 +40,8 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
     private ImageButton imageButtonEsquerda;
     private ImageButton imageButtonDireita;
 
-    private EditText editText ;
-    private Button button2;
+    private EditText pegaValorInformado;
+    private Button botaoAdicionar;
     private String teste;
 
 
@@ -49,9 +49,6 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_silo_principal);
-
-        Toast.makeText(getBaseContext(), "Cadastre um Valor qualquer no Gerenciamento de silos, para não bugar !!! ao entrar no Detalhe silos!!", Toast.LENGTH_LONG).show(); // mensagem é apenas temporaria.
-
 
         imageView3 = (ImageView) findViewById(R.id.imageView3);
         toolbar1 = (Toolbar) findViewById(R.id.toolbar1);
@@ -78,17 +75,14 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
         imageButtonEsquerda = (ImageButton) findViewById(R.id.imageButtonEsquerda);
         imageButtonDireita = (ImageButton) findViewById(R.id.imageButtonDireita);
 
-        editText = (EditText) findViewById(R.id.editText);
-        button2 = (Button) findViewById(R.id.button2);
+        pegaValorInformado = (EditText) findViewById(R.id.pegaValorInformado);
+        botaoAdicionar = (Button) findViewById(R.id.botaoAdicionar);
 
-        button2.setOnClickListener(this);
+        botaoAdicionar.setOnClickListener(this);
         imageButtonEsquerda.setOnClickListener(this);
         imageButtonDireita.setOnClickListener(this);
 
-        // Ainda Falta Ageitar aqui, pois ao voltar a activity, está zerando o valor que foi pego!!
         textViewNomeSilo.setText(Contexto.dados.get("nomeDoSilo") + "");
-
-
     }
 
     @Override
@@ -97,8 +91,70 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
         //Em cada Case, esta setando uma imagem diferente e ativando e desatvando a visibilidade dos toolbar
         // que vão aparecer dentro do silo. e tambem ele zera o que foi colocado no edittext, essa parte do edittext
         // é so pra testar e subir as porcentagens, não estara no app final...
-        if (button2.isPressed()) {
-             teste = editText.getText().toString();
+
+
+        //Pegando o valor informado pelo usuário que é do tipo EditText e depois vira String e
+        // convertendo isso e Double
+        double valorConvertido = Double.valueOf(pegaValorInformado.getText().toString());
+
+        // Recebendo o VALOR TOTAL DO SILO em String e convertendo para Double
+        String pegaValorTotal = Contexto.dados.get("tamanhoDoSilo").toString();
+        double converteemDoubleValorTotal = Double.parseDouble(pegaValorTotal);
+
+        //Calculo para achar a porcentagem
+        double valorFinal = ((valorConvertido * 100) / converteemDoubleValorTotal);
+
+
+        if (valorFinal == 0){
+            teste = "0" ;
+        }
+        if (valorFinal > 0 & valorFinal <=10){
+            teste = "10" ;
+        }
+
+        if (valorFinal > 10 & valorFinal <=20){
+            teste = "20" ;
+        }
+
+        if (valorFinal > 20 & valorFinal <=30){
+            teste = "30" ;
+        }
+
+        if (valorFinal > 30 & valorFinal <=40){
+            teste = "40" ;
+        }
+
+        if (valorFinal > 40 & valorFinal <=50){
+            teste = "50" ;
+        }
+
+        if (valorFinal > 50 & valorFinal <=60){
+            teste = "60" ;
+        }
+
+        if (valorFinal > 60 & valorFinal <=70){
+            teste = "70" ;
+        }
+
+        if (valorFinal > 70 & valorFinal <=80){
+            teste = "80" ;
+        }
+
+        if (valorFinal > 80 & valorFinal <=90){
+            teste = "90" ;
+        }
+        if (valorFinal > 90 & valorFinal <=100){
+            teste = "100" ;
+        }
+
+        if (valorFinal > 100){
+            Toast.makeText(getBaseContext(), "Você informou um valor maior que o valor total do Silo !!!", Toast.LENGTH_LONG).show(); // mensagem é apenas temporaria.
+
+        }
+
+
+        if (botaoAdicionar.isPressed()) {
+
             switch (teste) {
                 case "0":
                     //setando a imagem de fundo, diferente a cada 10% com excessão dos 90 e 100% que sao os mesmos...
@@ -130,7 +186,7 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
                     textView10.setVisibility(View.INVISIBLE);
 
                     //parte que ta aqui so pra limpar o que foi ecrito no edittext, essa parte é dispensavel depois...
-                    editText.setText("");
+                    pegaValorInformado.setText("");
                     break;
 
                 case "10":
@@ -158,7 +214,7 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
                     textView9.setVisibility(View.INVISIBLE);
                     textView10.setVisibility(View.INVISIBLE);
 
-                    editText.setText("");
+                    pegaValorInformado.setText("");
                     break;
 
                 case "20":
@@ -186,7 +242,7 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
                     textView9.setVisibility(View.INVISIBLE);
                     textView10.setVisibility(View.INVISIBLE);
 
-                    editText.setText("");
+                    pegaValorInformado.setText("");
                     break;
 
                 case "30":
@@ -213,8 +269,7 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
                     textView8.setVisibility(View.INVISIBLE);
                     textView9.setVisibility(View.INVISIBLE);
                     textView10.setVisibility(View.INVISIBLE);
-
-                    editText.setText("");
+                    pegaValorInformado.setText("");
                     break;
 
                 case "40":
@@ -242,7 +297,7 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
                     textView9.setVisibility(View.INVISIBLE);
                     textView10.setVisibility(View.INVISIBLE);
 
-                    editText.setText("");
+                    pegaValorInformado.setText("");
                     break;
 
                 case "50":
@@ -270,7 +325,7 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
                     textView9.setVisibility(View.INVISIBLE);
                     textView10.setVisibility(View.INVISIBLE);
 
-                    editText.setText("");
+                    pegaValorInformado.setText("");
                     break;
 
                 case "60":
@@ -297,8 +352,7 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
                     textView8.setVisibility(View.INVISIBLE);
                     textView9.setVisibility(View.INVISIBLE);
                     textView10.setVisibility(View.INVISIBLE);
-
-                    editText.setText("");
+                    pegaValorInformado.setText("");
                     break;
 
                 case "70":
@@ -325,8 +379,8 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
                     textView8.setVisibility(View.INVISIBLE);
                     textView9.setVisibility(View.INVISIBLE);
                     textView10.setVisibility(View.INVISIBLE);
-
-                    editText.setText("");
+                    pegaValorInformado.setText("");
+                    pegaValorInformado.setText("");
                     break;
 
                 case "80":
@@ -354,7 +408,7 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
                     textView9.setVisibility(View.INVISIBLE);
                     textView10.setVisibility(View.INVISIBLE);
 
-                    editText.setText("");
+                    pegaValorInformado.setText("");
                     break;
 
                 case "90":
@@ -382,7 +436,7 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
                     textView9.setVisibility(View.VISIBLE);
                     textView10.setVisibility(View.INVISIBLE);
 
-                    editText.setText("");
+                    pegaValorInformado.setText("");
                     break;
 
                 case "100":
@@ -409,17 +463,14 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
                     textView8.setVisibility(View.VISIBLE);
                     textView9.setVisibility(View.VISIBLE);
                     textView10.setVisibility(View.VISIBLE);
-
-                    editText.setText("");
+                    pegaValorInformado.setText("");
                     break;
 
                 default:
-                    editText.setError("informe o numero valido");
+                    pegaValorInformado.setError("informe o numero valido");
                     break;
 
             }
-
-
 
             }
             //Esse IF é referente as setas de mudança de activity em cima do silo...
@@ -434,4 +485,5 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
 
         }
     }
+
 

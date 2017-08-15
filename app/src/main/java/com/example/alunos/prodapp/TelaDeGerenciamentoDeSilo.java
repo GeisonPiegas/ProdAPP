@@ -1,5 +1,6 @@
 package com.example.alunos.prodapp;
 
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -68,11 +69,6 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
 
     private double QuantidadeDoubleConvertido;
 
-    Valor valor ;
-    ValorBD valorBD ;
-    private int id_valor ;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -132,37 +128,6 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
         TituloRemocaoDeProdutoTextViewTelaDeGerenciamentoDeSilos.setText("Remover Produto do Silo( " + Contexto.dados.remove("indice") + "" + " )");
 
         //---------------------
-
-        }
-
-    protected void onDestroyValor() {
-
-        valorBD.fechar();
-        super.onDestroy();
-    }
-
-
-    public void cadastrarValor() {
-
-        boolean validacao = true;
-
-        String valor_pego = apenasTeste.getText().toString();
-
-
-        if (validacao) {
-
-            valor = new Valor();
-
-            valor.setId_valor(id_valor);
-
-            // Se for Alteração de Dados
-            if (id_valor > 0) {
-                valor.setValor(valor_pego);
-            }
-
-            valorBD.salvarValor(valor);
-
-        }
     }
 
     @Override
@@ -183,7 +148,8 @@ public class TelaDeGerenciamentoDeSilo extends AppCompatActivity implements View
         }
 
         if (buttonTeste.isPressed()){
-            this.cadastrarValor();
+
+
         }
 
 /*
