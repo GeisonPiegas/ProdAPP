@@ -281,19 +281,9 @@
         android:id="@+id/buttonDetalhe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/textViewNomeSilo"
         android:layout_marginTop="11dp"
-        android:text="DETALHE" />
-
-    <ImageButton
-        android:id="@+id/imagemButtonDescricaoSilo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
+        android:text="DETALHE"
         android:layout_below="@+id/textViewNomeSilo"
-        android:layout_toEndOf="@+id/toolbar10"
-        android:background="@android:color/transparent"
-        app:srcCompat="?android:attr/actionModeFindDrawable" />
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

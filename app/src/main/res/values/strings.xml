@@ -94,7 +94,7 @@
     <string name="RetirarButtonTelaDeGerenciamentoDeSilos">Retirar Produto do Silo</string>
 
     <!-- TelaDeDetalhesDoSilo -->
-    <string name="NomeDetalheTextViewTelaDeDetalhesDoSilo">Nome/Detalhe</string>
+    <string name="NomeDetalheTextViewTelaDeDetalhesDoSilo">Nome/Descrição</string>
     <string name="TipoDeGraoTextViewTelaDeDetalhesDoSilo">Tipo de Grão</string>
     <string name="PorteDoSiloTextViewTelaDeDetalhesDoSilo">Porte do Silo</string>
     <string name="FiltroTextViewTelaDeDetalhesDoSilo">Filtro</string>

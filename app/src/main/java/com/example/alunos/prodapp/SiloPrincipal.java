@@ -37,8 +37,6 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
     private TextView textView9;
     private TextView textView10;
     private TextView textViewNomeSilo;
-    private ImageButton imageButtonEsquerda;
-    private ImageButton imageButtonDireita;
 
     private Button buttonDetalhe;
     private Button buttonRemover;
@@ -46,6 +44,7 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
     private EditText pegaValorInformado;
     private Button botaoAdicionar;
     private String teste;
+    private double  QuantidadeDoubleConvertido ;
 
 
     @Override
@@ -75,8 +74,6 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
         textView9 = (TextView) findViewById(R.id.textView9);
         textView10 = (TextView) findViewById(R.id.textView10);
         textViewNomeSilo = (TextView) findViewById(R.id.textViewNomeSilo);
-        imageButtonEsquerda = (ImageButton) findViewById(R.id.imageButtonEsquerda);
-        imageButtonDireita = (ImageButton) findViewById(R.id.imageButtonDireita);
 
         buttonDetalhe = (Button) findViewById(R.id.buttonDetalhe);
         buttonRemover = (Button) findViewById(R.id.buttonRemover);
@@ -84,29 +81,47 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
         pegaValorInformado = (EditText) findViewById(R.id.pegaValorInformado);
         botaoAdicionar = (Button) findViewById(R.id.botaoAdicionar);
 
+
         botaoAdicionar.setOnClickListener(this);
-        imageButtonEsquerda.setOnClickListener(this);
-        imageButtonDireita.setOnClickListener(this);
-
-        //buttonDetalhe.setOnClickListener(this);
-        //buttonRemover.setOnClickListener(this);
-
+        buttonRemover.setOnClickListener(this);
+        buttonDetalhe.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v)
+            {
+                Intent i = new Intent(SiloPrincipal.this,TelaDeDetalhesDoSilo.class);
+                startActivity(i);
+                finish() ;
+            }
+        });
+        textViewNomeSilo.setText("");
         textViewNomeSilo.setText(Contexto.dados.get("nomeDoSilo") + "");
     }
 
     @Override
     public void onClick(View v) {
 
-        //Em cada Case, esta setando uma imagem diferente e ativando e desatvando a visibilidade dos toolbar
-        // que vão aparecer dentro do silo. e tambem ele zera o que foi colocado no edittext, essa parte do edittext
-        // é so pra testar e subir as porcentagens, não estara no app final...
+
+
+
+        /* Pegando o valor digitado pelo usuario, e mandando pra outra activity */
+        String QuantidadePega = pegaValorInformado.getText().toString();
+        Contexto.dados.put("QuantidadeString", QuantidadePega);
+
+        String QuantidadeDouble = pegaValorInformado.getText().toString();
+        QuantidadeDoubleConvertido = Double.parseDouble(QuantidadeDouble);
+        QuantidadeDoubleConvertido = QuantidadeDoubleConvertido * (-1);
+
+        Contexto.dados.put("QuantidadeDouble", QuantidadeDoubleConvertido);
+        //-----------------------------------------------------------------
+
+
 
 
         //Pegando o valor informado pelo usuário que é do tipo EditText e depois vira String e
         // convertendo isso e Double
         double valorConvertido = Double.valueOf(pegaValorInformado.getText().toString());
-
         // Recebendo o VALOR TOTAL DO SILO em String e convertendo para Double
+
+
         String pegaValorTotal = Contexto.dados.get("tamanhoDoSilo").toString();
         double converteemDoubleValorTotal = Double.parseDouble(pegaValorTotal);
 
@@ -482,15 +497,328 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
             }
 
             }
-            //Esse IF é referente as setas de mudança de activity em cima do silo...
-            if (imageButtonEsquerda.isPressed()) {
-                Intent intentGerenciamentoSilo = new Intent(this, TelaDeGerenciamentoDeSilo.class);
-                startActivity(intentGerenciamentoSilo);
+
+            //------BOTÃO RETIRAR ===================
+        if (buttonRemover.isPressed()) {
+
+            switch (teste) {
+                case "0":
+                    //setando a imagem de fundo, diferente a cada 10% com excessão dos 90 e 100% que sao os mesmos...
+                    // é pra da uma sensação de que os toolbars estão dentro o silo...
+                    imageView3.setImageResource(R.drawable.silo);
+
+                    //visibilidade referente aos toolbars contidos na activity...
+                    toolbar1.setVisibility(View.INVISIBLE);
+                    toolbar2.setVisibility(View.INVISIBLE);
+                    toolbar3.setVisibility(View.INVISIBLE);
+                    toolbar4.setVisibility(View.INVISIBLE);
+                    toolbar5.setVisibility(View.INVISIBLE);
+                    toolbar6.setVisibility(View.INVISIBLE);
+                    toolbar7.setVisibility(View.INVISIBLE);
+                    toolbar8.setVisibility(View.INVISIBLE);
+                    toolbar9.setVisibility(View.INVISIBLE);
+                    toolbar10.setVisibility(View.INVISIBLE);
+
+                    //visibilidade referente aos textviews contidos na activity, eles possuem a escrita da porcentagem...
+                    textView1.setVisibility(View.INVISIBLE);
+                    textView2.setVisibility(View.INVISIBLE);
+                    textView3.setVisibility(View.INVISIBLE);
+                    textView4.setVisibility(View.INVISIBLE);
+                    textView5.setVisibility(View.INVISIBLE);
+                    textView6.setVisibility(View.INVISIBLE);
+                    textView7.setVisibility(View.INVISIBLE);
+                    textView8.setVisibility(View.INVISIBLE);
+                    textView9.setVisibility(View.INVISIBLE);
+                    textView10.setVisibility(View.INVISIBLE);
+
+                    //parte que ta aqui so pra limpar o que foi ecrito no edittext, essa parte é dispensavel depois...
+                    pegaValorInformado.setText("");
+                    break;
+
+                case "10":
+                    imageView3.setImageResource(R.drawable.silo10);
+
+                    toolbar1.setVisibility(View.VISIBLE);
+                    toolbar2.setVisibility(View.INVISIBLE);
+                    toolbar3.setVisibility(View.INVISIBLE);
+                    toolbar4.setVisibility(View.INVISIBLE);
+                    toolbar5.setVisibility(View.INVISIBLE);
+                    toolbar6.setVisibility(View.INVISIBLE);
+                    toolbar7.setVisibility(View.INVISIBLE);
+                    toolbar8.setVisibility(View.INVISIBLE);
+                    toolbar9.setVisibility(View.INVISIBLE);
+                    toolbar10.setVisibility(View.INVISIBLE);
+
+                    textView1.setVisibility(View.VISIBLE);
+                    textView2.setVisibility(View.INVISIBLE);
+                    textView3.setVisibility(View.INVISIBLE);
+                    textView4.setVisibility(View.INVISIBLE);
+                    textView5.setVisibility(View.INVISIBLE);
+                    textView6.setVisibility(View.INVISIBLE);
+                    textView7.setVisibility(View.INVISIBLE);
+                    textView8.setVisibility(View.INVISIBLE);
+                    textView9.setVisibility(View.INVISIBLE);
+                    textView10.setVisibility(View.INVISIBLE);
+
+                    pegaValorInformado.setText("");
+                    break;
+
+                case "20":
+                    imageView3.setImageResource(R.drawable.silo20);
+
+                    toolbar1.setVisibility(View.VISIBLE);
+                    toolbar2.setVisibility(View.VISIBLE);
+                    toolbar3.setVisibility(View.INVISIBLE);
+                    toolbar4.setVisibility(View.INVISIBLE);
+                    toolbar5.setVisibility(View.INVISIBLE);
+                    toolbar6.setVisibility(View.INVISIBLE);
+                    toolbar7.setVisibility(View.INVISIBLE);
+                    toolbar8.setVisibility(View.INVISIBLE);
+                    toolbar9.setVisibility(View.INVISIBLE);
+                    toolbar10.setVisibility(View.INVISIBLE);
+
+                    textView1.setVisibility(View.VISIBLE);
+                    textView2.setVisibility(View.VISIBLE);
+                    textView3.setVisibility(View.INVISIBLE);
+                    textView4.setVisibility(View.INVISIBLE);
+                    textView5.setVisibility(View.INVISIBLE);
+                    textView6.setVisibility(View.INVISIBLE);
+                    textView7.setVisibility(View.INVISIBLE);
+                    textView8.setVisibility(View.INVISIBLE);
+                    textView9.setVisibility(View.INVISIBLE);
+                    textView10.setVisibility(View.INVISIBLE);
+
+                    pegaValorInformado.setText("");
+                    break;
+
+                case "30":
+                    imageView3.setImageResource(R.drawable.silo30);
+
+                    toolbar1.setVisibility(View.VISIBLE);
+                    toolbar2.setVisibility(View.VISIBLE);
+                    toolbar3.setVisibility(View.VISIBLE);
+                    toolbar4.setVisibility(View.INVISIBLE);
+                    toolbar5.setVisibility(View.INVISIBLE);
+                    toolbar6.setVisibility(View.INVISIBLE);
+                    toolbar7.setVisibility(View.INVISIBLE);
+                    toolbar8.setVisibility(View.INVISIBLE);
+                    toolbar9.setVisibility(View.INVISIBLE);
+                    toolbar10.setVisibility(View.INVISIBLE);
+
+                    textView1.setVisibility(View.VISIBLE);
+                    textView2.setVisibility(View.VISIBLE);
+                    textView3.setVisibility(View.VISIBLE);
+                    textView4.setVisibility(View.INVISIBLE);
+                    textView5.setVisibility(View.INVISIBLE);
+                    textView6.setVisibility(View.INVISIBLE);
+                    textView7.setVisibility(View.INVISIBLE);
+                    textView8.setVisibility(View.INVISIBLE);
+                    textView9.setVisibility(View.INVISIBLE);
+                    textView10.setVisibility(View.INVISIBLE);
+                    pegaValorInformado.setText("");
+                    break;
+
+                case "40":
+                    imageView3.setImageResource(R.drawable.silo40);
+
+                    toolbar1.setVisibility(View.VISIBLE);
+                    toolbar2.setVisibility(View.VISIBLE);
+                    toolbar3.setVisibility(View.VISIBLE);
+                    toolbar4.setVisibility(View.VISIBLE);
+                    toolbar5.setVisibility(View.INVISIBLE);
+                    toolbar6.setVisibility(View.INVISIBLE);
+                    toolbar7.setVisibility(View.INVISIBLE);
+                    toolbar8.setVisibility(View.INVISIBLE);
+                    toolbar9.setVisibility(View.INVISIBLE);
+                    toolbar10.setVisibility(View.INVISIBLE);
+
+                    textView1.setVisibility(View.VISIBLE);
+                    textView2.setVisibility(View.VISIBLE);
+                    textView3.setVisibility(View.VISIBLE);
+                    textView4.setVisibility(View.VISIBLE);
+                    textView5.setVisibility(View.INVISIBLE);
+                    textView6.setVisibility(View.INVISIBLE);
+                    textView7.setVisibility(View.INVISIBLE);
+                    textView8.setVisibility(View.INVISIBLE);
+                    textView9.setVisibility(View.INVISIBLE);
+                    textView10.setVisibility(View.INVISIBLE);
+
+                    pegaValorInformado.setText("");
+                    break;
+
+                case "50":
+                    imageView3.setImageResource(R.drawable.silo50);
+
+                    toolbar1.setVisibility(View.VISIBLE);
+                    toolbar2.setVisibility(View.VISIBLE);
+                    toolbar3.setVisibility(View.VISIBLE);
+                    toolbar4.setVisibility(View.VISIBLE);
+                    toolbar5.setVisibility(View.VISIBLE);
+                    toolbar6.setVisibility(View.INVISIBLE);
+                    toolbar7.setVisibility(View.INVISIBLE);
+                    toolbar8.setVisibility(View.INVISIBLE);
+                    toolbar9.setVisibility(View.INVISIBLE);
+                    toolbar10.setVisibility(View.INVISIBLE);
+
+                    textView1.setVisibility(View.VISIBLE);
+                    textView2.setVisibility(View.VISIBLE);
+                    textView3.setVisibility(View.VISIBLE);
+                    textView4.setVisibility(View.VISIBLE);
+                    textView5.setVisibility(View.VISIBLE);
+                    textView6.setVisibility(View.INVISIBLE);
+                    textView7.setVisibility(View.INVISIBLE);
+                    textView8.setVisibility(View.INVISIBLE);
+                    textView9.setVisibility(View.INVISIBLE);
+                    textView10.setVisibility(View.INVISIBLE);
+
+                    pegaValorInformado.setText("");
+                    break;
+
+                case "60":
+                    imageView3.setImageResource(R.drawable.silo60);
+
+                    toolbar1.setVisibility(View.VISIBLE);
+                    toolbar2.setVisibility(View.VISIBLE);
+                    toolbar3.setVisibility(View.VISIBLE);
+                    toolbar4.setVisibility(View.VISIBLE);
+                    toolbar5.setVisibility(View.VISIBLE);
+                    toolbar6.setVisibility(View.VISIBLE);
+                    toolbar7.setVisibility(View.INVISIBLE);
+                    toolbar8.setVisibility(View.INVISIBLE);
+                    toolbar9.setVisibility(View.INVISIBLE);
+                    toolbar10.setVisibility(View.INVISIBLE);
+
+                    textView1.setVisibility(View.VISIBLE);
+                    textView2.setVisibility(View.VISIBLE);
+                    textView3.setVisibility(View.VISIBLE);
+                    textView4.setVisibility(View.VISIBLE);
+                    textView5.setVisibility(View.VISIBLE);
+                    textView6.setVisibility(View.VISIBLE);
+                    textView7.setVisibility(View.INVISIBLE);
+                    textView8.setVisibility(View.INVISIBLE);
+                    textView9.setVisibility(View.INVISIBLE);
+                    textView10.setVisibility(View.INVISIBLE);
+                    pegaValorInformado.setText("");
+                    break;
+
+                case "70":
+                    imageView3.setImageResource(R.drawable.silo70);
+
+                    toolbar1.setVisibility(View.VISIBLE);
+                    toolbar2.setVisibility(View.VISIBLE);
+                    toolbar3.setVisibility(View.VISIBLE);
+                    toolbar4.setVisibility(View.VISIBLE);
+                    toolbar5.setVisibility(View.VISIBLE);
+                    toolbar6.setVisibility(View.VISIBLE);
+                    toolbar7.setVisibility(View.VISIBLE);
+                    toolbar8.setVisibility(View.INVISIBLE);
+                    toolbar9.setVisibility(View.INVISIBLE);
+                    toolbar10.setVisibility(View.INVISIBLE);
+
+                    textView1.setVisibility(View.VISIBLE);
+                    textView2.setVisibility(View.VISIBLE);
+                    textView3.setVisibility(View.VISIBLE);
+                    textView4.setVisibility(View.VISIBLE);
+                    textView5.setVisibility(View.VISIBLE);
+                    textView6.setVisibility(View.VISIBLE);
+                    textView7.setVisibility(View.VISIBLE);
+                    textView8.setVisibility(View.INVISIBLE);
+                    textView9.setVisibility(View.INVISIBLE);
+                    textView10.setVisibility(View.INVISIBLE);
+                    pegaValorInformado.setText("");
+                    pegaValorInformado.setText("");
+                    break;
+
+                case "80":
+                    imageView3.setImageResource(R.drawable.silo80);
+
+                    toolbar1.setVisibility(View.VISIBLE);
+                    toolbar2.setVisibility(View.VISIBLE);
+                    toolbar3.setVisibility(View.VISIBLE);
+                    toolbar4.setVisibility(View.VISIBLE);
+                    toolbar5.setVisibility(View.VISIBLE);
+                    toolbar6.setVisibility(View.VISIBLE);
+                    toolbar7.setVisibility(View.VISIBLE);
+                    toolbar8.setVisibility(View.VISIBLE);
+                    toolbar9.setVisibility(View.INVISIBLE);
+                    toolbar10.setVisibility(View.INVISIBLE);
+
+                    textView1.setVisibility(View.VISIBLE);
+                    textView2.setVisibility(View.VISIBLE);
+                    textView3.setVisibility(View.VISIBLE);
+                    textView4.setVisibility(View.VISIBLE);
+                    textView5.setVisibility(View.VISIBLE);
+                    textView6.setVisibility(View.VISIBLE);
+                    textView7.setVisibility(View.VISIBLE);
+                    textView8.setVisibility(View.VISIBLE);
+                    textView9.setVisibility(View.INVISIBLE);
+                    textView10.setVisibility(View.INVISIBLE);
+
+                    pegaValorInformado.setText("");
+                    break;
+
+                case "90":
+                    imageView3.setImageResource(R.drawable.silo90);
+
+                    toolbar1.setVisibility(View.VISIBLE);
+                    toolbar2.setVisibility(View.VISIBLE);
+                    toolbar3.setVisibility(View.VISIBLE);
+                    toolbar4.setVisibility(View.VISIBLE);
+                    toolbar5.setVisibility(View.VISIBLE);
+                    toolbar6.setVisibility(View.VISIBLE);
+                    toolbar7.setVisibility(View.VISIBLE);
+                    toolbar8.setVisibility(View.VISIBLE);
+                    toolbar9.setVisibility(View.VISIBLE);
+                    toolbar10.setVisibility(View.INVISIBLE);
+
+                    textView1.setVisibility(View.VISIBLE);
+                    textView2.setVisibility(View.VISIBLE);
+                    textView3.setVisibility(View.VISIBLE);
+                    textView4.setVisibility(View.VISIBLE);
+                    textView5.setVisibility(View.VISIBLE);
+                    textView6.setVisibility(View.VISIBLE);
+                    textView7.setVisibility(View.VISIBLE);
+                    textView8.setVisibility(View.VISIBLE);
+                    textView9.setVisibility(View.VISIBLE);
+                    textView10.setVisibility(View.INVISIBLE);
+
+                    pegaValorInformado.setText("");
+                    break;
+
+                case "100":
+                    imageView3.setImageResource(R.drawable.silo90);
+
+                    toolbar1.setVisibility(View.VISIBLE);
+                    toolbar2.setVisibility(View.VISIBLE);
+                    toolbar3.setVisibility(View.VISIBLE);
+                    toolbar4.setVisibility(View.VISIBLE);
+                    toolbar5.setVisibility(View.VISIBLE);
+                    toolbar6.setVisibility(View.VISIBLE);
+                    toolbar7.setVisibility(View.VISIBLE);
+                    toolbar8.setVisibility(View.VISIBLE);
+                    toolbar9.setVisibility(View.VISIBLE);
+                    toolbar10.setVisibility(View.VISIBLE);
+
+                    textView1.setVisibility(View.VISIBLE);
+                    textView2.setVisibility(View.VISIBLE);
+                    textView3.setVisibility(View.VISIBLE);
+                    textView4.setVisibility(View.VISIBLE);
+                    textView5.setVisibility(View.VISIBLE);
+                    textView6.setVisibility(View.VISIBLE);
+                    textView7.setVisibility(View.VISIBLE);
+                    textView8.setVisibility(View.VISIBLE);
+                    textView9.setVisibility(View.VISIBLE);
+                    textView10.setVisibility(View.VISIBLE);
+                    pegaValorInformado.setText("");
+                    break;
+
+                default:
+                    pegaValorInformado.setError("informe o numero valido");
+                    break;
+
             }
-            if (imageButtonDireita.isPressed()) {
-                Intent intentDetalheSilo = new Intent(this, TelaDeDetalhesDoSilo.class);
-                startActivity(intentDetalheSilo);
-            }
+
+        }
 
         }
     }
