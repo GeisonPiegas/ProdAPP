@@ -86,8 +86,6 @@ public long pega  ;
 
         pega = id ;
 
-
-
         switch (position){
             case 0:
                 Contexto.dados.put("nomeDoSilo",silo.getNome_silo()) ;
