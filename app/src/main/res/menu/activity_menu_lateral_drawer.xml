@@ -35,11 +35,11 @@
         <menu>
             <item
                 android:id="@+id/Teste_01"
-                android:icon="@drawable/arroz"
+                android:icon="@drawable/arroz2"
                 android:title="Teste 01" />
             <item
                 android:id="@+id/Teste_02"
-                android:icon="@drawable/soja"
+                android:icon="@drawable/soja2"
                 android:title="Teste 02" />
         </menu>
     </item>

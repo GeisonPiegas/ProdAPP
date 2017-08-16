@@ -40,18 +40,18 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="?android:attr/textColorHighlight"
+                    android:background="@android:color/holo_blue_dark"
                     android:elevation="0dp"
                     app:srcCompat="@drawable/siloblack" />
 
                 <ImageButton
-                    android:id="@+id/imageButtonUsuario"
+                    android:id="@+id/imageButtonPragas"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
-                    android:background="@android:color/holo_green_dark"
-                    app:srcCompat="@drawable/usuario" />
+                    android:background="#ff4081"
+                    app:srcCompat="@drawable/pragas2" />
 
             </LinearLayout>
 
@@ -101,7 +101,7 @@
                     app:srcCompat="@drawable/descarte" />
 
                 <ImageButton
-                    android:id="@+id/imageButton34342"
+                    android:id="@+id/imageButtonRotacao"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginRight="10dp"
@@ -120,14 +120,14 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/imageButtonPragas"
+                    android:id="@+id/imageButtonSobre"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="#ff4081"
-                    app:srcCompat="@drawable/pragas2" />
+                    android:background="@color/Verde"
+                    app:srcCompat="@drawable/usuario" />
 
                 <ImageButton
                     android:id="@+id/imageButtonSair"

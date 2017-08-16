@@ -15,13 +15,14 @@ public class MenuCentral extends AppCompatActivity implements View.OnClickListen
     private LinearLayout LinearLayoutVertical;
     private LinearLayout LinearLayoutHorizontal1;
     private ImageButton imageButtonSilo;
-    private ImageButton imageButtonUsuario;
+    private ImageButton imageButtonPragas;
     private LinearLayout LinearLayoutHorizontal2;
     private ImageButton imageButtonNoticias;
     private ImageButton imageButtonCalendario;
+    private ImageButton imageButtonRotacao;
     private LinearLayout LinearLayoutHorizontal3;
     private ImageButton imageButtonAgrotoxicos;
-    private ImageButton imageButtonPragas;
+    private ImageButton imageButtonSobre;
     private ImageButton imageButtonSair;
 
     @Override
@@ -30,19 +31,21 @@ public class MenuCentral extends AppCompatActivity implements View.OnClickListen
         setContentView(R.layout.activity_menu_central);
 
         imageButtonSilo = (ImageButton) findViewById(R.id.imageButtonSilo);
-        imageButtonUsuario = (ImageButton) findViewById(R.id.imageButtonUsuario);
+        imageButtonPragas = (ImageButton) findViewById(R.id.imageButtonPragas);
         imageButtonNoticias = (ImageButton) findViewById(R.id.imageButtonNoticias);
         imageButtonCalendario = (ImageButton) findViewById(R.id.imageButtonCalendario);
+        imageButtonRotacao = (ImageButton) findViewById(R.id.imageButtonRotacao);
         imageButtonAgrotoxicos = (ImageButton) findViewById(R.id.imageButtonAgrotoxicos);
-        imageButtonPragas = (ImageButton) findViewById(R.id.imageButtonPragas);
+        imageButtonSobre = (ImageButton) findViewById(R.id.imageButtonSobre);
         imageButtonSair = (ImageButton) findViewById(R.id.imageButtonSair);
 
         imageButtonSilo.setOnClickListener(this);
-        imageButtonUsuario.setOnClickListener(this);
+        imageButtonPragas.setOnClickListener(this);
         imageButtonNoticias.setOnClickListener(this);
         imageButtonCalendario.setOnClickListener(this);
+        imageButtonRotacao.setOnClickListener(this);
         imageButtonAgrotoxicos.setOnClickListener(this);
-        imageButtonPragas.setOnClickListener(this);
+        imageButtonSobre.setOnClickListener(this);
         imageButtonSair.setOnClickListener(this);
     }
 
@@ -52,9 +55,10 @@ public class MenuCentral extends AppCompatActivity implements View.OnClickListen
             Intent intentListaSilos = new Intent(this, ListaSilos.class);
             startActivity(intentListaSilos);
         }
-        if (imageButtonUsuario.isPressed()) {
-            Intent intentListaUsuarios = new Intent(this, ListaUsuarios.class);
-            startActivity(intentListaUsuarios);
+        if (imageButtonPragas.isPressed()) {
+            Intent intentSubMenuPragas = new Intent(this, SubMenuPragas.class);
+            startActivity(intentSubMenuPragas);
+
         }
         if (imageButtonNoticias.isPressed()) {
             Intent intentNovidades = new Intent(this, TelaDeNovidades.class);
@@ -64,16 +68,17 @@ public class MenuCentral extends AppCompatActivity implements View.OnClickListen
             Intent intentEpocas = new Intent(this, TelaEpocasDePlantacao.class);
             startActivity(intentEpocas);
         }
-
+        if (imageButtonRotacao.isPressed()) {
+            Intent intentRotacao = new Intent(this, TelaDeRotacaoDeCultura.class);
+            startActivity(intentRotacao);
+        }
         if (imageButtonAgrotoxicos.isPressed()) {
             Intent intentAgrotoxicos = new Intent(this, TelaColetaAgrotoxicos.class);
             startActivity(intentAgrotoxicos);
         }
-
-        if (imageButtonPragas.isPressed()) {
-            Intent intentSubMenuPragas = new Intent(this, SubMenuPragas.class);
-            startActivity(intentSubMenuPragas);
-
+        if (imageButtonSobre.isPressed()) {
+            Intent intentListaUsuarios = new Intent(this, TelaDePerguntasESobre.class);
+            startActivity(intentListaUsuarios);
         }
         if (imageButtonSair.isPressed()) {
             finish();
