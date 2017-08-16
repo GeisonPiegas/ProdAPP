@@ -72,11 +72,6 @@
         <activity
             android:name=".TelaDeLogin"
             android:theme="@style/TemaMenuCentral">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <!-- ................................................................................... -->
         <!-- GERENCIAMENTO DE SILOS -->
@@ -153,6 +148,11 @@
         <activity
             android:name=".MenuCentral"
             android:theme="@style/TemaMenuCentral">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <!-- ................................................................................... -->
         <!-- SILO PRINCIPAL -->

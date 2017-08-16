@@ -80,19 +80,20 @@ public class TelaDeDetalhesDoSilo extends AppCompatActivity implements View.OnCl
         RecebeTipoDeGraoTextViewTelaDeDetalhesDoSilo.setText(Contexto.dados.get("produtoDoSilo")+"");
         RecebeCapacidadeTotalTextViewTelaDeDetalhesDoSilo.setText(Contexto.dados.get("tamanhoDoSilo")+"");
 
-        //------------
-        String pegaDouble = Contexto.dados.get("QuantidadeDouble").toString();
-        double converteDouble = Double.parseDouble(pegaDouble);
-        String vslorFinalString = String.valueOf(converteDouble);
-        RecebeCapacidadeUtilizadaTextViewTelaDeDetalhesDoSilo.setText(vslorFinalString);
 
+        //Pegando o valor que vem da Activity Silo Principal e Setando no Textview
+        String pegaDouble = Contexto.dados.get("EnviandoDouble").toString();
+        double converteDouble = Double.parseDouble(pegaDouble);
+        String valorFinalString = String.valueOf(converteDouble);
+        RecebeCapacidadeUtilizadaTextViewTelaDeDetalhesDoSilo.setText("nenhum valor informado");
+        RecebeCapacidadeUtilizadaTextViewTelaDeDetalhesDoSilo.setText(valorFinalString);
 
         // Recebendo o VALOR TOTAL DO SILO em String e convertendo para Double
         String pegaValorTotal = Contexto.dados.get("tamanhoDoSilo").toString();
         double converteemDoubleValorTotal = Double.parseDouble(pegaValorTotal);
 
         // Recebendo o valor informado na adição e convertendo para double
-        String pegaValorAdicao = Contexto.dados.get("QuantidadeString").toString();
+        String pegaValorAdicao = Contexto.dados.get("EnviandoDouble").toString();
         double converteemDoubleValorAdicao = Double.parseDouble(pegaValorAdicao);
 
         // Fazendo o calculo para descontar o valor informado do total e exibir no Espaço Disponível
@@ -101,13 +102,9 @@ public class TelaDeDetalhesDoSilo extends AppCompatActivity implements View.OnCl
         // Convertendo para String
         String valorDisponivelParaString = String.valueOf(valorDisponivel);
 
-                    //Enviando o valor Convertido para um Context para ser usado no Cilo Principal
-                   // Contexto.dados.put("ValorConvertido",valorDisponivelParaString) ;
-
-
         // Setando este valor no EditText
+        RecebeCapacidadeDisponivelTextViewTelaDeDetalhesDoSilo.setText("Calculo indisponível");
         RecebeCapacidadeDisponivelTextViewTelaDeDetalhesDoSilo.setText(valorDisponivelParaString);
-
 
         // Setando a Data atual, está pegando a mesma data certa, porem ele poem em todos os registros, não tem
         // Nada haver como banco de dados
