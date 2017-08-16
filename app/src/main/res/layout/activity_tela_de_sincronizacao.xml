@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alunos.prodapp.TelaDeSincronizacao">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginBottom="10dp"
+                app:srcCompat="@drawable/wifi" />
+
+            <TextView
+                android:id="@+id/TelaDeSincronizacaoTextViewTituloPrincipal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="@string/TelaDeSincronizacaoTextViewTituloPrincipal"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TelaDeSincronizacaoTextViewDescricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/TelaDeSincronizacaoTextViewDescricao"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:typeface="sans" />
+
+            <ImageButton
+                android:id="@+id/imageButtonSincronizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:elevation="19dp"
+                app:srcCompat="@drawable/sincro"
+                android:layout_weight="0.21" />
+
+            <TextView
+                android:id="@+id/TelaDeSincronizacaoCliquePraSincronizar"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginBottom="15dp"
+                android:text="@string/TelaDeSincronizacaoCliquePraSincronizar"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TelaDeSincronizacaoStatus"
+                    android:layout_width="233dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.41"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Status da Sincronização"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    tools:text="Status da Sincronização" />
+
+                <ImageView
+                    android:id="@+id/TelaDeSincronizacaoStatusDefinicao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    app:srcCompat="@android:drawable/presence_offline"
+                    android:layout_weight="0.12" />
+            </LinearLayout>
+
+        </LinearLayout>
+        </ScrollView>
+</RelativeLayout>

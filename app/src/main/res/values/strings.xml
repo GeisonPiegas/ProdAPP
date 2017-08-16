@@ -200,6 +200,10 @@
     <string name="Resposta8">Jamais olhe para onde um humano esta uivando, pois voce pode sentir o que eu sinto, e entao poderemos uivar juntos para a lua.</string>
     <string name="Resposta9">Porque a agua nao tem cor, nem cheiro e nem seja la o que o dinheiro pode estar causando a parte branca do seu dente, alerta dentistas de todo o mordor.</string>
     <string name="Resposta10">Se o batman é preto, porque o batman nao consegue perseguir o juliao atras das curtinas do novo pedreiro, jamilton? Nem a ciencia sabe explicar as explosoes em massa no arroz.</string>
+    <string name="TelaDeSincronizacaoTextViewTituloPrincipal">Sincronize seus dados agora mesmo !</string>
+    <string name="TelaDeSincronizacaoTextViewDescricao">Fazendo isto os dados e arquivos que você salvou em seu smarthphone serão enviandos para um servidor na internet e ao mesmo tempo novos conteúdos e atualizações serão adicionados em seu aparelho.</string>
+    <string name="TelaDeSincronizacaoCliquePraSincronizar">Clique na figura para sincronizar</string>
+    <string name="TelaDeSincronizacaoStatus">Status da sincronização</string>
 
     <!-- TelaCadastroSilo -->
     <string-array name="ProdutosSpinnerTelaCadastroSilo">

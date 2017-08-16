@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/prod"
+        android:icon="@mipmap/prodapp"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/prod"
+        android:roundIcon="@mipmap/prodapp"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
@@ -71,8 +71,7 @@
         <!-- TELA DE LOGIN -->
         <activity
             android:name=".TelaDeLogin"
-            android:theme="@style/TemaMenuCentral">
-        </activity>
+            android:theme="@style/TemaMenuCentral"></activity>
         <!-- ................................................................................... -->
         <!-- GERENCIAMENTO DE SILOS -->
         <activity
@@ -163,7 +162,6 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ListaSilos" />
-
         </activity>
         <!-- ................................................................................... -->
         <!-- PRAGA SOJA 1 -->
@@ -351,18 +349,25 @@
             android:name=".ZoomDescarte1"
             android:label=""
             android:screenOrientation="portrait"
-            android:theme="@style/TemaMenuDescarte"></activity>
+            android:theme="@style/TemaMenuDescarte" />
         <!-- ................................................................................... -->
         <!-- ZOOM DESCARTE 2 -->
         <activity
             android:name=".ZoomDescarte2"
             android:label=""
             android:screenOrientation="portrait"
-            android:theme="@style/TemaMenuDescarte"></activity>
+            android:theme="@style/TemaMenuDescarte" />
         <!-- ................................................................................... -->
         <!-- PERGUNTAS E SOBRE -->
-        <activity android:name=".TelaDePerguntasESobre">
+        <activity android:name=".TelaDePerguntasESobre"></activity>
+        <!-- ................................................................................... -->
 
+        <!-- Tela de Sincronização -->
+        <activity android:name=".TelaDeSincronizacao"
+            android:label="Sincronização dos dados">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuCentral" />
         </activity>
         <!-- ................................................................................... -->
     </application>
