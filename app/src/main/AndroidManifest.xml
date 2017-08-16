@@ -71,7 +71,8 @@
         <!-- TELA DE LOGIN -->
         <activity
             android:name=".TelaDeLogin"
-            android:theme="@style/TemaMenuCentral"></activity>
+            android:theme="@style/TemaMenuCentral">
+        </activity>
         <!-- ................................................................................... -->
         <!-- GERENCIAMENTO DE SILOS -->
         <activity
@@ -162,6 +163,7 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ListaSilos" />
+
         </activity>
         <!-- ................................................................................... -->
         <!-- PRAGA SOJA 1 -->
@@ -349,22 +351,18 @@
             android:name=".ZoomDescarte1"
             android:label=""
             android:screenOrientation="portrait"
-            android:theme="@style/TemaMenuDescarte" />
+            android:theme="@style/TemaMenuDescarte"></activity>
         <!-- ................................................................................... -->
         <!-- ZOOM DESCARTE 2 -->
         <activity
             android:name=".ZoomDescarte2"
             android:label=""
             android:screenOrientation="portrait"
-            android:theme="@style/TemaMenuDescarte" />
+            android:theme="@style/TemaMenuDescarte"></activity>
         <!-- ................................................................................... -->
         <!-- PERGUNTAS E SOBRE -->
         <activity android:name=".TelaDePerguntasESobre">
 
-        </activity>
-        <!-- ................................................................................... -->
-        <!-- TelaDeRotacaoDeCultura -->
-        <activity android:name=".TelaDeRotacaoDeCultura">
         </activity>
         <!-- ................................................................................... -->
     </application>
