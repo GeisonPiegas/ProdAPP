@@ -1,5 +1,6 @@
 package com.example.alunos.prodapp;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,6 +12,8 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.Toast;
+
+import Mensagem.MensagemGeral;
 
 public class MenuCentral extends AppCompatActivity implements View.OnClickListener{
     private RelativeLayout RelativeLayout;
@@ -58,24 +61,27 @@ public class MenuCentral extends AppCompatActivity implements View.OnClickListen
     public boolean onCreateOptionsMenu(Menu menu) {
 
         getMenuInflater().inflate(R.menu.menu_flutuante, menu);
-        return true;
+       return true;
     }
 
     public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId() ;
 
+        // Teste de o id foi o que foi clickado e faz un teste com o usuário
         if (id == R.id.sair){
+            MensagemGeral.MsgConfirmar(this, "Sair", "Deseja realmente sair?", R.drawable.question, new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    finish();
 
-            finish();
-
+                    Intent intent = new Intent(Intent.ACTION_MAIN);
+                    intent.addCategory(Intent.CATEGORY_HOME);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(intent);
+                }
+            });
             return true ;
         }
-
-        if (id == R.id.acabeiDeCaixao){
-            Toast.makeText(getBaseContext(), "DIDI" , Toast.LENGTH_SHORT).show();
-        }
         return super.onOptionsItemSelected(item) ;
-
     }
 
     @Override
