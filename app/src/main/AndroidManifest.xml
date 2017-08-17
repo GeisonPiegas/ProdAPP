@@ -365,6 +365,10 @@
 
         </activity>
         <!-- ................................................................................... -->
+        <!-- TelaDeRotacaoDeCultura -->
+        <activity android:name=".TelaDeRotacaoDeCultura">
+        </activity>
+        <!-- ................................................................................... -->
     </application>
 
 </manifest>

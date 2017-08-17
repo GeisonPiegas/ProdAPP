@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -38,12 +39,23 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
     private TextView textView10;
     private TextView textViewNomeSilo;
 
+    private ImageView imageViewDetalhes;
+    private ImageView imageViewAdicionar;
+    private ImageView imageViewRemover;
+
+    private LinearLayout LinearLayoutAdicionar1;
+    private LinearLayout LinearLayoutAdicionar2;
+    private LinearLayout LinearLayoutRemover1;
+    private LinearLayout LinearLayoutRemover2;
+
     private Button buttonDetalhe;
     private Button buttonRemover;
 
     private EditText pegaValorInformado;
     private Button botaoAdicionar;
     private String teste;
+    private boolean testeVisivelAdicionar;
+    private boolean testeVisivelRemover;
     private double QuantidadeDoubleConvertido;
 
     double pegaPositivo = 0;
@@ -80,6 +92,11 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
         textView9 = (TextView) findViewById(R.id.textView9);
         textView10 = (TextView) findViewById(R.id.textView10);
         textViewNomeSilo = (TextView) findViewById(R.id.textViewNomeSilo);
+        imageViewDetalhes = (ImageView) findViewById(R.id.imageViewDetalhes);
+        imageViewAdicionar = (ImageView) findViewById(R.id.imageViewAdicionar);
+        imageViewRemover = (ImageView) findViewById(R.id.imageViewRemover);
+        LinearLayoutAdicionar1 = (LinearLayout) findViewById(R.id.LinearLayoutAdicionar1);
+        LinearLayoutRemover1 = (LinearLayout) findViewById(R.id.LinearLayoutRemover1);
 
         buttonDetalhe = (Button) findViewById(R.id.buttonDetalhe);
         buttonRemover = (Button) findViewById(R.id.buttonRemover);
@@ -87,6 +104,9 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
         pegaValorInformado = (EditText) findViewById(R.id.pegaValorInformado);
         botaoAdicionar = (Button) findViewById(R.id.botaoAdicionar);
 
+        imageViewDetalhes.setOnClickListener(this);
+        imageViewAdicionar.setOnClickListener(this);
+        imageViewRemover.setOnClickListener(this);
 
         botaoAdicionar.setOnClickListener(this);
         buttonRemover.setOnClickListener(this);
@@ -99,18 +119,63 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
         });
         textViewNomeSilo.setText("");
         textViewNomeSilo.setText(Contexto.dados.get("nomeDoSilo") + "");
+
+        testeVisivelAdicionar = true;
+        testeVisivelRemover = true;
+
     }
 
     @Override
     public void onClick(View v) {
 
+        if (imageViewAdicionar.isPressed()) {
+            if(testeVisivelAdicionar == true){
+                LinearLayoutAdicionar1.setVisibility(View.VISIBLE);
+                LinearLayoutRemover1.setVisibility(View.GONE);
+
+                testeVisivelAdicionar = false;
+                testeVisivelRemover = true;
+            }else{
+                LinearLayoutAdicionar1.setVisibility(View.GONE);
+                LinearLayoutRemover1.setVisibility(View.GONE);
+
+                testeVisivelAdicionar = true;
+                testeVisivelRemover = true;
+            }
+        }
+        if (imageViewRemover.isPressed()) {
+            if(testeVisivelRemover == true){
+                LinearLayoutRemover1.setVisibility(View.VISIBLE);
+                LinearLayoutAdicionar1.setVisibility(View.GONE);
+
+                testeVisivelRemover = false;
+                testeVisivelAdicionar = true;
+            }else{
+                LinearLayoutRemover1.setVisibility(View.GONE);
+                LinearLayoutAdicionar1.setVisibility(View.GONE);
+
+                testeVisivelRemover = true;
+                testeVisivelAdicionar = true;
+            }
+        }
+
         if (botaoAdicionar.isPressed()) {
+            LinearLayoutAdicionar1.setVisibility(View.GONE);
+            LinearLayoutRemover1.setVisibility(View.GONE);
+            testeVisivelAdicionar = true;
+            testeVisivelRemover = true;
+
             double valorConvertido = Double.valueOf(pegaValorInformado.getText().toString());
             pegaPositivo = valorConvertido;
             somaPositivo= somaPositivo + pegaPositivo ;
         }
 
         if (buttonRemover.isPressed()) {
+            LinearLayoutRemover1.setVisibility(View.GONE);
+            LinearLayoutAdicionar1.setVisibility(View.GONE);
+            testeVisivelRemover = true;
+            testeVisivelAdicionar = true;
+
             double valorConvertido = Double.valueOf(pegaValorInformado.getText().toString());
             pegaNegativo = valorConvertido;
 

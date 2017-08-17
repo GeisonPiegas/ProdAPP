@@ -249,41 +249,130 @@
         android:textSize="24sp"
         android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/pegaValorInformado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Informe o valor que deseja"
-        android:inputType="number"
-        android:layout_alignBottom="@+id/imageView3"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:id="@+id/botaoAdicionar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Adicionar"
-        android:layout_alignBaseline="@+id/pegaValorInformado"
-        android:layout_alignBottom="@+id/pegaValorInformado"
-        android:layout_toEndOf="@+id/textViewNomeSilo"
-        android:layout_marginStart="14dp" />
-
-    <Button
-        android:id="@+id/buttonRemover"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/botaoAdicionar"
-        android:layout_below="@+id/toolbar2"
-        android:text="rEMOVER" />
-
     <Button
         android:id="@+id/buttonDetalhe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="11dp"
         android:text="DETALHE"
-        android:layout_below="@+id/textViewNomeSilo"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="9dp" />
+
+    <ImageView
+        android:id="@+id/imageViewDetalhes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/maissilo" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutAdicionar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView91"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Adicionar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <EditText
+            android:id="@+id/pegaValorInformado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:hint="Informe o valor que deseja"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/botaoAdicionar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/pegaValorInformado"
+            android:layout_alignBottom="@+id/pegaValorInformado"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@+id/textViewNomeSilo"
+            android:text="Adicionar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutRemover1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/LinearLayoutAdicionar1"
+        android:layout_toStartOf="@+id/imageViewDetalhes"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView91"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Remover"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <EditText
+            android:id="@+id/tiraValorInformado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:hint="Informe o valor que deseja"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/buttonRemover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/botaoAdicionar"
+            android:layout_below="@+id/toolbar2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="rEMOVER" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewAdicionar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/maissilo"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/imageViewRemover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/maissilo"
+        android:layout_below="@+id/toolbar6"
         android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
