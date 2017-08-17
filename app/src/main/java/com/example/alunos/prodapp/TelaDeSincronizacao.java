@@ -1,6 +1,7 @@
 package com.example.alunos.prodapp;
 
 import android.content.DialogInterface;
+import android.graphics.Color;
 import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,10 +11,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
+import static com.example.alunos.prodapp.R.id.textView;
+
 public class TelaDeSincronizacao extends AppCompatActivity implements View.OnClickListener {
 
     private ImageButton imageButtonSincronizar ;
     private ImageView TelaDeSincronizacaoStatusDefinicao ;
+    private TextView textVieTelaDeSincronizacaoStatusAlteranado ;
 
 
     @Override
@@ -22,7 +28,7 @@ public class TelaDeSincronizacao extends AppCompatActivity implements View.OnCli
         setContentView(R.layout.activity_tela_de_sincronizacao);
 
         imageButtonSincronizar = (ImageButton) findViewById(R.id.imageButtonSincronizar) ;
-        TelaDeSincronizacaoStatusDefinicao = (ImageView) findViewById(R.id.TelaDeSincronizacaoStatusDefinicao) ;
+        textVieTelaDeSincronizacaoStatusAlteranado = (TextView) findViewById(R.id.textVieTelaDeSincronizacaoStatusAlteranado) ;
 
         imageButtonSincronizar.setOnClickListener(this);
     }
@@ -31,8 +37,8 @@ public class TelaDeSincronizacao extends AppCompatActivity implements View.OnCli
     @Override
     public void onClick(View v) {
         if (imageButtonSincronizar.isPressed()){
-            TelaDeSincronizacaoStatusDefinicao.setImageResource(R.drawable.ic_menu_camera) ;
-            //Toast.makeText(getBaseContext(), "Os dados foram sincronizados com sucesso !" , Toast.LENGTH_LONG).show();
+        textVieTelaDeSincronizacaoStatusAlteranado.setText("        Sincronizado");
+            textVieTelaDeSincronizacaoStatusAlteranado.setTextColor(Color.parseColor("#008B45"));
         }
 
     }

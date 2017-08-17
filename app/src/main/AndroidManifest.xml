@@ -359,7 +359,12 @@
             android:theme="@style/TemaMenuDescarte" />
         <!-- ................................................................................... -->
         <!-- PERGUNTAS E SOBRE -->
-        <activity android:name=".TelaDePerguntasESobre"></activity>
+        <activity android:name=".TelaDePerguntasESobre"
+            android:label="Dúvidas">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuCentral" />
+        </activity>
         <!-- ................................................................................... -->
 
         <!-- Tela de Sincronização -->
@@ -371,7 +376,11 @@
         </activity>
         <!-- ................................................................................... -->
         <!-- TelaDeRotacaoDeCultura -->
-        <activity android:name=".TelaDeRotacaoDeCultura">
+        <activity android:name=".TelaDeRotacaoDeCultura"
+            android:label="Rotação de Culturas">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuCentral" />
         </activity>
         <!-- ................................................................................... -->
     </application>
