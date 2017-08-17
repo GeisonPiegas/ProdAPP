@@ -35,10 +35,12 @@
                 android:id="@+id/textView50"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_weight="0.33"
-                android:text="Clique na Época que Desejar Visualizar"
-                android:textAlignment="center" />
+                android:text="Clique na época que deseja visualizar"
+                android:textAlignment="center"
+                android:textColor="@android:color/black" />
 
             <LinearLayout
                 android:id="@+id/LinearLayoutHorizontal1"
@@ -54,16 +56,18 @@
                     android:id="@+id/buttonVerde"
                     android:layout_width="80dp"
                     android:layout_height="50dp"
-                    android:background="#11772d"
-                    android:text="Plantio" />
+                    android:background="@color/MenuNoticias"
+                    android:text="Plantio"
+                    android:textColor="@android:color/black" />
 
                 <Button
                     android:id="@+id/buttonAmarelo"
                     android:layout_width="80dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="3dp"
-                    android:background="#f2f302"
-                    android:text="Colheita" />
+                    android:background="@color/MenuUsuario"
+                    android:text="Colheita"
+                    android:textColor="@android:color/black" />
 
                 <Button
                     android:id="@+id/buttonVermelho"
@@ -71,8 +75,9 @@
                     android:layout_height="50dp"
                     android:layout_marginLeft="3dp"
                     android:layout_weight="1"
-                    android:background="#cc0000"
-                    android:text="Fora de Época" />
+                    android:background="@color/MenuEpocas"
+                    android:text="Fora de Época"
+                    android:textColor="@android:color/black" />
 
                 <Button
                     android:id="@+id/buttonPadraoCinza"
@@ -81,7 +86,8 @@
                     android:layout_marginLeft="3dp"
                     android:background="@color/PadraoBotao"
                     android:text="TODAS"
-                    android:textAllCaps="false" />
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black" />
 
             </LinearLayout>
 
@@ -99,7 +105,8 @@
                     android:layout_height="105dp"
                     android:layout_weight="1"
                     android:background="#d6d7d7"
-                    android:text="Janeiro" />
+                    android:text="Janeiro"
+                    android:textColor="@android:color/black" />
 
                 <Button
                     android:id="@+id/buttonFevereiro"
@@ -109,7 +116,8 @@
                     android:layout_marginRight="3dp"
                     android:layout_weight="1"
                     android:background="#d6d7d7"
-                    android:text="Fevereiro" />
+                    android:text="Fevereiro"
+                    android:textColor="@android:color/black" />
 
                 <Button
                     android:id="@+id/buttonMarco"
@@ -117,7 +125,8 @@
                     android:layout_height="105dp"
                     android:layout_weight="1"
                     android:background="#d6d7d7"
-                    android:text="Março" />
+                    android:text="Março"
+                    android:textColor="@android:color/black" />
 
             </LinearLayout>
 
@@ -134,7 +143,8 @@
                     android:layout_height="105dp"
                     android:layout_weight="1"
                     android:background="#d6d7d7"
-                    android:text="Abril" />
+                    android:text="Abril"
+                    android:textColor="@android:color/black" />
 
                 <Button
                     android:id="@+id/buttonMaio"
@@ -144,7 +154,8 @@
                     android:layout_marginRight="3dp"
                     android:layout_weight="1"
                     android:background="#d6d7d7"
-                    android:text="Maio" />
+                    android:text="Maio"
+                    android:textColor="@android:color/black" />
 
                 <Button
                     android:id="@+id/buttonJunho"
@@ -152,7 +163,8 @@
                     android:layout_height="105dp"
                     android:layout_weight="1"
                     android:background="#d6d7d7"
-                    android:text="Junho" />
+                    android:text="Junho"
+                    android:textColor="@android:color/black" />
             </LinearLayout>
 
             <LinearLayout
@@ -170,7 +182,8 @@
                     android:layout_height="105dp"
                     android:layout_weight="1"
                     android:background="#d6d7d7"
-                    android:text="julho" />
+                    android:text="julho"
+                    android:textColor="@android:color/black" />
 
                 <Button
                     android:id="@+id/buttonAgosto"
@@ -180,7 +193,8 @@
                     android:layout_marginRight="3dp"
                     android:layout_weight="1"
                     android:background="#d6d7d7"
-                    android:text="Agosto" />
+                    android:text="Agosto"
+                    android:textColor="@android:color/black" />
 
                 <Button
                     android:id="@+id/buttonSetembro"
@@ -188,7 +202,8 @@
                     android:layout_height="105dp"
                     android:layout_weight="1"
                     android:background="#d6d7d7"
-                    android:text="Setembro" />
+                    android:text="Setembro"
+                    android:textColor="@android:color/black" />
             </LinearLayout>
 
             <LinearLayout
@@ -206,7 +221,8 @@
                     android:layout_height="105dp"
                     android:layout_weight="1"
                     android:background="#d6d7d7"
-                    android:text="OUtubro" />
+                    android:text="OUtubro"
+                    android:textColor="@android:color/black" />
 
                 <Button
                     android:id="@+id/buttonNovembro"
@@ -216,7 +232,8 @@
                     android:layout_marginRight="3dp"
                     android:layout_weight="1"
                     android:background="#d6d7d7"
-                    android:text="novembro" />
+                    android:text="novembro"
+                    android:textColor="@android:color/black" />
 
                 <Button
                     android:id="@+id/buttonDezembro"
@@ -224,7 +241,8 @@
                     android:layout_height="105dp"
                     android:layout_weight="1"
                     android:background="#d6d7d7"
-                    android:text="dezembro" />
+                    android:text="dezembro"
+                    android:textColor="@android:color/black" />
             </LinearLayout>
 
 

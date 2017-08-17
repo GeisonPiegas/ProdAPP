@@ -61,10 +61,10 @@ public class TelaEpocaDeMilho extends AppCompatActivity implements View.OnClickL
         if (buttonAmarelo.isPressed()) {
 
             if (teste == true) {
-                buttonMarco.setBackgroundColor(getResources().getColor(R.color.Amarelo));
-                buttonAbril.setBackgroundColor(getResources().getColor(R.color.Amarelo));
-                buttonMaio.setBackgroundColor(getResources().getColor(R.color.Amarelo));
-                buttonJunho.setBackgroundColor(getResources().getColor(R.color.Amarelo));
+                buttonMarco.setBackgroundColor(getResources().getColor(R.color.MenuUsuario));
+                buttonAbril.setBackgroundColor(getResources().getColor(R.color.MenuUsuario));
+                buttonMaio.setBackgroundColor(getResources().getColor(R.color.MenuUsuario));
+                buttonJunho.setBackgroundColor(getResources().getColor(R.color.MenuUsuario));
 
                 buttonJaneiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonFevereiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
@@ -107,11 +107,11 @@ public class TelaEpocaDeMilho extends AppCompatActivity implements View.OnClickL
         if (buttonVermelho.isPressed()) {
 
             if (teste == true) {
-                buttonJaneiro.setBackgroundColor(getResources().getColor(R.color.Vermelho));
-                buttonFevereiro.setBackgroundColor(getResources().getColor(R.color.Vermelho));
-                buttonJulho.setBackgroundColor(getResources().getColor(R.color.Vermelho));
-                buttonAgosto.setBackgroundColor(getResources().getColor(R.color.Vermelho));
-                buttonDezembro.setBackgroundColor(getResources().getColor(R.color.Vermelho));
+                buttonJaneiro.setBackgroundColor(getResources().getColor(R.color.MenuEpocas));
+                buttonFevereiro.setBackgroundColor(getResources().getColor(R.color.MenuEpocas));
+                buttonJulho.setBackgroundColor(getResources().getColor(R.color.MenuEpocas));
+                buttonAgosto.setBackgroundColor(getResources().getColor(R.color.MenuEpocas));
+                buttonDezembro.setBackgroundColor(getResources().getColor(R.color.MenuEpocas));
 
                 buttonMaio.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonJunho.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
@@ -153,9 +153,9 @@ public class TelaEpocaDeMilho extends AppCompatActivity implements View.OnClickL
         if (buttonVerde.isPressed()) {
 
             if (teste == true) {
-                buttonOutubro.setBackgroundColor(getResources().getColor(R.color.Verde));
-                buttonNovembro.setBackgroundColor(getResources().getColor(R.color.Verde));
-                buttonSetembro.setBackgroundColor(getResources().getColor(R.color.Verde));
+                buttonOutubro.setBackgroundColor(getResources().getColor(R.color.MenuNoticias));
+                buttonNovembro.setBackgroundColor(getResources().getColor(R.color.MenuNoticias));
+                buttonSetembro.setBackgroundColor(getResources().getColor(R.color.MenuNoticias));
 
                 buttonJaneiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonFevereiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
@@ -197,18 +197,18 @@ public class TelaEpocaDeMilho extends AppCompatActivity implements View.OnClickL
         if (buttonPadraoCinza.isPressed()) {
 
             if (teste == true) {
-                buttonMarco.setBackgroundColor(getResources().getColor(R.color.Amarelo));
-                buttonAbril.setBackgroundColor(getResources().getColor(R.color.Amarelo));
-                buttonMaio.setBackgroundColor(getResources().getColor(R.color.Amarelo));
-                buttonJunho.setBackgroundColor(getResources().getColor(R.color.Amarelo));
-                buttonJaneiro.setBackgroundColor(getResources().getColor(R.color.Vermelho));
-                buttonFevereiro.setBackgroundColor(getResources().getColor(R.color.Vermelho));
-                buttonJulho.setBackgroundColor(getResources().getColor(R.color.Vermelho));
-                buttonAgosto.setBackgroundColor(getResources().getColor(R.color.Vermelho));
-                buttonDezembro.setBackgroundColor(getResources().getColor(R.color.Vermelho));
-                buttonOutubro.setBackgroundColor(getResources().getColor(R.color.Verde));
-                buttonNovembro.setBackgroundColor(getResources().getColor(R.color.Verde));
-                buttonSetembro.setBackgroundColor(getResources().getColor(R.color.Verde));
+                buttonMarco.setBackgroundColor(getResources().getColor(R.color.MenuUsuario));
+                buttonAbril.setBackgroundColor(getResources().getColor(R.color.MenuUsuario));
+                buttonMaio.setBackgroundColor(getResources().getColor(R.color.MenuUsuario));
+                buttonJunho.setBackgroundColor(getResources().getColor(R.color.MenuUsuario));
+                buttonJaneiro.setBackgroundColor(getResources().getColor(R.color.MenuEpocas));
+                buttonFevereiro.setBackgroundColor(getResources().getColor(R.color.MenuEpocas));
+                buttonJulho.setBackgroundColor(getResources().getColor(R.color.MenuEpocas));
+                buttonAgosto.setBackgroundColor(getResources().getColor(R.color.MenuEpocas));
+                buttonDezembro.setBackgroundColor(getResources().getColor(R.color.MenuEpocas));
+                buttonOutubro.setBackgroundColor(getResources().getColor(R.color.MenuNoticias));
+                buttonNovembro.setBackgroundColor(getResources().getColor(R.color.MenuNoticias));
+                buttonSetembro.setBackgroundColor(getResources().getColor(R.color.MenuNoticias));
 
                 buttonVermelho.setVisibility(View.VISIBLE);
                 buttonVerde.setVisibility(View.VISIBLE);

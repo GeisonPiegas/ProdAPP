@@ -36,6 +36,7 @@
                         android:layout_marginRight="1dp"
                         android:background="@color/PadraoBotao"
                         android:text="Novidades"
+                        android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <Button
@@ -44,7 +45,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="4dp"
                         android:background="@color/MenuNoticias"
-                        android:text="Fornecedores" />
+                        android:text="Fornecedores"
+                        android:textColor="@android:color/black" />
                 </LinearLayout>
             </HorizontalScrollView>
 

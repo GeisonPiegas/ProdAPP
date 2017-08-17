@@ -80,6 +80,22 @@
         <item name="colorAccent">@color/MenuUsuario</item>
     </style>
 
+    <!-- Tema Menu Rotação de Cultura. -->
+    <style name="TemaMenuRotação" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/MenuRotacao</item>
+        <item name="colorPrimaryDark">@color/MenuRotacao</item>
+        <item name="colorAccent">@color/MenuRotacao</item>
+    </style>
+
+    <!-- Tema Menu Sincronizar. -->
+    <style name="TemaMenuWifi" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/MenuWifi</item>
+        <item name="colorPrimaryDark">@color/MenuWifi</item>
+        <item name="colorAccent">@color/MenuWifi</item>
+    </style>
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

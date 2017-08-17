@@ -373,12 +373,14 @@
             android:label="Sincronização dos dados">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MenuCentral" />
+                android:value=".MenuCentral"
+                android:theme="@style/TemaMenuWifi"/>
         </activity>
         <!-- ................................................................................... -->
         <!-- TelaDeRotacaoDeCultura -->
         <activity android:name=".TelaDeRotacaoDeCultura"
-            android:label="Rotação de Culturas">
+            android:label="Rotação de Culturas"
+            android:theme="@style/TemaMenuRotacao">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuCentral" />

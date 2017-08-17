@@ -82,7 +82,7 @@ public long pega  ;
 
         Silos silo = silosList.get(position) ;
 
-        Toast.makeText(getBaseContext(), "Silo" + position, Toast.LENGTH_SHORT).show(); // mensagem é apenas temporaria.
+        //Toast.makeText(getBaseContext(), "Silo" + position, Toast.LENGTH_SHORT).show(); // mensagem é apenas temporaria.
 
         pega = id ;
 
