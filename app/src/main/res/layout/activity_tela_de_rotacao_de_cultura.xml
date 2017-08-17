@@ -53,7 +53,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="5dp"
                                 android:text="Arroz"
-                                android:textColor="@android:color/black" />
+                                android:textColor="@android:color/black"
+                                android:textColorLink="@color/Preto" />
 
                             <CheckBox
                                 android:id="@+id/checkBoxMilho"
@@ -61,7 +62,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="5dp"
                                 android:text="Milho"
-                                android:textColor="@android:color/black" />
+                                android:textColor="@android:color/black"
+                                android:textColorLink="@color/Preto" />
 
                             <CheckBox
                                 android:id="@+id/checkBoxSoja"
@@ -69,7 +71,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="5dp"
                                 android:text="Soja"
-                                android:textColor="@android:color/black" />
+                                android:textColor="@android:color/black"
+                                android:textColorLink="@color/Preto" />
 
                             <CheckBox
                                 android:id="@+id/checkBoxTrigo"
@@ -77,7 +80,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="5dp"
                                 android:text="Trigo"
-                                android:textColor="@android:color/black" />
+                                android:textColor="@android:color/black"
+                                android:textColorLink="@color/Preto" />
 
                             <Button
                                 android:id="@+id/buttonSaberMais"
@@ -109,7 +113,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="5dp"
                                 android:text="Girassol"
-                                android:textColor="@android:color/black" />
+                                android:textColor="@android:color/black"
+                                android:textColorLink="@color/Preto" />
 
                             <CheckBox
                                 android:id="@+id/checkBoxMilhete"
@@ -117,7 +122,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="5dp"
                                 android:text="Milhete"
-                                android:textColor="@android:color/black" />
+                                android:textColor="@android:color/black"
+                                android:textColorLink="@color/Preto" />
 
                             <CheckBox
                                 android:id="@+id/checkBoxSorgo"
@@ -125,7 +131,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="5dp"
                                 android:text="Sorgo"
-                                android:textColor="@android:color/black" />
+                                android:textColor="@android:color/black"
+                                android:textColorLink="@color/Preto" />
 
                             <CheckBox
                                 android:id="@+id/checkBoxTremoco"
@@ -133,7 +140,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="5dp"
                                 android:text="Tremoço"
-                                android:textColor="@android:color/black" />
+                                android:textColor="@android:color/black"
+                                android:textColorLink="@color/Preto" />
 
                             <Button
                                 android:id="@+id/buttonCriarDiagrama"
