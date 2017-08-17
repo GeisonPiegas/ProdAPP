@@ -99,15 +99,15 @@
 
     <!-- TelaDeDetalhesDoSilo -->
     <string name="NomeDetalheTextViewTelaDeDetalhesDoSilo">Nome/Descrição</string>
-    <string name="TipoDeGraoTextViewTelaDeDetalhesDoSilo">Tipo de Grão</string>
-    <string name="PorteDoSiloTextViewTelaDeDetalhesDoSilo">Porte do Silo</string>
+    <string name="TipoDeGraoTextViewTelaDeDetalhesDoSilo">Tipo de grão</string>
+    <string name="PorteDoSiloTextViewTelaDeDetalhesDoSilo">Porte do silo</string>
     <string name="FiltroTextViewTelaDeDetalhesDoSilo">Filtro</string>
     <string name="KgRadioButtonTelaDeDetalhesDoSilo">Kg</string>
     <string name="TonRadioButtonTelaDeDetalhesDoSilo">Ton</string>
-    <string name="CapacidadeTotalTextViewTelaDeDetalhesDoSilo">Capacidade Total</string>
-    <string name="CapacidadeUtilizadaTextViewTelaDeDetalhesDoSilo">Capacidade Utilizada</string>
-    <string name="CapacidadeDisponivelTextViewTelaDeDetalhesDoSilo">Capacidade Disponível</string>
-    <string name="DataDaCriacaoTextViewTelaDeDetalhesDoSilo">Data de Criação</string>
+    <string name="CapacidadeTotalTextViewTelaDeDetalhesDoSilo">Capacidade total</string>
+    <string name="CapacidadeUtilizadaTextViewTelaDeDetalhesDoSilo">Capacidade utilizada</string>
+    <string name="CapacidadeDisponivelTextViewTelaDeDetalhesDoSilo">Capacidade disponível</string>
+    <string name="DataDaCriacaoTextViewTelaDeDetalhesDoSilo">Data de criação</string>
 
     <!-- Textos Pragas -->
     <!-- Soja -->
