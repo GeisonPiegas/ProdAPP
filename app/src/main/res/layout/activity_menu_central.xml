@@ -40,9 +40,8 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="@android:color/holo_blue_dark"
                     android:elevation="0dp"
-                    app:srcCompat="@drawable/siloblack" />
+                    app:srcCompat="@drawable/silofinal" />
 
                 <ImageButton
                     android:id="@+id/imageButtonPragas"
@@ -50,8 +49,7 @@
                     android:layout_height="150dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
-                    android:background="#ff4081"
-                    app:srcCompat="@drawable/pragas2" />
+                    app:srcCompat="@drawable/pragasfinal" />
 
             </LinearLayout>
 
@@ -69,8 +67,7 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="@android:color/holo_orange_dark"
-                    app:srcCompat="@drawable/noticias" />
+                    app:srcCompat="@drawable/noticiasfinal" />
 
                 <ImageButton
                     android:id="@+id/imageButtonCalendario"
@@ -78,8 +75,7 @@
                     android:layout_height="150dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
-                    android:background="@android:color/holo_red_dark"
-                    app:srcCompat="@drawable/calendario" />
+                    app:srcCompat="@drawable/calendariofinal" />
 
             </LinearLayout>
 
@@ -97,8 +93,7 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="@android:color/holo_purple"
-                    app:srcCompat="@drawable/descarte" />
+                    app:srcCompat="@drawable/descartefinal" />
 
                 <ImageButton
                     android:id="@+id/imageButtonRotacao"
@@ -106,8 +101,7 @@
                     android:layout_height="150dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
-                    android:background="@color/Amarelo"
-                    app:srcCompat="@drawable/rotacao" />
+                    app:srcCompat="@drawable/rotacaofinal" />
 
             </LinearLayout>
 
@@ -126,8 +120,7 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="@color/Verde"
-                    app:srcCompat="@drawable/usuario" />
+                    app:srcCompat="@drawable/usuariofinal" />
 
                 <ImageButton
                     android:id="@+id/imageButtonSair"
@@ -135,25 +128,7 @@
                     android:layout_height="150dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
-                    android:background="#3f51b5"
-                    app:srcCompat="@drawable/sair" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/LinearLayoutHorizontal3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="15dp"
-                android:orientation="horizontal">
-
-                <ImageButton
-                    android:id="@+id/imageButtonSincronizar"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:background="@android:color/transparent"
-                    app:srcCompat="@drawable/wifi" />
+                    app:srcCompat="@drawable/wififinal" />
 
             </LinearLayout>
 
