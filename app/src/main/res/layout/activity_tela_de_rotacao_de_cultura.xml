@@ -34,9 +34,8 @@
                         android:weightSum="1">
 
                         <LinearLayout
-                            android:layout_width="200dp"
+                            android:layout_width="178dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginRight="10dp"
                             android:orientation="vertical">
 
                             <TextView
@@ -45,43 +44,53 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="5dp"
                                 android:text="Sementes Principais"
-                                android:textAlignment="center" />
+                                android:textAlignment="textStart"
+                                android:textColor="@android:color/black" />
 
                             <CheckBox
                                 android:id="@+id/checkBoxArroz"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Arroz" />
+                                android:layout_marginLeft="5dp"
+                                android:text="Arroz"
+                                android:textColor="@android:color/black" />
 
                             <CheckBox
                                 android:id="@+id/checkBoxMilho"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Milho" />
+                                android:layout_marginLeft="5dp"
+                                android:text="Milho"
+                                android:textColor="@android:color/black" />
 
                             <CheckBox
                                 android:id="@+id/checkBoxSoja"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Soja" />
+                                android:layout_marginLeft="5dp"
+                                android:text="Soja"
+                                android:textColor="@android:color/black" />
 
                             <CheckBox
                                 android:id="@+id/checkBoxTrigo"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Trigo" />
+                                android:layout_marginLeft="5dp"
+                                android:text="Trigo"
+                                android:textColor="@android:color/black" />
 
                             <Button
                                 android:id="@+id/buttonSaberMais"
                                 android:layout_width="match_parent"
                                 android:layout_height="40dp"
                                 android:layout_marginTop="5dp"
-                                android:text="Mais Informações" />
+                                android:text="Mais Informações"
+                                android:textColor="@android:color/black" />
 
                         </LinearLayout>
 
                         <LinearLayout
-                            android:layout_width="200dp"
+                            android:layout_width="178dp"
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
@@ -91,115 +100,131 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="5dp"
                                 android:text="Sementes Secundárias"
-                                android:textAlignment="center" />
+                                android:textAlignment="textStart"
+                                android:textColor="@android:color/black" />
 
                             <CheckBox
                                 android:id="@+id/checkBoxGirassol"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Girassol" />
+                                android:layout_marginLeft="5dp"
+                                android:text="Girassol"
+                                android:textColor="@android:color/black" />
 
                             <CheckBox
                                 android:id="@+id/checkBoxMilhete"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Milhete" />
+                                android:layout_marginLeft="5dp"
+                                android:text="Milhete"
+                                android:textColor="@android:color/black" />
 
                             <CheckBox
                                 android:id="@+id/checkBoxSorgo"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Sorgo" />
+                                android:layout_marginLeft="5dp"
+                                android:text="Sorgo"
+                                android:textColor="@android:color/black" />
 
                             <CheckBox
                                 android:id="@+id/checkBoxTremoco"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Tremoço" />
+                                android:layout_marginLeft="5dp"
+                                android:text="Tremoço"
+                                android:textColor="@android:color/black" />
 
                             <Button
                                 android:id="@+id/buttonCriarDiagrama"
                                 android:layout_width="match_parent"
                                 android:layout_height="40dp"
                                 android:layout_marginTop="5dp"
-                                android:text="Criar diagrama" />
+                                android:text="Criar diagrama"
+                                android:textColor="@android:color/black" />
 
                         </LinearLayout>
 
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/LinearLayout1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:visibility="gone">
 
                         <ImageView
                             android:id="@+id/imageView16"
-                            android:layout_width="135dp"
-                            android:layout_height="135dp"
-                            android:layout_weight="0.67"
+                            android:layout_width="119dp"
+                            android:layout_height="105dp"
                             app:srcCompat="@drawable/setaesquerdacima" />
 
                         <ImageView
                             android:id="@+id/imageViewCima"
-                            android:layout_width="135dp"
-                            android:layout_height="135dp"
+                            android:layout_width="119dp"
+                            android:layout_height="105dp"
                             app:srcCompat="@drawable/arrozquadrado" />
 
                         <ImageView
                             android:id="@+id/imageView12"
-                            android:layout_width="135dp"
-                            android:layout_height="135dp"
+                            android:layout_width="119dp"
+                            android:layout_height="105dp"
                             app:srcCompat="@drawable/setadireitacima" />
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/LinearLayout2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="1">
 
                         <ImageView
                             android:id="@+id/imageViewEsquerda"
-                            android:layout_width="135dp"
-                            android:layout_height="135dp"
-                            android:layout_weight="0.67"
+                            android:layout_width="119dp"
+                            android:layout_height="105dp"
                             app:srcCompat="@drawable/arrozquadrado" />
 
                         <ImageView
                             android:id="@+id/imageView13"
-                            android:layout_width="135dp"
-                            android:layout_height="135dp"
+                            android:layout_width="119dp"
+                            android:layout_height="105dp"
+                            android:layout_weight="0.04"
                             app:srcCompat="@drawable/meio" />
 
                         <ImageView
                             android:id="@+id/imageViewDireita"
-                            android:layout_width="135dp"
-                            android:layout_height="135dp"
+                            android:layout_width="119dp"
+                            android:layout_height="105dp"
                             app:srcCompat="@drawable/arrozquadrado" />
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/LinearLayout3"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:visibility="gone">
 
                         <ImageView
                             android:id="@+id/imageView16"
-                            android:layout_width="135dp"
-                            android:layout_height="135dp"
+                            android:layout_width="119dp"
+                            android:layout_height="105dp"
                             android:layout_weight="0.67"
                             app:srcCompat="@drawable/setaesquerdabaixo" />
 
                         <ImageView
                             android:id="@+id/imageViewBaixo"
-                            android:layout_width="135dp"
-                            android:layout_height="135dp"
+                            android:layout_width="119dp"
+                            android:layout_height="105dp"
                             app:srcCompat="@drawable/arrozquadrado" />
 
                         <ImageView
                             android:id="@+id/imageView12"
-                            android:layout_width="135dp"
-                            android:layout_height="135dp"
+                            android:layout_width="119dp"
+                            android:layout_height="105dp"
                             app:srcCompat="@drawable/setadireitabaixo" />
                     </LinearLayout>
 
