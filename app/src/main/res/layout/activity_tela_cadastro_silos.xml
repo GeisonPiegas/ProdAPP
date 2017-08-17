@@ -12,7 +12,7 @@
         android:id="@+id/ScrollViewTelaDeCadastroSilos"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentStart="true">
 
         <LinearLayout
@@ -26,27 +26,35 @@
                 android:id="@+id/IconeImageViewTelaDeCadastroSilo"
                 android:layout_width="match_parent"
                 android:layout_height="73dp"
-                app:srcCompat="@mipmap/prod" />
+                android:layout_marginBottom="30dp"
+                app:srcCompat="@drawable/silofinal" />
 
             <TextView
                 android:id="@+id/IdentificacaoTextViewTelaDeCadastroSilo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/IdentificacaoTextViewTelaDeCadastroSilo" />
+                android:layout_marginLeft="5dp"
+                android:text="@string/IdentificacaoTextViewTelaDeCadastroSilo"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
 
             <EditText
                 android:id="@+id/IdentificacaoEditTextTelaDeCadastroSilo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Nome ou N° do Silo"
-                android:inputType="textPersonName" />
+                android:hint="B49"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/black" />
 
             <TextView
                 android:id="@+id/EstocagemTextViewTelaDeCadastroSilo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/EstocagemTextViewTelaDeCadastroSilo" />
+                android:layout_marginLeft="5dp"
+                android:text="@string/EstocagemTextViewTelaDeCadastroSilo"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
 
             <Spinner
                 android:id="@+id/EstocagemSpinnerTelaDeCadastroSilo"
@@ -57,22 +65,27 @@
                 android:id="@+id/CapacidadeTextViewTelaDeCadastroSilo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/CapacidadeTextViewTelaDeCadastroSilo" />
+                android:layout_marginLeft="5dp"
+                android:text="@string/CapacidadeTextViewTelaDeCadastroSilo"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
 
             <EditText
                 android:id="@+id/CapacidadeEditTextTelaDeCadastroSilo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="7.8 Toneladas"
+                android:hint="5.000 kg"
                 android:inputType="textPersonName|number"
-                android:text="@string/CapacidadeEditTextTelaDeCadastroSilo" />
+                android:text="@string/CapacidadeEditTextTelaDeCadastroSilo"
+                android:textColor="@android:color/black" />
 
             <Button
                 android:id="@+id/CadastrarButtonTelaDeCadastroSilo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/CadastrarButtonTelaDeCadastroSilo" />
+                android:text="@string/CadastrarButtonTelaDeCadastroSilo"
+                android:textColor="@android:color/black" />
 
         </LinearLayout>
     </ScrollView>

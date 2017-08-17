@@ -46,7 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="50dp"
-        android:visibility="visible">
+        android:visibility="gone">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -178,7 +178,8 @@
             <ScrollView
                 android:id="@+id/ScrollViewResposta1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:visibility="visible">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -511,7 +512,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="50dp"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -523,8 +524,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="Programação"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:text="Desenvolvedores"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView58"
@@ -532,28 +536,35 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
-                android:text="Geison Piegas" />
+                android:text="Geison Piegas"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView98"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Borboletão"
+                android:textColor="@android:color/black" />
 
             <TextView
                 android:id="@+id/textView59"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="geison@admin.coom" />
-
-            <TextView
-                android:id="@+id/textView60"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:text="Tecnico em Cosinha" />
+                android:text="geisonpiegas2018@gmail.com "
+                android:textColor="@android:color/black" />
 
             <TextView
                 android:id="@+id/textView61"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="Cursando Bacharelado em Sistemas de Informação" />
+                android:text="Cursando Bacharelado em Sistemas de Informação"
+                android:textColor="@android:color/black" />
 
             <TextView
                 android:id="@+id/textView62"
@@ -561,28 +572,43 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
-                android:text="Marcos Martinho" />
+                android:text="Marcos Gronytzki"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView99"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="XK08"
+                android:textColor="@android:color/black" />
 
             <TextView
                 android:id="@+id/textView63"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="marcos@ponto.com" />
+                android:text="gronytzki@gmail.com"
+                android:textColor="@android:color/black" />
 
             <TextView
                 android:id="@+id/textView64"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="Tecnico em Maquiagem" />
+                android:text="Tecnico em Informática"
+                android:textColor="@android:color/black" />
 
             <TextView
                 android:id="@+id/textView65"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="Cursando Bacharelado em Sistemas de Informação" />
+                android:text="Cursando Bacharelado em Sistemas de Informação"
+                android:textColor="@android:color/black" />
 
             <TextView
                 android:id="@+id/textView66"
@@ -590,28 +616,43 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
-                android:text='Rafael "Prozera" Martins' />
+                android:text="Rafael Martins"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView67"
+                android:id="@+id/textView100"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="rafael.tafarel@neymar.com" />
+                android:layout_marginTop="10dp"
+                android:text="Skema"
+                android:textColor="@android:color/black" />
 
             <TextView
                 android:id="@+id/textView68"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="Tecnico em Tecnicos" />
+                android:text="Tecnico em Informática"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView67"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="skema1114@hotmail.com"
+                android:textColor="@android:color/black" />
 
             <TextView
                 android:id="@+id/textView69"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="Cursando Bacharelado em Sistemas de Informação" />
+                android:text="Cursando Bacharelado em Sistemas de Informação"
+                android:textColor="@android:color/black" />
 
             <TextView
                 android:id="@+id/textView70"
@@ -619,37 +660,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="20dp"
-                android:text="Marketing"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
-
-            <TextView
-                android:id="@+id/textView71"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="10dp"
-                android:text="Tamaki" />
-
-            <TextView
-                android:id="@+id/textView78"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:text="tamaki@hot.com" />
-
-            <TextView
-                android:id="@+id/textView77"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:text="Tecnico em Sushi" />
-
-            <TextView
-                android:id="@+id/textView76"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:text="Cursando Jornalismo" />
+                android:text="Publicidade"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView75"
@@ -657,67 +672,72 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
-                android:text="Mila" />
-
-            <TextView
-                android:id="@+id/textView74"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:text="mila@arroba.com" />
+                android:text="Milena Vançan "
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView73"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="Tecnico em Algo" />
+                android:layout_marginTop="10dp"
+                android:text="Mila"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView74"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="milavancan@gmail.com "
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView76"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Cursando Bacharelado em Jornalismo"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView71"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Juliana Tamaki"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView101"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Tamaki"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView78"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="julianatamaki21@gmail.com "
+                android:textColor="@android:color/black" />
 
             <TextView
                 android:id="@+id/textView72"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="Cursando Jornalismo" />
+                android:text="Cursando Bacharelado em Jornalismo"
+                android:textColor="@android:color/black" />
 
-            <TextView
-                android:id="@+id/textView79"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="20dp"
-                android:text="Agradecimento"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
-
-            <TextView
-                android:id="@+id/textView80"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="10dp"
-                android:text="Jairmandinho" />
-
-            <TextView
-                android:id="@+id/textView83"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:text="jilo@filo.lo" />
-
-            <TextView
-                android:id="@+id/textView82"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:text="Agropequarista na empresa VASP" />
-
-            <TextView
-                android:id="@+id/textView81"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginLeft="5dp"
-                android:text='"Cara que foi entrevistado"' />
         </LinearLayout>
     </ScrollView>
 

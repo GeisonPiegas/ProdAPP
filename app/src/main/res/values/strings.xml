@@ -33,7 +33,7 @@
     <!-- Copiados Direto do Projeto PARTIU_sb -->
     <string name="Atualizar_Evento">Atualizar Eventos</string>
     <string name="Campos_Obrigatorios">Campos Obrigatorios</string>
-    <string name="mensagem_cadastrar">Resgistro Cadastro com Sucesso ! </string>
+    <string name="mensagem_cadastrar">Resgistro cadastro com sucesso ! </string>
     <string name="mensagem_atualizar">Resgistro Atualizado com Sucesso ! </string>
     <string name="mensagem_erro">Erro ao Salvar !! ! </string>
     <string name="popin_textview_dataEvento">Informe a Data do Evento:</string>
@@ -80,10 +80,10 @@
     <string name="acabeiDeCaixao">Acabei de Caixão</string>
 
     <!-- TelaDeCadastroSilo -->
-    <string name="IdentificacaoTextViewTelaDeCadastroSilo">Identificação do Silo:</string>
+    <string name="IdentificacaoTextViewTelaDeCadastroSilo">Nome ou descrição</string>
     <string name="IdentificacaoEditTextTelaDeCadastroSilo" />
-    <string name="EstocagemTextViewTelaDeCadastroSilo">Tipo de Grão Estocado</string>
-    <string name="CapacidadeTextViewTelaDeCadastroSilo">Capacidade de Estocagem:</string>
+    <string name="EstocagemTextViewTelaDeCadastroSilo">Tipo de grão estocado</string>
+    <string name="CapacidadeTextViewTelaDeCadastroSilo">Capacidade total de estocagem (kg)</string>
     <string name="CapacidadeEditTextTelaDeCadastroSilo" />
     <string name="CadastrarButtonTelaDeCadastroSilo">Cadastrar Silo</string>
 
