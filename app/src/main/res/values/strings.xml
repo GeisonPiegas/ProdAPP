@@ -75,6 +75,10 @@
     <string name="action_settings">Settings</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    //aqui está sendo criando as Strings pros menuzinhos clicaveis
+    <string name="sair">Sair</string>
+    <string name="acabeiDeCaixao">Acabei de Caixão</string>
+
     <!-- TelaDeCadastroSilo -->
     <string name="IdentificacaoTextViewTelaDeCadastroSilo">Identificação do Silo:</string>
     <string name="IdentificacaoEditTextTelaDeCadastroSilo" />

@@ -2,9 +2,6 @@ package com.example.alunos.prodapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -49,7 +46,7 @@ public class MenuLateralActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_lateral, menu);
+        getMenuInflater().inflate(R.menu.menu_flutuante, menu);
         return true;
     }
 
@@ -61,7 +58,7 @@ public class MenuLateralActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.sair) {
             return true;
         }
 

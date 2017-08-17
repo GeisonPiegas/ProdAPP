@@ -3,11 +3,14 @@ package com.example.alunos.prodapp;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
+import android.widget.Toast;
 
 public class MenuCentral extends AppCompatActivity implements View.OnClickListener{
     private RelativeLayout RelativeLayout;
@@ -49,6 +52,30 @@ public class MenuCentral extends AppCompatActivity implements View.OnClickListen
         imageButtonAgrotoxicos.setOnClickListener(this);
         imageButtonSobre.setOnClickListener(this);
         imageButtonWifi.setOnClickListener(this);
+    }
+
+    //Parte responsável peli menuzinho de sair
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.menu_flutuante, menu);
+        return true;
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item){
+        int id = item.getItemId() ;
+
+        if (id == R.id.sair){
+
+            finish();
+
+            return true ;
+        }
+
+        if (id == R.id.acabeiDeCaixao){
+            Toast.makeText(getBaseContext(), "DIDI" , Toast.LENGTH_SHORT).show();
+        }
+        return super.onOptionsItemSelected(item) ;
+
     }
 
     @Override
