@@ -23,7 +23,7 @@ public class MenuCentral extends AppCompatActivity implements View.OnClickListen
     private LinearLayout LinearLayoutHorizontal3;
     private ImageButton imageButtonAgrotoxicos;
     private ImageButton imageButtonSobre;
-    private ImageButton imageButtonSair;
+    private ImageButton imageButtonWifi;
     private ImageButton imageButtonSincronizar ;
 
     @Override
@@ -38,7 +38,7 @@ public class MenuCentral extends AppCompatActivity implements View.OnClickListen
         imageButtonRotacao = (ImageButton) findViewById(R.id.imageButtonRotacao);
         imageButtonAgrotoxicos = (ImageButton) findViewById(R.id.imageButtonAgrotoxicos);
         imageButtonSobre = (ImageButton) findViewById(R.id.imageButtonSobre);
-        imageButtonSair = (ImageButton) findViewById(R.id.imageButtonSair);
+        imageButtonWifi = (ImageButton) findViewById(R.id.imageButtonSair);
         imageButtonSincronizar = (ImageButton) findViewById(R.id.imageButtonSincronizar) ;
 
         imageButtonSilo.setOnClickListener(this);
@@ -48,8 +48,7 @@ public class MenuCentral extends AppCompatActivity implements View.OnClickListen
         imageButtonRotacao.setOnClickListener(this);
         imageButtonAgrotoxicos.setOnClickListener(this);
         imageButtonSobre.setOnClickListener(this);
-        imageButtonSair.setOnClickListener(this);
-        imageButtonSincronizar.setOnClickListener(this) ;
+        imageButtonWifi.setOnClickListener(this);
     }
 
     @Override
@@ -83,13 +82,9 @@ public class MenuCentral extends AppCompatActivity implements View.OnClickListen
             Intent intentListaUsuarios = new Intent(this, TelaDePerguntasESobre.class);
             startActivity(intentListaUsuarios);
         }
-        if (imageButtonSair.isPressed()) {
-            finish();
-        }
-
-        if (imageButtonSincronizar.isPressed()){
-            Intent intentSincro = new Intent(this, TelaDeSincronizacao.class);
-            startActivity(intentSincro);
+        if (imageButtonWifi.isPressed()) {
+            Intent intentWifi = new Intent(this, TelaDeSincronizacao.class);
+            startActivity(intentWifi);
         }
 
     }
