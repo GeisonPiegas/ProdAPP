@@ -9,15 +9,25 @@
     <color name="Vermelho">#cc0000</color>
     <color name="PadraoBotao">#d6d7d7</color>
 
-    <color name="MenuCentral">#492c01</color>
-    <color name="MenuSilo">#96d2cc</color>
-    <color name="MenuUsuario">#669900</color>
-    <color name="MenuNoticias">#ff8800</color>
-    <color name="MenuEpocas">#cc0000</color>
+    <color name="MenuCentral">#98cd65</color>
+    <color name="MenuSilo">#4a84e1</color>
+    <color name="MenuUsuario">#e4a943</color>
+    <color name="MenuNoticias">#99cc66</color>
+    <color name="MenuEpocas">#ea5e54</color>
     <color name="MenuDescarte">#aa66cc</color>
-    <color name="MenuRotacao">#f2f302</color>
-    <color name="MenuPraga">#ff4081</color>
-    <color name="MenuSair">#3f51b5</color>
+    <color name="MenuRotacao">#d45ed2</color>
+    <color name="MenuPraga">#53bcbe</color>
+    <color name="MenuWifi">#a883d4</color>
+
+    <color name="MenuCentralAntigo">#492c01</color>
+    <color name="MenuSiloAntigo">#96d2cc</color>
+    <color name="MenuUsuarioAntigo">#669900</color>
+    <color name="MenuNoticiasAntigo">#ff8800</color>
+    <color name="MenuEpocasAntigo">#cc0000</color>
+    <color name="MenuDescarteAntigo">#aa66cc</color>
+    <color name="MenuRotacaoAntigo">#f2f302</color>
+    <color name="MenuPragaAntigo">#ff4081</color>
+    <color name="MenuSairAntigo">#3f51b5</color>
 
     <color name="Branco">#fafafa</color>
 
