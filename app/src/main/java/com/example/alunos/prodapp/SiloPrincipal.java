@@ -52,6 +52,7 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
     private Button buttonRemover;
 
     private EditText pegaValorInformado;
+    private EditText tiraValorInformado ;
     private Button botaoAdicionar;
     private String teste;
     private boolean testeVisivelAdicionar;
@@ -96,11 +97,10 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
         imageViewRemover = (ImageView) findViewById(R.id.imageViewRemover);
         LinearLayoutAdicionar1 = (LinearLayout) findViewById(R.id.LinearLayoutAdicionar1);
         LinearLayoutRemover1 = (LinearLayout) findViewById(R.id.LinearLayoutRemover1);
-
-        buttonDetalhe = (Button) findViewById(R.id.buttonDetalhe);
         buttonRemover = (Button) findViewById(R.id.buttonRemover);
 
         pegaValorInformado = (EditText) findViewById(R.id.pegaValorInformado);
+        tiraValorInformado = (EditText) findViewById(R.id.tiraValorInformado) ;
         botaoAdicionar = (Button) findViewById(R.id.botaoAdicionar);
 
         imageViewDetalhes.setOnClickListener(this);
@@ -109,7 +109,7 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
 
         botaoAdicionar.setOnClickListener(this);
         buttonRemover.setOnClickListener(this);
-        buttonDetalhe.setOnClickListener(new View.OnClickListener() {
+        imageViewDetalhes.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i = new Intent(SiloPrincipal.this, TelaDeDetalhesDoSilo.class);
                 startActivity(i);
@@ -122,6 +122,19 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
         testeVisivelAdicionar = true;
         testeVisivelRemover = true;
 
+        double valorFinalPego = somaPositivo - somaNegativo;
+        Contexto.dados.put("EnviandoDouble", valorFinalPego);
+
+        // Transformando num objeto do tipo context apenas para manter o valor ativo
+        String pegaValorDoubleContext = Contexto.dados.get("EnviandoDouble").toString();
+        double converteemDoubleValorDouble = Double.parseDouble(pegaValorDoubleContext);
+
+        //Pegando o tamanho total do Silo
+        String pegaValorTotal = Contexto.dados.get("tamanhoDoSilo").toString();
+        double converteemDoubleValorTotal = Double.parseDouble(pegaValorTotal);
+
+        //Calculo para achar a porcentagem
+        double valorFinal = ((converteemDoubleValorDouble * 100) / converteemDoubleValorTotal);
     }
 
     @Override
@@ -175,7 +188,7 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
             testeVisivelRemover = true;
             testeVisivelAdicionar = true;
 
-            double valorConvertido = Double.valueOf(pegaValorInformado.getText().toString());
+            double valorConvertido = Double.valueOf(tiraValorInformado.getText().toString());
             pegaNegativo = valorConvertido;
 
             somaNegativo= somaNegativo + pegaNegativo ;
@@ -183,10 +196,11 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
         double valorFinalPego = somaPositivo - somaNegativo;
         Contexto.dados.put("EnviandoDouble", valorFinalPego);
 
+        // Transformando num objeto do tipo context apenas para manter o valor ativo
         String pegaValorDoubleContext = Contexto.dados.get("EnviandoDouble").toString();
         double converteemDoubleValorDouble = Double.parseDouble(pegaValorDoubleContext);
 
-
+        //Pegando o tamanho total do Silo
         String pegaValorTotal = Contexto.dados.get("tamanhoDoSilo").toString();
         double converteemDoubleValorTotal = Double.parseDouble(pegaValorTotal);
 
@@ -552,7 +566,7 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
                 break;
 
             default:
-                pegaValorInformado.setError("informe o numero valido");
+                pegaValorInformado.setError("informe um valor válido");
                 break;
         }
 

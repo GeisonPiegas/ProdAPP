@@ -16,7 +16,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
@@ -34,7 +35,10 @@
                 android:id="@+id/NomeDetalheTextViewTelaDeDetalhesDoSilo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/NomeDetalheTextViewTelaDeDetalhesDoSilo" />
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/NomeDetalheTextViewTelaDeDetalhesDoSilo"
+                android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/RecebeNomeDetalheTextViewTelaDeDetalhesDoSilo"
@@ -42,14 +46,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:text="Silo Teste"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/TipoDeGraoTextViewTelaDeDetalhesDoSilo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
-                android:text="@string/TipoDeGraoTextViewTelaDeDetalhesDoSilo" />
+                android:text="@string/TipoDeGraoTextViewTelaDeDetalhesDoSilo"
+                android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/RecebeTipoDeGraoTextViewTelaDeDetalhesDoSilo"
@@ -57,14 +64,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:text="Soja"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/PorteDoSiloTextViewTelaDeDetalhesDoSilo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
-                android:text="@string/PorteDoSiloTextViewTelaDeDetalhesDoSilo" />
+                android:text="@string/PorteDoSiloTextViewTelaDeDetalhesDoSilo"
+                android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/RecebePorteDoSiloTextViewTelaDeDetalhesDoSilo"
@@ -72,14 +82,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:text="Médio"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/CapacidadeTotalTextViewTelaDeDetalhesDoSilo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
-                android:text="@string/CapacidadeTotalTextViewTelaDeDetalhesDoSilo" />
+                android:text="@string/CapacidadeTotalTextViewTelaDeDetalhesDoSilo"
+                android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/RecebeCapacidadeTotalTextViewTelaDeDetalhesDoSilo"
@@ -87,14 +100,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:text="100.000 Kg"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/CapacidadeUtilizadaTextViewTelaDeDetalhesDoSilo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
-                android:text="@string/CapacidadeUtilizadaTextViewTelaDeDetalhesDoSilo" />
+                android:text="@string/CapacidadeUtilizadaTextViewTelaDeDetalhesDoSilo"
+                android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/RecebeCapacidadeUtilizadaTextViewTelaDeDetalhesDoSilo"
@@ -102,14 +118,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:text="30.000 Kg"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/CapacidadeDisponivelTextViewTelaDeDetalhesDoSilo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
-                android:text="@string/CapacidadeDisponivelTextViewTelaDeDetalhesDoSilo" />
+                android:text="@string/CapacidadeDisponivelTextViewTelaDeDetalhesDoSilo"
+                android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/RecebeCapacidadeDisponivelTextViewTelaDeDetalhesDoSilo"
@@ -117,14 +136,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:text="70.000 Kg"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/DataDaCriacaoTextViewTelaDeDetalhesDoSilo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
-                android:text="@string/DataDaCriacaoTextViewTelaDeDetalhesDoSilo" />
+                android:text="@string/DataDaCriacaoTextViewTelaDeDetalhesDoSilo"
+                android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/RecebeDataDaCriacaoTextViewTelaDeDetalhesDoSilo"
@@ -132,7 +154,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:text="07/06/2017 03:34"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
