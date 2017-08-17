@@ -36,7 +36,7 @@
         <!-- CADASTRO DE SILOS -->
         <activity
             android:name=".TelaCadastroSilos"
-            android:label="Meus Silos"
+            android:label="Cadastro de Silos"
             android:theme="@style/TemaMenuSilo">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -86,7 +86,7 @@
         <!-- DETALHES DO SILO -->
         <activity
             android:name=".TelaDeDetalhesDoSilo"
-            android:label="Meus Silos"
+            android:label="Detalhes do Silo"
             android:theme="@style/TemaMenuSilo">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -157,7 +157,7 @@
         <!-- SILO PRINCIPAL -->
         <activity
             android:name=".SiloPrincipal"
-            android:label="Meus Silos"
+            android:label="Visualização"
             android:theme="@style/TemaMenuSilo">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
