@@ -72,23 +72,30 @@
 
                 <TextView
                     android:id="@+id/TelaDeSincronizacaoStatus"
-                    android:layout_width="233dp"
+                    android:layout_width="228dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.41"
-                    android:fontFamily="sans-serif-smallcaps"
+                    android:fontFamily="sans-serif-condensed"
                     android:text="Status da Sincronização"
                     android:textAlignment="center"
                     android:textSize="20sp"
-                    android:textStyle="bold"
                     android:typeface="serif"
-                    tools:text="Status da Sincronização" />
+                    tools:text="Status da Sincronização"
+                    android:layout_weight="0.34" />
 
-                <ImageView
-                    android:id="@+id/TelaDeSincronizacaoStatusDefinicao"
+                <TextView
+                    android:id="@+id/textVieTelaDeSincronizacaoStatusAlteranado"
                     android:layout_width="wrap_content"
-                    android:layout_height="32dp"
-                    app:srcCompat="@android:drawable/presence_offline"
-                    android:layout_weight="0.12" />
+                    android:layout_height="30dp"
+                    android:layout_weight="0.12"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Não Sincronizado"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/MenuEpocas"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
             </LinearLayout>
 
         </LinearLayout>

@@ -5,9 +5,9 @@
     <!-- TelaDeLogin -->
     <string name="EmailTextViewTelaDeLogin">E-mail</string>
     <string name="SenhaTextViewTelaDeLogin">Senha</string>
-    <string name="SalvarSenhaCheckBoxTelaDeLogin">Deseja Salvar sua Senha?</string>
-    <string name="EntrarButtonTelaDeLogin">Entrar</string>
-    <string name="EsqueceuSenhaTextViewTelaDeLogin">Esqueci Minha Senha</string>
+    <string name="SalvarSenhaCheckBoxTelaDeLogin">Deseja salvar sua senha ?</string>
+    <string name="EntrarButtonTelaDeLogin">Logar</string>
+    <string name="EsqueceuSenhaTextViewTelaDeLogin">Problemas com sua conta ?</string>
 
     <!-- Silo já Cadastrado -->
     <string name="nomeSilo">1</string>
@@ -63,10 +63,10 @@
     <!-- TelaDeCadastro -->
     <string name="CamposEmailDiferentes">O E-mail não Confere com o que foi Digitado Acima!</string>
     <string name="CamposSenhaDiferentes">A Senha não Confere com a que foi Digitada Acima!</string>
-    <string name="LoginTextViewTelaDeCadastro">Já tem Conta? Clique e Faça Login</string>
+    <string name="LoginTextViewTelaDeCadastro">Já é cadastrado? Clique aqui e faça login</string>
 
     <!-- TelaDeLogin -->
-    <string name="CriarContaUsuarioTextViewTelaDeLogin">Clique pra Criar Sua Conta.</string>
+    <string name="CriarContaUsuarioTextViewTelaDeLogin">Ainda não é cadastrado? Clique aqui.</string>
 
     <!-- Adicionado na Implementação do MenuLateralActivity -->
     <string name="title_activity_menu_lateral">MenuLateralActivity</string>
@@ -177,30 +177,36 @@
 
     <!-- TelaDePerguntasESobreNos -->
     <!-- Perguntas -->
-    <string name="PerguntaBug">Desejo relatar um erro ou reclamação!</string>
-    <string name="Pergunta1">O que o gato disse para o rato?</string>
-    <string name="Pergunta2">Quem é que vai ir ao lago?</string>
-    <string name="Pergunta3">Quem é Jailson na fila do pão?</string>
-    <string name="Pergunta4">A Xuxa fez pacto?</string>
-    <string name="Pergunta5">Funk é musica?</string>
-    <string name="Pergunta6">Chimbinha é o novo Slash?</string>
-    <string name="Pergunta7">O filho falso do Kratos vai estraga o jogo?</string>
-    <string name="Pergunta8">Voce acredita em vida apos a vida?</string>
-    <string name="Pergunta9">Quem manda na parte norte de Los Street?</string>
-    <string name="Pergunta10">O que o sapo putão falo pro Bart?</string>
+    <string name="PerguntaBug">Entrar em contato com a equipe</string>
+    <string name="Pergunta1">Como faço para me cadastrar no aplicativo?</string>
+    <string name="Pergunta2">O prodAPP é compatível com meu dispositivo?</string>
+    <string name="Pergunta3">Caso eu não tenha internet no campo, o aplicativo irá funcionar?</string>
+    <string name="Pergunta4">O que garante que meus dados não serão perdidos em algum eventual problema com o aplicativo?</string>
+    <string name="Pergunta5">O aplicativo tem algum custo de utilização por parte dos usuários?</string>
+    <string name="Pergunta6">Estou com dificuldade de acessar minha conta, como devo proceder?</string>
+    <string name="Pergunta7">Como faço para informar um local de descarte de defensivos agrícolas no aplicativo?</string>
+    <string name="Pergunta8">O aplicativo recebe atualizações, estas interferem em minha utilização?
+</string>
+    <string name="Pergunta9">Como funciona o sistema de anúncios e publicidade dentro do aplicativo?</string>
+    <string name="Pergunta10">De onde surgiu o aplicativo prodAPP?</string>
+
     <!-- Respostas -->
-    <string name="RespostaBug">Para relatar qualquer tipo de bug, mal funcionamento do aplicativo, erro de digitação, sugestão de melhoria, adição de produtos, duvidas, reclamação ou até mesmo entrar em contato com os desenvolvedores, basta informar seus dados abaixo, se desejar (o campo "E-mail" e "Nome" não são obrigatorios) e escrever um breve resumo sobre o seu problema ou sugestão que entraremos em contato com você (caso tenha preenchido o campo "E-mail") o mais rapido possivel.</string>
-    <string name="Resposta1">Voce sabe a resposta dessa pergunta mesmo que ela seja aquela em quem voce sabe que nao e uma pergunta e sim com varias respostas diferentes de etinias.</string>
-    <string name="Resposta2">As vezes temos qu escrever coisas das quais nao fazem o menor sentido ate acharmos alguem que vire uma banana.</string>
-    <string name="Resposta3">Porcos nao voam, explica a ciencia da matematica quantica aplicada em processadores arduinos da quadcore enterprise.</string>
-    <string name="Resposta4">Musicas ganhaam um local na parte norte de oclaroma quando o indigena negao pegou o expelho e queimou o rosto.</string>
-    <string name="Resposta5">Deuses sao reais se acredita neles, mas mesmo assim voce pode não passar o video e asisistir tudo o que vai acontece na serie por um anuncio no youtube.</string>
-    <string name="Resposta6">O que sao dragoes perto de galinhas andand em circulo chamadas de nova guine das 3 pernas, não sabem responder coisas desse tipo pois est]ao locaos de acido mané.</string>
-    <string name="Resposta7">Quem viu o meteoro jamais esquece o lado escuro da lua, pois os mesmos estao ligados aos decepticons e autobots programados a objeto.</string>
-    <string name="Resposta8">Jamais olhe para onde um humano esta uivando, pois voce pode sentir o que eu sinto, e entao poderemos uivar juntos para a lua.</string>
-    <string name="Resposta9">Porque a agua nao tem cor, nem cheiro e nem seja la o que o dinheiro pode estar causando a parte branca do seu dente, alerta dentistas de todo o mordor.</string>
-    <string name="Resposta10">Se o batman é preto, porque o batman nao consegue perseguir o juliao atras das curtinas do novo pedreiro, jamilton? Nem a ciencia sabe explicar as explosoes em massa no arroz.</string>
-    <string name="TelaDeSincronizacaoTextViewTituloPrincipal">Sincronize seus dados agora mesmo !</string>
+    <string name="RespostaBug">Para relatar qualquer tipo de problema, funcionamento defeituoso do aplicativo, erro de sintático, sugestão de melhoria, adição de produtos, duvidas frequentes, reclamações, ou entrar em contato com os desenvolvedores, basta informar seus dados abaixo,e escrever um breve resumo sobre o seu problema ou sugestão, que entraremos em contato com você pelos dados cadastrados.</string>
+
+    <string name="Resposta1">Você deve baixar o aplicativo em sua loja de aplicativos e instalar ele em seu dispositivo, após isso, você será direcionado para uma sessão onde terá que informar seus dados básicos como nome, sobrenome, E-mail e escolherá sua senha de acesso.</string>
+    <string name="Resposta2">Para utilizar o app você precisa ter um smartphone com o sistema operacional android superior à versão KitKat (4.0).</string>
+    <string name="Resposta3">Sim, pois o aplicativo permite que você o utilize de maneira off-line, ou seja, sem acesso a conexões de internet.</string>
+    <string name="Resposta4">Você pode utilizar o aplicativo de maneira offline e definir algumas funções para atualizarem seus dados de maneira manual ou automática para um servidor. Este, irá guardar de maneira confiável e permanente esses seus dados.</string>
+    <string name="Resposta5">Essa é a parte legal de nosso aplicativo, para você usuário, ele é totalmente grátis.</string>
+
+    <string name="Resposta6">Na sessão de Login do aplicativo você tem acesso a opção “Problemas com sua Conta?”, onde ao acessa-la você tem uma série de ferramentas que buscam lhe auxiliar em seu problema. Ou você pode entrar em contato com nossa equipe técnica por meio da sessão “Dúvidas” que disponibiliza e-mail e telefone para contato.</string>
+    <string name="Resposta7">Na sessão de “Dúvidas” você pode informar um ponto de descarte existente na cidade que seja de seu conhecimento, assim podemos entrar em contato com o estabelecimento para futuramente cadastrá-lo em nosso aplicativo.</string>
+    <string name="Resposta8">Nosso aplicativo está constantemente passando por mudanças e refinamentos que buscam melhorar o sistema e a experiência do usuário. Ao usuário será solicitado ao entrar no aplicativo que efetue a permissão desta atualização, a partir desta permissão tudo será feito de forma dinâmica sem interferir na utilização do mesmo.</string>
+    <string name="Resposta9">As empresas que trabalham na área agrícola, devem entrar em contato conosco para se informar sobre os serviços de propaganda que oferecemos em nosso APP.</string>
+    <string name="Resposta10">Nosso aplicativo surgiu em um concurso de aplicativos que aconteceu este ano (2017), na cidade de São Borja intitulado como “São Borja APK”. Diversos alunos buscavam ideias criativas baseadas nos temas sugeridos pelo concurso buscando aprender e desenvolver um protótipo de aplicativo.</string>
+
+
+    <string name="TelaDeSincronizacaoTextViewTituloPrincipal">Sincronize seus dados.</string>
     <string name="TelaDeSincronizacaoTextViewDescricao">Fazendo isto os dados e arquivos que você salvou em seu smarthphone serão enviandos para um servidor na internet e ao mesmo tempo novos conteúdos e atualizações serão adicionados em seu aparelho.</string>
     <string name="TelaDeSincronizacaoCliquePraSincronizar">Clique na figura para sincronizar</string>
     <string name="TelaDeSincronizacaoStatus">Status da sincronização</string>
@@ -216,13 +222,13 @@
     <!-- TelaDePerguntasESobreNos -->
     <string-array name="Problemas">
         <item>Bug</item>
-        <item>Duvidas</item>
+        <item>Dúvidas</item>
         <item>Reclamação</item>
         <item>Mal Funcionamento</item>
-        <item>Erro de Digitação</item>
+        <item>Erro Sintático</item>
         <item>Entrar em Contato</item>
-        <item>Adição de Produtos</item>
-        <item>Sugestão de Melhoria</item>
+        <item>Adição de Produtos  e Serviços</item>
+        <item>Sugestão de Melhorias</item>
     </string-array>
 
 </resources>

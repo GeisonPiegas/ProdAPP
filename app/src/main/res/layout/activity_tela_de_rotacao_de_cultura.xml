@@ -44,7 +44,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="5dp"
-                                android:text="Sementes Principais" />
+                                android:text="Sementes Principais"
+                                android:textAlignment="center" />
 
                             <CheckBox
                                 android:id="@+id/checkBoxArroz"
@@ -75,7 +76,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="40dp"
                                 android:layout_marginTop="5dp"
-                                android:text="Saber Mais" />
+                                android:text="Mais Informações" />
 
                         </LinearLayout>
 
@@ -89,7 +90,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="5dp"
-                                android:text="Sementes Secundárias" />
+                                android:text="Sementes Secundárias"
+                                android:textAlignment="center" />
 
                             <CheckBox
                                 android:id="@+id/checkBoxGirassol"
