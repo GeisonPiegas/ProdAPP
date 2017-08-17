@@ -15,7 +15,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:weightSum="1">
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
@@ -138,13 +139,13 @@
                 android:id="@+id/ScrollViewFornecedores"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:visibility="gone">
+                android:visibility="visible">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:visibility="gone">
+                    android:visibility="visible">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -175,35 +176,40 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Nome: Agroeste" />
+                                android:text="Nome: Agroeste"
+                                android:textColor="@android:color/black" />
 
                             <TextView
                                 android:id="@+id/dhsdlkd"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Email: central.cim@monsanto.com " />
+                                android:text="Email: central.cim@monsanto.com "
+                                android:textColor="@android:color/black" />
 
                             <TextView
                                 android:id="@+id/textView94"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Telefone:  0800 490011" />
+                                android:text="Telefone:  0800 490011"
+                                android:textColor="@android:color/black" />
 
                             <TextView
                                 android:id="@+id/textView96"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Endereço: Avenida do Capão 9748" />
+                                android:text="Endereço: Avenida do Capão 9748"
+                                android:textColor="@android:color/black" />
 
                             <TextView
                                 android:id="@+id/textView97"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="CNPJ: 86.933.639/0001-45" />
+                                android:text="CNPJ: 86.933.639/0001-45"
+                                android:textColor="@android:color/black" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -238,35 +244,48 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Nome: Dekalab" />
+                                android:text="Nome: Dekalab"
+                                android:textColor="@android:color/black" />
 
                             <TextView
                                 android:id="@+id/dhsdlkd"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Email: dekalb@faleconosco.com" />
+                                android:text="Email: dekalb@faleconosco.com"
+                                android:textColor="@android:color/black" />
+
+                            <TextView
+                                android:id="@+id/textView98"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@android:color/black"
+                                android:textColor="@android:color/black" />
 
                             <TextView
                                 android:id="@+id/textView94"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Telefone: 0800 940 6000" />
+                                android:text="Telefone: 0800 940 6000"
+                                android:textColor="@android:color/black" />
 
                             <TextView
                                 android:id="@+id/textView96"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Endereço: Rua Marcelo Bom Jesus 4534" />
+                                android:text="Endereço: Rua Marcelo Bom Jesus 4534"
+                                android:textColor="@android:color/black" />
 
                             <TextView
                                 android:id="@+id/textView97"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="CNPJ: 28.788.746/0001-20" />
+                                android:text="CNPJ: 28.788.746/0001-20"
+                                android:textColor="@android:color/black" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -301,35 +320,40 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Nome: Dimicron" />
+                                android:text="Nome: Dimicron"
+                                android:textColor="@android:color/black" />
 
                             <TextView
                                 android:id="@+id/dhsdlkd"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Email: dimicron@contato.com" />
+                                android:text="Email: dimicron@contato.com"
+                                android:textColor="@android:color/black" />
 
                             <TextView
                                 android:id="@+id/textView94"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Telefone: (65) 3667-1004" />
+                                android:text="Telefone: (65) 3667-1004"
+                                android:textColor="@android:color/black" />
 
                             <TextView
                                 android:id="@+id/textView96"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Endereço: Avenida Santa Bárbara do Sul, 377" />
+                                android:text="Endereço: Avenida Santa Bárbara do Sul, 377"
+                                android:textColor="@android:color/black" />
 
                             <TextView
                                 android:id="@+id/textView97"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="CNPJ: 62.072.425/0001-63" />
+                                android:text="CNPJ: 62.072.425/0001-63"
+                                android:textColor="@android:color/black" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -364,35 +388,40 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Nome: Sementes Estrelas" />
+                                android:text="Nome: Sementes Estrelas"
+                                android:textColor="@android:color/black" />
 
                             <TextView
                                 android:id="@+id/dhsdlkd"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Email: sementes@sementesestrela.com.br " />
+                                android:text="Email: sementes@sementesestrela.com.br "
+                                android:textColor="@android:color/black" />
 
                             <TextView
                                 android:id="@+id/textView94"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Telefone: 54.2107.3100 " />
+                                android:text="Telefone: 54.2107.3100 "
+                                android:textColor="@android:color/black" />
 
                             <TextView
                                 android:id="@+id/textView96"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Endereço: Rua Portugal, 359 Erechim/RS/Brasil" />
+                                android:text="Endereço: Rua Portugal, 359 Erechim/RS/Brasil"
+                                android:textColor="@android:color/black" />
 
                             <TextView
                                 android:id="@+id/textView97"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="CNPJ: 83.111.434/0001-96" />
+                                android:text="CNPJ: 83.111.434/0001-96"
+                                android:textColor="@android:color/black" />
                         </LinearLayout>
 
                     </LinearLayout>
