@@ -58,22 +58,30 @@
                 android:text="@string/TelaDeSincronizacaoCliquePraSincronizar"
                 android:textAlignment="center" />
 
+            <CheckBox
+                android:id="@+id/checkBoxTelaDeSincronizacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fazer sincronização automática"
+                android:textAlignment="textStart" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="22dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/TelaDeSincronizacaoStatus"
                     android:layout_width="228dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="0.34"
                     android:fontFamily="sans-serif-condensed"
                     android:text="Status da Sincronização"
                     android:textAlignment="center"
                     android:textSize="20sp"
                     android:typeface="serif"
-                    tools:text="Status da Sincronização"
-                    android:layout_weight="0.34" />
+                    tools:text="Status da Sincronização" />
 
                 <TextView
                     android:id="@+id/textVieTelaDeSincronizacaoStatusAlteranado"

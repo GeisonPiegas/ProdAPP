@@ -210,7 +210,7 @@
     <string name="Resposta10">Nosso aplicativo surgiu em um concurso de aplicativos que aconteceu este ano (2017), na cidade de São Borja intitulado como “São Borja APK”. Diversos alunos buscavam ideias criativas baseadas nos temas sugeridos pelo concurso buscando aprender e desenvolver um protótipo de aplicativo.</string>
 
 
-    <string name="TelaDeSincronizacaoTextViewTituloPrincipal">Sincronize seus dados.</string>
+    <string name="TelaDeSincronizacaoTextViewTituloPrincipal">Sincronize seus dados</string>
     <string name="TelaDeSincronizacaoTextViewDescricao">Fazendo isto os dados e arquivos que você salvou em seu smarthphone serão enviandos para um servidor na internet e ao mesmo tempo novos conteúdos e atualizações serão adicionados em seu aparelho.</string>
     <string name="TelaDeSincronizacaoCliquePraSincronizar">Clique na figura para sincronizar</string>
     <string name="TelaDeSincronizacaoStatus">Status da sincronização</string>
