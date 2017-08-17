@@ -82,10 +82,11 @@ public class TelaDeDetalhesDoSilo extends AppCompatActivity implements View.OnCl
 
 
         //Pegando o valor que vem da Activity Silo Principal e Setando no Textview
-        String pegaDouble = Contexto.dados.get("EnviandoDouble").toString();
+
+         String pegaDouble = Contexto.dados.get("EnviandoDouble").toString();
         double converteDouble = Double.parseDouble(pegaDouble);
         String valorFinalString = String.valueOf(converteDouble);
-        RecebeCapacidadeUtilizadaTextViewTelaDeDetalhesDoSilo.setText("nenhum valor informado");
+
         RecebeCapacidadeUtilizadaTextViewTelaDeDetalhesDoSilo.setText(valorFinalString);
 
         // Recebendo o VALOR TOTAL DO SILO em String e convertendo para Double
@@ -102,8 +103,6 @@ public class TelaDeDetalhesDoSilo extends AppCompatActivity implements View.OnCl
         // Convertendo para String
         String valorDisponivelParaString = String.valueOf(valorDisponivel);
 
-        // Setando este valor no EditText
-        RecebeCapacidadeDisponivelTextViewTelaDeDetalhesDoSilo.setText("Calculo indisponível");
         RecebeCapacidadeDisponivelTextViewTelaDeDetalhesDoSilo.setText(valorDisponivelParaString);
 
         // Setando a Data atual, está pegando a mesma data certa, porem ele poem em todos os registros, não tem
