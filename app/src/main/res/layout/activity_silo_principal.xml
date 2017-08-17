@@ -253,9 +253,9 @@
         android:id="@+id/imageViewDetalhes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/maissilo"
+        android:layout_alignParentEnd="true"
         android:layout_below="@+id/toolbar10"
-        android:layout_alignParentEnd="true" />
+        app:srcCompat="@drawable/detalhe" />
 
     <LinearLayout
         android:id="@+id/LinearLayoutAdicionar1"
@@ -393,16 +393,16 @@
         android:id="@+id/imageViewAdicionar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/maissilo"
+        android:layout_alignParentEnd="true"
         android:layout_below="@+id/toolbar7"
-        android:layout_alignParentEnd="true" />
+        app:srcCompat="@drawable/adicionar" />
 
     <ImageView
         android:id="@+id/imageViewRemover"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/maissilo"
+        android:layout_alignParentEnd="true"
         android:layout_below="@+id/toolbar4"
-        android:layout_alignParentEnd="true" />
+        app:srcCompat="@drawable/remover" />
 
 </RelativeLayout>
