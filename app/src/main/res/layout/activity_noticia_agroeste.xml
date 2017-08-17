@@ -120,6 +120,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:text="@string/NoticiaAgroesteParte8"
+                android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="@android:color/black" />
         </LinearLayout>

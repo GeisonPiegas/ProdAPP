@@ -35,6 +35,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
                 android:fontFamily="sans-serif-smallcaps"
                 android:text="@string/TelaDeSincronizacaoTextViewDescricao"
                 android:textAlignment="center"
@@ -62,6 +63,7 @@
                 android:id="@+id/checkBoxTelaDeSincronizacao"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:text="Fazer sincronização automática"
                 android:textAlignment="textStart" />
 
