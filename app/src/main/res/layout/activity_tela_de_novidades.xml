@@ -32,8 +32,9 @@
                         android:id="@+id/buttonNovidades"
                         android:layout_width="175dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="3dp"
-                        android:background="@color/MenuNoticias"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="1dp"
+                        android:background="@color/PadraoBotao"
                         android:text="Novidades"
                         android:textStyle="bold" />
 
@@ -41,7 +42,8 @@
                         android:id="@+id/buttonForcedores"
                         android:layout_width="175dp"
                         android:layout_height="wrap_content"
-                        android:background="@color/PadraoBotao"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/MenuNoticias"
                         android:text="Fornecedores" />
                 </LinearLayout>
             </HorizontalScrollView>
@@ -71,7 +73,7 @@
                             android:layout_weight="2.10"
                             android:backgroundTint="@android:color/transparent"
                             android:scaleType="centerCrop"
-                            app:srcCompat="@drawable/agroestenoticia" />
+                            app:srcCompat="@drawable/agroestenoticia2" />
 
                     </LinearLayout>
 
@@ -89,7 +91,7 @@
                             android:adjustViewBounds="false"
                             android:backgroundTint="@android:color/transparent"
                             android:scaleType="centerCrop"
-                            app:srcCompat="@drawable/dekalbnoticia" />
+                            app:srcCompat="@drawable/dekalbnoticia2" />
 
                     </LinearLayout>
 
@@ -107,7 +109,7 @@
                             android:layout_weight="1"
                             android:backgroundTint="@android:color/transparent"
                             android:scaleType="centerCrop"
-                            app:srcCompat="@drawable/dimicronnoticia" />
+                            app:srcCompat="@drawable/dimicronnoticia2" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -124,7 +126,7 @@
                             android:layout_weight="1"
                             android:backgroundTint="@android:color/transparent"
                             android:scaleType="centerCrop"
-                            app:srcCompat="@drawable/sementesestrelanotcia" />
+                            app:srcCompat="@drawable/sementesestrelanotcia2" />
                     </LinearLayout>
 
                 </LinearLayout>

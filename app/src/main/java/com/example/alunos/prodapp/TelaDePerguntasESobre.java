@@ -133,17 +133,22 @@ public class TelaDePerguntasESobre extends AppCompatActivity implements View.OnC
         //Botões Referentes aos Menus da Activity, ou seja, FAQ e Sobre Nós
         if (buttonFAQ.isPressed()) {
             ScrollViewFAQ.setVisibility(View.VISIBLE);
-            buttonFAQ.setBackgroundColor(getResources().getColor(R.color.Verde));
-            buttonSobreNos.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+            buttonFAQ.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+            buttonSobreNos.setBackgroundColor(getResources().getColor(R.color.MenuUsuario));
             ScrollViewSobreNos.setVisibility(View.GONE);
             buttonFAQ.setVisibility(View.VISIBLE);
+            buttonFAQ.setTypeface(null, Typeface.BOLD);
+            buttonSobreNos.setTypeface(null, Typeface.NORMAL);
         }
         if (buttonSobreNos.isPressed()) {
             ScrollViewSobreNos.setVisibility(View.VISIBLE);
-            buttonSobreNos.setBackgroundColor(getResources().getColor(R.color.Verde));
-            buttonFAQ.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+            buttonSobreNos.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+            buttonFAQ.setBackgroundColor(getResources().getColor(R.color.MenuUsuario));
             ScrollViewFAQ.setVisibility(View.GONE);
             ScrollViewSobreNos.setVisibility(View.VISIBLE);
+            buttonSobreNos.setTypeface(null, Typeface.BOLD);
+            buttonFAQ.setTypeface(null, Typeface.NORMAL);
+
 
             ScrollViewBug.setVisibility(View.GONE);
             ScrollViewResposta1.setVisibility(View.GONE);

@@ -64,8 +64,8 @@ public class TelaDeNovidades extends AppCompatActivity implements View.OnClickLi
             ScrollViewNovidades.setVisibility(View.VISIBLE);
             ScrollViewFornecedores.setVisibility(View.GONE);
 
-            buttonNovidades.setBackgroundColor(getResources().getColor(R.color.MenuNoticias));
-            buttonForcedores.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+            buttonNovidades.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+            buttonForcedores.setBackgroundColor(getResources().getColor(R.color.MenuNoticias));
 
             buttonNovidades.setTypeface(null, Typeface.BOLD);
             buttonForcedores.setTypeface(null, Typeface.NORMAL);
@@ -74,8 +74,8 @@ public class TelaDeNovidades extends AppCompatActivity implements View.OnClickLi
             ScrollViewFornecedores.setVisibility(View.VISIBLE);
             ScrollViewNovidades.setVisibility(View.GONE);
 
-            buttonForcedores.setBackgroundColor(getResources().getColor(R.color.MenuNoticias));
-            buttonNovidades.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+            buttonForcedores.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
+            buttonNovidades.setBackgroundColor(getResources().getColor(R.color.MenuNoticias));
 
             buttonForcedores.setTypeface(null, Typeface.BOLD);
             buttonNovidades.setTypeface(null, Typeface.NORMAL);

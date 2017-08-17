@@ -10,31 +10,33 @@
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="5dp"
         android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/ScrollViewSobreNos">
+        android:layout_toEndOf="@+id/ScrollViewSobreNos"
+        android:layout_alignParentStart="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimaryDark"
-            android:orientation="horizontal"
-            android:paddingBottom="10dp"
-            android:paddingRight="15dp">
+            android:background="@color/MenuUsuario"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/buttonFAQ"
-                android:layout_width="180dp"
+                android:layout_width="175dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="1dp"
                 android:layout_weight="0.30"
-                android:background="#11772d"
-                android:text="faq" />
+                android:background="@color/PadraoBotao"
+                android:text="Perguntas"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/buttonSobreNos"
-                android:layout_width="180dp"
+                android:layout_width="175dp"
                 android:layout_height="wrap_content"
-                android:background="#d6d7d7"
+                android:layout_marginRight="5dp"
+                android:background="@color/MenuUsuario"
                 android:text="Sobre nós" />
         </LinearLayout>
     </HorizontalScrollView>
@@ -43,7 +45,7 @@
         android:id="@+id/ScrollViewFAQ"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="50dp"
         android:visibility="visible">
 
         <LinearLayout
@@ -496,8 +498,8 @@
         android:id="@+id/ScrollViewSobreNos"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="55dp"
-        android:visibility="gone">
+        android:layout_marginTop="50dp"
+        android:visibility="visible">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -706,4 +708,5 @@
                 android:text='"Cara que foi entrevistado"' />
         </LinearLayout>
     </ScrollView>
+
 </RelativeLayout>

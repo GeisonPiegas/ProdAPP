@@ -360,7 +360,8 @@
         <!-- ................................................................................... -->
         <!-- PERGUNTAS E SOBRE -->
         <activity android:name=".TelaDePerguntasESobre"
-            android:label="Dúvidas">
+            android:label="Dúvidas"
+            android:theme="@style/TemaMenuSobre" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuCentral" />
