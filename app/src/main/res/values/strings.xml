@@ -1,6 +1,6 @@
 <resources>
     <!-- Nome do Aplicativo -->
-    <string name="app_name">ProdAPP</string>
+    <string name="app_name">prodAPP</string>
 
     <!-- TelaDeLogin -->
     <string name="EmailTextViewTelaDeLogin">E-mail</string>

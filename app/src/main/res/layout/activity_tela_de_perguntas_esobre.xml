@@ -58,15 +58,17 @@
                 android:layout_width="412dp"
                 android:layout_height="wrap_content"
                 android:background="@android:color/darker_gray"
+                android:paddingLeft="5dp"
                 android:text="@string/PerguntaBug"
-                android:textAlignment="center"
+                android:textAlignment="textStart"
                 android:textAllCaps="false"
                 android:textSize="18sp" />
 
             <ScrollView
                 android:id="@+id/ScrollViewBug"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:visibility="gone">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -166,6 +168,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
                 android:background="@android:color/transparent"
                 android:text="@string/Pergunta1"
                 android:textAlignment="textStart"
@@ -199,6 +202,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
                 android:background="@android:color/transparent"
                 android:text="@string/Pergunta2"
                 android:textAlignment="textStart"
@@ -232,6 +236,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
                 android:background="@android:color/transparent"
                 android:text="@string/Pergunta3"
                 android:textAlignment="textStart"
@@ -265,6 +270,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
                 android:background="@android:color/transparent"
                 android:text="@string/Pergunta4"
                 android:textAlignment="textStart"
@@ -298,6 +304,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
                 android:background="@android:color/transparent"
                 android:text="@string/Pergunta5"
                 android:textAlignment="textStart"
@@ -331,6 +338,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
                 android:background="@android:color/transparent"
                 android:text="@string/Pergunta6"
                 android:textAlignment="textStart"
@@ -364,6 +372,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
                 android:background="@android:color/transparent"
                 android:text="@string/Pergunta7"
                 android:textAlignment="textStart"
@@ -397,6 +406,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
                 android:background="@android:color/transparent"
                 android:text="@string/Pergunta8"
                 android:textAlignment="textStart"
@@ -430,6 +440,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
                 android:background="@android:color/transparent"
                 android:text="@string/Pergunta9"
                 android:textAlignment="textStart"
@@ -463,6 +474,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
                 android:background="@android:color/transparent"
                 android:text="@string/Pergunta10"
                 android:textAlignment="textStart"
@@ -499,7 +511,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="50dp"
-        android:visibility="visible">
+        android:visibility="gone">
 
         <LinearLayout
             android:layout_width="match_parent"

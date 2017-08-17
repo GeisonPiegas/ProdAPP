@@ -187,7 +187,7 @@
         <!-- SUB MENU PRAGAS -->
         <activity
             android:name=".SubMenuPragas"
-            android:label="Reconhecimento de Pragas"
+            android:label="Dicionário de Pragas"
             android:theme="@style/TemaMenuPragas">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

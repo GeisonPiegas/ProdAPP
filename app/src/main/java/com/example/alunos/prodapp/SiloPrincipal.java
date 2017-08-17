@@ -144,12 +144,16 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
             if(testeVisivelAdicionar == true){
                 LinearLayoutAdicionar1.setVisibility(View.VISIBLE);
                 LinearLayoutRemover1.setVisibility(View.GONE);
+                pegaValorInformado.setVisibility(View.VISIBLE);
+                tiraValorInformado.setVisibility(View.VISIBLE);
 
                 testeVisivelAdicionar = false;
                 testeVisivelRemover = true;
             }else{
                 LinearLayoutAdicionar1.setVisibility(View.GONE);
                 LinearLayoutRemover1.setVisibility(View.GONE);
+                pegaValorInformado.setVisibility(View.GONE);
+                tiraValorInformado.setVisibility(View.GONE);
 
                 testeVisivelAdicionar = true;
                 testeVisivelRemover = true;
@@ -159,12 +163,16 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
             if(testeVisivelRemover == true){
                 LinearLayoutRemover1.setVisibility(View.VISIBLE);
                 LinearLayoutAdicionar1.setVisibility(View.GONE);
+                pegaValorInformado.setVisibility(View.VISIBLE);
+                tiraValorInformado.setVisibility(View.VISIBLE);
 
                 testeVisivelRemover = false;
                 testeVisivelAdicionar = true;
             }else{
                 LinearLayoutRemover1.setVisibility(View.GONE);
                 LinearLayoutAdicionar1.setVisibility(View.GONE);
+                pegaValorInformado.setVisibility(View.GONE);
+                tiraValorInformado.setVisibility(View.GONE);
 
                 testeVisivelRemover = true;
                 testeVisivelAdicionar = true;
@@ -174,6 +182,8 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
         if (botaoAdicionar.isPressed()) {
             LinearLayoutAdicionar1.setVisibility(View.GONE);
             LinearLayoutRemover1.setVisibility(View.GONE);
+            pegaValorInformado.setVisibility(View.GONE);
+            tiraValorInformado.setVisibility(View.GONE);
             testeVisivelAdicionar = true;
             testeVisivelRemover = true;
 
@@ -185,6 +195,8 @@ public class SiloPrincipal extends AppCompatActivity implements View.OnClickList
         if (buttonRemover.isPressed()) {
             LinearLayoutRemover1.setVisibility(View.GONE);
             LinearLayoutAdicionar1.setVisibility(View.GONE);
+            pegaValorInformado.setVisibility(View.GONE);
+            tiraValorInformado.setVisibility(View.GONE);
             testeVisivelRemover = true;
             testeVisivelAdicionar = true;
 
