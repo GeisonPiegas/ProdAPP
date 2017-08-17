@@ -155,25 +155,6 @@
                 android:text="@string/PragaMilho1Parte5"
                 android:textColor="@android:color/black" />
 
-            <TextView
-                android:id="@+id/textView25"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="10dp"
-                android:text="Controle:"
-                android:textColor="@android:color/black"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView26"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginLeft="5dp"
-                android:text="@string/PragaMilho1Parte6"
-                android:textColor="@android:color/black" />
-
             <Button
                 android:id="@+id/buttonVerProdutos"
                 android:layout_width="match_parent"
@@ -199,10 +180,12 @@
                             android:id="@+id/textView33"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
                             android:layout_marginLeft="5dp"
                             android:layout_marginTop="10dp"
-                            android:text="Controle:"
+                            android:text="Como Controlar"
                             android:textColor="@android:color/black"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -210,7 +193,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
-                            android:text="os produtos que combatem esse combatem prodiutos nao sao mais validos para o esto de sao paulo bla bla bla eu odeio sao borja apk, acaba logo essa poha pra para de enche meu litro de coca cola da pra 20 comer"
+                            android:text="Pulverizações com os inseticidas à base de Carbaryl, Triclofom e Cloropirifós etil, Paratiom metil (Folido 600). 10 lagartas (com mais de 2cm. de comprimento) por metro quadrado."
                             android:textColor="@android:color/black" />
 
                         <HorizontalScrollView
@@ -230,7 +213,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="5dp"
                                     android:layout_weight="1"
-                                    app:srcCompat="@drawable/pragamilho2" />
+                                    app:srcCompat="@drawable/produto1" />
 
                                 <ImageView
                                     android:id="@+id/imageView9"
@@ -238,7 +221,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="5dp"
                                     android:layout_weight="1"
-                                    app:srcCompat="@drawable/pragamilho4" />
+                                    app:srcCompat="@drawable/produto2" />
 
                                 <ImageView
                                     android:id="@+id/imageView8"
@@ -246,7 +229,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="5dp"
                                     android:layout_weight="1"
-                                    app:srcCompat="@drawable/pragaarroz2" />
+                                    app:srcCompat="@drawable/produto3" />
 
                                 <ImageView
                                     android:id="@+id/imageView7"
@@ -254,18 +237,9 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="5dp"
                                     android:layout_marginRight="5dp"
-                                    app:srcCompat="@drawable/pragaarroz1" />
+                                    app:srcCompat="@drawable/produto4" />
                             </LinearLayout>
                         </HorizontalScrollView>
-
-                        <TextView
-                            android:id="@+id/textView31"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginLeft="5dp"
-                            android:text="Essews produtos pod vir em forma de cascudos da patria explosivos que quando tocados no carro amarelo faz o mesmo miojo que 30 pessoas procudo 30 pessoas procurando 30 pessoas achando as outras peças do quebra tabuleiroranem"
-                            android:textColor="@android:color/black" />
 
                     </LinearLayout>
                 </ScrollView>

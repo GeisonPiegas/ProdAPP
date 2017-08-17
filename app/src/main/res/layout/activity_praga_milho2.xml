@@ -168,24 +168,6 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/textView35"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="10dp"
-                            android:text="Controle:"
-                            android:textColor="@android:color/black"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/textView29"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="5dp"
-                            android:text="os produtos que combatem esse combatem prodiutos nao sao mais validos para o esto de sao paulo bla bla bla eu odeio sao borja apk, acaba logo essa poha pra para de enche meu litro de coca cola da pra 20 comer"
-                            android:textColor="@android:color/black" />
-
                         <HorizontalScrollView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -203,7 +185,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="5dp"
                                     android:layout_weight="1"
-                                    app:srcCompat="@drawable/pragamilho2" />
+                                    app:srcCompat="@drawable/pulgao1" />
 
                                 <ImageView
                                     android:id="@+id/imageView9"
@@ -211,7 +193,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="5dp"
                                     android:layout_weight="1"
-                                    app:srcCompat="@drawable/pragamilho4" />
+                                    app:srcCompat="@drawable/pulgao2" />
 
                                 <ImageView
                                     android:id="@+id/imageView8"
@@ -219,7 +201,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="5dp"
                                     android:layout_weight="1"
-                                    app:srcCompat="@drawable/pragaarroz2" />
+                                    app:srcCompat="@drawable/pulgao3" />
 
                                 <ImageView
                                     android:id="@+id/imageView7"
@@ -227,17 +209,72 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="5dp"
                                     android:layout_marginRight="5dp"
-                                    app:srcCompat="@drawable/pragaarroz1" />
+                                    app:srcCompat="@drawable/pulgao4" />
                             </LinearLayout>
                         </HorizontalScrollView>
 
                         <TextView
-                            android:id="@+id/textView31"
+                            android:id="@+id/textView35"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="10dp"
+                            android:layout_marginBottom="20dp"
                             android:layout_marginLeft="5dp"
-                            android:text="Essews produtos pod vir em forma de cascudos da patria explosivos que quando tocados no carro amarelo faz o mesmo miojo que 30 pessoas procudo 30 pessoas procurando 30 pessoas achando as outras peças do quebra tabuleiroranem"
+                            android:layout_marginTop="15dp"
+                            android:text="Como Controlar"
+                            android:textAlignment="textStart"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Controle Natural "
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView29"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:paddingBottom="15dp"
+                            android:text="Frequentemente as populações do pulgãodo-milho são naturalmente mantidas sob controle devido à existência de diversos inimigos naturais associados a esta praga, como coccinelídeos (Cycloneda sanguinea, Eriopis connexa), sirfídeos, crisopídeos e microimenóperos (parasitóides) que transformam os pulgões em indivíduos vulgarmente denominados de “múmias” ."
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/textView26"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Uso de práticas agronômicas "
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView77"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:paddingBottom="15dp"
+                            android:text="A observação a campo de híbridos de milho mais suscetíveis ao pulgão é uma informação importante 14.9.1. Métodos de controle do pulgão-do-milho Figura 14.15. “Múmia” de pulgão-do-milho. FUNDAÇÃO MS para estruturar as táticas de manejo. Outro fato a ser considerado é o de se evitar o escalonamento do plantio das áreas de milho, para que não haja a migração de pulgões alados de lavouras mais velhas para outras mais novas, as quais sofreriam grande pressão da praga e consequentemente maiores prejuízos. Além disso, plantios de milho safrinha mais tardios estariam mais sujeitos a períodos de estiagem mais prolongados, favorecendo o ataque da praga. "
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/textView79"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Controle químico"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView80"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:paddingBottom="15dp"
+                            android:text="Os produtos registrados para o controle do pulgão-do-milho se resumem ao tratamento de sementes , no entanto pulverizações aéreas com inseticidas a base de neonicotinóides têm apresentado bons resultados a campo, devendo-se respeitar, sempre, o período de carência. Pulverizações de parte aérea só se justificam se a infestação da praga tiver atingido populações demasiadamente elevadas (mais de 100 indivíduos por planta) em um percentual muito expressivo de plantas por hectare. Fatores agravantes como estresse hídrico próximo ao pendoamento das plantas pode potencializar os danos. A quantidade e diversidade de inimigos naturais na área devem sempre ser levadas em consideração para a tomada de decisão com controle químico. "
                             android:textColor="@android:color/black" />
 
                     </LinearLayout>

@@ -14,7 +14,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class PragaSoja1 extends AppCompatActivity implements View.OnClickListener{
+public class PragaSoja1 extends AppCompatActivity implements View.OnClickListener {
     private RelativeLayout RelativeLayout;
     private ImageButton imageButtonEsquerda;
     private ImageButton imageButtonDireita;
@@ -78,7 +78,7 @@ public class PragaSoja1 extends AppCompatActivity implements View.OnClickListene
         //Teste logico pra abrir e fechar o menuzinho dos produtos que combatem cada praga, e estou
         // setando um texto diferente em cada clique no button ...
         if (buttonVerProdutos.isPressed()) {
-            if(teste == true){
+          /*  if(teste == true){
                 RelativeLayoutVerMais.setVisibility(View.VISIBLE);
                 buttonVerProdutos.setText("FECHAR PRODUTOS PARA CONTROLE");
                 teste = false;
@@ -89,6 +89,7 @@ public class PragaSoja1 extends AppCompatActivity implements View.OnClickListene
                 teste = true;
             }
         }
-
+*/
+        }
     }
 }

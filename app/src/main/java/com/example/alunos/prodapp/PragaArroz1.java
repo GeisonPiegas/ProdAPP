@@ -78,7 +78,7 @@ public class PragaArroz1 extends AppCompatActivity implements View.OnClickListen
         if (buttonVerProdutos.isPressed()) {
 
            // Toast.makeText(getBaseContext(), "Deslize a Tela para Baixo." + null, Toast.LENGTH_SHORT).show(); // mensagem é apenas temporaria.
-
+/*
             if(teste == true){
                 RelativeLayoutVerMais.setVisibility(View.VISIBLE);
                 buttonVerProdutos.setText("FECHAR PRODUTOS PARA CONTROLE");
@@ -89,9 +89,9 @@ public class PragaArroz1 extends AppCompatActivity implements View.OnClickListen
                 RelativeLayoutVerMais.setVisibility(View.GONE);
                 buttonVerProdutos.setText("VER PRODUTOS PARA CONTROLE");
                 teste = true;
-
+*/
             }
         }
 
     }
-}
+
