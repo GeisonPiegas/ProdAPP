@@ -1,9 +1,12 @@
 package com.example.alunos.prodapp;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class TelaRotacaoDeCulturaMaisDetalhes extends AppCompatActivity implements View.OnClickListener {
 
@@ -30,11 +33,27 @@ public class TelaRotacaoDeCulturaMaisDetalhes extends AppCompatActivity implemen
     @Override
     public void onClick(View view) {
         if (grafrico1.isPressed()){
+            Intent intentZoomGrafico = new Intent(this, ZoomGrafico1.class);
+            startActivity(intentZoomGrafico);
+            finish();
 
+            Context contexto = getApplicationContext();
+            String texto = "Clique na imagem para voltar";
+            int duracao = Toast.LENGTH_SHORT;
+            Toast toast = Toast.makeText(contexto, texto,duracao);
+            toast.show();
         }
 
         if (grafrico2.isPressed()){
+            Intent intentZoomGrafico = new Intent(this, ZoomGrafico1.class);
+            startActivity(intentZoomGrafico);
+            finish();
 
+            Context contexto = getApplicationContext();
+            String texto = "Clique na imagem para voltar";
+            int duracao = Toast.LENGTH_SHORT;
+            Toast toast = Toast.makeText(contexto, texto,duracao);
+            toast.show();
         }
 
         if (grafrico4.isPressed()){
