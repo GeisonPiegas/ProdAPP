@@ -1,15 +1,20 @@
 package com.example.alunos.prodapp;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
+
+import Mensagem.MensagemGeral;
 
 public class TelaDeRotacaoDeCultura extends AppCompatActivity implements View.OnClickListener{
     private CheckBox checkBoxArroz;
@@ -77,7 +82,24 @@ public class TelaDeRotacaoDeCultura extends AppCompatActivity implements View.On
 
     }
 
+    //Parte responsável peli menuzinho de sair
+    public boolean onCreateOptionsMenu(Menu menu) {
 
+        getMenuInflater().inflate(R.menu.menu_rotacao, menu);
+        return true;
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item){
+        int id = item.getItemId() ;
+
+        // Teste de o id foi o que foi clickado e faz un teste com o usuário
+        if (id == R.id.verInfoRotacao){
+            Intent intentTelaMaisDetalheSilo = new Intent(this, TelaRotacaoDeCulturaMaisDetalhes.class); // criando um novo objeto da classe Intent e passado os parametros a outra activity
+            startActivity(intentTelaMaisDetalheSilo); // comecando a activity
+            return true ;
+        }
+        return super.onOptionsItemSelected(item) ;
+    }
 
     @Override
     public void onClick(View view) {
