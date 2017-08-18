@@ -5,9 +5,9 @@
     <!-- TelaDeLogin -->
     <string name="EmailTextViewTelaDeLogin">E-mail</string>
     <string name="SenhaTextViewTelaDeLogin">Senha</string>
-    <string name="SalvarSenhaCheckBoxTelaDeLogin">Deseja salvar sua senha ?</string>
+    <string name="SalvarSenhaCheckBoxTelaDeLogin">Deseja salvar sua senha?</string>
     <string name="EntrarButtonTelaDeLogin">Logar</string>
-    <string name="EsqueceuSenhaTextViewTelaDeLogin">Problemas com sua conta ?</string>
+    <string name="EsqueceuSenhaTextViewTelaDeLogin">Problemas com sua conta?</string>
 
     <!-- Silo já Cadastrado -->
     <string name="nomeSilo">1</string>
@@ -23,19 +23,19 @@
     <string name="CadastrarButtonTelaDeCadastro">Cadastrar-se</string>
 
     <!-- TelaDeCadastro -->
-    <string name="CamposObrigatorios">Esses Campos são \n Obrigatórios !</string>
-    <string name="CampoSenhaUsuario">Você Deve Informar a Senha !</string>
-    <string name="CampoEmailUsuario">Você Deve Informar o E-mail !</string>
-    <string name="CampoNomeUsuario">Você Deve Informar o Nome !</string>
-    <string name="EmailNaoCorreponde">Os E-mails Informados São Diferentes !</string>
-    <string name="SenhaNaoCorreponde">As Senhas Informadas São Diferentes !</string>
+    <string name="CamposObrigatorios">Esses campos são obrigatórios!</string>
+    <string name="CampoSenhaUsuario">Você deve informar a senha!</string>
+    <string name="CampoEmailUsuario">Você deve informar o e-mail!</string>
+    <string name="CampoNomeUsuario">Você deve informar o nome!</string>
+    <string name="EmailNaoCorreponde">Os E-mails Informados São Diferentes!</string>
+    <string name="SenhaNaoCorreponde">As Senhas Informadas São Diferentes!</string>
 
     <!-- Copiados Direto do Projeto PARTIU_sb -->
     <string name="Atualizar_Evento">Atualizar Eventos</string>
-    <string name="Campos_Obrigatorios">Campos Obrigatorios</string>
-    <string name="mensagem_cadastrar">Resgistro cadastro com sucesso ! </string>
-    <string name="mensagem_atualizar">Resgistro Atualizado com Sucesso ! </string>
-    <string name="mensagem_erro">Erro ao Salvar !! ! </string>
+    <string name="Campos_Obrigatorios">Campos obrigatorios</string>
+    <string name="mensagem_cadastrar">Resgistro cadastro com sucesso! </string>
+    <string name="mensagem_atualizar">Resgistro atualizado com sucesso! </string>
+    <string name="mensagem_erro">Erro ao salvar! </string>
     <string name="popin_textview_dataEvento">Informe a Data do Evento:</string>
     <string name="popin_button_dataEvento">Confirmar</string>
     <string name="popin_textview_Assunto">Assunto da Mensagem:</string>
@@ -61,9 +61,9 @@
     <string name="categoria_lista_categoria">categoria_lista_categoria</string>
 
     <!-- TelaDeCadastro -->
-    <string name="CamposEmailDiferentes">O E-mail não Confere com o que foi Digitado Acima!</string>
-    <string name="CamposSenhaDiferentes">A Senha não Confere com a que foi Digitada Acima!</string>
-    <string name="LoginTextViewTelaDeCadastro">Já é cadastrado? Clique aqui e faça login</string>
+    <string name="CamposEmailDiferentes">O E-mail não confere com o que foi digitado acima!</string>
+    <string name="CamposSenhaDiferentes">A Senha não confere com a que foi digitada acima!</string>
+    <string name="LoginTextViewTelaDeCadastro">Já é cadastrado? Clique aqui e faça login.</string>
 
     <!-- TelaDeLogin -->
     <string name="CriarContaUsuarioTextViewTelaDeLogin">Ainda não é cadastrado? Clique aqui.</string>
@@ -75,7 +75,7 @@
     <string name="action_settings">Settings</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    //aqui está sendo criando as Strings pros menuzinhos clicaveis
+    <!-- aqui está sendo criando as Strings pros menuzinhos clicaveis -->
     <string name="sair">Sair</string>
     <string name="maisInfoRotacao">Ver mais informações</string>
 

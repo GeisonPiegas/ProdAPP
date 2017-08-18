@@ -126,7 +126,7 @@ public class TelaDeLogin extends AppCompatActivity implements View.OnClickListen
         // Fazendo o teste logico e testanto se o usuario não digitou nada ou deixou nulo
         if ((email == null) || (email.equals(""))) {
             validacao = false;
-            EmailEditTextTelaDeLogin.setError("E-mail inválido"); // mostrando de erro criado no <String>
+            EmailEditTextTelaDeLogin.setError("E-mail inválido!"); // mostrando de erro criado no <String>
 
         }
 
@@ -134,12 +134,12 @@ public class TelaDeLogin extends AppCompatActivity implements View.OnClickListen
             validacao = true;
         } else {
             validacao = false;
-            EmailEditTextTelaDeLogin.setError("Insira um E-mail Válido");
+            EmailEditTextTelaDeLogin.setError("Insira um e-mail válido!");
         }
 
         if ((senha == null) || (senha.equals(""))) {
             validacao = false;
-            SenhaEditTextTelaDeLogin.setError("Senha Inválida");
+            SenhaEditTextTelaDeLogin.setError("Senha inválida!");
 
         }
 
@@ -154,7 +154,7 @@ public class TelaDeLogin extends AppCompatActivity implements View.OnClickListen
                 // Se o Login for Incorreto ele cai nesta condição, E chama o metodo mensagem - o objeto criado - por parametros recebe obrigatoriamente
                 // (A Activity que deseja que apareça a mensagem neste caso usa-se THIS pois é nesta activity atual 'LoginActivity', com o comando 'getString' está sendo
                 // setada a mensagem -> usa-se a Classe 'R' -  o Tipo de dados(String) e o metodo que foi criado com as mensagens)
-                MensagemGeral.Msg(this, "Usuário e/ou Senha inválido!");
+                MensagemGeral.Msg(this, "Usuário e/ou senha inválido!");
             }
         }
 
