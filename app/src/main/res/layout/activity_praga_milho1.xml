@@ -238,6 +238,15 @@
                                     android:layout_marginLeft="5dp"
                                     android:layout_marginRight="5dp"
                                     app:srcCompat="@drawable/produto4" />
+
+                                <ImageView
+                                    android:id="@+id/imageView19"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/produto4" />
                             </LinearLayout>
                         </HorizontalScrollView>
 
