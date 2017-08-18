@@ -36,6 +36,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:fontFamily="sans-serif-smallcaps"
                 android:text="@string/TelaDeSincronizacaoTextViewDescricao"
                 android:textAlignment="center"

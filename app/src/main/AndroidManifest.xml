@@ -412,7 +412,7 @@
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:theme="@style/TemaMenuWifi"
+                android:theme="@style/TemaMenuWifi2"
                 android:value=".MenuCentral" />
         </activity>
         <!-- ................................................................................... -->
@@ -431,6 +431,7 @@
         <activity
             android:name=".TelaRotacaoDeCulturaMaisDetalhes"
             android:label="Informações Complementares"
+            android:theme="@style/TemaMenuRotacao"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -440,6 +441,7 @@
         <!-- ZoomGrafico1 -->
         <activity android:name=".ZoomGrafico1"
             android:label=""
+            android:theme="@style/TemaMenuRotacao"
             android:screenOrientation="portrait">
 
         </activity>
@@ -447,6 +449,7 @@
         <!-- ZoomGrafico2 -->
         <activity android:name=".ZoomGrafico2"
             android:label=""
+            android:theme="@style/TemaMenuRotacao"
             android:screenOrientation="portrait">
 
         </activity>
