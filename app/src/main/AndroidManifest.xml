@@ -72,7 +72,6 @@
         <activity
             android:name=".TelaDeLogin"
             android:theme="@style/TemaMenuCentral">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -153,9 +152,7 @@
         <!-- MENU CENTRAL -->
         <activity
             android:name=".MenuCentral"
-            android:theme="@style/TemaMenuCentral">
-
-        </activity>
+            android:theme="@style/TemaMenuCentral"></activity>
         <!-- ................................................................................... -->
         <!-- SILO PRINCIPAL -->
         <activity
@@ -393,7 +390,8 @@
                 android:value=".MenuCentral" />
         </activity>
         <!-- ................................................................................... -->
-        <activity android:name=".TelaDeEscolhaPrimeira"></activity>
+        <activity android:name=".TelaDeEscolhaPrimeira" />
+        <activity android:name=".TelaRotacaoDeCulturaMaisDetalhes"></activity>
     </application>
 
 </manifest>
