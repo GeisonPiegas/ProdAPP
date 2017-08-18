@@ -72,7 +72,6 @@
         <activity
             android:name=".TelaDeLogin"
             android:theme="@style/TemaMenuCentral">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -153,9 +152,7 @@
         <!-- MENU CENTRAL -->
         <activity
             android:name=".MenuCentral"
-            android:theme="@style/TemaMenuCentral">
-
-        </activity>
+            android:theme="@style/TemaMenuCentral"></activity>
         <!-- ................................................................................... -->
         <!-- SILO PRINCIPAL -->
         <activity
@@ -376,8 +373,7 @@
         <!-- Tela de Sincronização -->
         <activity
             android:name=".TelaDeSincronizacao"
-            android:label="Sincronização dos dados"
-            android:theme="@style/TemaMenuWifi">
+            android:label="Sincronização dos dados">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:theme="@style/TemaMenuWifi"
@@ -394,6 +390,8 @@
                 android:value=".MenuCentral" />
         </activity>
         <!-- ................................................................................... -->
+        <activity android:name=".TelaDeEscolhaPrimeira" />
+        <activity android:name=".TelaRotacaoDeCulturaMaisDetalhes"></activity>
     </application>
 
 </manifest>
