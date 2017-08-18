@@ -67,6 +67,14 @@
                 android:textSize="16sp"
                 android:typeface="sans" />
 
+            <TextView
+                android:id="@+id/textView113"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Para ampliar, clique na imagem"
+                android:textAlignment="center"
+                android:textColor="@android:color/black" />
+
             <ImageView
                 android:id="@+id/grafico1"
                 android:layout_width="match_parent"
@@ -76,6 +84,13 @@
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="5dp"
                 app:srcCompat="@drawable/grafico1" />
+
+            <TextView
+                android:id="@+id/textView114"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Para ampliar, clique na imagem"
+                android:textColor="@android:color/black" />
 
             <ImageView
                 android:id="@+id/grafico2"
