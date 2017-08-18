@@ -23,25 +23,20 @@
                 android:id="@+id/imageView20"
                 android:layout_width="match_parent"
                 android:layout_height="176dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
                 app:srcCompat="@drawable/arte_pronta" />
 
             <TextView
-                android:id="@+id/textView103"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
-                android:layout_weight="2.61"
-                android:text="Mais informações sobre a rotação de culturas"
-                android:textAlignment="center"
-                android:textSize="18sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
                 android:text="Os benefícios da rotação de culturas não se limitam apenas ao aumento da produtividade, envolvem também a melhoria da qualidade física, química e biológica do solo, além da redução de pragas, doenças e plantas daninhas."
                 android:textAlignment="textStart"
+                android:textColor="@android:color/black"
                 android:textSize="16sp"
                 android:typeface="sans" />
 
@@ -49,11 +44,12 @@
                 android:id="@+id/textView82"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="15dp"
                 android:layout_marginLeft="10dp"
                 android:layout_weight="2.61"
                 android:text="A ausência de um sistema acarreta em alterações de ordem química, física e biológica no solo, que podem comprometer a estabilidade do sistema produtivo."
                 android:textAlignment="textStart"
+                android:textColor="@android:color/black"
                 android:textSize="16sp"
                 android:typeface="sans" />
 
@@ -61,14 +57,55 @@
                 android:id="@+id/textView81"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="15dp"
                 android:layout_marginLeft="10dp"
                 android:layout_weight="2.61"
                 android:fontFamily="sans-serif"
                 android:text="O aumento da diversidade biológica contribui para a estabilidade da produção devido à ciclagem de nutrientes, a fixação biológica de N, à diversificação da flora de plantas daninhas, á redução na ocorrência de doenças, ao aumento da cobertura do solo e ao trabalho realizado pelo sistema radicular das espécies, reduzindo o grau de compactação do solo em sistemas intensivos."
                 android:textAlignment="textStart"
+                android:textColor="@android:color/black"
                 android:textSize="16sp"
                 android:typeface="sans" />
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="match_parent"
+                android:layout_height="176dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/grafico1" />
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="match_parent"
+                android:layout_height="176dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/grafico2" />
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="match_parent"
+                android:layout_height="176dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/grafico4" />
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="match_parent"
+                android:layout_height="176dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/grafico5" />
 
             <TextView
                 android:id="@+id/TelaDeSincronizacaoTextViewTituloPrincipal"
@@ -77,7 +114,9 @@
                 android:layout_marginBottom="15dp"
                 android:text="As culturas que compõe um sistema de rotação de culturas devem atender ao maior numero dos seguintes princípios:"
                 android:textAlignment="center"
-                android:textSize="20sp"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -90,6 +129,7 @@
                 android:fontFamily="sans-serif"
                 android:text="1 – Produzir, quantidade suficiente de fitomassa da parte aérea e raízes visando ao aumento do teor de MOS e à formação de cobertura morta para controlar os processos erosivos, diminuir as oscilações de temperatura e reduzir as perdas de água por evaporação;"
                 android:textAlignment="textStart"
+                android:textColor="@android:color/black"
                 android:textSize="16sp"
                 android:typeface="sans" />
 
@@ -103,6 +143,7 @@
                 android:fontFamily="sans-serif"
                 android:text="2 – Promover condições favoráveis de solos que diminuam a suscetibilidade das plantas aos danos de pragas e doenças ou contribuam para a formação de um ambiente supressor as mesmas;"
                 android:textAlignment="textStart"
+                android:textColor="@android:color/black"
                 android:textSize="16sp"
                 android:typeface="sans" />
 
@@ -116,6 +157,7 @@
                 android:fontFamily="sans-serif"
                 android:text="3 – Apresentar exigências nutricionais e capacidade de aproveitamento de nutrientes diferenciais (ex: leguminosas e gramíneas);"
                 android:textAlignment="textStart"
+                android:textColor="@android:color/black"
                 android:textSize="16sp"
                 android:typeface="sans" />
 
@@ -129,6 +171,7 @@
                 android:fontFamily="sans-serif"
                 android:text="4 – Apresentar suscetibilidade a pragas e doenças diferentes, evitando as espécies que sejam hospedeiras de pragas e doenças de importância econômica para as culturas principais;"
                 android:textAlignment="textStart"
+                android:textColor="@android:color/black"
                 android:textSize="16sp"
                 android:typeface="sans" />
 
@@ -142,6 +185,7 @@
                 android:fontFamily="sans-serif"
                 android:text="5 – Permitir a diversificação de princípios ativos de mecanismos de ação de herbicidas, inseticidas e fungicidas, visando evitar a seleção de espécies ou biótipos tolerantes ou resistentes;"
                 android:textAlignment="textStart"
+                android:textColor="@android:color/black"
                 android:textSize="16sp"
                 android:typeface="sans" />
 
@@ -155,6 +199,7 @@
                 android:fontFamily="sans-serif"
                 android:text="6 – Reduzir o tempo em que a área permaneça sem culturas vivas, contemplando a inclusão, em alguma fase, de culturas caracterizadas por alta produção de fitomassa e sistemas radiculares profundos, agressivo e abundante, visando melhorar a qualidade do solo;"
                 android:textAlignment="textStart"
+                android:textColor="@android:color/black"
                 android:textSize="16sp"
                 android:typeface="sans" />
 
@@ -168,6 +213,7 @@
                 android:fontFamily="sans-serif"
                 android:text="7 – Resultar em renda direta pela produção de grãos, sementes ou forragem. Ou, indireta através de efeitos positivos sobre as culturas subsequentes."
                 android:textAlignment="textStart"
+                android:textColor="@android:color/black"
                 android:textSize="16sp"
                 android:typeface="sans" />
 
