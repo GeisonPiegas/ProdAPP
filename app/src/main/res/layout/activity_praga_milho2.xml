@@ -213,14 +213,6 @@
                                     android:layout_marginRight="5dp"
                                     app:srcCompat="@drawable/pulgao4" />
 
-                                <ImageView
-                                    android:id="@+id/imageView18"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="5dp"
-                                    android:layout_marginRight="5dp"
-                                    android:layout_weight="1"
-                                    app:srcCompat="@drawable/pulgao4" />
                             </LinearLayout>
                         </HorizontalScrollView>
 

@@ -373,7 +373,8 @@
         <!-- Tela de Sincronização -->
         <activity
             android:name=".TelaDeSincronizacao"
-            android:label="Sincronização dos dados">
+            android:label="Sincronização dos dados"
+            android:theme="@style/TemaMenuWifi">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:theme="@style/TemaMenuWifi"
@@ -390,7 +391,6 @@
                 android:value=".MenuCentral" />
         </activity>
         <!-- ................................................................................... -->
-        <activity android:name=".TelaDeEscolhaPrimeira"></activity>
     </application>
 
 </manifest>
