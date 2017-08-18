@@ -46,7 +46,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:ems="10"
-                android:hint="Bill Portões"
+                android:hint="John Constantine"
                 android:inputType="textPersonName"
                 android:textColor="@android:color/black" />
 
@@ -67,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:ems="10"
-                android:hint="exemplo@gmail.com"
+                android:hint="constantine@prodapp.bait"
                 android:inputType="textEmailAddress"
                 android:textColor="@android:color/black" />
 
