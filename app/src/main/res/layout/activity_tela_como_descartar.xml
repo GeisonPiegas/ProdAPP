@@ -36,8 +36,24 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginTop="10dp"
+                        android:text="Breve manual "
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                    <TextView
+                        android:id="@+id/textView103"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
                         android:text="@string/DescarteAgrotoxicoParte1"
                         android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="@android:color/black"
                         android:textSize="18sp"
                         android:typeface="sans" />
 
@@ -51,6 +67,21 @@
                         android:background="@android:color/darker_gray"
                         android:text="@string/DescarteAgrotoxicoParte2"
                         android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:typeface="sans" />
+
+                    <TextView
+                        android:id="@+id/textView111"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Para ampliar, clique na imagem"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="@android:color/black"
                         android:textSize="18sp"
                         android:typeface="sans" />
 
@@ -71,6 +102,21 @@
                         android:layout_marginLeft="5dp"
                         android:text="@string/DescarteAgrotoxicoParte3"
                         android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:typeface="sans" />
+
+                    <TextView
+                        android:id="@+id/textView112"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Para ampliar, clique na imagem"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="@android:color/black"
                         android:textSize="18sp"
                         android:typeface="sans" />
 
