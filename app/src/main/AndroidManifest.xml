@@ -17,6 +17,7 @@
         <!-- CADASTRO -->
         <activity
             android:name=".TelaDeCadastro"
+            android:label="Cadastro"
             android:theme="@style/TemaMenuCentral">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -152,7 +153,7 @@
         <!-- MENU CENTRAL -->
         <activity
             android:name=".MenuCentral"
-            android:theme="@style/TemaMenuCentral" />
+            android:theme="@style/TemaMenuCentral"></activity>
         <!-- ................................................................................... -->
         <!-- SILO PRINCIPAL -->
         <activity
@@ -287,7 +288,7 @@
         <!-- COLETA DE AGROTOXICOS -->
         <activity
             android:name=".TelaColetaAgrotoxicos"
-            android:label="Descarte de Agrotoxicos"
+            android:label="Descarte de Defensivos"
             android:theme="@style/TemaMenuDescarte">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -373,7 +374,7 @@
         <!-- Tela de Sincronização -->
         <activity
             android:name=".TelaDeSincronizacao"
-            android:label="Sincronização dos dados">
+            android:label="Sincronização dos Dados">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:theme="@style/TemaMenuWifi"
@@ -390,15 +391,14 @@
                 android:value=".MenuCentral" />
         </activity>
         <!-- ................................................................................... -->
-        <!-- TelaDeEscolhaPrimeira -->
-        <activity android:name=".TelaDeEscolhaPrimeira" />
-        <!-- ................................................................................... -->
-        <!-- TelaRotacaoDeCulturaMaisDetalhes -->
-        <activity
-            android:name=".TelaRotacaoDeCulturaMaisDetalhes"
-            android:theme="@style/TemaMenuRotacao" />
-        <!-- ................................................................................... -->
-        <activity android:name=".ZoomGrafico1"></activity>
+
+        <activity android:name=".TelaRotacaoDeCulturaMaisDetalhes"
+            android:label="Informações Complementares">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TelaDeRotacaoDeCultura" />
+
+        </activity>
     </application>
 
 </manifest>
