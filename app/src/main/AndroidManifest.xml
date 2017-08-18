@@ -390,8 +390,13 @@
                 android:value=".MenuCentral" />
         </activity>
         <!-- ................................................................................... -->
+        <!-- TelaDeEscolhaPrimeira -->
         <activity android:name=".TelaDeEscolhaPrimeira" />
-        <activity android:name=".TelaRotacaoDeCulturaMaisDetalhes"></activity>
+        <!-- ................................................................................... -->
+        <!-- TelaRotacaoDeCulturaMaisDetalhes -->
+        <activity android:name=".TelaRotacaoDeCulturaMaisDetalhes"
+            android:theme="@style/TemaMenuRotacao"></activity>
+        <!-- ................................................................................... -->
     </application>
 
 </manifest>
