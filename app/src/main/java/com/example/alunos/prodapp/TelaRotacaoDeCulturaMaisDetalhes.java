@@ -45,7 +45,7 @@ public class TelaRotacaoDeCulturaMaisDetalhes extends AppCompatActivity implemen
         }
 
         if (grafrico2.isPressed()){
-            Intent intentZoomGrafico = new Intent(this, ZoomGrafico1.class);
+            Intent intentZoomGrafico = new Intent(this, ZoomGrafico2.class);
             startActivity(intentZoomGrafico);
             finish();
 
