@@ -53,17 +53,13 @@ public class TelaDeCadastro extends AppCompatActivity implements View.OnClickLis
         LinearLayoutVerticalTelaDeCadastro = (LinearLayout) findViewById(R.id.LinearLayoutVerticalTelaDeCadastro) ;
         IconeImageViewTelaDeCadastro = (ImageView) findViewById(R.id.IconeImageViewTelaDeCadastro) ;
 
-
-         /*NomeTextViewTelaDeCadastro = (TextView) findViewById(R.id.NomeTextViewTelaDeCadastro) ;
+         NomeTextViewTelaDeCadastro = (TextView) findViewById(R.id.NomeTextViewTelaDeCadastro) ;
         NomeEditTextTelaDeCadastro = (EditText) findViewById(R.id.NomeEditTextTelaDeCadastro) ;
         EmailTextViewTelaDeCadastro =  (TextView) findViewById(R.id.EmailTextViewTelaDeCadastro) ;
          EmailEditTextTelaDeCadastro =  (EditText) findViewById(R.id.EmailEditTextTelaDeCadastro) ;
-        ConfirmarEmailTextViewTelaDeCadastro = (TextView) findViewById(R.id.ConfirmarEmailTextViewTelaDeCadastro) ;
-        ConfirmarEmailEditTextTelaDeCadastro = (EditText) findViewById(R.id.ConfirmarEmailEditTextTelaDeCadastro) ;
+
          SenhaTextViewTelaDeCadastro = (TextView) findViewById(R.id.SenhaTextViewTelaDeCadastro) ;
         SenhaEditTextTelaDeCadastro = (EditText) findViewById(R.id.SenhaEditTextTelaDeCadastro) ;
-       ConfirmarSenhaTextViewTelaDeCadastro = (TextView) findViewById(R.id.ConfirmarSenhaTextViewTelaDeCadastro) ;
-        ConfirmarSenhaEditTextTelaDeCadastro = (EditText) findViewById(R.id.ConfirmarSenhaEditTextTelaDeCadastro) ;
 
         CadastrarButtonTelaDeCadastro = (Button) findViewById(R.id.CadastrarButtonTelaDeCadastro) ;
         CadastrarButtonTelaDeCadastro.setOnClickListener(this);
@@ -72,7 +68,7 @@ public class TelaDeCadastro extends AppCompatActivity implements View.OnClickLis
         LoginTextViewTelaDeCadastro.setOnClickListener(this);
 
 
-*/
+
 
         //---------------------
         // PARTE REFERENTE AO CRUD
@@ -87,7 +83,7 @@ public class TelaDeCadastro extends AppCompatActivity implements View.OnClickLis
             EmailEditTextTelaDeCadastro.setText(model.getEmail_usuario());
             SenhaEditTextTelaDeCadastro.setText(model.getSenha_usuario());
 
-            setTitle(R.string.CadastrarButtonTelaDeCadastro); // Não sei de onde vem essa parte ainda
+            setTitle(R.string.CadastrarButtonTelaDeCadastro);
 
         }
 
@@ -107,8 +103,6 @@ public class TelaDeCadastro extends AppCompatActivity implements View.OnClickLis
         String nome_usuario = NomeEditTextTelaDeCadastro.getText().toString();
         String email_usuario = EmailEditTextTelaDeCadastro.getText().toString();
         String senha_usuario = SenhaEditTextTelaDeCadastro.getText().toString();
-        String confirma_email_usuario = ConfirmarEmailEditTextTelaDeCadastro.getText().toString();
-        String confirma_senha_usuario = ConfirmarSenhaEditTextTelaDeCadastro.getText().toString();
 
         // Validação de E-mail e Confirmar Email (@ e .)
         if (email_usuario.matches("[a-zA-Z0-9._-]+@[a-z]+.[a-z]+") && email_usuario.length() > 0) {
@@ -116,13 +110,6 @@ public class TelaDeCadastro extends AppCompatActivity implements View.OnClickLis
         } else {
             validacao = false;
             EmailEditTextTelaDeCadastro.setError("Insira um E-mail Válido");
-        }
-
-        if (confirma_email_usuario.matches("[a-zA-Z0-9._-]+@[a-z]+.[a-z]+") && confirma_email_usuario.length() > 0) {
-            validacao = true;
-        } else {
-            validacao = false;
-            ConfirmarEmailEditTextTelaDeCadastro.setError("Insira um E-mail Válido");
         }
 
         // Resposável por fazer os Testes Lógicos e Exibir pro usuário ao se logar
@@ -141,20 +128,6 @@ public class TelaDeCadastro extends AppCompatActivity implements View.OnClickLis
             SenhaEditTextTelaDeCadastro.setError(getString(R.string.CampoSenhaUsuario));
 
         }
-
-        // Validação da validação da senha e email, mas ta dando pau
-        /* if (confirma_email_usuario != email_usuario) {
-            validacao = false;
-            ConfirmarEmailEditTextTelaDeCadastro.setError(getString(R.string.CamposEmailDiferentes));
-        }
-
-        if (confirma_senha_usuario != senha_usuario) {
-            validacao = false;
-            ConfirmarSenhaEditTextTelaDeCadastro.setError(getString(R.string.CamposSenhaDiferentes));
-        } */
-
-
-
 
         if (validacao) {
 
@@ -198,14 +171,11 @@ public class TelaDeCadastro extends AppCompatActivity implements View.OnClickLis
     public void onClick(View v) {
 
         if (LoginTextViewTelaDeCadastro.isPressed()) {
-
             Intent intentTelaLogin = new Intent(this, TelaDeLogin.class); // criando um novo objeto da classe Intent e passado os parametros a outra activity
 
             startActivity(intentTelaLogin); // comecando a activity
 
             finish(); // finaliza a activity anterior
-
-          // overridePendingTransition(android.R.anim.slide_out_right, android.R.anim.slide_in_left);
         }
 
         if (CadastrarButtonTelaDeCadastro.isPressed()){
