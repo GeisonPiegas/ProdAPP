@@ -19,7 +19,7 @@ public class TelaDeRotacaoDeCultura extends AppCompatActivity implements View.On
     private CheckBox checkBoxMilhete;
     private CheckBox checkBoxSorgo;
     private CheckBox checkBoxTremoco;
-    private Button buttonSaberMais;
+    //private Button buttonSaberMais;
     private Button buttonCriarDiagrama;
     private ImageView imageViewCima;
     private ImageView imageViewEsquerda;
@@ -51,7 +51,7 @@ public class TelaDeRotacaoDeCultura extends AppCompatActivity implements View.On
         checkBoxMilhete = (CheckBox) findViewById(R.id.checkBoxMilhete);
         checkBoxSorgo = (CheckBox) findViewById(R.id.checkBoxSorgo);
         checkBoxTremoco = (CheckBox) findViewById(R.id.checkBoxTremoco);
-        buttonSaberMais = (Button) findViewById(R.id.buttonSaberMais);
+        //buttonSaberMais = (Button) findViewById(R.id.buttonSaberMais);
         buttonCriarDiagrama = (Button) findViewById(R.id.buttonCriarDiagrama);
         imageViewCima = (ImageView) findViewById(R.id.imageViewCima);
         imageViewEsquerda = (ImageView) findViewById(R.id.imageViewEsquerda);
@@ -61,7 +61,7 @@ public class TelaDeRotacaoDeCultura extends AppCompatActivity implements View.On
         LinearLayout2 = (LinearLayout) findViewById(R.id.LinearLayout2);
         LinearLayout3 = (LinearLayout) findViewById(R.id.LinearLayout3);
 
-        buttonSaberMais.setOnClickListener(this);
+        //buttonSaberMais.setOnClickListener(this);
         buttonCriarDiagrama.setOnClickListener(this);
 
         testeValor = 0;
@@ -121,9 +121,9 @@ public class TelaDeRotacaoDeCultura extends AppCompatActivity implements View.On
             tremoco = true;
         }
 
-        if (buttonSaberMais.isPressed()) {
+        /*if (buttonSaberMais.isPressed()) {
 
-        }
+        }*/
 
        if (buttonCriarDiagrama.isPressed()) {
            if(testeValor<4){

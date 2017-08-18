@@ -38,6 +38,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
                 android:text="@string/NomeDetalheTextViewTelaDeDetalhesDoSilo"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
@@ -56,6 +57,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
                 android:text="@string/TipoDeGraoTextViewTelaDeDetalhesDoSilo"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
@@ -74,6 +76,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
                 android:text="@string/PorteDoSiloTextViewTelaDeDetalhesDoSilo"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
@@ -92,6 +95,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
                 android:text="@string/CapacidadeTotalTextViewTelaDeDetalhesDoSilo"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
@@ -110,6 +114,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
                 android:text="@string/CapacidadeUtilizadaTextViewTelaDeDetalhesDoSilo"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
@@ -128,6 +133,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
                 android:text="@string/CapacidadeDisponivelTextViewTelaDeDetalhesDoSilo"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
@@ -146,6 +152,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
                 android:text="@string/DataDaCriacaoTextViewTelaDeDetalhesDoSilo"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
