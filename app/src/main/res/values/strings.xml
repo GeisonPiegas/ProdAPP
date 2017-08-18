@@ -77,7 +77,7 @@
 
     //aqui está sendo criando as Strings pros menuzinhos clicaveis
     <string name="sair">Sair</string>
-    <string name="acabeiDeCaixao">Acabei de Caixão</string>
+    <string name="maisInfoRotacao">Ver mais informações</string>
 
     <!-- TelaDeCadastroSilo -->
     <string name="IdentificacaoTextViewTelaDeCadastroSilo">Nome ou descrição</string>

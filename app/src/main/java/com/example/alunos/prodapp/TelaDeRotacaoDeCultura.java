@@ -1,14 +1,20 @@
 package com.example.alunos.prodapp;
 
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
+
+import Mensagem.MensagemGeral;
 
 public class TelaDeRotacaoDeCultura extends AppCompatActivity implements View.OnClickListener{
     private CheckBox checkBoxArroz;
@@ -19,7 +25,7 @@ public class TelaDeRotacaoDeCultura extends AppCompatActivity implements View.On
     private CheckBox checkBoxMilhete;
     private CheckBox checkBoxSorgo;
     private CheckBox checkBoxTremoco;
-    //private Button buttonSaberMais;
+    private Button buttonSaberMais;
     private Button buttonCriarDiagrama;
     private ImageView imageViewCima;
     private ImageView imageViewEsquerda;
@@ -51,7 +57,7 @@ public class TelaDeRotacaoDeCultura extends AppCompatActivity implements View.On
         checkBoxMilhete = (CheckBox) findViewById(R.id.checkBoxMilhete);
         checkBoxSorgo = (CheckBox) findViewById(R.id.checkBoxSorgo);
         checkBoxTremoco = (CheckBox) findViewById(R.id.checkBoxTremoco);
-        //buttonSaberMais = (Button) findViewById(R.id.buttonSaberMais);
+        buttonSaberMais = (Button) findViewById(R.id.buttonSaberMais);
         buttonCriarDiagrama = (Button) findViewById(R.id.buttonCriarDiagrama);
         imageViewCima = (ImageView) findViewById(R.id.imageViewCima);
         imageViewEsquerda = (ImageView) findViewById(R.id.imageViewEsquerda);
@@ -61,7 +67,7 @@ public class TelaDeRotacaoDeCultura extends AppCompatActivity implements View.On
         LinearLayout2 = (LinearLayout) findViewById(R.id.LinearLayout2);
         LinearLayout3 = (LinearLayout) findViewById(R.id.LinearLayout3);
 
-        //buttonSaberMais.setOnClickListener(this);
+        buttonSaberMais.setOnClickListener(this);
         buttonCriarDiagrama.setOnClickListener(this);
 
         testeValor = 0;
@@ -76,10 +82,28 @@ public class TelaDeRotacaoDeCultura extends AppCompatActivity implements View.On
 
     }
 
+    //Parte responsável peli menuzinho de sair
+    public boolean onCreateOptionsMenu(Menu menu) {
 
+        getMenuInflater().inflate(R.menu.menu_rotacao, menu);
+        return true;
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item){
+        int id = item.getItemId() ;
+
+        // Teste de o id foi o que foi clickado e faz un teste com o usuário
+        if (id == R.id.verInfoRotacao){
+            Intent intentTelaMaisDetalheSilo = new Intent(this, TelaRotacaoDeCulturaMaisDetalhes.class); // criando um novo objeto da classe Intent e passado os parametros a outra activity
+            startActivity(intentTelaMaisDetalheSilo); // comecando a activity
+            return true ;
+        }
+        return super.onOptionsItemSelected(item) ;
+    }
 
     @Override
     public void onClick(View view) {
+
 
         if (checkBoxArroz.isChecked()){
             testeValor = testeValor+1;
@@ -121,9 +145,13 @@ public class TelaDeRotacaoDeCultura extends AppCompatActivity implements View.On
             tremoco = true;
         }
 
-        /*if (buttonSaberMais.isPressed()) {
+        if (buttonSaberMais.isPressed()) {
+            Intent intentRotacaoDeCulturaMaisDetalhes = new Intent(this, TelaRotacaoDeCulturaMaisDetalhes.class);
+            startActivity(intentRotacaoDeCulturaMaisDetalhes);
 
-        }*/
+
+
+        }
 
        if (buttonCriarDiagrama.isPressed()) {
            if(testeValor<4){
