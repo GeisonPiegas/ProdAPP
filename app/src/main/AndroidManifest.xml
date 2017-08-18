@@ -12,13 +12,15 @@
 
         <!-- ................................................................................... -->
         <!-- Não esta em uso -->
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
         <!-- ................................................................................... -->
         <!-- CADASTRO -->
         <activity
             android:name=".TelaDeCadastro"
             android:label="Cadastro"
-            android:theme="@style/TemaMenuCentral">
+            android:theme="@style/TemaMenuCentral"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaDeLogin" />
@@ -28,7 +30,8 @@
         <activity
             android:name=".TelaDeConfiguracaoDeSilo"
             android:label="Meus Silos"
-            android:theme="@style/TemaMenuSilo">
+            android:theme="@style/TemaMenuSilo"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuLateralActivity" />
@@ -38,7 +41,8 @@
         <activity
             android:name=".TelaCadastroSilos"
             android:label="Cadastro de Silos"
-            android:theme="@style/TemaMenuSilo">
+            android:theme="@style/TemaMenuSilo"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ListaSilos" />
@@ -47,7 +51,8 @@
         <!-- LISTAR USUARIOS -->
         <activity
             android:name=".ListaUsuarios"
-            android:theme="@style/TemaMenuUsuario">
+            android:theme="@style/TemaMenuUsuario"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuCentral" />
@@ -57,7 +62,8 @@
         <activity
             android:name=".ListaSilos"
             android:label="Meus Silos"
-            android:theme="@style/TemaMenuSilo">
+            android:theme="@style/TemaMenuSilo"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuCentral" />
@@ -67,12 +73,14 @@
         <activity
             android:name=".MenuLateralActivity"
             android:label="@string/title_activity_menu_lateral"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
         <!-- ................................................................................... -->
         <!-- TELA DE LOGIN -->
         <activity
             android:name=".TelaDeLogin"
-            android:theme="@style/TemaMenuCentral">
+            android:theme="@style/TemaMenuCentral"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -84,7 +92,8 @@
         <activity
             android:name=".TelaDeGerenciamentoDeSilo"
             android:label="Meus Silos"
-            android:theme="@style/TemaMenuSilo">
+            android:theme="@style/TemaMenuSilo"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SiloPrincipal" />
@@ -94,7 +103,8 @@
         <activity
             android:name=".TelaDeDetalhesDoSilo"
             android:label="Detalhes do Silo"
-            android:theme="@style/TemaMenuSilo">
+            android:theme="@style/TemaMenuSilo"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SiloPrincipal" />
@@ -104,7 +114,8 @@
         <activity
             android:name=".TelaEpocaDeArroz"
             android:label="Plantio de Arroz"
-            android:theme="@style/TemaMenuEpocas">
+            android:theme="@style/TemaMenuEpocas"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaEpocasDePlantacao" />
@@ -114,7 +125,8 @@
         <activity
             android:name=".TelaEpocaDeSoja"
             android:label="Plantio de Soja"
-            android:theme="@style/TemaMenuEpocas">
+            android:theme="@style/TemaMenuEpocas"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaEpocasDePlantacao" />
@@ -124,7 +136,8 @@
         <activity
             android:name=".TelaEpocaDeTrigo"
             android:label="Plantio de Trigo"
-            android:theme="@style/TemaMenuEpocas">
+            android:theme="@style/TemaMenuEpocas"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaEpocasDePlantacao" />
@@ -134,7 +147,8 @@
         <activity
             android:name=".TelaEpocaDeMilho"
             android:label="Plantio de Milho"
-            android:theme="@style/TemaMenuEpocas">
+            android:theme="@style/TemaMenuEpocas"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaColetaAgrotoxicos" />
@@ -144,7 +158,8 @@
         <activity
             android:name=".TelaEpocasDePlantacao"
             android:label="Calendario de Plantio"
-            android:theme="@style/TemaMenuEpocas">
+            android:theme="@style/TemaMenuEpocas"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuCentral" />
@@ -153,13 +168,15 @@
         <!-- MENU CENTRAL -->
         <activity
             android:name=".MenuCentral"
-            android:theme="@style/TemaMenuCentral" />
+            android:theme="@style/TemaMenuCentral"
+            android:screenOrientation="portrait"/>
         <!-- ................................................................................... -->
         <!-- SILO PRINCIPAL -->
         <activity
             android:name=".SiloPrincipal"
             android:label="Visualização"
-            android:theme="@style/TemaMenuSilo">
+            android:theme="@style/TemaMenuSilo"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ListaSilos" />
@@ -169,7 +186,8 @@
         <activity
             android:name=".PragaSoja1"
             android:label="Pragas da Soja"
-            android:theme="@style/TemaMenuPragas">
+            android:theme="@style/TemaMenuPragas"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SubSubMenuSoja" />
@@ -179,7 +197,8 @@
         <activity
             android:name=".PragaSoja2"
             android:label="Pragas da Soja"
-            android:theme="@style/TemaMenuPragas">
+            android:theme="@style/TemaMenuPragas"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SubSubMenuSoja" />
@@ -189,7 +208,8 @@
         <activity
             android:name=".SubMenuPragas"
             android:label="Dicionário de Pragas"
-            android:theme="@style/TemaMenuPragas">
+            android:theme="@style/TemaMenuPragas"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuCentral" />
@@ -199,7 +219,8 @@
         <activity
             android:name=".PragaMilho1"
             android:label="Pragas do Milho"
-            android:theme="@style/TemaMenuPragas">
+            android:theme="@style/TemaMenuPragas"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SubSubMenuMilho" />
@@ -209,7 +230,8 @@
         <activity
             android:name=".PragaMilho2"
             android:label="Pragas do Milho"
-            android:theme="@style/TemaMenuPragas">
+            android:theme="@style/TemaMenuPragas"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SubSubMenuMilho" />
@@ -219,7 +241,8 @@
         <activity
             android:name=".PragaArroz1"
             android:label="Pragas do Arroz"
-            android:theme="@style/TemaMenuPragas">
+            android:theme="@style/TemaMenuPragas"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SubSubMenuArroz" />
@@ -229,7 +252,8 @@
         <activity
             android:name=".PragaArroz2"
             android:label="Pragas do Arroz"
-            android:theme="@style/TemaMenuPragas">
+            android:theme="@style/TemaMenuPragas"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SubSubMenuArroz" />
@@ -239,7 +263,8 @@
         <activity
             android:name=".TelaDeNovidades"
             android:label="Novidades"
-            android:theme="@style/TemaMenuNoticias">
+            android:theme="@style/TemaMenuNoticias"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuCentral" />
@@ -249,7 +274,8 @@
         <activity
             android:name=".NoticiaAgroeste"
             android:label="Agroeste"
-            android:theme="@style/TemaMenuNoticias">
+            android:theme="@style/TemaMenuNoticias"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaDeNovidades" />
@@ -259,7 +285,8 @@
         <activity
             android:name=".NoticiaDeklab"
             android:label="Deklab"
-            android:theme="@style/TemaMenuNoticias">
+            android:theme="@style/TemaMenuNoticias"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaDeNovidades" />
@@ -269,7 +296,8 @@
         <activity
             android:name=".NoticiaDimicron"
             android:label="Dimicron"
-            android:theme="@style/TemaMenuNoticias">
+            android:theme="@style/TemaMenuNoticias"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaDeNovidades" />
@@ -279,7 +307,8 @@
         <activity
             android:name=".NoticiaSementesEstrela"
             android:label="Sementes Estrela"
-            android:theme="@style/TemaMenuNoticias">
+            android:theme="@style/TemaMenuNoticias"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaDeNovidades" />
@@ -289,7 +318,8 @@
         <activity
             android:name=".TelaColetaAgrotoxicos"
             android:label="Descarte de Defensivos"
-            android:theme="@style/TemaMenuDescarte">
+            android:theme="@style/TemaMenuDescarte"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuCentral" />
@@ -299,7 +329,8 @@
         <activity
             android:name=".TelaComoDescartar"
             android:label="Como Descartar"
-            android:theme="@style/TemaMenuDescarte">
+            android:theme="@style/TemaMenuDescarte"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaColetaAgrotoxicos" />
@@ -309,7 +340,8 @@
         <activity
             android:name=".TelaOndeDescartar"
             android:label="Pontos de Descarte"
-            android:theme="@style/TemaMenuDescarte">
+            android:theme="@style/TemaMenuDescarte"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaColetaAgrotoxicos" />
@@ -319,7 +351,8 @@
         <activity
             android:name=".SubSubMenuArroz"
             android:label="Pragas do Arroz"
-            android:theme="@style/TemaMenuPragas">
+            android:theme="@style/TemaMenuPragas"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SubMenuPragas" />
@@ -329,7 +362,8 @@
         <activity
             android:name=".SubSubMenuMilho"
             android:label="Pragas do Milho"
-            android:theme="@style/TemaMenuPragas">
+            android:theme="@style/TemaMenuPragas"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SubMenuPragas" />
@@ -339,7 +373,8 @@
         <activity
             android:name=".SubSubMenuSoja"
             android:label="Pragas da Soja"
-            android:theme="@style/TemaMenuPragas">
+            android:theme="@style/TemaMenuPragas"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SubMenuPragas" />
@@ -363,18 +398,18 @@
         <activity
             android:name=".TelaDePerguntasESobre"
             android:label="Dúvidas"
-            android:theme="@style/TemaMenuSobre">
+            android:theme="@style/TemaMenuSobre"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuCentral" />
         </activity>
         <!-- ................................................................................... -->
-
-
         <!-- Tela de Sincronização -->
         <activity
             android:name=".TelaDeSincronizacao"
-            android:label="Sincronização dos Dados">
+            android:label="Sincronização dos Dados"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:theme="@style/TemaMenuWifi"
@@ -385,21 +420,37 @@
         <activity
             android:name=".TelaDeRotacaoDeCultura"
             android:label="Rotação de Culturas"
-            android:theme="@style/TemaMenuRotacao">
+            android:theme="@style/TemaMenuRotacao"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuCentral" />
         </activity>
         <!-- ................................................................................... -->
-
+        <!-- TelaRotacaoDeCulturaMaisDetalhes -->
         <activity
             android:name=".TelaRotacaoDeCulturaMaisDetalhes"
-            android:label="Informações Complementares">
+            android:label="Informações Complementares"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TelaDeRotacaoDeCultura" />
         </activity>
-        <activity android:name=".ZoomGrafico2"></activity>
+        <!-- ................................................................................... -->
+        <!-- ZoomGrafico1 -->
+        <activity android:name=".ZoomGrafico1"
+            android:label=""
+            android:screenOrientation="portrait">
+
+        </activity>
+        <!-- ................................................................................... -->
+        <!-- ZoomGrafico2 -->
+        <activity android:name=".ZoomGrafico2"
+            android:label=""
+            android:screenOrientation="portrait">
+
+        </activity>
+        <!-- ................................................................................... -->
     </application>
 
 </manifest>
