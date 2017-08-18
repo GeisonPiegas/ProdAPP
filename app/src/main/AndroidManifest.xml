@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/prodapp"
+        android:icon="@mipmap/logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/prodapp"
+        android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
@@ -71,7 +71,14 @@
         <!-- TELA DE LOGIN -->
         <activity
             android:name=".TelaDeLogin"
-            android:theme="@style/TemaMenuCentral" />
+            android:theme="@style/TemaMenuCentral">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <!-- ................................................................................... -->
         <!-- GERENCIAMENTO DE SILOS -->
         <activity
@@ -147,11 +154,7 @@
         <activity
             android:name=".MenuCentral"
             android:theme="@style/TemaMenuCentral">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <!-- ................................................................................... -->
         <!-- SILO PRINCIPAL -->

@@ -38,11 +38,8 @@ public class TelaDeLogin extends AppCompatActivity implements View.OnClickListen
     private static final String PREFERENCE_NAME = "LoginActivityPreference";
     public Integer id_pedido;
 
-
     // Criando um objeto da classe criada pro banco de dados.
     private UsuariosBD helper;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,17 +62,12 @@ public class TelaDeLogin extends AppCompatActivity implements View.OnClickListen
 
         CriarContaUsuarioTextViewTelaDeLogin = (TextView) findViewById(R.id.CriarContaUsuarioTextViewTelaDeLogin) ;
 
-        //onclick's
-
        // SalvarSenhaCheckBoxTelaDeLogin.setOnClickListener(this);
         EntrarButtonTelaDeLogin.setOnClickListener(this);
         CriarContaUsuarioTextViewTelaDeLogin.setOnClickListener(this);
-
-
         //------
         helper = new UsuariosBD(this) ; // Criando e Iniciando o Metodo Helper dentro do ON-CREATE
         //------------------
-
 
         // Irá Pegar o Arquivo de Preferencia que foi salvo e testar
         SharedPreferences sharedPreferences = getSharedPreferences(PREFERENCE_NAME, MODE_PRIVATE);
@@ -111,10 +103,6 @@ public class TelaDeLogin extends AppCompatActivity implements View.OnClickListen
             startActivity(intentTelaDeCadastro); // comecando a activity
 
             finish(); // finaliza a activity anterior
-
-            overridePendingTransition(android.R.anim.slide_out_right, android.R.anim.slide_in_left); // Resposável pela animação da janela
-
-
         }
 
         if (EntrarButtonTelaDeLogin.isPressed()){

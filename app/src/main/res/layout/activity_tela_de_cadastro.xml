@@ -11,70 +11,86 @@
         android:id="@+id/ScrollViewTelaDeCadastro"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="55dp">
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
 
         <LinearLayout
             android:id="@+id/LinearLayoutVerticalTelaDeCadastro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:weightSum="1">
 
             <ImageView
                 android:id="@+id/IconeImageViewTelaDeCadastro"
                 android:layout_width="match_parent"
                 android:layout_height="155dp"
-                android:layout_marginTop="10dp"
-                app:srcCompat="@android:drawable/btn_dialog" />
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1.00"
+                app:srcCompat="@drawable/logo" />
 
             <TextView
                 android:id="@+id/NomeTextViewTelaDeCadastro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
-                android:text="Nome:"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+                android:text="Nome"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#966100"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/NomeEditTextTelaDeCadastro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:ems="10"
                 android:hint="Bill Portões"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textColor="@android:color/black" />
 
             <TextView
                 android:id="@+id/EmailTextViewTelaDeCadastro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
-                android:text="E-mail:"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+                android:text="E-mail"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#966100"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/EmailEditTextTelaDeCadastro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:ems="10"
                 android:hint="exemplo@gmail.com"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/black" />
 
             <TextView
                 android:id="@+id/SenhaTextViewTelaDeCadastro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
-                android:text="Senha:"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+                android:text="Senha"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#966100"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/SenhaEditTextTelaDeCadastro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:ems="10"
                 android:hint="********"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:textColor="@android:color/black" />
 
             <Button
                 android:id="@+id/CadastrarButtonTelaDeCadastro"
@@ -82,16 +98,19 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
-                android:text="Cadastrar" />
+                android:text="Cadastrar"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/LoginTextViewTelaDeCadastro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:text="@string/LoginTextViewTelaDeCadastro"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textColor="@android:color/holo_orange_dark" />
+                android:textColor="#966100" />
 
         </LinearLayout>
     </ScrollView>

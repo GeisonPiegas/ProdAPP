@@ -76,7 +76,6 @@ public class PragaArroz2 extends AppCompatActivity implements View.OnClickListen
         //Teste logico pra abrir e fechar o menuzinho dos produtos que combatem cada praga, e estou
         // setando um texto diferente em cada clique no button...
         if (buttonVerProdutos.isPressed()) {
-
          /*   if(teste == true){
                 RelativeLayoutVerMais.setVisibility(View.VISIBLE);
                 buttonVerProdutos.setText("FECHAR PRODUTOS PARA CONTROLE");
