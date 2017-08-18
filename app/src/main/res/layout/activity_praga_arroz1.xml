@@ -32,8 +32,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_weight="1"
                     android:background="@android:color/transparent"
-                    android:visibility="invisible"
-                    app:srcCompat="@drawable/setaesquerda" />
+                    android:visibility="invisible" />
 
                 <TextView
                     android:id="@+id/textViewTitulo"
@@ -52,8 +51,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_weight="1"
                     android:background="@android:color/transparent"
-                    android:visibility="invisible"
-                    app:srcCompat="@drawable/setadireita" />
+                    android:visibility="invisible" />
             </LinearLayout>
 
             <TextView

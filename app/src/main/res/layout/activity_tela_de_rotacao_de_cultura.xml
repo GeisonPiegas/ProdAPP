@@ -83,14 +83,6 @@
                                 android:textColor="@android:color/black"
                                 android:textColorLink="@color/Preto" />
 
-                            <Button
-                                android:id="@+id/buttonSaberMais"
-                                android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginTop="5dp"
-                                android:text="Mais Informações"
-                                android:textColor="@android:color/black" />
-
                         </LinearLayout>
 
                         <LinearLayout
@@ -143,17 +135,17 @@
                                 android:textColor="@android:color/black"
                                 android:textColorLink="@color/Preto" />
 
-                            <Button
-                                android:id="@+id/buttonCriarDiagrama"
-                                android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginTop="5dp"
-                                android:text="Criar diagrama"
-                                android:textColor="@android:color/black" />
-
                         </LinearLayout>
 
                     </LinearLayout>
+
+                    <Button
+                        android:id="@+id/buttonCriarDiagrama"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Criar diagrama"
+                        android:textColor="@android:color/black" />
 
                     <LinearLayout
                         android:id="@+id/LinearLayout1"

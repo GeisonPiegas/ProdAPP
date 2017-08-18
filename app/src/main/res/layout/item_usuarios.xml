@@ -9,5 +9,6 @@
         android:id="@+id/textViewnomeSilo"
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textColor="@android:color/black" />
 </LinearLayout>

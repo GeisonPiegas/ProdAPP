@@ -1,5 +1,6 @@
 package com.example.alunos.prodapp;
 
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -66,6 +67,11 @@ public class TelaEpocaDeArroz extends AppCompatActivity implements View.OnClickL
                 buttonMarco.setBackgroundColor(getResources().getColor(R.color.MenuUsuario));
                 buttonAbril.setBackgroundColor(getResources().getColor(R.color.MenuUsuario));
 
+                buttonJaneiro.setTypeface(null, Typeface.BOLD);
+                buttonFevereiro.setTypeface(null, Typeface.BOLD);
+                buttonMarco.setTypeface(null, Typeface.BOLD);
+                buttonAbril.setTypeface(null, Typeface.BOLD);
+
                 buttonMaio.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonJunho.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonJulho.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
@@ -75,9 +81,23 @@ public class TelaEpocaDeArroz extends AppCompatActivity implements View.OnClickL
                 buttonNovembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonDezembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
 
+                buttonMaio.setTypeface(null, Typeface.NORMAL);
+                buttonJunho.setTypeface(null, Typeface.NORMAL);
+                buttonJulho.setTypeface(null, Typeface.NORMAL);
+                buttonAgosto.setTypeface(null, Typeface.NORMAL);
+                buttonSetembro.setTypeface(null, Typeface.NORMAL);
+                buttonOutubro.setTypeface(null, Typeface.NORMAL);
+                buttonNovembro.setTypeface(null, Typeface.NORMAL);
+                buttonDezembro.setTypeface(null, Typeface.NORMAL);
+
                 buttonVermelho.setVisibility(View.INVISIBLE);
                 buttonVerde.setVisibility(View.INVISIBLE);
                 buttonPadraoCinza.setVisibility(View.INVISIBLE);
+
+                buttonAmarelo.setTypeface(null, Typeface.BOLD);
+                buttonVermelho.setTypeface(null, Typeface.NORMAL);
+                buttonVerde.setTypeface(null, Typeface.NORMAL);
+                buttonPadraoCinza.setTypeface(null, Typeface.NORMAL);
 
                 teste = false;
             }else{
@@ -86,6 +106,11 @@ public class TelaEpocaDeArroz extends AppCompatActivity implements View.OnClickL
                 buttonMarco.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonAbril.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
 
+                buttonJaneiro.setTypeface(null, Typeface.NORMAL);
+                buttonFevereiro.setTypeface(null, Typeface.NORMAL);
+                buttonMarco.setTypeface(null, Typeface.NORMAL);
+                buttonAbril.setTypeface(null, Typeface.NORMAL);
+
                 buttonMaio.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonJunho.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonJulho.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
@@ -95,9 +120,23 @@ public class TelaEpocaDeArroz extends AppCompatActivity implements View.OnClickL
                 buttonNovembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonDezembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
 
+                buttonMaio.setTypeface(null, Typeface.NORMAL);
+                buttonJunho.setTypeface(null, Typeface.NORMAL);
+                buttonJulho.setTypeface(null, Typeface.NORMAL);
+                buttonAgosto.setTypeface(null, Typeface.NORMAL);
+                buttonSetembro.setTypeface(null, Typeface.NORMAL);
+                buttonOutubro.setTypeface(null, Typeface.NORMAL);
+                buttonNovembro.setTypeface(null, Typeface.NORMAL);
+                buttonDezembro.setTypeface(null, Typeface.NORMAL);
+
                 buttonVermelho.setVisibility(View.VISIBLE);
                 buttonVerde.setVisibility(View.VISIBLE);
                 buttonPadraoCinza.setVisibility(View.VISIBLE);
+
+                buttonAmarelo.setTypeface(null, Typeface.NORMAL);
+                buttonVermelho.setTypeface(null, Typeface.NORMAL);
+                buttonVerde.setTypeface(null, Typeface.NORMAL);
+                buttonPadraoCinza.setTypeface(null, Typeface.NORMAL);
 
                 teste = true;
             }
@@ -113,6 +152,12 @@ public class TelaEpocaDeArroz extends AppCompatActivity implements View.OnClickL
                 buttonAgosto.setBackgroundColor(getResources().getColor(R.color.MenuEpocas));
                 buttonSetembro.setBackgroundColor(getResources().getColor(R.color.MenuEpocas));
 
+                buttonMaio.setTypeface(null, Typeface.BOLD);
+                buttonJunho.setTypeface(null, Typeface.BOLD);
+                buttonJulho.setTypeface(null, Typeface.BOLD);
+                buttonAgosto.setTypeface(null, Typeface.BOLD);
+                buttonSetembro.setTypeface(null, Typeface.BOLD);
+
                 buttonJaneiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonFevereiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonMarco.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
@@ -121,9 +166,22 @@ public class TelaEpocaDeArroz extends AppCompatActivity implements View.OnClickL
                 buttonNovembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonDezembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
 
+                buttonJaneiro.setTypeface(null, Typeface.NORMAL);
+                buttonFevereiro.setTypeface(null, Typeface.NORMAL);
+                buttonMarco.setTypeface(null, Typeface.NORMAL);
+                buttonAbril.setTypeface(null, Typeface.NORMAL);
+                buttonOutubro.setTypeface(null, Typeface.NORMAL);
+                buttonNovembro.setTypeface(null, Typeface.NORMAL);
+                buttonDezembro.setTypeface(null, Typeface.NORMAL);
+
                 buttonAmarelo.setVisibility(View.INVISIBLE);
                 buttonVerde.setVisibility(View.INVISIBLE);
                 buttonPadraoCinza.setVisibility(View.INVISIBLE);
+
+                buttonAmarelo.setTypeface(null, Typeface.NORMAL);
+                buttonVermelho.setTypeface(null, Typeface.BOLD);
+                buttonVerde.setTypeface(null, Typeface.NORMAL);
+                buttonPadraoCinza.setTypeface(null, Typeface.NORMAL);
 
                 teste = false;
             }else{
@@ -133,6 +191,12 @@ public class TelaEpocaDeArroz extends AppCompatActivity implements View.OnClickL
                 buttonAgosto.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonSetembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
 
+                buttonMaio.setTypeface(null, Typeface.NORMAL);
+                buttonJunho.setTypeface(null, Typeface.NORMAL);
+                buttonJulho.setTypeface(null, Typeface.NORMAL);
+                buttonAgosto.setTypeface(null, Typeface.NORMAL);
+                buttonSetembro.setTypeface(null, Typeface.NORMAL);
+
                 buttonJaneiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonFevereiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonMarco.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
@@ -141,9 +205,22 @@ public class TelaEpocaDeArroz extends AppCompatActivity implements View.OnClickL
                 buttonNovembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonDezembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
 
+                buttonJaneiro.setTypeface(null, Typeface.NORMAL);
+                buttonFevereiro.setTypeface(null, Typeface.NORMAL);
+                buttonMarco.setTypeface(null, Typeface.NORMAL);
+                buttonAbril.setTypeface(null, Typeface.NORMAL);
+                buttonOutubro.setTypeface(null, Typeface.NORMAL);
+                buttonNovembro.setTypeface(null, Typeface.NORMAL);
+                buttonDezembro.setTypeface(null, Typeface.NORMAL);
+
                 buttonAmarelo.setVisibility(View.VISIBLE);
                 buttonVerde.setVisibility(View.VISIBLE);
                 buttonPadraoCinza.setVisibility(View.VISIBLE);
+
+                buttonAmarelo.setTypeface(null, Typeface.NORMAL);
+                buttonVermelho.setTypeface(null, Typeface.NORMAL);
+                buttonVerde.setTypeface(null, Typeface.NORMAL);
+                buttonPadraoCinza.setTypeface(null, Typeface.NORMAL);
 
                 teste = true;
             }
@@ -157,6 +234,10 @@ public class TelaEpocaDeArroz extends AppCompatActivity implements View.OnClickL
                 buttonNovembro.setBackgroundColor(getResources().getColor(R.color.MenuNoticias));
                 buttonDezembro.setBackgroundColor(getResources().getColor(R.color.MenuNoticias));
 
+                buttonOutubro.setTypeface(null, Typeface.BOLD);
+                buttonNovembro.setTypeface(null, Typeface.BOLD);
+                buttonDezembro.setTypeface(null, Typeface.BOLD);
+
                 buttonJaneiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonFevereiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonMarco.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
@@ -167,9 +248,24 @@ public class TelaEpocaDeArroz extends AppCompatActivity implements View.OnClickL
                 buttonAgosto.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonSetembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
 
+                buttonJaneiro.setTypeface(null, Typeface.NORMAL);
+                buttonFevereiro.setTypeface(null, Typeface.NORMAL);
+                buttonMarco.setTypeface(null, Typeface.NORMAL);
+                buttonAbril.setTypeface(null, Typeface.NORMAL);
+                buttonMaio.setTypeface(null, Typeface.NORMAL);
+                buttonJunho.setTypeface(null, Typeface.NORMAL);
+                buttonJulho.setTypeface(null, Typeface.NORMAL);
+                buttonAgosto.setTypeface(null, Typeface.NORMAL);
+                buttonSetembro.setTypeface(null, Typeface.NORMAL);
+
                 buttonVermelho.setVisibility(View.INVISIBLE);
                 buttonAmarelo.setVisibility(View.INVISIBLE);
                 buttonPadraoCinza.setVisibility(View.INVISIBLE);
+
+                buttonAmarelo.setTypeface(null, Typeface.NORMAL);
+                buttonVermelho.setTypeface(null, Typeface.NORMAL);
+                buttonVerde.setTypeface(null, Typeface.BOLD);
+                buttonPadraoCinza.setTypeface(null, Typeface.NORMAL);
 
                 teste = false;
             }else{
@@ -177,6 +273,10 @@ public class TelaEpocaDeArroz extends AppCompatActivity implements View.OnClickL
                 buttonNovembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonDezembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
 
+                buttonOutubro.setTypeface(null, Typeface.NORMAL);
+                buttonNovembro.setTypeface(null, Typeface.NORMAL);
+                buttonDezembro.setTypeface(null, Typeface.NORMAL);
+
                 buttonJaneiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonFevereiro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonMarco.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
@@ -187,9 +287,24 @@ public class TelaEpocaDeArroz extends AppCompatActivity implements View.OnClickL
                 buttonAgosto.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonSetembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
 
+                buttonJaneiro.setTypeface(null, Typeface.NORMAL);
+                buttonFevereiro.setTypeface(null, Typeface.NORMAL);
+                buttonMarco.setTypeface(null, Typeface.NORMAL);
+                buttonAbril.setTypeface(null, Typeface.NORMAL);
+                buttonMaio.setTypeface(null, Typeface.NORMAL);
+                buttonJunho.setTypeface(null, Typeface.NORMAL);
+                buttonJulho.setTypeface(null, Typeface.NORMAL);
+                buttonAgosto.setTypeface(null, Typeface.NORMAL);
+                buttonSetembro.setTypeface(null, Typeface.NORMAL);
+
                 buttonVermelho.setVisibility(View.VISIBLE);
                 buttonAmarelo.setVisibility(View.VISIBLE);
                 buttonPadraoCinza.setVisibility(View.VISIBLE);
+
+                buttonAmarelo.setTypeface(null, Typeface.NORMAL);
+                buttonVermelho.setTypeface(null, Typeface.NORMAL);
+                buttonVerde.setTypeface(null, Typeface.NORMAL);
+                buttonPadraoCinza.setTypeface(null, Typeface.NORMAL);
 
                 teste = true;
             }
@@ -210,10 +325,28 @@ public class TelaEpocaDeArroz extends AppCompatActivity implements View.OnClickL
                 buttonNovembro.setBackgroundColor(getResources().getColor(R.color.MenuNoticias));
                 buttonDezembro.setBackgroundColor(getResources().getColor(R.color.MenuNoticias));
 
+                buttonJaneiro.setTypeface(null, Typeface.BOLD);
+                buttonFevereiro.setTypeface(null, Typeface.BOLD);
+                buttonMarco.setTypeface(null, Typeface.BOLD);
+                buttonAbril.setTypeface(null, Typeface.BOLD);
+                buttonMaio.setTypeface(null, Typeface.BOLD);
+                buttonJunho.setTypeface(null, Typeface.BOLD);
+                buttonJulho.setTypeface(null, Typeface.BOLD);
+                buttonAgosto.setTypeface(null, Typeface.BOLD);
+                buttonSetembro.setTypeface(null, Typeface.BOLD);
+                buttonOutubro.setTypeface(null, Typeface.BOLD);
+                buttonNovembro.setTypeface(null, Typeface.BOLD);
+                buttonDezembro.setTypeface(null, Typeface.BOLD);
+
                 buttonVermelho.setVisibility(View.VISIBLE);
                 buttonVerde.setVisibility(View.VISIBLE);
                 buttonPadraoCinza.setVisibility(View.VISIBLE);
                 buttonAmarelo.setVisibility(View.VISIBLE);
+
+                buttonAmarelo.setTypeface(null, Typeface.NORMAL);
+                buttonVermelho.setTypeface(null, Typeface.NORMAL);
+                buttonVerde.setTypeface(null, Typeface.NORMAL);
+                buttonPadraoCinza.setTypeface(null, Typeface.BOLD);
 
                 teste = false;
             }else{
@@ -230,10 +363,28 @@ public class TelaEpocaDeArroz extends AppCompatActivity implements View.OnClickL
                 buttonNovembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
                 buttonDezembro.setBackgroundColor(getResources().getColor(R.color.PadraoBotao));
 
+                buttonJaneiro.setTypeface(null, Typeface.NORMAL);
+                buttonFevereiro.setTypeface(null, Typeface.NORMAL);
+                buttonMarco.setTypeface(null, Typeface.NORMAL);
+                buttonAbril.setTypeface(null, Typeface.NORMAL);
+                buttonMaio.setTypeface(null, Typeface.NORMAL);
+                buttonJunho.setTypeface(null, Typeface.NORMAL);
+                buttonJulho.setTypeface(null, Typeface.NORMAL);
+                buttonAgosto.setTypeface(null, Typeface.NORMAL);
+                buttonSetembro.setTypeface(null, Typeface.NORMAL);
+                buttonOutubro.setTypeface(null, Typeface.NORMAL);
+                buttonNovembro.setTypeface(null, Typeface.NORMAL);
+                buttonDezembro.setTypeface(null, Typeface.NORMAL);
+
                 buttonVermelho.setVisibility(View.VISIBLE);
                 buttonVerde.setVisibility(View.VISIBLE);
                 buttonPadraoCinza.setVisibility(View.VISIBLE);
                 buttonAmarelo.setVisibility(View.VISIBLE);
+
+                buttonAmarelo.setTypeface(null, Typeface.NORMAL);
+                buttonVermelho.setTypeface(null, Typeface.NORMAL);
+                buttonVerde.setTypeface(null, Typeface.NORMAL);
+                buttonPadraoCinza.setTypeface(null, Typeface.NORMAL);
 
                 teste = true;
             }

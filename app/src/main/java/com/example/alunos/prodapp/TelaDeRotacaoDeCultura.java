@@ -25,7 +25,6 @@ public class TelaDeRotacaoDeCultura extends AppCompatActivity implements View.On
     private CheckBox checkBoxMilhete;
     private CheckBox checkBoxSorgo;
     private CheckBox checkBoxTremoco;
-    private Button buttonSaberMais;
     private Button buttonCriarDiagrama;
     private ImageView imageViewCima;
     private ImageView imageViewEsquerda;
@@ -57,7 +56,6 @@ public class TelaDeRotacaoDeCultura extends AppCompatActivity implements View.On
         checkBoxMilhete = (CheckBox) findViewById(R.id.checkBoxMilhete);
         checkBoxSorgo = (CheckBox) findViewById(R.id.checkBoxSorgo);
         checkBoxTremoco = (CheckBox) findViewById(R.id.checkBoxTremoco);
-        buttonSaberMais = (Button) findViewById(R.id.buttonSaberMais);
         buttonCriarDiagrama = (Button) findViewById(R.id.buttonCriarDiagrama);
         imageViewCima = (ImageView) findViewById(R.id.imageViewCima);
         imageViewEsquerda = (ImageView) findViewById(R.id.imageViewEsquerda);
@@ -67,7 +65,6 @@ public class TelaDeRotacaoDeCultura extends AppCompatActivity implements View.On
         LinearLayout2 = (LinearLayout) findViewById(R.id.LinearLayout2);
         LinearLayout3 = (LinearLayout) findViewById(R.id.LinearLayout3);
 
-        buttonSaberMais.setOnClickListener(this);
         buttonCriarDiagrama.setOnClickListener(this);
 
         testeValor = 0;
@@ -143,14 +140,6 @@ public class TelaDeRotacaoDeCultura extends AppCompatActivity implements View.On
         if (checkBoxTremoco.isChecked()){
             testeValor = testeValor+1;
             tremoco = true;
-        }
-
-        if (buttonSaberMais.isPressed()) {
-            Intent intentRotacaoDeCulturaMaisDetalhes = new Intent(this, TelaRotacaoDeCulturaMaisDetalhes.class);
-            startActivity(intentRotacaoDeCulturaMaisDetalhes);
-
-
-
         }
 
        if (buttonCriarDiagrama.isPressed()) {

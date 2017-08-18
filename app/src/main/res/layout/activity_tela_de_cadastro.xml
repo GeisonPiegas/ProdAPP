@@ -106,6 +106,7 @@
                 android:id="@+id/LoginTextViewTelaDeCadastro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
                 android:layout_marginTop="10dp"
                 android:text="@string/LoginTextViewTelaDeCadastro"
                 android:textAlignment="center"
